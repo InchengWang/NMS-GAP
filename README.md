@@ -18,7 +18,7 @@ Human NMS digital-twin analysis and proposal materials:
 
 ### [`Embody AI/`](Embody%20AI/)
 
-Human NMS Embodied-AI work: [`01_core_paper_critiques/`](Embody%20AI/01_core_paper_critiques/) re-assesses 49 core papers, and [`02_gap_validation/`](Embody%20AI/02_gap_validation/) tests ten scientific, engineering, clinical, robotics-control and sensor-substitution gaps against nearest counter-evidence. Generic muscle-driven simulation is kept distinct from a patient-bound digital twin.
+Human NMS Embodied-AI work: [`01_core_paper_critiques/`](Embody%20AI/01_core_paper_critiques/) re-assesses 49 core papers, [`02_gap_validation/`](Embody%20AI/02_gap_validation/) tests ten candidate gaps against nearest counter-evidence, and [`03_phd_proposal/`](Embody%20AI/03_phd_proposal/) converts the validated residuals into an embodied-intelligence doctoral plan. Generic muscle-driven simulation is kept distinct from a patient-bound digital representation.
 
 ## Main conclusion
 
