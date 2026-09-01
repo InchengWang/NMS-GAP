@@ -12,8 +12,12 @@ The reproducible first-pass map: taxonomy, search protocol, inclusion/exclusion 
 
 Critical reading of all 49 core papers. Every paper is assessed by Problem, Method, Data, Evaluation, Findings, Digital Twin Assessment, Limitations, Reproducibility and PhD Relevance, with explicit sensing/modeling/personalization/validation/near-twin classification.
 
+### [`03_gap_validation/`](03_gap_validation/)
+
+Counter-evidence validation of ten candidate research gaps. Each dossier records supporting evidence, searches intended to disprove the claim, closest work, remaining limitation, controlled verdict, feasibility and the next falsification pilot.
+
 ## Main conclusion
 
 The literature provides strong neural sensing, personalized NMS modeling, treatment simulation, muscle-driven Embodied AI and adaptive assistance components, but no `L5` longitudinal, uncertainty-aware, clinically validated NMS twin in this core set. The most defensible research direction is to connect patient-specific state estimation to validated counterfactual prediction and safe longitudinal intervention.
 
-**Start here:** [`02_paper_critiques/SUMMARY.md`](02_paper_critiques/SUMMARY.md).
+**Start here:** [`03_gap_validation/GAP_VALIDATION_REPORT.md`](03_gap_validation/GAP_VALIDATION_REPORT.md).
