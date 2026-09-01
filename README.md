@@ -16,8 +16,12 @@ Critical reading of all 49 core papers. Every paper is assessed by Problem, Meth
 
 Counter-evidence validation of ten candidate research gaps. Each dossier records supporting evidence, searches intended to disprove the claim, closest work, remaining limitation, controlled verdict, feasibility and the next falsification pilot.
 
+### [`04_phd_proposal/`](04_phd_proposal/)
+
+Advisor-facing PhD plan derived from the validated gaps: an uncertainty-aware longitudinal NMS twin with decision-specific observability, two-timescale adaptation and safe rehabilitation decisions. Includes a nearest-prior-work claim matrix and structured Aim design matrix.
+
 ## Main conclusion
 
 The literature provides strong neural sensing, personalized NMS modeling, treatment simulation, muscle-driven Embodied AI and adaptive assistance components, but no `L5` longitudinal, uncertainty-aware, clinically validated NMS twin in this core set. The most defensible research direction is to connect patient-specific state estimation to validated counterfactual prediction and safe longitudinal intervention.
 
-**Start here:** [`03_gap_validation/GAP_VALIDATION_REPORT.md`](03_gap_validation/GAP_VALIDATION_REPORT.md).
+**Start here:** [`04_phd_proposal/PHD_PROPOSAL.md`](04_phd_proposal/PHD_PROPOSAL.md).
