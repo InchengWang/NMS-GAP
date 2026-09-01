@@ -1,7 +1,7 @@
 # Gap Validation Dossiers
 
 **Search cutoff:** 2026-09-01  
-**Starting candidates:** the ten “Highest-priority uncovered questions” in [`../01_literature_mapping/CLUSTERS_AND_GAPS.md`](../01_literature_mapping/CLUSTERS_AND_GAPS.md).  
+**Starting candidates:** the ten “Highest-priority uncovered questions” in [`../../01_literature_mapping/CLUSTERS_AND_GAPS.md`](../../01_literature_mapping/CLUSTERS_AND_GAPS.md).  
 **Input evidence:** the 60-paper map, 49 core-paper critiques, new counter-evidence searches, selected trial records, and newly released work through the cutoff.
 
 The dossiers judge the original candidate, not a more convenient rewritten version. A narrower residual question can remain useful even when the broad candidate is `not-a-gap`.

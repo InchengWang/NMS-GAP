@@ -43,9 +43,8 @@ If any item is missing, the output should be named more narrowly: a personalized
 
 The nearest-work set above is inherited from:
 
-- [`../01_literature_mapping/`](../01_literature_mapping/), the 60-paper first-pass map;
+- [`../../01_literature_mapping/`](../../01_literature_mapping/), the 60-paper first-pass map;
 - [`../02_paper_critiques/`](../02_paper_critiques/), the 49 core-paper critical reading;
 - [`../03_gap_validation/`](../03_gap_validation/), including counter-evidence searches and controlled verdicts.
 
 The proposal should be re-searched immediately before submission because G01, G03, G05, G07 and G08 are active `partially-addressed` areas.
-

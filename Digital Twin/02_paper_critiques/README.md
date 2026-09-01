@@ -17,9 +17,8 @@ Critical assessment of the 49 papers marked `priority=core` in the first-pass li
 1. Read [`SUMMARY.md`](SUMMARY.md) for the main judgment.
 2. Use the CSV to filter by paper type, DT level or PhD relevance.
 3. Open the matching card volume for evidence, limitations and reproducibility.
-4. Cross-check metadata and the wider 60-paper context in [`../01_literature_mapping/`](../01_literature_mapping/).
+4. Cross-check metadata and the wider 60-paper context in [`../../01_literature_mapping/`](../../01_literature_mapping/).
 
 ## Bottom line
 
 The field has several compelling **components**—neural observation, personalized NMS models, predictive treatment simulations, scalable embodied controllers and adaptive assistance—but no validated `L5` longitudinal NMS twin in this core set. The strongest thesis opportunity lies in connecting these components and validating the connection, not in relabeling a single sensing or simulation paper as a twin.
-

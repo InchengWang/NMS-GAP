@@ -36,7 +36,7 @@ A paper can have secondary types, but it receives one primary label in the machi
 
 ## Digital-twin decision rule
 
-The maturity scale is inherited from [`../01_literature_mapping/TAXONOMY.md`](../01_literature_mapping/TAXONOMY.md):
+The maturity scale is inherited from [`../../01_literature_mapping/TAXONOMY.md`](../../01_literature_mapping/TAXONOMY.md):
 
 - `L0`: generic simulator; no individual binding.
 - `L1`: offline subject-specific digital model.
