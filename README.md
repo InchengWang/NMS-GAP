@@ -18,7 +18,7 @@ Human NMS digital-twin analysis and proposal materials:
 
 ### [`Embody AI/`](Embody%20AI/)
 
-Workspace for Embodied-AI-specific literature, benchmarks, methods and future proposals. Generic muscle-driven simulation is kept distinct from a patient-bound digital twin.
+Human NMS Embodied-AI work, beginning with [`01_core_paper_critiques/`](Embody%20AI/01_core_paper_critiques/): a 49-paper re-assessment centered on body modeling, sensorimotor control, physical interaction, assistive control, rehabilitation and subject-specific validation. Generic muscle-driven simulation is kept distinct from a patient-bound digital twin.
 
 ## Main conclusion
 
