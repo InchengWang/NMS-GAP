@@ -1,6 +1,6 @@
 # Human Neuromusculoskeletal Digital Twin / Embodied AI Taxonomy
 
-**Version:** first-pass map, 2026-09-01  
+**Version:** seed map 2026-09-01; incremental update 2026-10-01
 **Scope:** human neuromusculoskeletal (NMS) systems, with digital twin and Embodied AI treated as overlapping but non-equivalent research programs.
 
 ## 1. Operational boundary
@@ -103,3 +103,13 @@ The most important research bridge is:
 - Uncertainty type: aleatoric, epistemic, parameter posterior, confidence calibration.
 - Availability of code, model, data, and real-time implementation.
 
+
+## 5. Coding clarifications (2026-10-01)
+
+- `explicit_digital_twin` records terminology and implementation/framework scope; it is not an automatic L4/L5 award. Author framing, synchronization and validation must be assessed separately.
+- Real human device testing prevents classifying the whole study as `simulation_only`, even if its learning occurs in simulation (ROB013). This does not establish a synchronized patient twin.
+- Separate simulated human-policy training, device-policy training, deployment adaptation and longitudinal human learning. The word co-adaptation alone does not prove all four.
+- Treat physiological diagnostics, external mechanics validation, internal-force validation and clinical outcomes as separate evidence. EMG-envelope agreement is not unique neural-mechanism identification; model-derived stress is not observed injury.
+- Wearable ultrasound fascia tracking is an adjacent observability component (WEA008), not proof of force estimation or full NMS observability.
+- Preprints remain `priority=watch` with `preprint_metadata_verified` until a peer-reviewed version is independently located. Indexed abstract inspection and unavailable full text are explicitly noted.
+- Preserve stable IDs across publication versions. `year` uses earliest verified journal online year when known; issue year and preprint history are separately recorded in the dated verification table. Do not infer first publication from a search engine's crawl date.

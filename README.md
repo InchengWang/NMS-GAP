@@ -6,7 +6,7 @@ Evidence map and critical assessment for **human neuromusculoskeletal digital tw
 
 ### [`01_literature_mapping/`](01_literature_mapping/)
 
-The reproducible first-pass map: taxonomy, search protocol, inclusion/exclusion rules, 60-paper literature matrix, major clusters and uncovered space.
+The evidence map: taxonomy, search protocol, inclusion/exclusion rules, 67-record literature matrix, major clusters and uncovered space. Latest incremental update: [2026-10-01](01_literature_mapping/updates/2026-10-01.md), including separately marked preprint watch items.
 
 ### [`Digital Twin/`](Digital%20Twin/)
 

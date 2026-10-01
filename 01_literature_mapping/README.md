@@ -15,7 +15,7 @@ IMU is treated as one wearable movement-sensing modality rather than the center 
 
 - [`TAXONOMY.md`](TAXONOMY.md): operational digital-twin maturity ladder and multidimensional NMS taxonomy.
 - [`SEARCH_PROTOCOL.md`](SEARCH_PROTOCOL.md): query families, inclusion/exclusion criteria, verification rules, and first-pass limitations.
-- [`data/literature_matrix.csv`](data/literature_matrix.csv): 60-paper machine-readable seed matrix.
+- [`data/literature_matrix.csv`](data/literature_matrix.csv): 67-record machine-readable matrix (including explicitly marked preprint watch items).
 - [`NMS_literature_map_first_pass.xlsx`](NMS_literature_map_first_pass.xlsx): filterable workbook with summary, literature matrix, and codebook.
 - [`CLUSTERS_AND_GAPS.md`](CLUSTERS_AND_GAPS.md): major research clusters, researcher lineages, venue coverage, and uncovered space.
 
@@ -47,3 +47,11 @@ This is a structured seed map with verified metadata and abstracts for most rows
 6. MyoSuite, MyoDex, DynSyn, MotorNet, and MS-Human-700 for the Embodied AI layer.
 7. OpenSense, OpenCap, wearable ultrasound, and multimodal JBHI papers for field observability.
 
+
+## Update: 2026-10-01
+
+- Incremental window: 2026-09-02 through 2026-10-01 (Asia/Tokyo).
+- Added 7 records: 5 peer-reviewed journal records (4 core, 1 adjacent) and 2 preprint watch items.
+- Corrected ROB010 to its peer-reviewed CEINMS-RT journal version; removed 0 existing records.
+- This is a targeted public-source update, not exhaustive database surveillance. Search/access limitations and deferred candidates are retained, not interpreted as absence of literature.
+- [Dated search and change report](updates/2026-10-01.md), [screening decisions](data/screening_2026-10-01.csv), and [metadata verification](data/verification_2026-10-01.csv).

@@ -8,7 +8,7 @@ This is a **first-round evidence map**, not yet a PRISMA-complete systematic rev
 
 ## 2. Scope and cutoff
 
-- Search cutoff: **2026-09-01**.
+- Seed search cutoff: **2026-09-01**. Latest incremental search: **2026-10-01**.
 - Main publication window: **2015–2026**.
 - Seminal pre-2015 papers retained when they define EMG-driven NMS modeling or hybrid neural-control methods.
 - Language: English.
@@ -180,3 +180,7 @@ This pass used public scholarly pages, PubMed/publisher metadata, proceedings si
 
 These items define round two rather than hidden assumptions in round one.
 
+
+## 9. Incremental search, 2026-10-01
+
+See [the dated report](updates/2026-10-01.md) for literal query strings, source/access limits, coverage and counts. New journal versions of older preprints are publication-status changes; earlier-online articles discovered in September issues are backfill candidates, not automatically new publications. A failed fetch is not a zero-hit search. Seven records were added and one existing record corrected; no records were removed.

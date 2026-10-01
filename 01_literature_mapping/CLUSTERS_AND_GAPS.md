@@ -145,3 +145,19 @@ Most mapped studies are **twin-enabling L1–L2 components**. Some reach L3 pred
 - Code/data availability and real-time latency audit.
 - Citation-network and co-authorship map after deduplication.
 
+
+## Incremental evidence and gap revisions: 2026-10-01
+
+The six broad clusters remain unchanged. Seven additions strengthen links between them; they do not establish a complete longitudinal patient twin.
+
+| Cluster | New evidence | Consequence for the gap map |
+|---|---|---|
+| Personalized and multiscale modeling | [NMS020](https://doi.org/10.3389/fbioe.2026.1875782), [NMS021](https://doi.org/10.1177/21695172261486297) | Coupled NMS-FE workflows and patient intervention loading are already addressed in part. Prospective decision value, uncertainty propagation and observed tissue outcomes remain distinct tests. |
+| Neural control | [NEU013](https://doi.org/10.1186/s12984-026-02157-6) | Perturbation-sensitive virtual ablation is an available baseline. Nominal motion tracking alone cannot demonstrate robust neural control. |
+| Musculoskeletal Embodied AI | [EMB006](https://arxiv.org/abs/2609.26872), preprint | Broad physiological benchmark coverage is partially addressed. Patient binding and external validity remain separate questions. |
+| Wearable observability | [WEA008](https://doi.org/10.1109/JBHI.2026.3734932) | Add fascia-tracking method selection to the ultrasound branch; do not equate image-level validation with internal-force truth. |
+| Rehabilitation and assistive robotics | [ROB012](https://doi.org/10.1186/s12984-026-02136-x), [ROB013](https://arxiv.org/abs/2609.19690), preprint | Simulation-to-device transfer and multi-skill training are partially addressed. Multi-participant clinical benefit and longitudinal deployment co-adaptation remain unverified by these records. |
+
+Researcher watch: Pizzolato coauthors NMS020; Sui coauthors EMB006. Durandau, Sartori and Pizzolato also coauthor the corrected journal record ROB010. No additional September-new Durandau/Sartori paper was verified in this targeted pass; that is not proof of no output.
+
+Scope of the remaining gaps must be narrow: do not claim that physiological evaluation, patient intervention models, FES transfer, or co-adaptation training are absent. The unresolved questions concern credibility under changed conditions, identifiable individual state, prospective choices and sustained patient outcomes. No new L5 claim was validated. Dedicated FES longitudinal studies, internal-load reference measurements, trial registries and full-text screening remain uncovered by this update.
