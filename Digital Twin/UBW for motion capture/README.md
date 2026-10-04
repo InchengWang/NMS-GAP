@@ -7,10 +7,11 @@
 | 文件 | 内容 |
 |---|---|
 | [PHD_PROPOSAL.md](PHD_PROPOSAL.md) | 完整英文计划及中文题目：背景、SOTA、validated gap、核心问题/假设、Aim 1–3、方法、基线、指标、统计、贡献、风险、时间表、个人与实验室匹配。 |
+| [PHD_PROPOSAL_ZH.md](PHD_PROPOSAL_ZH.md) | 完整中文描述：与英文版保持相同问题、三个 Aim、实验/统计设计和文献边界，便于中文讨论及审阅。 |
 | [GAP_VALIDATION_AND_NEAREST_WORK.md](GAP_VALIDATION_AND_NEAREST_WORK.md) | 继承 gap 的 traceability、UWB 专属 verdict、反证边界、nearest-work 对照、检索范围、21 项来源的完整引用/出版状态/访问深度。 |
 | [PROPOSAL_SUMMARY_ZH.md](PROPOSAL_SUMMARY_ZH.md) | 中文讨论概要，便于与导师讨论研究范围、端点和推进条件。 |
 
-**建议阅读顺序：**中文概要 → 完整计划 → nearest-work/gap 证据记录。
+**建议阅读顺序：**中文概要 → 完整中文计划（或英文版）→ nearest-work/gap 证据记录。
 
 ## 三项 Aim
 
@@ -28,4 +29,3 @@
 - 主交互任务暂选坐位躯干—上肢到达；全身功能动作作为感知评估。时间表以确认入学日为起点，样本范围待先导后进行正式统计设计。
 
 原有 gap validation 和旧 proposal 保持为独立历史材料。本目录为新的 UWB 研究方案。
-
