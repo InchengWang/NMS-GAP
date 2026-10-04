@@ -10,8 +10,12 @@
 | [PHD_PROPOSAL_ZH.md](PHD_PROPOSAL_ZH.md) | 完整中文描述：与英文版保持相同问题、三个 Aim、实验/统计设计和文献边界，便于中文讨论及审阅。 |
 | [GAP_VALIDATION_AND_NEAREST_WORK.md](GAP_VALIDATION_AND_NEAREST_WORK.md) | 继承 gap 的 traceability、UWB 专属 verdict、反证边界、nearest-work 对照、检索范围、21 项来源的完整引用/出版状态/访问深度。 |
 | [PROPOSAL_SUMMARY_ZH.md](PROPOSAL_SUMMARY_ZH.md) | 中文讨论概要，便于与导师讨论研究范围、端点和推进条件。 |
+| [RESEARCH_TASK_BREAKDOWN_ZH.md](RESEARCH_TASK_BREAKDOWN_ZH.md) | 30个工作包：输入、依赖、步骤、交付/验收、nearest-work、失败路径及三篇论文对应。 |
+| [FIRST_90_DAYS_PLAN_ZH.md](FIRST_90_DAYS_PLAN_ZH.md) | 前90天的13周顺序、台架/健康先导矩阵、硬件/数据字段、误差预算和推进条件。 |
 
 **建议阅读顺序：**中文概要 → 完整中文计划（或英文版）→ nearest-work/gap 证据记录。
+
+执行研究时从30个工作包与前90天计划开始。工作包目前均为待执行；文档编制不表示实验、基线或招募已经完成。
 
 ## 三项 Aim
 
