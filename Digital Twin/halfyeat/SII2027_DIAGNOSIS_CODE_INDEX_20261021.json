@@ -1,0 +1,632 @@
+{
+  "updated": "2026-10-21 Asia/Tokyo",
+  "local_root_alias": "D=Project2_submission/experiments/stroke_dynamic_diagnosis_20261021",
+  "code_entities_published": false,
+  "raw_participant_data_published": false,
+  "source_snapshot": "source_snapshots/b9e3da81755966d9",
+  "original_paper_numbers_are_not_new_manuscript_targets": true,
+  "full_test_is_reused_development_holdout": true,
+  "source_files": [
+    {
+      "path": "D/diag_data.py",
+      "purpose": "Exact M arrays/cache and TRAIN subset boundary",
+      "sha256": "afd58e54a82185ea1f191794c2576d36c735f8f34e9ec3c815a46b4ff4c1ed36",
+      "entities": [
+        {
+          "name": "Trial",
+          "line": 33,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "file_sha",
+          "line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "array_sha",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_atomic_bytes",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_source_module",
+          "line": 69,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_validate_protocol",
+          "line": 79,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_content_audit",
+          "line": 106,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_manifest",
+          "line": 124,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_protocol",
+          "line": 133,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "diagnostic_parent",
+          "line": 146,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_dataset",
+          "line": 156,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prepare_cache",
+          "line": 197,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/diag_models.py",
+      "purpose": "Original pooled versus sequence readout and FrameTCN wrappers",
+      "sha256": "bf2a22668d7dfc7ec8933793ac056cd610f3b599afd1b614ca7966b3d61b4746",
+      "entities": [
+        {
+          "name": "WindowReadout",
+          "line": 21,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_model",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "description",
+          "line": 49,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/diag_runner.py",
+      "purpose": "Frozen fit signatures, checkpointing, window inference and deferred evaluation",
+      "sha256": "894f27d9c4488982b06118a94336a6a1a57abb9596d1d1596faf012ee207791b",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "seed_all",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_fingerprints",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 59,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_scaler",
+          "line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "standardize",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "target",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "decode",
+          "line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "make_windows",
+          "line": 88,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "signature",
+          "line": 98,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "infer",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save_predictions",
+          "line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit",
+          "line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 226,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate_full",
+          "line": 256,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/run_diagnosis.py",
+      "purpose": "Bounded workers and all-fit source freeze",
+      "sha256": "d3e1a6e38f2af5cd7774e6386ea5d1e8e3156453e762ce6ee366eab8ad0838f9",
+      "entities": [
+        {
+          "name": "main",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 39,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/diagnosis_metrics.py",
+      "purpose": "Six-angle metrics, degeneracy guards and source support",
+      "sha256": "ec247dea1d7fe383c07cda8557be50ff5346353acdcc6ea395100152270167f6",
+      "entities": [
+        {
+          "name": "_finite",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_clock",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_frames",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "score",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_rotations_from_6d",
+          "line": 87,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_yz_angle",
+          "line": 102,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "projection_from_rot6d",
+          "line": 110,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "oracle_reconstruct_projection",
+          "line": 130,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_same_support",
+          "line": 153,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_prediction_npz",
+          "line": 164,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/audit_results.py",
+      "purpose": "Independent fit/scaler/window/fusion/metric acceptance",
+      "sha256": "58f31795dd281632f09cd045c7f47d2a9e7880e63c5b82ea498dbd112f6aa8c4",
+      "entities": [
+        {
+          "name": "read",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "raw_sha",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "dump",
+          "line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_path",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "protocol",
+          "line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_cache",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler",
+          "line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_fit",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_metrics",
+          "line": 154,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "decode_independent",
+          "line": 167,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_windows",
+          "line": 180,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_prediction",
+          "line": 214,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "engineering_gate_rows",
+          "line": 250,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 261,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 341,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/analyze_diagnosis.py",
+      "purpose": "TRAIN constant, patient/seed aggregation and all fixed case waveforms",
+      "sha256": "d43da411701007ea872e9c5a2139480b3ecea416cc032cb6316767aec7b7b2c0",
+      "entities": [
+        {
+          "name": "save_json",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fisher",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "group_metrics",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "single_waveforms",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analyze_single",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "constant_baseline",
+          "line": 116,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "full_waveforms",
+          "line": 143,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analyze_full",
+          "line": 186,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/audit_analysis.py",
+      "purpose": "Independent constant and summary/bootstrap reconciliation",
+      "sha256": "f84c72294c8241823cf48903395814742a80f9e0775290492bfcd2c8c6b60c0b",
+      "entities": [
+        {
+          "name": "aggregate",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_table",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_primary_row",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 138,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/window_dynamics_diagnostic.py",
+      "purpose": "Within-window amplitude versus fusion and disagreement",
+      "sha256": "19ffa62ac31956f6b4be016705448285e3f2e85b0230746fe60796898ce6b53c",
+      "entities": [
+        {
+          "name": "analyze",
+          "line": 9,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/geometry_review_checks.py",
+      "purpose": "Actual original M oracle and controlled geometry/gradient checks",
+      "sha256": "c42e80f44af0eeaa59ed9523daf81ad01a73694bacdcfbf645db940f10511392",
+      "entities": [
+        {
+          "name": "rx",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rot6d",
+          "line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "so3_mean",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "geodesic_gradient_cases",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 69,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/train_marker_pelvis_check.py",
+      "purpose": "Fixed TRAIN marker axes and exact frame/time source comparison",
+      "sha256": "07ac3ee4f305b462b90915dba697bf8d608fd6a31b2ca87f704d204a7edcf0a5",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_source_rows",
+          "line": 47,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summary",
+          "line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unit",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 100,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/review_budget.py",
+      "purpose": "Actual parent/frame/window/step/parameter checks without TEST arrays",
+      "sha256": "47f25b212e3a2bae3c0ce7d59c15c1b6f5f90d3c5a774bb3ddc9077ab50926e4",
+      "entities": [
+        {
+          "name": "read",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 15,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    },
+    {
+      "path": "D/archive_diagnosis.py",
+      "purpose": "Acceptance-gated immutable source and output hash archive",
+      "sha256": "f6a46344717430ed49063ef245cb4b0d7d67fcde78cb87cc3c64322904fc9b7a",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 12,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 19,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded_to_this_repository"
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "D/PROTOCOL_ZH.md",
+      "sha256": "c25de9bbfa71406d3c1cf853473266252360f38ffc048ad2a14a5c0258accba3",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/FINAL_REPORT_ZH.md",
+      "sha256": "8e969231844e8547b2c2341a10747810ec638ed86cbc4002055f226dac78f04f",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/RESEARCH_DIRECTION_20261021_ZH.md",
+      "sha256": "c367ce07cfc1093d5b461c897410e6887ad4deec488547aeb7356715116ac600",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/geometry_review_checks.json",
+      "sha256": "5ce3db2e7b2047e03667a7367553f4f8e653435a5a077164545a34d05ba36525",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/train_marker_pelvis_check.json",
+      "sha256": "a266e1468e653c327ccb46156d6bc3ec1ad7b7b02b207df41f3b12385423adcc",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/budget_compute_review.json",
+      "sha256": "e2607c9e3953f3e511afc738531094acc638ee147698fc24d079abc7644073d1",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/completed_experiment_manifest.json",
+      "sha256": "168be4fec2b08c46a4ccbbfe8c24e8acf61f384f18edb17fdce06930f796862a",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/outputs/single_trial/single_gate.json",
+      "sha256": "1438dda587a9720f292c26ac82ee86c6df49e21f789128428265650c762aa146",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/outputs/full_matched/analysis/equal_subject_primary.csv",
+      "sha256": "d45cab61b789a4a897e0e408ca6852ff7f3d0adb84afe4ec4703b7deb10f9230",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/outputs/full_matched/analysis/paired_effects.csv",
+      "sha256": "fd18d7cb314020f71c3730a9d0d10f436ee111d85bfa0af84943847c0bc3cbf6",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/outputs/full_matched/independent_audit_full-evaluated/audit.json",
+      "sha256": "5b06656b2b95eb7358b291a89c9e893597375b55b629b8bc5c0aee01c52c24c6",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/outputs/full_matched/independent_audit_analysis/audit.json",
+      "sha256": "88bd786de38b387261389a0ce47fc92a522c730257f587dc63e2a659caec4254",
+      "availability": "local_only"
+    },
+    {
+      "path": "D/metadata/final_tests.log",
+      "sha256": "f5577dae27d1720612eeeca66f56990cf1f4bf104a9e8a63344d9348263942cf",
+      "availability": "local_only"
+    }
+  ]
+}
