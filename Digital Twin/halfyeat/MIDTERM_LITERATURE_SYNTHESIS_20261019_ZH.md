@@ -1,6 +1,6 @@
 # 中期答辩修改建议：稀疏传感新论文与既有文献地图的综合判断
 
-日期：2026-10-19（Asia/Tokyo）。目标：2026-11-20硕士中期答辩与第二篇IEEE Sensors Journal首投。用户明确要求将新上传论文与旧文献地图综合，本报告据此评估两稿与中期叙事，不将会议论文包当作整个领域。
+初版：2026-10-19；代码与实验执行回写：2026-10-20（Asia/Tokyo）。目标：2026-11-20硕士中期答辩与第二篇IEEE Sensors Journal首投。用户明确要求将新上传论文与旧文献地图综合，本报告据此评估两稿与中期叙事，不将会议论文包当作整个领域。
 
 ## 1. 结论与推荐定位
 
@@ -14,7 +14,7 @@
 
 - 重新上传的[论文包](https://drive.google.com/file/d/1TRlzZLKJ0UnWTlsEKclz6uv533yajJuG/view?usp=drivesdk)：110,284,420字节；实际有16篇可解析PDF，共191页。README仍写“没有PDF”，与当前包内容不一致；本报告以实际PDF为准，没有执行包内下载脚本。
 - 全部16篇核对题名、输入模态、摘要及问题定位；重点阅读PIP、TIP、DynaIP、PNP、UIP、UMotion、ProbIP、UDP、GRIP的方法/评价相关部分；视觉核对DynaIP、PNP和GRIP的重要页面/表格。不是对191页逐字精读或系统综述。
-- 两份现有稿件：BSN.pdf（4页）、sii2027_abstract_summary.pdf（7页），本轮重新读取。尚未拿到原始数据、代码、训练日志，也没有重跑模型。
+- 两份现有稿件：BSN.pdf（4页）、sii2027_abstract_summary.pdf（7页），本轮重新读取。10/19文献分析时尚未拿到原始数据、代码、训练日志；10/20的代码与实际重跑状态见第14节。
 - 既有中期大纲和CURRENT_WORK_CRITIQUE_AND_CORE_EXPERIMENTS_ZH；本轮更新的是文字大纲，未取得并审阅实际答辩PPT。
 - NMS-GAP文献地图及Digital Twin / Embodied AI gap矩阵，main核对为a463f882ed198d97dcd498c8ad680b49772326ec，与此前版本相同。采用其分析框架，但具体先行工作能力优先依据论文原文，不把旧verdict当作永久定论。
 
@@ -206,4 +206,26 @@ SII预先指定患侧膝RMSE为主终点，另加signed bias、ROM误差、必�
 
 旧地图原始定位：[研究簇](https://github.com/InchengWang/NMS-GAP/blob/a463f882ed198d97dcd498c8ad680b49772326ec/01_literature_mapping/CLUSTERS_AND_GAPS.md)、[Digital Twin矩阵](https://github.com/InchengWang/NMS-GAP/blob/a463f882ed198d97dcd498c8ad680b49772326ec/Digital%20Twin/03_gap_validation/data/gap_validation_matrix.csv)、[Embodied AI矩阵](https://github.com/InchengWang/NMS-GAP/blob/a463f882ed198d97dcd498c8ad680b49772326ec/Embody%20AI/02_gap_validation/data/embodied_ai_gap_validation_matrix.csv)。
 
-部分CVF网页本轮返回403，使用包内实际PDF读取，不把网页访问失败当作论文不存在。全文、摘要与作者项目的访问深度已区分；本次没有重新验证所有长期gap，也没有产生新的实验性能。
+部分CVF网页本轮返回403，使用包内实际PDF读取，不把网页访问失败当作论文不存在。全文、摘要与作者项目的访问深度已区分；10/19文献分析没有重新验证所有长期gap，也没有产生新实验性能；10/20实际执行证据另见第14节。
+
+
+## 14. 代码与实验执行回写：中期决策更新（2026-10-20）
+
+本节按代码和实际输出更新第8节的待办。详细的每次尝试、目的、模块/函数、预算、结论和下一步见[实验决策台账](SII2027_EXPERIMENT_DECISIONS_20261020_ZH.md)；[30文件代码指纹索引](SII2027_CODE_EVIDENCE_INDEX_20261020.json)与[38行聚合结果](SII2027_AGGREGATE_RESULTS_20261020.csv)一并保存。其余文献判断保留原访问日期和访问深度。
+
+| 原规划问题 | 已执行证据 | 当前决策 |
+|---|---|---|
+| 输入是否混入动态参考 | 确认旧24D包含18D动态mocap姿态；新12D只取实测ACC/GYRO | 新分支作为processed/offline sensor-only；旧结果为参考辅助条件，禁止换名复用 |
+| 时间与三个平面 | 69条常量位置标签由local/absolute时间混用导致，新入口已恢复；YZ/XZ/XY索引未交换 | 六个YZ历史投影保留限制；轴向旋转、足滚转、临床零点/JCS仍未认证 |
+| G/I/A/C与标定预算 | 3epoch流程验证后完成G最多60、I/A各30的单seed矩阵，118bundle；1/2/all和成本账本齐 | A比G低不能等同预训练优于I；同k简单C和常量M必须保留 |
+| 分阶段是否值得 | 主8 direct A10.192°、staged A10.269°，额外位置监督/计算差异记录 | 没有稳定分阶段优势；不以网络复杂度写贡献 |
+| 误差是否代表动态保真 | M常量9.868°；TRAIN预测ROM仅5.49–8.44°，GT36.61° | 先做原队列动态拟合诊断；不继续用角度RMSE下降证明临床动态有效 |
+| Guo最近邻 | 原始xlsx角色的G60/A30骨干完成，A12.027° | 完整physics仍缺独立标定；骨干比较不能更名为完整论文复现 |
+| 合成2×2 | v1因19.937m/s²解析边界错误失效；context v2重跑58parent/22运行，3epoch | v2没有稳定mixed改善；计算更新与mocap context更多，不能作纯合成因果收益 |
+| BSN任务指标 | 现存单人三传感LSTM四容差一对一复核 | 不是新双足/跨患者实验；实测算法一致性与marker参考分开 |
+| 独立数据与内容隔离 | BLISS首轮发现两对不同ID同内容；旧120条失效，去重118条重训 | 将完整源/数组内容唯一性升级为训练前硬门槛，旧数据作负例 |
+| 外部动态可行性 | BLISS2卒中+1健康，18个40epoch模型、25tests、1328预测复算；A窗口6.889°、逐帧2.578° | native角度pilot有效；不能把它解释成原队列同协议提升、完整staged/三平面认证 |
+
+BLISS两名卒中者逐帧I为2.210°、A为2.023°，差0.188°；不能把群体G到A的下降全部归为预训练价值。原Stroke69条补查未见完整内容重复，但不证明session独立或排除部分重叠。
+
+**更新后的执行顺序：** 原队列固定输入/参考/覆盖的逐帧训练拟合检查 → 必要的坐标/同步与临床参考闭环 → 计算与参考分钟匹配的合成/近邻对照 → 冻结配置后的多seed确认。中期按实际证据展示失败与修正；当前训练完成不等于投稿就绪。

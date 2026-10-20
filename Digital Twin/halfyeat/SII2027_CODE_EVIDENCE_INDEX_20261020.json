@@ -1,0 +1,1498 @@
+{
+  "updated": "2026-10-20 Asia/Tokyo",
+  "source_plan_commit": "5219cdb4f2aea7bd60df8b4e1d07a6708b2910dd",
+  "local_project_suffix": "Dataset_Stroke/Yan_Stroke Experiment Data/1_2027SII/Project2_submission/experiments",
+  "roots": {
+    "M": "midterm_20261019",
+    "X1": "external_validation_20261019 (invalid for reporting)",
+    "X2": "external_validation_20261020_deduplicated"
+  },
+  "code": [
+    {
+      "root_alias": "M",
+      "path": "data.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "57cc82fdb3c6928d244729afe7c6a4dd85616d4f2a840d295451331ee0263a44",
+      "top_level_symbols": [
+        {
+          "symbol": "Trial",
+          "line": 38,
+          "kind": "class"
+        },
+        {
+          "symbol": "_sha256",
+          "line": 53,
+          "kind": "function"
+        },
+        {
+          "symbol": "_finite",
+          "line": 57,
+          "kind": "function"
+        },
+        {
+          "symbol": "_increasing",
+          "line": 64,
+          "kind": "function"
+        },
+        {
+          "symbol": "checked_interp",
+          "line": 71,
+          "kind": "function"
+        },
+        {
+          "symbol": "sensor_features",
+          "line": 87,
+          "kind": "function"
+        },
+        {
+          "symbol": "rot6d_to_matrices",
+          "line": 96,
+          "kind": "function"
+        },
+        {
+          "symbol": "_signed_yz",
+          "line": 115,
+          "kind": "function"
+        },
+        {
+          "symbol": "angles_from_rot6d",
+          "line": 123,
+          "kind": "function"
+        },
+        {
+          "symbol": "_verify_label_pair",
+          "line": 143,
+          "kind": "function"
+        },
+        {
+          "symbol": "_label_path",
+          "line": 173,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_real_trials",
+          "line": 180,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "protocols.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "4bd2a645afb8989a94ecdb511b36dfe19f2485a6a151d14272db7cad15ae8fe5",
+      "top_level_symbols": [
+        {
+          "symbol": "_get",
+          "line": 33,
+          "kind": "function"
+        },
+        {
+          "symbol": "_identity",
+          "line": 37,
+          "kind": "function"
+        },
+        {
+          "symbol": "_parent_index",
+          "line": 51,
+          "kind": "function"
+        },
+        {
+          "symbol": "_ordered",
+          "line": 69,
+          "kind": "function"
+        },
+        {
+          "symbol": "_interval",
+          "line": 76,
+          "kind": "function"
+        },
+        {
+          "symbol": "_union_seconds",
+          "line": 104,
+          "kind": "function"
+        },
+        {
+          "symbol": "_cost",
+          "line": 116,
+          "kind": "function"
+        },
+        {
+          "symbol": "supervision_budget",
+          "line": 145,
+          "kind": "function"
+        },
+        {
+          "symbol": "select_trials",
+          "line": 167,
+          "kind": "function"
+        },
+        {
+          "symbol": "validate_training_sources",
+          "line": 178,
+          "kind": "function"
+        },
+        {
+          "symbol": "assert_no_leakage",
+          "line": 229,
+          "kind": "function"
+        },
+        {
+          "symbol": "build_protocol",
+          "line": 260,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "runner.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "dbd36016694093a0d7ed3bab654da053a5e1b183818e9e368bfd1c3d6a47fe3f",
+      "top_level_symbols": [
+        {
+          "symbol": "json_write",
+          "line": 46,
+          "kind": "function"
+        },
+        {
+          "symbol": "seed_all",
+          "line": 55,
+          "kind": "function"
+        },
+        {
+          "symbol": "fingerprint",
+          "line": 61,
+          "kind": "function"
+        },
+        {
+          "symbol": "window_starts",
+          "line": 72,
+          "kind": "function"
+        },
+        {
+          "symbol": "Standardizer",
+          "line": 81,
+          "kind": "class"
+        },
+        {
+          "symbol": "make_windows",
+          "line": 102,
+          "kind": "function"
+        },
+        {
+          "symbol": "predict_stage",
+          "line": 120,
+          "kind": "function"
+        },
+        {
+          "symbol": "train_stage",
+          "line": 130,
+          "kind": "function"
+        },
+        {
+          "symbol": "train_bundle",
+          "line": 187,
+          "kind": "function"
+        },
+        {
+          "symbol": "rotation_angles",
+          "line": 245,
+          "kind": "function"
+        },
+        {
+          "symbol": "predict_trial",
+          "line": 252,
+          "kind": "function"
+        },
+        {
+          "symbol": "paretic_sides",
+          "line": 278,
+          "kind": "function"
+        },
+        {
+          "symbol": "evaluate",
+          "line": 283,
+          "kind": "function"
+        },
+        {
+          "symbol": "prepare",
+          "line": 302,
+          "kind": "function"
+        },
+        {
+          "symbol": "run_subject",
+          "line": 323,
+          "kind": "function"
+        },
+        {
+          "symbol": "aggregate",
+          "line": 384,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 401,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "models.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "75ad55885581da8148d666d102760e3104484902c93000527d4005a73dff9e06",
+      "top_level_symbols": [
+        {
+          "symbol": "build_stage",
+          "line": 18,
+          "kind": "function"
+        },
+        {
+          "symbol": "stages",
+          "line": 42,
+          "kind": "function"
+        },
+        {
+          "symbol": "decode_rot6d",
+          "line": 46,
+          "kind": "function"
+        },
+        {
+          "symbol": "parameter_count",
+          "line": 61,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "metrics.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "4878fa747a608e1dd1ba600a3f45e3e0e36027e4192f489afb0254b12f7d3007",
+      "top_level_symbols": [
+        {
+          "symbol": "_finite",
+          "line": 34,
+          "kind": "function"
+        },
+        {
+          "symbol": "_mean",
+          "line": 38,
+          "kind": "function"
+        },
+        {
+          "symbol": "_side",
+          "line": 43,
+          "kind": "function"
+        },
+        {
+          "symbol": "_angles",
+          "line": 52,
+          "kind": "function"
+        },
+        {
+          "symbol": "per_trial_metrics",
+          "line": 59,
+          "kind": "function"
+        },
+        {
+          "symbol": "cluster_bootstrap_ci",
+          "line": 139,
+          "kind": "function"
+        },
+        {
+          "symbol": "summarize_patient_equal_weight",
+          "line": 172,
+          "kind": "function"
+        },
+        {
+          "symbol": "calculate_GIAC",
+          "line": 222,
+          "kind": "function"
+        },
+        {
+          "symbol": "fit_calibration_trainonly",
+          "line": 253,
+          "kind": "function"
+        },
+        {
+          "symbol": "apply_calibration_trainonly",
+          "line": 295,
+          "kind": "function"
+        },
+        {
+          "symbol": "match_events_one_to_one",
+          "line": 306,
+          "kind": "function"
+        },
+        {
+          "symbol": "evaluate_event_tolerances",
+          "line": 363,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "run_matrix.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "c79ea78f0b6faec357d7c761533237bf09a6eaa3f38a2fe6888391f624d2fc7a",
+      "top_level_symbols": [
+        {
+          "symbol": "main",
+          "line": 17,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "analyze_results.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "4ca7d82eb9c03aed4b2cc5a52100c17112582f07929a41ffe847a58cabe43182",
+      "top_level_symbols": [
+        {
+          "symbol": "assert_saved_endpoints",
+          "line": 27,
+          "kind": "function"
+        },
+        {
+          "symbol": "paretic_metadata_gate",
+          "line": 43,
+          "kind": "function"
+        },
+        {
+          "symbol": "clean",
+          "line": 59,
+          "kind": "function"
+        },
+        {
+          "symbol": "budget_map",
+          "line": 71,
+          "kind": "function"
+        },
+        {
+          "symbol": "expand_budget_aliases",
+          "line": 81,
+          "kind": "function"
+        },
+        {
+          "symbol": "verify_run_coverage",
+          "line": 105,
+          "kind": "function"
+        },
+        {
+          "symbol": "read_completed_runs",
+          "line": 155,
+          "kind": "function"
+        },
+        {
+          "symbol": "supervision_costs",
+          "line": 194,
+          "kind": "function"
+        },
+        {
+          "symbol": "seed_average",
+          "line": 230,
+          "kind": "function"
+        },
+        {
+          "symbol": "equal_patient_groups",
+          "line": 245,
+          "kind": "function"
+        },
+        {
+          "symbol": "paired_giac",
+          "line": 259,
+          "kind": "function"
+        },
+        {
+          "symbol": "paired_architectures",
+          "line": 281,
+          "kind": "function"
+        },
+        {
+          "symbol": "plot_patient_curves",
+          "line": 302,
+          "kind": "function"
+        },
+        {
+          "symbol": "analyze",
+          "line": 338,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 406,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "cost_ledger.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "0bbc61f11c397221ec1d91b40c012e3c3c0a5f613127832dd4102f7a460b8840",
+      "top_level_symbols": [
+        {
+          "symbol": "build",
+          "line": 12,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "guo_baseline.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "96a15cbba1fabc5f544c643401d3225efe2e9dfd1e504a1a71e34cb06bd333a4",
+      "top_level_symbols": [
+        {
+          "symbol": "_get",
+          "line": 67,
+          "kind": "function"
+        },
+        {
+          "symbol": "_parent",
+          "line": 71,
+          "kind": "function"
+        },
+        {
+          "symbol": "_subject",
+          "line": 75,
+          "kind": "function"
+        },
+        {
+          "symbol": "_write",
+          "line": 79,
+          "kind": "function"
+        },
+        {
+          "symbol": "_reference_modules",
+          "line": 95,
+          "kind": "function"
+        },
+        {
+          "symbol": "_original_paretic_xlsx",
+          "line": 112,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_paretic_metadata",
+          "line": 155,
+          "kind": "function"
+        },
+        {
+          "symbol": "_config",
+          "line": 191,
+          "kind": "function"
+        },
+        {
+          "symbol": "_role_inputs",
+          "line": 207,
+          "kind": "function"
+        },
+        {
+          "symbol": "_role_targets",
+          "line": 222,
+          "kind": "function"
+        },
+        {
+          "symbol": "estimate_length_prior",
+          "line": 229,
+          "kind": "function"
+        },
+        {
+          "symbol": "preflight_guo",
+          "line": 265,
+          "kind": "function"
+        },
+        {
+          "symbol": "GuoFit",
+          "line": 309,
+          "kind": "class"
+        },
+        {
+          "symbol": "_windows",
+          "line": 321,
+          "kind": "function"
+        },
+        {
+          "symbol": "fit_guo",
+          "line": 358,
+          "kind": "function"
+        },
+        {
+          "symbol": "predict_guo",
+          "line": 462,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 479,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "guo_dispatch.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "6baf5500120dfdc994b19b5eb8a0a73fca0ceeacfd37501277b888b3b3c07a1c",
+      "top_level_symbols": [
+        {
+          "symbol": "main",
+          "line": 24,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "compare_backbone.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "55dfa98118e23dd2b7ae350fa350b1a5a0b61e7a97b40e6bbb4c30561651ed91",
+      "top_level_symbols": [
+        {
+          "symbol": "read_json",
+          "line": 36,
+          "kind": "function"
+        },
+        {
+          "symbol": "json_clean",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "symbol": "full_budget",
+          "line": 50,
+          "kind": "function"
+        },
+        {
+          "symbol": "role_metadata_conflicts",
+          "line": 59,
+          "kind": "function"
+        },
+        {
+          "symbol": "backbone_subject_paths",
+          "line": 72,
+          "kind": "function"
+        },
+        {
+          "symbol": "assert_protocol_match",
+          "line": 92,
+          "kind": "function"
+        },
+        {
+          "symbol": "align_saved_predictions",
+          "line": 103,
+          "kind": "function"
+        },
+        {
+          "symbol": "validate_training_contract",
+          "line": 145,
+          "kind": "function"
+        },
+        {
+          "symbol": "paired_primary_summary",
+          "line": 179,
+          "kind": "function"
+        },
+        {
+          "symbol": "compare",
+          "line": 202,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 293,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "virtual.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "21801d7389353d52d48bef9eb3f11aa3a2bbcac9f2814fe8fa8f4c6b19062f16",
+      "top_level_symbols": [
+        {
+          "symbol": "VirtualSignals",
+          "line": 36,
+          "kind": "class"
+        },
+        {
+          "symbol": "_digest",
+          "line": 45,
+          "kind": "function"
+        },
+        {
+          "symbol": "_validate_provenance",
+          "line": 49,
+          "kind": "function"
+        },
+        {
+          "symbol": "generate_sensor12",
+          "line": 85,
+          "kind": "function"
+        },
+        {
+          "symbol": "require_training_eligibility",
+          "line": 150,
+          "kind": "function"
+        },
+        {
+          "symbol": "signals_to_trial",
+          "line": 157,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_verified_virtual_trials",
+          "line": 176,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "assumption_virtual.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "b7990adb14a49a826ef2ac26516337d800ff528cc32907ac74feea234ffbd46a",
+      "top_level_symbols": [
+        {
+          "symbol": "sha",
+          "line": 34,
+          "kind": "function"
+        },
+        {
+          "symbol": "align_vector",
+          "line": 38,
+          "kind": "function"
+        },
+        {
+          "symbol": "unit",
+          "line": 54,
+          "kind": "function"
+        },
+        {
+          "symbol": "read_world",
+          "line": 61,
+          "kind": "function"
+        },
+        {
+          "symbol": "one_trial",
+          "line": 93,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_assumption_virtual_trials",
+          "line": 175,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "assumption_virtual_context.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "f956e48ffc8d86c2e47a1b9eb548ebf09f42eb3b17ffed4601e7ecf0b5f531cf",
+      "top_level_symbols": [
+        {
+          "symbol": "_covered_interp",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "symbol": "_context_grid",
+          "line": 47,
+          "kind": "function"
+        },
+        {
+          "symbol": "one_trial",
+          "line": 74,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_assumption_virtual_trials",
+          "line": 170,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "factorial.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "682cb3e8a4e53263d38004d3ac3ff1f37ac9218b5613e824b284f6e0b72c08d2",
+      "top_level_symbols": [
+        {
+          "symbol": "load_bundle",
+          "line": 28,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 40,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "analyze_factorial.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "849711927d0afa71164643f7aa6a72e90e7d69b8e3612d5d0c24f56b64803a61",
+      "top_level_symbols": [
+        {
+          "symbol": "read_json",
+          "line": 36,
+          "kind": "function"
+        },
+        {
+          "symbol": "interpretation_gate",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "symbol": "verify_cells",
+          "line": 54,
+          "kind": "function"
+        },
+        {
+          "symbol": "verify_sources",
+          "line": 84,
+          "kind": "function"
+        },
+        {
+          "symbol": "interval_union_seconds",
+          "line": 119,
+          "kind": "function"
+        },
+        {
+          "symbol": "reference_coverage_costs",
+          "line": 136,
+          "kind": "function"
+        },
+        {
+          "symbol": "paired_factorial",
+          "line": 201,
+          "kind": "function"
+        },
+        {
+          "symbol": "analyze",
+          "line": 239,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 370,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "mean_baseline_diagnostic.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "660bc4396ed31fed0d9a8bd38f6ef8c94e6eaaa3dd5a3da04d9f48b11fb0e3d5",
+      "top_level_symbols": [
+        {
+          "symbol": "read_json",
+          "line": 36,
+          "kind": "function"
+        },
+        {
+          "symbol": "unique_training_frames",
+          "line": 40,
+          "kind": "function"
+        },
+        {
+          "symbol": "fit_train_mean",
+          "line": 54,
+          "kind": "function"
+        },
+        {
+          "symbol": "training_label_loader",
+          "line": 81,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_frozen_trial",
+          "line": 101,
+          "kind": "function"
+        },
+        {
+          "symbol": "paired_summary",
+          "line": 125,
+          "kind": "function"
+        },
+        {
+          "symbol": "plot_first_trials",
+          "line": 149,
+          "kind": "function"
+        },
+        {
+          "symbol": "analyze",
+          "line": 174,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 316,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "audit_train_vs_holdout_waveform.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "6135598da9c93870e9455fa0e565b7100be37e7b76d36f32d58facb5d698fbf0",
+      "top_level_symbols": [
+        {
+          "symbol": "sha",
+          "line": 28,
+          "kind": "function"
+        },
+        {
+          "symbol": "correlation_mean",
+          "line": 32,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 38,
+          "kind": "function"
+        },
+        {
+          "symbol": "sha_bytes",
+          "line": 160,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "legacy_and_events.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "7235134be0aa13412016b4b91314977959b779562bec914c633c298e6dd2e717",
+      "top_level_symbols": [
+        {
+          "symbol": "write",
+          "line": 23,
+          "kind": "function"
+        },
+        {
+          "symbol": "digest",
+          "line": 28,
+          "kind": "function"
+        },
+        {
+          "symbol": "legacy_angles",
+          "line": 32,
+          "kind": "function"
+        },
+        {
+          "symbol": "standardize",
+          "line": 83,
+          "kind": "function"
+        },
+        {
+          "symbol": "events",
+          "line": 91,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "M",
+      "path": "metadata_sensitivity.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "440f16d6ea965231f01396d21e6775bd4cdc89327970259d416809b263df8d05",
+      "top_level_symbols": [
+        {
+          "symbol": "apply_roles",
+          "line": 22,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 32,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "prepare_bliss.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "1a8b449aac87f004f9fa76e6630c45f12ef72b958470e95c32d45657f603e59d",
+      "top_level_symbols": [
+        {
+          "symbol": "digest",
+          "line": 32,
+          "kind": "function"
+        },
+        {
+          "symbol": "checked_clock",
+          "line": 36,
+          "kind": "function"
+        },
+        {
+          "symbol": "longest_valid_run",
+          "line": 46,
+          "kind": "function"
+        },
+        {
+          "symbol": "align_arrays",
+          "line": 55,
+          "kind": "function"
+        },
+        {
+          "symbol": "verified_archive",
+          "line": 106,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 119,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "external_runner.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "3c800f34e0782ebf4b9cf3eee61a31fa8a072d073017a2a26c891415e3e123e3",
+      "top_level_symbols": [
+        {
+          "symbol": "clean",
+          "line": 43,
+          "kind": "function"
+        },
+        {
+          "symbol": "json_write",
+          "line": 53,
+          "kind": "function"
+        },
+        {
+          "symbol": "sha",
+          "line": 61,
+          "kind": "function"
+        },
+        {
+          "symbol": "seed_all",
+          "line": 65,
+          "kind": "function"
+        },
+        {
+          "symbol": "Trial",
+          "line": 72,
+          "kind": "class"
+        },
+        {
+          "symbol": "validate_source_gate",
+          "line": 84,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_prepared",
+          "line": 101,
+          "kind": "function"
+        },
+        {
+          "symbol": "ordered",
+          "line": 139,
+          "kind": "function"
+        },
+        {
+          "symbol": "build_protocol",
+          "line": 143,
+          "kind": "function"
+        },
+        {
+          "symbol": "select",
+          "line": 167,
+          "kind": "function"
+        },
+        {
+          "symbol": "window_starts",
+          "line": 174,
+          "kind": "function"
+        },
+        {
+          "symbol": "frame_mask",
+          "line": 183,
+          "kind": "function"
+        },
+        {
+          "symbol": "fit_scaler",
+          "line": 190,
+          "kind": "function"
+        },
+        {
+          "symbol": "transform",
+          "line": 195,
+          "kind": "function"
+        },
+        {
+          "symbol": "make_windows",
+          "line": 199,
+          "kind": "function"
+        },
+        {
+          "symbol": "signature",
+          "line": 210,
+          "kind": "function"
+        },
+        {
+          "symbol": "train_model",
+          "line": 218,
+          "kind": "function"
+        },
+        {
+          "symbol": "fuse_predictions",
+          "line": 290,
+          "kind": "function"
+        },
+        {
+          "symbol": "predict_trial",
+          "line": 307,
+          "kind": "function"
+        },
+        {
+          "symbol": "fit_constant",
+          "line": 323,
+          "kind": "function"
+        },
+        {
+          "symbol": "fit_bias",
+          "line": 330,
+          "kind": "function"
+        },
+        {
+          "symbol": "trial_metrics",
+          "line": 343,
+          "kind": "function"
+        },
+        {
+          "symbol": "frozen_coverage",
+          "line": 362,
+          "kind": "function"
+        },
+        {
+          "symbol": "save_prediction",
+          "line": 375,
+          "kind": "function"
+        },
+        {
+          "symbol": "run_subject",
+          "line": 390,
+          "kind": "function"
+        },
+        {
+          "symbol": "subject_ci",
+          "line": 443,
+          "kind": "function"
+        },
+        {
+          "symbol": "verify_completed_run",
+          "line": 452,
+          "kind": "function"
+        },
+        {
+          "symbol": "summarize",
+          "line": 554,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 619,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "external_models.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "ee252b3574a7acec4a6d5c1f488e311f6f406d02a83321f8a20517f7e2ae978b",
+      "top_level_symbols": [
+        {
+          "symbol": "WindowAngleDirect",
+          "line": 16,
+          "kind": "class"
+        },
+        {
+          "symbol": "CausalConv",
+          "line": 29,
+          "kind": "class"
+        },
+        {
+          "symbol": "FrameResidual",
+          "line": 39,
+          "kind": "class"
+        },
+        {
+          "symbol": "FrameTCN",
+          "line": 53,
+          "kind": "class"
+        },
+        {
+          "symbol": "build_model",
+          "line": 67,
+          "kind": "function"
+        },
+        {
+          "symbol": "model_description",
+          "line": 75,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "run_external_matrix.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "f3fa221b162a9519b0857df0bf246c30c0f4de2a8aa6735ecb38f776e588ea48",
+      "top_level_symbols": [
+        {
+          "symbol": "write",
+          "line": 17,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 23,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "content_identity_gate.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "6b3c7a9ad427a59f77abf338cecd42affa68aa34057714db9465ed4ac2c4a4cf",
+      "top_level_symbols": [
+        {
+          "symbol": "check_content_identity",
+          "line": 10,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "audit_content_isolation.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "44b41ab90529392186ebb374481a46b5c20fd119b8ed41818ae0dc9edb8f123a",
+      "top_level_symbols": [
+        {
+          "symbol": "array_sha256",
+          "line": 25,
+          "kind": "function"
+        },
+        {
+          "symbol": "build_content_inventory",
+          "line": 35,
+          "kind": "function"
+        },
+        {
+          "symbol": "duplicate_groups",
+          "line": 55,
+          "kind": "function"
+        },
+        {
+          "symbol": "cross_role_duplicates",
+          "line": 66,
+          "kind": "function"
+        },
+        {
+          "symbol": "check_content_isolation",
+          "line": 84,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 105,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "audit_external_results.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "5f0c60773f030a0a60b28546e170b3b9741c3be0438d3dcf311ce6f72f530945",
+      "top_level_symbols": [
+        {
+          "symbol": "read",
+          "line": 25,
+          "kind": "function"
+        },
+        {
+          "symbol": "sha",
+          "line": 29,
+          "kind": "function"
+        },
+        {
+          "symbol": "dump",
+          "line": 33,
+          "kind": "function"
+        },
+        {
+          "symbol": "source_audit",
+          "line": 38,
+          "kind": "function"
+        },
+        {
+          "symbol": "history_audit",
+          "line": 75,
+          "kind": "function"
+        },
+        {
+          "symbol": "prediction_audit",
+          "line": 118,
+          "kind": "function"
+        },
+        {
+          "symbol": "reconcile_summary",
+          "line": 182,
+          "kind": "function"
+        },
+        {
+          "symbol": "audit",
+          "line": 226,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 306,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "audit_bliss_source_contract.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "08c37281ab6363ad30f08d00ee2f730bf3eeab97fcbd069ba1510f65be7f545e",
+      "top_level_symbols": [
+        {
+          "symbol": "array_content_digest",
+          "line": 21,
+          "kind": "function"
+        },
+        {
+          "symbol": "duplicate_content_groups",
+          "line": 30,
+          "kind": "function"
+        },
+        {
+          "symbol": "assert_content_disjoint",
+          "line": 50,
+          "kind": "function"
+        },
+        {
+          "symbol": "source_report",
+          "line": 63,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 190,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "analyze_external.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "3a96af712fe5c2bf7513fbaacbf6fa03bbe5b1747584d45d46b659af16be00b7",
+      "top_level_symbols": [
+        {
+          "symbol": "f",
+          "line": 14,
+          "kind": "function"
+        },
+        {
+          "symbol": "load_prediction",
+          "line": 18,
+          "kind": "function"
+        },
+        {
+          "symbol": "waveform_plot",
+          "line": 29,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 67,
+          "kind": "function"
+        }
+      ]
+    },
+    {
+      "root_alias": "X2",
+      "path": "archive_external.py",
+      "location": "local_project_code",
+      "github_source_published": false,
+      "sha256": "8d368ddd6130f285ed499805f057c1ed234fb4bf94bab305e6f131b9a0dac1a2",
+      "top_level_symbols": [
+        {
+          "symbol": "digest",
+          "line": 15,
+          "kind": "function"
+        },
+        {
+          "symbol": "main",
+          "line": 23,
+          "kind": "function"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "root_alias": "M",
+      "path": "MIDTERM_EXPERIMENT_PROGRESS_ZH.md",
+      "sha256": "07c80bcfe98e4a6f990774f614b745375aaa1c8ed8632c7164c6ccf8c4817abf",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "INPUT_AND_PLANES_CURRENT_ZH.md",
+      "sha256": "ff4d2a40514217679ca4276b14ca731555b456520a34364ef6067328a8b97915",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "data_acceptance.json",
+      "sha256": "a7aed66ae6bc0cb51ef7af877f3f71ce0d758af617318cb4f40142e97d541dd5",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "target_epoch_contract_audit.json",
+      "sha256": "e41ac5a161356471d61583d44d7a194b11fef7cdf34262de099ee74dd3cd3602",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "outputs/development_60ep/analysis_main8/group_equal_patient_metrics.csv",
+      "sha256": "442b8055add6a4b3a3a2bdfd8b2d1bd4cc580b7da6d6d2c6ac75ac9d008f37b7",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "outputs/development_60ep/post_hoc_mean_diagnostic/patient_primary_summary.csv",
+      "sha256": "236f672c267fe371505ea98d180c49361609c0e7089b3eb9134182c2e0f4dce6",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "train_vs_holdout_waveform_audit.md",
+      "sha256": "2aa534892a57746b84f89e578d423a525682afaea93ebc41b04c259130b006d8",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "outputs/guo_backbone_source_checked_60ep/comparison_main8/comparison_summary.md",
+      "sha256": "d20042b5edfb44e970ba8763e504313e918466a55f2b92794f67665d60f08f66",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "outputs/virtual_factorial_context_pilot/paired_analysis/factorial_summary.md",
+      "sha256": "08b6b9b83ecc9a2931777268eb2d01b358687f9633ed8a90f30d5cfa498d38b9",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "outputs/legacy_reanalysis/legacy_aggregation_audit.json",
+      "sha256": "a7efb345ef4500e6c75d82a56fe3e3381099aa92ef34387189eaa9010572c20d",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "M",
+      "path": "assumption_context_acceptance.json",
+      "sha256": "2b4f4931adf5f790b3315b40dfd1519a6657b6ce53c759ab0ba5c57998e775eb",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "X2",
+      "path": "prepared_manifest.json",
+      "sha256": "93bca39bf0dadf55769ef32daa8991acba9d3034c5e24dc5e9166ec23544fb8c",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "X2",
+      "path": "outputs/bliss_native_pilot/analysis/subject_primary.csv",
+      "sha256": "d9702997b444a57cb7184f802fc4275fcc4809149b2e0571c7ccc591b6485ffe",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "X2",
+      "path": "outputs/bliss_native_pilot/analysis/RESULTS_ZH.md",
+      "sha256": "9b8a4f3436676b45a68baa09e27bc04fe95eb95b009b6d04b173d72e6ed1727d",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "X2",
+      "path": "outputs/bliss_native_pilot/independent_audit/audit.json",
+      "sha256": "fda3c91f92803c04dda9a4aefb6054814ce0367b5c5ae2ebcc397c1c1ed8c97b",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "X2",
+      "path": "completed_experiment_manifest.json",
+      "sha256": "cf79df78eb9dc6afa19c6efb9d243ab0f6b3f7030e008bc04e974d39f9e4dfd2",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "X2",
+      "path": "independent_review_tests.log",
+      "sha256": "371649bc9beb4a0ffaeba5fa59f5857de3fcd4747ca3986c1ab1e2d5cd452636",
+      "location": "local_artifact_not_uploaded"
+    },
+    {
+      "root_alias": "X2",
+      "path": "metadata/original_stroke_exact_content_check.json",
+      "sha256": "a59ca38011e62b26c7d0530013bc5001bddb3f41efe31866cafbc4cd5fd2c3b4",
+      "location": "local_artifact_not_uploaded"
+    }
+  ],
+  "note": "This repository update publishes the decision record, exact local code entrypoints/functions/source fingerprints and aggregate results. Source code, participant raw data and checkpoints remain in the local project; paths are not GitHub source URLs."
+}
