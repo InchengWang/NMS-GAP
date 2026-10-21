@@ -1,0 +1,614 @@
+{
+  "project": "Dataset_Stroke/.../1_2027SII/Project2_submission",
+  "date": "2026-10-21 Asia/Tokyo",
+  "scripts": [
+    {
+      "path": "experiments/marker_recall_20261021/archive_marker_recall.py",
+      "sha256": "857a3df2a2fa7c336c44fcff962ba2a15d43f5e4eadd6d94ac5770a3f90991d1",
+      "functions": [
+        {
+          "name": "read",
+          "line": 8,
+          "end_line": 8,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 9,
+          "end_line": 9,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 11,
+          "end_line": 78,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "check",
+          "line": 13,
+          "end_line": 17,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "receipts",
+          "line": 18,
+          "end_line": 23,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/audit_recall_matching.py",
+      "sha256": "2a60192bb314b7c055739a78f722015674bf5910c160384d982d6f13350ee013",
+      "functions": [
+        {
+          "name": "read",
+          "line": 22,
+          "end_line": 22,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "direct_pcc",
+          "line": 23,
+          "end_line": 25,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 28,
+          "end_line": 169,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/build_recall_matching.py",
+      "sha256": "79bb7788a24bea0e8f49abf2d16a32fa1fc7b08460615cb375fd05192b644cd6",
+      "functions": [
+        {
+          "name": "main",
+          "line": 7,
+          "end_line": 40,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/compare_recall_versions.py",
+      "sha256": "e8507ab8a273d0bb0e57d01e2b8fca804e32ae34a0a080ff6fcced04d990c73f",
+      "functions": [
+        {
+          "name": "main",
+          "line": 10,
+          "end_line": 39,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/export_recall_candidates.py",
+      "sha256": "917ff819008578bc857cf7f36bef1b6e6b0aeabfce801ea253441887726f9a14",
+      "functions": [
+        {
+          "name": "read",
+          "line": 21,
+          "end_line": 21,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 24,
+          "end_line": 83,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/missed_cause.py",
+      "sha256": "4b5432ce4e9ac9d2f9f95b588d90e57a015517ffbc68ab63a871d672e5bfd169",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 26,
+          "end_line": 27,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "dump",
+          "line": 30,
+          "end_line": 31,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "rms",
+          "line": 34,
+          "end_line": 35,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "group_stats",
+          "line": 38,
+          "end_line": 55,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 58,
+          "end_line": 253,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/physical_assignment.py",
+      "sha256": "47fbc441a76f36da830a22ee1dd5b565f7faabb0016b00dc539e4e8fbfb6cf6d",
+      "functions": [
+        {
+          "name": "_physical_key",
+          "line": 12,
+          "end_line": 18,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "solve",
+          "line": 21,
+          "end_line": 94,
+          "kind": "FunctionDef",
+          "docstring": "Return top2 physical-pair sets and their best actual raw-edge paths.\n\nAPI and path fields follow the frozen v1 solver. Missing physical_identity\ngives raw-pair identity for compatibility. ``forbidden`` is an iterable of\nraw (parent, episode) pairs; ``edge_margins`` expands a selected physical\nidentity to all its eligible raw aliases before passing this argument."
+        },
+        {
+          "name": "visit",
+          "line": 52,
+          "end_line": 81,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "edge_margins",
+          "line": 97,
+          "end_line": 120,
+          "kind": "FunctionDef",
+          "docstring": "For each selected identity, exclude its complete raw-alias class."
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/physical_assignment_test.py",
+      "sha256": "bbf81f12dcb8ade8f731fe4ff3ea6d292c448b79c6bf1ab251f87653f0b04de1",
+      "functions": [
+        {
+          "name": "edge",
+          "line": 9,
+          "end_line": 13,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "pairs",
+          "line": 16,
+          "end_line": 17,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "physical_key",
+          "line": 20,
+          "end_line": 21,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "exhaustive",
+          "line": 24,
+          "end_line": 54,
+          "kind": "FunctionDef",
+          "docstring": "Independent enumeration chooses at most one edge per optical parent."
+        },
+        {
+          "name": "V1RegressionTests",
+          "line": 57,
+          "end_line": 101,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_initial_internal_and_final_IMU_skips",
+          "line": 58,
+          "end_line": 63,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_unmatchable_optical_is_not_forced",
+          "line": 65,
+          "end_line": 68,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_no_optical_reorder_within_chain",
+          "line": 70,
+          "end_line": 73,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_two_conditions_interleave_without_episode_reuse",
+          "line": 75,
+          "end_line": 79,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_different_episode_ids_cannot_reuse_physical_samples",
+          "line": 81,
+          "end_line": 84,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_gap_permutations_are_not_distinct_runner_up",
+          "line": 86,
+          "end_line": 90,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_equal_periodic_alternatives_remain_ambiguous",
+          "line": 92,
+          "end_line": 96,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_all_unmatched_is_valid",
+          "line": 98,
+          "end_line": 101,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "PhysicalIdentityTests",
+          "line": 104,
+          "end_line": 163,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_exact_alias_is_one_path_identity_and_one_counterfactual",
+          "line": 105,
+          "end_line": 113,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_distinct_physical_periodic_alternative_stays_ambiguous",
+          "line": 115,
+          "end_line": 121,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_alias_best_path_keeps_actual_interval_compatibility",
+          "line": 123,
+          "end_line": 131,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_aliases_cannot_share_identity_across_different_parents",
+          "line": 133,
+          "end_line": 136,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_exhaustive_random_alias_paths_and_class_exclusion",
+          "line": 138,
+          "end_line": 163,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/plot_recall_matching.py",
+      "sha256": "55ba39c7b950f9578b4e0a36c8785110e28e24b9d48d18dbd1dabd045ae79090",
+      "functions": [
+        {
+          "name": "main",
+          "line": 21,
+          "end_line": 103,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/recall_inventory.py",
+      "sha256": "28c5a101ea55ba52a6c5321999d0e991f6397fc178c7265685a224bb551d5e08",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 13,
+          "end_line": 13,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read",
+          "line": 14,
+          "end_line": 14,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write",
+          "line": 15,
+          "end_line": 15,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "marking_blocks",
+          "line": 17,
+          "end_line": 54,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "signature",
+          "line": 56,
+          "end_line": 56,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 58,
+          "end_line": 113,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/recall_inventory_test.py",
+      "sha256": "9ae654db88f6a1b210d3e7a99d09c11ecbc791a95337a9f5fb7d9558d4133612",
+      "functions": [
+        {
+          "name": "signals",
+          "line": 6,
+          "end_line": 9,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "MarkingTests",
+          "line": 11,
+          "end_line": 36,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_valid_whole_group_is_single_maximal",
+          "line": 12,
+          "end_line": 15,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_interpeak_tail_contamination_recovers_core",
+          "line": 16,
+          "end_line": 22,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_long_group_has_valid_subwindows",
+          "line": 23,
+          "end_line": 28,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_bilateral_motion_rejected",
+          "line": 29,
+          "end_line": 30,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_noise_rejected",
+          "line": 31,
+          "end_line": 32,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_three_peaks_rejected",
+          "line": 33,
+          "end_line": 34,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_gap_is_not_bridged",
+          "line": 35,
+          "end_line": 36,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/recall_matching.py",
+      "sha256": "1931268f0f4c3f7af3eacd1fc4a76b6af74f225ddd296fd45a96d9a798c388af",
+      "functions": [
+        {
+          "name": "read",
+          "line": 45,
+          "end_line": 45,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 46,
+          "end_line": 46,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write",
+          "line": 47,
+          "end_line": 49,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sliding_pcc",
+          "line": 52,
+          "end_line": 62,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "best_index",
+          "line": 65,
+          "end_line": 69,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "contract",
+          "line": 72,
+          "end_line": 81,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sessions_for",
+          "line": 84,
+          "end_line": 89,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_template",
+          "line": 92,
+          "end_line": 94,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_runs",
+          "line": 97,
+          "end_line": 107,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "score_candidates",
+          "line": 110,
+          "end_line": 188,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "assign",
+          "line": 191,
+          "end_line": 216,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "pcc",
+          "line": 219,
+          "end_line": 220,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "validate",
+          "line": 223,
+          "end_line": 280,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/marker_recall_20261021/regression_review.py",
+      "sha256": "607f6e049e65995137575e80e5901e3ca3c123ed2fc1936a6ded52bfac533b92",
+      "functions": [
+        {
+          "name": "read",
+          "line": 17,
+          "end_line": 18,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 21,
+          "end_line": 22,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_solver",
+          "line": 25,
+          "end_line": 29,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 32,
+          "end_line": 153,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "edge",
+          "line": 69,
+          "end_line": 70,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "literal_subscripts",
+          "line": 90,
+          "end_line": 93,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    }
+  ],
+  "code_entities_local_only": true,
+  "source_snapshot": "source_snapshots/355d38fed7f83c76",
+  "source_identity_sha256": "355d38fed7f83c76eca363caaea8d068e391399983c3056c64c9575eb7eb1717",
+  "manifest_sha256": "efe72410f9fc5c4c46dc681ee1d33ccd436470786d5e62511d2fa73f2d1ecfb9",
+  "raw_data_weights_and_participant_identity_tables_uploaded": false
+}
