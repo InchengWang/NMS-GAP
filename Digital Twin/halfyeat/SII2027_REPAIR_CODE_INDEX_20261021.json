@@ -1,0 +1,803 @@
+{
+  "date": "2026-10-21 Asia/Tokyo",
+  "location": "Dataset_Stroke/.../1_2027SII/Project2_submission",
+  "code_entities_local_only": true,
+  "source_snapshot": "source_snapshots/cba40a9491c278a4",
+  "source_identity_sha256": "cba40a9491c278a41d01ff2f60463ceffd7a45262fca98d681eed1d7962d80a8",
+  "archive_manifest_sha256": "da2424d08dd950e29a34167b67207bd3fbdf9e2f8a5548b56dbb07f3a2601974",
+  "scripts": [
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/alignment_candidates.py",
+      "sha256": "7a699b048a4e2f8f668d198070068da652d5cf92ff7c6042cc76fa39c413bac5",
+      "bytes": 22989,
+      "functions": [
+        {
+          "name": "sha",
+          "line": 53,
+          "end_line": 54,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "freeze_protocol",
+          "line": 57,
+          "end_line": 64,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "unit",
+          "line": 67,
+          "end_line": 72,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "frame_speed",
+          "line": 75,
+          "end_line": 83,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sliding_pcc",
+          "line": 86,
+          "end_line": 100,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "corr",
+          "line": 103,
+          "end_line": 106,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_world_markers",
+          "line": 109,
+          "end_line": 131,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "optical_speeds",
+          "line": 134,
+          "end_line": 149,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_source_window",
+          "line": 152,
+          "end_line": 173,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "best_index",
+          "line": 176,
+          "end_line": 179,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "peak_count",
+          "line": 182,
+          "end_line": 183,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "diagnose",
+          "line": 186,
+          "end_line": 249,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "selfcheck",
+          "line": 252,
+          "end_line": 271,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 274,
+          "end_line": 366,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/alignment_legacy_comparison.py",
+      "sha256": "63a67be70a7bfd9fca71a71d0489c73148c48ca5b0b3f2174916972038d9749d",
+      "bytes": 4611,
+      "functions": [
+        {
+          "name": "main",
+          "line": 16,
+          "end_line": 70,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/apply_frozen_calibration.py",
+      "sha256": "aece1e3ade5282aac10fa1b4712e32a3e2542ec249a23bbd323214a8da042158",
+      "bytes": 13055,
+      "functions": [
+        {
+          "name": "sha",
+          "line": 38,
+          "end_line": 38,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read",
+          "line": 39,
+          "end_line": 39,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "blocks",
+          "line": 42,
+          "end_line": 52,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "shank_speeds",
+          "line": 55,
+          "end_line": 63,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 66,
+          "end_line": 173,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/archive_repair.py",
+      "sha256": "0fbe4e0ff6350e84323e213dd5357fff677a0d1aefb7146adfdddaaf04d6c174",
+      "bytes": 8225,
+      "functions": [
+        {
+          "name": "read",
+          "line": 14,
+          "end_line": 14,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 15,
+          "end_line": 15,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 18,
+          "end_line": 125,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "check",
+          "line": 35,
+          "end_line": 42,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "records",
+          "line": 43,
+          "end_line": 49,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/audit_repair_pilot.py",
+      "sha256": "f8b5ff1b0ef1b4499474930fdff0e0a109dff96c66b04e4fb76e61c16efcf90e",
+      "bytes": 8460,
+      "functions": [
+        {
+          "name": "fisher",
+          "line": 18,
+          "end_line": 19,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 22,
+          "end_line": 118,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/audit_upstream_filter.py",
+      "sha256": "822d7952876773a586e1a1db11db86ab51670966b5e8e961104a5883480f4ff2",
+      "bytes": 2469,
+      "functions": [
+        {
+          "name": "main",
+          "line": 17,
+          "end_line": 40,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/calibration_alignment.py",
+      "sha256": "b0f5468231b77e396f6a1e38c5a4197e273eb7b59343e257b9467ec5c9272f2e",
+      "bytes": 12514,
+      "functions": [
+        {
+          "name": "sha",
+          "line": 38,
+          "end_line": 38,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read",
+          "line": 39,
+          "end_line": 39,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "blocks",
+          "line": 42,
+          "end_line": 52,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "shank_speeds",
+          "line": 55,
+          "end_line": 63,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 66,
+          "end_line": 168,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/calibration_alignment_test.py",
+      "sha256": "a914ef2daa6c443cd42ec1c6cafb1949641869c9e7b8c538d2b093e3a97a6e32",
+      "bytes": 1974,
+      "functions": [
+        {
+          "name": "CalibrationClockTests",
+          "line": 8,
+          "end_line": 39,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_missing_marker_and_native_clock_gap_split_calibration",
+          "line": 9,
+          "end_line": 12,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_disjoint_fit_validation_recover_known_positive_offset",
+          "line": 14,
+          "end_line": 31,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_periodic_high_correlation_is_not_unique_clock",
+          "line": 33,
+          "end_line": 39,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/condition_repair.py",
+      "sha256": "f6e47a5dadda4229aa1b7af00176992394c747407b6b0e73444d7346520f90bf",
+      "bytes": 13482,
+      "functions": [
+        {
+          "name": "sha",
+          "line": 26,
+          "end_line": 31,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read_json",
+          "line": 34,
+          "end_line": 35,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "condition_decision",
+          "line": 38,
+          "end_line": 72,
+          "kind": "FunctionDef",
+          "docstring": "Conservative rule, frozen independently of any signal/model scores."
+        },
+        {
+          "name": "source_receipt",
+          "line": 75,
+          "end_line": 89,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "protocols_and_roles",
+          "line": 92,
+          "end_line": 107,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "build_manifest",
+          "line": 110,
+          "end_line": 199,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "save_manifest",
+          "line": 202,
+          "end_line": 225,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/condition_repair_test.py",
+      "sha256": "6fd7243c207a406254fc4000ba97f83db1fc9c2cb0d0611261e0f5506b296b8a",
+      "bytes": 2796,
+      "functions": [
+        {
+          "name": "agreeing_row",
+          "line": 8,
+          "end_line": 14,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "ConditionRuleTests",
+          "line": 17,
+          "end_line": 59,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_agreement_is_candidate_never_independent_truth_or_release",
+          "line": 18,
+          "end_line": 23,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_mocap_path_does_not_override_IMU_rows",
+          "line": 25,
+          "end_line": 30,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_mixed_retained_rows_never_use_majority_or_first_frame",
+          "line": 32,
+          "end_line": 37,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_upstream_outside_crop_mix_does_not_change_retained_condition",
+          "line": 39,
+          "end_line": 41,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_missing_IMU_label_stays_unknown",
+          "line": 43,
+          "end_line": 46,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_unknown_token_is_not_coerced",
+          "line": 48,
+          "end_line": 53,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_original_fields_not_mutated",
+          "line": 55,
+          "end_line": 59,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/export_calibration_candidates.py",
+      "sha256": "854cd89fed35478faa8ad1f52285a3571d92e972d7991bbd8a363b1dbc7b0c32",
+      "bytes": 10097,
+      "functions": [
+        {
+          "name": "documentary_decision",
+          "line": 17,
+          "end_line": 29,
+          "kind": "FunctionDef",
+          "docstring": "Apply source-only review to every parent, independently of signal scores."
+        },
+        {
+          "name": "main",
+          "line": 32,
+          "end_line": 121,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/export_full_candidates.py",
+      "sha256": "5fac448e462717ac85fcf4eb6454c3262e2d380b9e5edc28089e4c871abbe0ac",
+      "bytes": 10613,
+      "functions": [
+        {
+          "name": "documentary_decision",
+          "line": 17,
+          "end_line": 29,
+          "kind": "FunctionDef",
+          "docstring": "Apply source-only review to every parent, independently of signal scores."
+        },
+        {
+          "name": "main",
+          "line": 32,
+          "end_line": 123,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/frozen_application_test.py",
+      "sha256": "af70851eab12a12e3c6815d36ba86115c1d1a5dc0ad8fb0ec285ed9e7c25e7c8",
+      "bytes": 2776,
+      "functions": [
+        {
+          "name": "function_ast",
+          "line": 14,
+          "end_line": 16,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "FrozenApplicationTests",
+          "line": 19,
+          "end_line": 49,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_numeric_helper_functions_are_identical",
+          "line": 20,
+          "end_line": 24,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_full_application_loop_changes_roles_only_not_numerical_method",
+          "line": 26,
+          "end_line": 36,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_documentary_rule_is_frozen_for_full_application",
+          "line": 38,
+          "end_line": 40,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_without_cane_review_does_not_resolve_with_cane_or_missing_window",
+          "line": 42,
+          "end_line": 49,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/repair_data.py",
+      "sha256": "b9bec52c0a06829a69542a6e1d646ec826848972ae29a68304af952a17a13dd6",
+      "bytes": 8715,
+      "functions": [
+        {
+          "name": "read",
+          "line": 23,
+          "end_line": 23,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 24,
+          "end_line": 24,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "covered_interp",
+          "line": 27,
+          "end_line": 38,
+          "kind": "FunctionDef",
+          "docstring": "Preserve source support and missing intervals instead of clamping/filling."
+        },
+        {
+          "name": "require_candidate",
+          "line": 41,
+          "end_line": 49,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 52,
+          "end_line": 127,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/repair_data_test.py",
+      "sha256": "a051ac3d7dfae3d8120a728aff7394361eab556bd0b60fb561e93e9ce35de504",
+      "bytes": 1916,
+      "functions": [
+        {
+          "name": "RepairDataTests",
+          "line": 6,
+          "end_line": 32,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_clock_sign_selects_known_source_event",
+          "line": 7,
+          "end_line": 12,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_refuses_extrapolation_and_missing_gap",
+          "line": 14,
+          "end_line": 18,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_duplicate_source_clock_and_nonfinite_are_rejected",
+          "line": 20,
+          "end_line": 22,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_numerical_pass_cannot_override_condition_or_identity",
+          "line": 24,
+          "end_line": 32,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/repair_pilot.py",
+      "sha256": "421b59e1156b24314570befcfdc3d36a7a32c90aa382e36e768211c756f5bf1d",
+      "bytes": 12124,
+      "functions": [
+        {
+          "name": "read",
+          "line": 32,
+          "end_line": 32,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 33,
+          "end_line": 33,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write",
+          "line": 34,
+          "end_line": 36,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "selection",
+          "line": 39,
+          "end_line": 50,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_trials",
+          "line": 53,
+          "end_line": 75,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "contract",
+          "line": 78,
+          "end_line": 93,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "directory",
+          "line": 96,
+          "end_line": 96,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "worker",
+          "line": 99,
+          "end_line": 108,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "train",
+          "line": 111,
+          "end_line": 127,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "run",
+          "line": 114,
+          "end_line": 119,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "evaluate",
+          "line": 130,
+          "end_line": 166,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "fisher",
+          "line": 169,
+          "end_line": 171,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "summarize",
+          "line": 174,
+          "end_line": 192,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "aggregate",
+          "line": 178,
+          "end_line": 185,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/review_full_candidates.py",
+      "sha256": "865fadb19cf34d0ca35e41579e2f85af48325a2a6dd08c9ceefce329161e701c",
+      "bytes": 8684,
+      "functions": [
+        {
+          "name": "main",
+          "line": 22,
+          "end_line": 112,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/review_repair_candidates.py",
+      "sha256": "6baafd9d902355e06b83688fc8932a6e7cbcdda793ba1292f6343b6f3fdd4893",
+      "bytes": 7976,
+      "functions": [
+        {
+          "name": "main",
+          "line": 22,
+          "end_line": 107,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/stroke_pairing_repair_20261021/source_identity_manifest.py",
+      "sha256": "52cce4477bae140437e96d8df73d7c33a5866703812de4ec80920db7ac58a2d0",
+      "bytes": 6923,
+      "functions": [
+        {
+          "name": "sha",
+          "line": 43,
+          "end_line": 47,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 49,
+          "end_line": 102,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    }
+  ],
+  "inherited_fixed_engine_sources": {
+    "diag_runner.py": "894f27d9c4488982b06118a94336a6a1a57abb9596d1d1596faf012ee207791b",
+    "diag_models.py": "bf2a22668d7dfc7ec8933793ac056cd610f3b599afd1b614ca7966b3d61b4746",
+    "diag_data.py": "afd58e54a82185ea1f191794c2576d36c735f8f34e9ec3c815a46b4ff4c1ed36",
+    "diagnosis_metrics.py": "ec247dea1d7fe383c07cda8557be50ff5346353acdcc6ea395100152270167f6",
+    "run_diagnosis.py": "d3e1a6e38f2af5cd7774e6386ea5d1e8e3156453e762ce6ee366eab8ad0838f9",
+    "PROTOCOL_ZH.md": "c25de9bbfa71406d3c1cf853473266252360f38ffc048ad2a14a5c0258accba3",
+    "midterm/data.py": "57cc82fdb3c6928d244729afe7c6a4dd85616d4f2a840d295451331ee0263a44",
+    "midterm/models.py": "75ad55885581da8148d666d102760e3104484902c93000527d4005a73dff9e06",
+    "original/model_stage3.py": "43ac20b9e1da104c4f07d346c1cabb72fd61d307be2077b17f9c3caf93f45265",
+    "external/external_models.py": "ee252b3574a7acec4a6d5c1f488e311f6f406d02a83321f8a20517f7e2ae978b",
+    "data_cache_manifest": "c7d335c4977244aa59ac46a467e3cc1697b46a62cae1958572a250b99b7bc762",
+    "side_metadata": "79f371acb5bb72279b8b475178b278ebdcc8d82212b69d05927695f1f865cf54",
+    "protocol/P1": "f1516acf6dd9be82296c16ad7c67c2a8dcb8d3334fcddf1574dadb69bb182030",
+    "protocol/P4": "6cee6e15ba6091bea7b05e073d6795e4978b994092053cabd35107b6b8802b8c",
+    "protocol/P6": "c4d353755978eb827e6c7f4eca29612f67c4e9aed4c99634abc172f9ed18e1ec",
+    "protocol/P7": "6f09421a745fdf0b31e70b7835d64e82a48164e79b0a36be273f8eacd28d5d71",
+    "protocol/P8": "72cc9c4a89063c852867fa35d80868e8a9bb27e20af0ee9b2a9357d811ef5ae1",
+    "protocol/P10": "dc5d8a20a13bb33072f2d5069c482f9e5005a180f2f6d1f5422b053e14c10870",
+    "protocol/P15": "0b6996fe2384c0c4933b1477efd28c9165acbd2ae9123b0cdc2388ce79b2eb41",
+    "protocol/P17": "8c65126f10e669c79713faf2a96a77994e6500c4ad8b168683f164987bf16eb8"
+  },
+  "raw_data_weights_and_participant_identity_tables_uploaded": false
+}
