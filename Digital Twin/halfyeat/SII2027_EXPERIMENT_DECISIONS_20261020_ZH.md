@@ -1,5 +1,7 @@
 # SII2027中期报告：代码、历次实验与决策记录
 
+**10/21后续可靠性复核：** [新审计](SII2027_DATA_RELIABILITY_20261021_ZH.md)确认原Stroke当前配对有条件来源与时间契约矛盾，固定TRAIN物理信号缺乏零lag一致性，元数据候选也未修复。下述原Stroke数值保留为处理诊断，不能据此判定方法优劣或真实泛化；BLISS X2维持其原有限scope。先验收新数据版本，再讨论模型。
+
 更新：2026-10-21（Asia/Tokyo）；10/20实验保持归档，10/21增量见R00–R03。本记录把10/19文献规划回写为实际执行事实；依据本地源代码、checkpoint训练历史、连续预测和独立复算，不按配置文件存在推定实验完成。
 
 10/21最新结论与用户方向：[R00–R03动态诊断](SII2027_DYNAMIC_DIAGNOSIS_20261021_ZH.md)、[新增函数/SHA索引](SII2027_DIAGNOSIS_CODE_INDEX_20261021.json)、[聚合结果](SII2027_DIAGNOSIS_AGGREGATES_20261021.csv)。TRAIN恢复、TEST仍失败；原文数字不作还原目标，核心思路变更先沟通。以下19项是既有实验的历史事实，追加4项详见新页。
@@ -42,7 +44,8 @@ flowchart TD
     N --> O["R00/R01：原队列oracle通过；40次TRAIN诊断8/8门槛通过"]
     O --> P["R02：完整TRAIN两模型×3seed，48次拟合完成"]
     P --> Q["TEST逐帧11.734°劣于整窗10.608°及常量9.868°"]
-    Q --> R["先审跨trial配对/侧别/预对齐；临床参考继续补"]
+    Q --> R["Q0-Q2：条件来源和clock契约矛盾，TRAIN同相近0"]
+    R --> S["Q3候选未修复；Stroke旧配对只作诊断；BLISS维持正对照"]
     I --> O
     G --> O
 ```
@@ -254,3 +257,8 @@ python -B analyze_external.py --input outputs/bliss_native_replication
 ## 6. 10/21下一步执行回写
 
 上一节第1项已完成，新增I(full)三seed比较也已完成：[R00–R03](SII2027_DYNAMIC_DIAGNOSIS_20261021_ZH.md)记录尝试、目的、实际代码与负结果。下一优先级改为TRAIN内部跨trial来源/同步/物理映射审查和整parent内部验证；G/A/staged、合成与临床参考门槛分别保留。原文各项数字按用户说明不再要求严格还原，新稿数值只取新实验；研究思路改变前先沟通。
+
+
+## 7. 数据可靠性Q0–Q4及解释降级
+
+[五项新审计的尝试、目的、实际代码及结论](SII2027_DATA_RELIABILITY_20261021_ZH.md)、[函数/SHA索引](SII2027_RELIABILITY_CODE_INDEX_20261021.json)、[聚合证据](SII2027_RELIABILITY_AGGREGATES_20261021.csv)。条件冲突不是简单NPZ误标；两套时间契约冲突不是已知硬件lag；元数据候选没有恢复一致性。原M/D全部加工配对实验数值归档保留，当前不支持监督方法优劣/真实泛化归因；虚拟/适配收益也须在新可靠数据上检验。未新训练，未改分数。

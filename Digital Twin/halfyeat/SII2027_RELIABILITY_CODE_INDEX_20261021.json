@@ -1,0 +1,326 @@
+{
+  "report_date": "2026-10-21 Asia/Tokyo",
+  "local_root_alias": "Q=Project2_submission/experiments/data_reliability_20261021",
+  "source_snapshot": "source_snapshots/f688e49d8ae01302",
+  "new_training_runs": 0,
+  "old_data_models_and_scores_modified": false,
+  "raw_data_and_participant_identity_tables_uploaded": false,
+  "source_files": [
+    {
+      "local_path": "Q/cane_condition_audit.py",
+      "purpose": "NPZ/aligned/IMU/mocap condition chain and independent saved-prediction strata",
+      "sha256": "7f519d91c5ea3bf83fb2dcf35f946ebe75fa0610bc65038c0d2e93f6a8f36c65",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_json",
+          "line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "path_condition",
+          "line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "token_condition",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scalar_text",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "provenance",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metrics",
+          "line": 170,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prediction_rows",
+          "line": 178,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mean_metrics",
+          "line": 216,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "strata",
+          "line": 225,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "split_summary",
+          "line": 253,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "report",
+          "line": 271,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 327,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    },
+    {
+      "local_path": "Q/sync_provenance_check.py",
+      "purpose": "Full 69-row/sample clocks, old anchors, source identity and disjoint intervals",
+      "sha256": "c90af60b35d4c5d008029af6189cb537faedfd3820f9c71cde14317e6bf5c6f9",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scalar",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_csv",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "limits",
+          "line": 110,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "native",
+          "line": 132,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    },
+    {
+      "local_path": "Q/signal_pairing_audit.py",
+      "purpose": "Fixed TRAIN gyro/optical long-axis pairing and full lag hypotheses",
+      "sha256": "0dabb40ca8b45490ec33afdc1618bad5a58c0bfca8251ab3828838f9b6a41364",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unit",
+          "line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interpolate",
+          "line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "longest",
+          "line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "corr",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stroke_world",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "pair_rows",
+          "line": 106,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 146,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    },
+    {
+      "local_path": "Q/signal_candidate_mapping.py",
+      "purpose": "Five predeclared TRAIN metadata-clock candidates, no fitted lag or correction",
+      "sha256": "9f8de6c0296ee7d8a748c1d39b06b7d3b998f04a4f2bd28c49254f81637528ef",
+      "entities": [
+        {
+          "name": "main",
+          "line": 25,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    },
+    {
+      "local_path": "Q/signal_pairing_report.py",
+      "purpose": "Patient/cohort medians, mathematical self-checks and candidate failure report",
+      "sha256": "837588724f3cd995db1d81e31563c8f73646133221c9457df4022d7b3ca7a7ec",
+      "entities": [
+        {
+          "name": "median",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mdtable",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 26,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    },
+    {
+      "local_path": "Q/distribution_quality_audit.py",
+      "purpose": "Source arrays, TRAIN-only scalers, distribution drift and common bilateral I endpoint",
+      "sha256": "f7853b86ecd08f9d24a92550f32f90398f4ae9d7c986848ed1ba71ea92d62337",
+      "entities": [
+        {
+          "name": "read",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "aggregate",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 33,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    },
+    {
+      "local_path": "Q/plot_reliability.py",
+      "purpose": "Patient-level descriptive points and clock-contract discrepancy visual",
+      "sha256": "296a197eafe2d7593e4d9a33365569111012ff61033c61afa3d0c355fb06ce66",
+      "entities": [
+        {
+          "name": "main",
+          "line": 15,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    },
+    {
+      "local_path": "Q/archive_reliability.py",
+      "purpose": "Negative-gate acceptance, old archive integrity and immutable new evidence",
+      "sha256": "7634dcbd8976315da2ffa49a673f64b19b26359f8437f567762e4bd26c276852",
+      "entities": [
+        {
+          "name": "read",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 18,
+          "kind": "FunctionDef"
+        }
+      ],
+      "availability": "local_code_not_uploaded"
+    }
+  ],
+  "evidence": [
+    {
+      "local_path": "Q/PROTOCOL_ZH.md",
+      "sha256": "e60cbaff1cc447e6786235af5b14ba3d9ebf8db98ba84a940461cd99bb70a5ce",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/COMPARATIVE_RELIABILITY_REPORT_ZH.md",
+      "sha256": "6ebadf6e9406e7af417fbbcbd29cca81c01c7b075be741d4b6ecc241179678cf",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/dataset_reliability_gate.json",
+      "sha256": "6fda48eddcb965ccfee2dacf6f077d9a302aad377402960c056d62c489cff50d",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/completed_reliability_audit_manifest.json",
+      "sha256": "69d170da6424aba616f79d85170c2c777f36eb857d31d83f26bd1f21cc84f017",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/cane_condition_audit.json",
+      "sha256": "7bb53bfe39123d4008ed029e591ea7b494347dc8f99c24b0de50404f5e620bc7",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/sync_provenance_audit.json",
+      "sha256": "da1143d7e43d4c25b8009fa3ab06699d3886b7d9dea9d66a6b6ccc781de11352",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/signal_pairing_audit.json",
+      "sha256": "57287822fd40b9c332c9b293479e5bd83c395d5182640cd206662f1308b5283b",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/signal_candidate_mapping.json",
+      "sha256": "479eb47fd04131dfbd2eff0141cfa3cf88a437d01ffa8f25c5e666da494755bb",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/signal_pairing_selfcheck.json",
+      "sha256": "54eee56d2e79301a4795653391adfeabafe0949383696ed2be213b589a9303d0",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/distribution_quality_audit.json",
+      "sha256": "e8f3a2715f86557d007f460a54c910e2549b17e6b6f7d3309adefd048c86ceed",
+      "availability": "local_only"
+    },
+    {
+      "local_path": "Q/common_bilateral_I_model_results.csv",
+      "sha256": "0d5a91fdf9333907e4ee46ebb0cb830911ac12ec990ef407a017e5933086bc60",
+      "availability": "local_only"
+    }
+  ]
+}
