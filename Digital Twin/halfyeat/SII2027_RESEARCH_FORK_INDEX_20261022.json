@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-22 Asia/Tokyo",
+  "status": "branch_plans_and_synthetic_preflight_only",
+  "baseline_commit": "dfeceb69d8a954a0aaddf4ded29a6db69ea71d3b",
+  "baseline_manifest_sha256": "0d735c1e0ca960632f0db92196503636f30f17081bb4fd19bac6f952cd41e9d2",
+  "source_scripts": [
+    {
+      "path": "experiments/research_fork_20261022/audit_research_fork.py",
+      "sha256": "f6525e7d861e6090bc71ae4a31b02bc51aa4aa2ea7aae9c4f82d12c517f49892",
+      "entities": [
+        {
+          "name": "read",
+          "line": 17,
+          "end_line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 21,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "windows",
+          "line": 29,
+          "end_line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 36,
+          "end_line": 175,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/research_fork_20261022/build_research_fork.py",
+      "sha256": "3041aeaacbc232845eb387f0beb33cc430d4eee5d84b47455fa3409cdb526be7",
+      "entities": [
+        {
+          "name": "read",
+          "line": 17,
+          "end_line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 18,
+          "end_line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write",
+          "line": 23,
+          "end_line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "window_count",
+          "line": 28,
+          "end_line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 32,
+          "end_line": 158,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cost",
+          "line": 56,
+          "end_line": 59,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_architecture_augmentation_20261022/architecture_augmentation_preflight.py",
+      "sha256": "8526b645a8a8006c3f4871646c686ff2043fcadebceb03ab79860013fdc8dbfb",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 19,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "convolution_macs",
+          "line": 21,
+          "end_line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hook",
+          "line": 23,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "timing",
+          "line": 31,
+          "end_line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 41,
+          "end_line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "capture",
+          "line": 62,
+          "end_line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "RouteEncoder",
+          "line": 76,
+          "end_line": 80,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "forward",
+          "line": 77,
+          "end_line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "markdown",
+          "line": 154,
+          "end_line": 165,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_architecture_augmentation_20261022/real_axis_augmentation.py",
+      "sha256": "bff11026170707c46d7ad76c90923aff65348cc5433f5f24cc834bb544dcd92d",
+      "entities": [
+        {
+          "name": "_key",
+          "line": 16,
+          "end_line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_rotation",
+          "line": 28,
+          "end_line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rotation_matrix",
+          "line": 46,
+          "end_line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "view_receipt",
+          "line": 51,
+          "end_line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "augment_native_input",
+          "line": 64,
+          "end_line": 81,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_architecture_augmentation_20261022/shared_shank_model.py",
+      "sha256": "40e8ecd8d431aa16c5ece723392cc9c5884ad34bee19460f7bce1036727273ce",
+      "entities": [
+        {
+          "name": "SharedShankTCN",
+          "line": 17,
+          "end_line": 42,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 20,
+          "end_line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "encode_shank",
+          "line": 29,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 34,
+          "end_line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build",
+          "line": 45,
+          "end_line": 46,
+          "kind": "FunctionDef"
+        }
+      ]
+    }
+  ],
+  "local_plans": [
+    {
+      "branch": "GEN",
+      "path": "experiments/native_generalization_20261022/branch_plan.json",
+      "sha256": "c225f3a4ab531974c3fc46b130e2ebc624bb98ecf461f77feaeb75adecb7f761"
+    },
+    {
+      "branch": "ARCH_AUG",
+      "path": "experiments/native_architecture_augmentation_20261022/branch_plan.json",
+      "sha256": "02820a2d7430e4b64d21dc41b168286c5e452e2ac05a35037e85ae3482882e82"
+    }
+  ],
+  "metadata_preflight": {
+    "status": "research_fork_metadata_preflight_passed_no_training",
+    "GEN_folds": 6,
+    "GEN_planned_fits": 72,
+    "GEN_planned_steps": 228000,
+    "ARCH_AUG_logical_fits": 144,
+    "ARCH_AUG_old_reused_fits": 48,
+    "ARCH_AUG_new_fits": 96,
+    "ARCH_AUG_planned_new_steps": 84000
+  },
+  "independent_review": {
+    "status": "research_fork_plans_metadata_and_budgets_independent_review_passed",
+    "sha256": "e81ac27aaef602bbcc1d0659d17658aa822d6e495cfeb9e1bd082c99e3b2b8d2"
+  },
+  "synthetic_module_preflight": {
+    "status": "passed_synthetic_architecture_and_axis_augmentation_preflight",
+    "sha256": "0f7abdafdf9722bf8c939b7e7dc11728ad649f644c2d73ee277436a2be3def88",
+    "gates": {
+      "shape_B_T_6": true,
+      "parameter_difference_within5percent": true,
+      "one_shared_encoder_parameter_set": true,
+      "left_right_input_and_concat_order_verified": true,
+      "identical_shank_inputs_equal_encoded_features_in_eval": true,
+      "causal_RF85_preserved": true,
+      "Q_proper_SO3": true,
+      "axis_angle_abs_at_most10deg": true,
+      "identity_bitwise_copy": true,
+      "deterministic_parent_sensor_view_hash": true,
+      "constant_Q_across_entire_parent_and_chunks": true,
+      "acc_and_gyro_same_sensor_Q": true,
+      "vector_norms_preserved": true,
+      "physical_input_not_mutated": true,
+      "GT_and_time_not_mutated": true,
+      "no_real_dynamic_data_access": true,
+      "no_training_or_optimizer_steps": true
+    },
+    "parameter_counts": {
+      "original_FrameTCN": 151110,
+      "shared_shank": 148422
+    },
+    "convolution_MACs": {
+      "original_FrameTCN": 17986560,
+      "shared_shank": 35235840
+    },
+    "convolution_MAC_ratio": 1.9590093936806148
+  },
+  "new_training_runs": 0,
+  "local_participant_role_tables_uploaded": false
+}
