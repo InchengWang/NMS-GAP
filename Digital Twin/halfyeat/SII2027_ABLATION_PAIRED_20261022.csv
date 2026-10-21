@@ -1,0 +1,8 @@
+experiment,variant,reference,endpoint,n_patients,mean_paired_RMSE_difference_deg,patient_SD_difference_deg,bootstrap_patient_percentile_lower_deg,bootstrap_patient_percentile_upper_deg,exact_two_sided_sign_flip_p,sign_flip_patterns,patients_better,patients_worse,prespecified_primary_contrast,Holm_p_five_exploratory_contrasts,Holm_p_two_generator_contrasts
+I_full,gyro6_angle,frame_tcn_angle,paretic_knee,6,0.2182995197942809,0.3759616581517772,-0.0283197088307277,0.5044101324857694,0.15625,64,1,5,False,0.625,
+I_full,acc6_angle,frame_tcn_angle,paretic_knee,6,0.1193252518739436,0.3873407587869046,-0.1737020618394354,0.3833434017713233,0.40625,64,2,4,False,0.8125,
+I_full,norm4_angle,frame_tcn_angle,paretic_knee,6,-0.1407320868101977,0.9941775576775173,-0.9751604647971456,0.3911662908920161,1.0,64,1,5,True,1.0,
+I_full,native12_rot6d_mse,frame_tcn_angle,paretic_knee,6,0.1989298808364678,0.2244502521606327,0.0411665296152486,0.3625390557472057,0.125,64,2,4,False,0.625,
+I_full,native12_rot6d_geo,frame_tcn_angle,paretic_knee,6,0.2016611127333694,0.2327404873891558,0.0369047473233515,0.3746273470218479,0.15625,64,2,4,False,0.625,
+virtual_common_support,mixed_nominal3,real_replay4,paretic_knee,6,0.1372615270327135,0.1216735413782356,0.0543471628056883,0.2289789661426848,0.0625,64,1,5,False,,0.125
+virtual_common_support,mixed_random3,real_replay4,paretic_knee,6,0.4009212226434935,0.392949246351031,0.1358510015181457,0.6983767891119226,0.0625,64,1,5,True,,0.125

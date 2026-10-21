@@ -1,0 +1,1055 @@
+{
+  "project": "Dataset_Stroke/.../1_2027SII/Project2_submission",
+  "date": "2026-10-22 Asia/Tokyo",
+  "scripts": [
+    {
+      "path": "experiments/native_ablation_20261022/I_full_statistics.py",
+      "sha256": "d23b2be17dd7fce474edbadf619260297a522bd6aefee3d616573d1c586a28b8",
+      "functions": [
+        {
+          "name": "signed_flip_p",
+          "line": 10,
+          "end_line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "holm",
+          "line": 15,
+          "end_line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 20,
+          "end_line": 44,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/ablation_features.py",
+      "sha256": "46b8fda55c673c07043c58f1b306c869f4659cff2d9fdc8fd2c8131b639a8494",
+      "functions": [
+        {
+          "name": "transform",
+          "line": 3,
+          "end_line": 11,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/ablation_models.py",
+      "sha256": "6d618bdd5912c5411d28142a832d12a4c1b15ba59d8e4514614294734502b317",
+      "functions": [
+        {
+          "name": "FrameTCN",
+          "line": 9,
+          "end_line": 14,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 10,
+          "end_line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 14,
+          "end_line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build",
+          "line": 16,
+          "end_line": 16,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/archive_ablation.py",
+      "sha256": "72bb0a9ea8e241f8dc4e2ae5d2cbd932cf747bcbcd13f36d157684523c458b39",
+      "functions": [
+        {
+          "name": "read",
+          "line": 25,
+          "end_line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 26,
+          "end_line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "csv_rows",
+          "line": 31,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 33,
+          "end_line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "features",
+          "line": 40,
+          "end_line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler",
+          "line": 51,
+          "end_line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "engine_paths",
+          "line": 56,
+          "end_line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 67,
+          "end_line": 393,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 69,
+          "end_line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 76,
+          "end_line": 77,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "passed",
+          "line": 78,
+          "end_line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audited_sources",
+          "line": 79,
+          "end_line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metadata_count",
+          "line": 82,
+          "end_line": 89,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/audit_I_full.py",
+      "sha256": "fbff3b04110252cdb62c902310c5fd2c4f6052f358062590b99d599bed9fbdea",
+      "functions": [
+        {
+          "name": "features",
+          "line": 23,
+          "end_line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rotations",
+          "line": 39,
+          "end_line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "angles_from_matrices",
+          "line": 48,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "yz",
+          "line": 49,
+          "end_line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_table",
+          "line": 63,
+          "end_line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 77,
+          "end_line": 301,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/audit_linear_reference.py",
+      "sha256": "5ad70d50d5c96882cd76121bdc785730705eebbcec2ac025566627630eeded66",
+      "functions": [
+        {
+          "name": "design",
+          "line": 17,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 22,
+          "end_line": 115,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/audit_rotation_secondary.py",
+      "sha256": "dc8772b683840cf3599b10293f401d851dc14158b9faec0c33a3254e14fcb802",
+      "functions": [
+        {
+          "name": "groups",
+          "line": 14,
+          "end_line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 25,
+          "end_line": 82,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/audit_virtual.py",
+      "sha256": "406c74bf75071d7d22a76e85916d8b448727d8d3be7739c0b012dcfe241c4828",
+      "functions": [
+        {
+          "name": "table",
+          "line": 21,
+          "end_line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 31,
+          "end_line": 191,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/build_virtual_ablation.py",
+      "sha256": "1231b7c5720970c8fbfeb518fc9a90c068884af8e269226e8fca8941862ee019",
+      "functions": [
+        {
+          "name": "main",
+          "line": 6,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "replace",
+          "line": 8,
+          "end_line": 10,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/design_probe.py",
+      "sha256": "494828559c6ed6f4402646aef5a100f00ddc317780309840b7468d502b9a6a73",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 14,
+          "end_line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "transform",
+          "line": 15,
+          "end_line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 25,
+          "end_line": 71,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/i_full_ablation.py",
+      "sha256": "5706461242a782e667e772c7e79a0de9543d335637cb117e685e36ab809dbdb6",
+      "functions": [
+        {
+          "name": "architecture",
+          "line": 31,
+          "end_line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "folder",
+          "line": 32,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "trials",
+          "line": 33,
+          "end_line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 38,
+          "end_line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_metric",
+          "line": 54,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 62,
+          "end_line": 110,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 112,
+          "end_line": 125,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 115,
+          "end_line": 119,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 127,
+          "end_line": 141,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 143,
+          "end_line": 166,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 168,
+          "end_line": 181,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/i_full_smoke.py",
+      "sha256": "f2ba50438755fda6280304735bdf762003b1372389e3a6344c11306afcc1e41f",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 14,
+          "end_line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 16,
+          "end_line": 104,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "FixedRotation",
+          "line": 50,
+          "end_line": 53,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "forward",
+          "line": 51,
+          "end_line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fake_infer",
+          "line": 87,
+          "end_line": 89,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/leakage_review.py",
+      "sha256": "39e3d6d4c10cb584f04d81cd76799b01c35484fd56bb246dd3f9d25d716ebc9c",
+      "functions": [
+        {
+          "name": "read",
+          "line": 18,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 22,
+          "end_line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "windows",
+          "line": 26,
+          "end_line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 33,
+          "end_line": 203,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/linear_reference.py",
+      "sha256": "155c568540a9efe9f0cb8529ffb3800292b0541f3a6a987180376d478b668cef",
+      "functions": [
+        {
+          "name": "contract",
+          "line": 17,
+          "end_line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "matrix",
+          "line": 29,
+          "end_line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "infer",
+          "line": 30,
+          "end_line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit",
+          "line": 32,
+          "end_line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 59,
+          "end_line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 78,
+          "end_line": 91,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/plot_ablation.py",
+      "sha256": "a2fe1b54bd0acc1e4a609c047d420e3feefe5645341a30dcd8fd696fa27e5db1",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 26,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 27,
+          "end_line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unique",
+          "line": 28,
+          "end_line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bar_metric",
+          "line": 35,
+          "end_line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "public_figures",
+          "line": 56,
+          "end_line": 118,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "local_waveforms",
+          "line": 120,
+          "end_line": 161,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 163,
+          "end_line": 221,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/plot_artifact_review.py",
+      "sha256": "4a475cbfddf18c4cd77bbee1cec9c99d864e0fde22609ed1d04e2d124d6ed759",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 5,
+          "end_line": 5,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 6,
+          "end_line": 45,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/plot_virtual_ablation.py",
+      "sha256": "e22a820076d36ffe0cb774754f373c5e94c3bfbd0a056b1b3f2279a56bc681e5",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 20,
+          "end_line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 21,
+          "end_line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unique",
+          "line": 22,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "plot_metric",
+          "line": 28,
+          "end_line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "budgets",
+          "line": 42,
+          "end_line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "public_figures",
+          "line": 55,
+          "end_line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "all_local_waveforms",
+          "line": 103,
+          "end_line": 137,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 139,
+          "end_line": 188,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/rotation_secondary_metrics.py",
+      "sha256": "155c2c8d707ea96d6b155a6158afcafcba88f2df68def22971b6a0dcc50ae750",
+      "functions": [
+        {
+          "name": "decode",
+          "line": 9,
+          "end_line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fused_rotations",
+          "line": 15,
+          "end_line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 27,
+          "end_line": 53,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_ablation.py",
+      "sha256": "5dcff893643d87b24f66b47af21b364ca4e5543a64a0fc6207d3c87dff2542f6",
+      "functions": [
+        {
+          "name": "architecture",
+          "line": 28,
+          "end_line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "folder",
+          "line": 29,
+          "end_line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "trials",
+          "line": 30,
+          "end_line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 32,
+          "end_line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_metric",
+          "line": 55,
+          "end_line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 63,
+          "end_line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 115,
+          "end_line": 128,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 118,
+          "end_line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 130,
+          "end_line": 144,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 146,
+          "end_line": 166,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 168,
+          "end_line": 181,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_data.py",
+      "sha256": "e24df8c50ec2ffac483bddeb0a66b6200f2a502fa04ea235a96963228ee4efa6",
+      "functions": [
+        {
+          "name": "verify_generation",
+          "line": 12,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "real_trials",
+          "line": 21,
+          "end_line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_views",
+          "line": 30,
+          "end_line": 45,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_generate_v2.py",
+      "sha256": "8ec40ce7ff5b40d65d2fe20cdd76d36c45ef9451d467009150fcba4dd6f8712b",
+      "functions": [
+        {
+          "name": "protocol",
+          "line": 12,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "installation",
+          "line": 22,
+          "end_line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 31,
+          "end_line": 81,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_identifiability.py",
+      "sha256": "41031c2bdeee6be200079179c50b14ef4a050a55a1839951c5f86d9cba7588d6",
+      "functions": [
+        {
+          "name": "hat",
+          "line": 17,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_gyro",
+          "line": 22,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 35,
+          "end_line": 88,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_independent_check.py",
+      "sha256": "925a8c8eb5264ec5b6da2b09d5af4d945e3192ab96db3c5f22ee0b827a925bec",
+      "functions": [
+        {
+          "name": "read",
+          "line": 22,
+          "end_line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 23,
+          "end_line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unit",
+          "line": 24,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "maximum",
+          "line": 25,
+          "end_line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_world",
+          "line": 28,
+          "end_line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "matrix_log_vee",
+          "line": 45,
+          "end_line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rebuild",
+          "line": 53,
+          "end_line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "quaternion_matrix",
+          "line": 86,
+          "end_line": 88,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 91,
+          "end_line": 156,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_kernel_test.py",
+      "sha256": "8d5f37b5840886740411ffe3e1d48cae05ce4c4b6260541e4e879c6fbe6eb487",
+      "functions": [
+        {
+          "name": "VirtualPhysicsTests",
+          "line": 11,
+          "end_line": 80,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "setUp",
+          "line": 12,
+          "end_line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_static_specific_force_plusZ_and_zero_gyro",
+          "line": 17,
+          "end_line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_constant_world_translation_acceleration_is_present",
+          "line": 22,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_free_fall_force_zero_proves_gravity_subtraction_sign",
+          "line": 28,
+          "end_line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_nonidentity_sensor_frame_reports_body_gyro",
+          "line": 33,
+          "end_line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_fixed_leverarm_has_tangential_and_centripetal_acceleration",
+          "line": 41,
+          "end_line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_global_rigid_world_transform_preserves_sensor_signals",
+          "line": 56,
+          "end_line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_Q_rotates_acc_and_gyro_together_and_is_reproducible",
+          "line": 65,
+          "end_line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_gap_extrapolation_and_nonTRAIN_sources_fail_closed",
+          "line": 76,
+          "end_line": 80,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_source.py",
+      "sha256": "ad2b8943d3032f3cdbede116bc632074bb0da4f2c0286df78bd24a149a66228c",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 29,
+          "end_line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 30,
+          "end_line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write",
+          "line": 31,
+          "end_line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 37,
+          "end_line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "real_train",
+          "line": 53,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "world_train",
+          "line": 64,
+          "end_line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "finite_runs",
+          "line": 87,
+          "end_line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "checked_interp",
+          "line": 94,
+          "end_line": 105,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unit",
+          "line": 108,
+          "end_line": 111,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "marker_body_pose",
+          "line": 114,
+          "end_line": 128,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prepare",
+          "line": 131,
+          "end_line": 168,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gyro_body",
+          "line": 171,
+          "end_line": 182,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "physical_signals",
+          "line": 185,
+          "end_line": 195,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "installation_Q",
+          "line": 198,
+          "end_line": 205,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "generation_contract",
+          "line": 208,
+          "end_line": 216,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 219,
+          "end_line": 227,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "generate",
+          "line": 230,
+          "end_line": 261,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_statistics.py",
+      "sha256": "42a34d4c28622792d53fa4c87007da818c50dc72f85055a76f5250c188c93908",
+      "functions": [
+        {
+          "name": "main",
+          "line": 10,
+          "end_line": 31,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_ablation_20261022/virtual_training_smoke.py",
+      "sha256": "df0d934bf72e29c628ae5ea04776450564d6594b5e0fa424e50e0ec2f3a1cca7",
+      "functions": [
+        {
+          "name": "digest_array",
+          "line": 24,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "state_digest",
+          "line": 29,
+          "end_line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler_digest",
+          "line": 36,
+          "end_line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "static_and_mock_boundaries",
+          "line": 39,
+          "end_line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fake_load",
+          "line": 68,
+          "end_line": 73,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 86,
+          "end_line": 232,
+          "kind": "FunctionDef"
+        }
+      ]
+    }
+  ],
+  "source_snapshot": "source_snapshots/c0bfadaf0e14450e",
+  "source_identity_sha256": "c0bfadaf0e14450e2885b21a88555544f4489af37af3af3fcfd208aa34d5cc58",
+  "manifest_sha256": "0d735c1e0ca960632f0db92196503636f30f17081bb4fd19bac6f952cd41e9d2",
+  "code_entities_local_only": true,
+  "raw_data_weights_or_participant_identity_tables_uploaded": false
+}

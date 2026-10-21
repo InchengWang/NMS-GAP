@@ -1,5 +1,7 @@
 # 原生53条冻结、S6与坐标验收及患者内基线（2026-10-21）
 
+**10/22输入、监督表示与虚拟对照更新：** [192新增神经拟合、简单线性参考及独立验收](SII2027_NATIVE_ABLATIONS_20261022_ZH.md)完成。固定53真实数据/6患者TEST；3输入mask＋RotMSE/RotGeo，虚拟31TRAIN/124假设视图与同支持同21000步控制，失败context尝试也保留。所有种子及患者级配对结果见表；论文有标定方法但本地逐人安装值仍未知。当前为I_full，原E2的G/A外层患者排除尚未完成；不称临床JCS或真实安装等价。
+
 ![原生SI患者内基线](SII2027_NATIVE_SUMMARY_20261021.svg)
 
 配套：[代码函数/行号/SHA](SII2027_NATIVE_CODE_INDEX_20261021.json)、[聚合指标](SII2027_NATIVE_AGGREGATES_20261021.csv)。本页公开聚合证据；患者编号、逐trial结果、波形、原始数据、预测文件和权重留在本地。
@@ -103,3 +105,13 @@ flowchart TD
 工程基线准入true，最终临床认证false。核心研究思路保持双小腿真实IMU→下肢运动学；本轮FrameTCN是数据与读出基线，不替代原稿核心模型的最终消融与评价。
 
 快照：`source_snapshots/199ac8e3d870d0ad`；manifest SHA256：`5d71f9f48207d9732423575df1e0daa59bc09e7b8d59099a1fdc1feb4df19f24`。新源码位于本地主项目`experiments/native_training_release_20261021`；各函数行号及SHA见索引。
+
+## 10/22新增：I_full信息、监督表示与假设虚拟对照（R23–R31）
+
+[实验目的、每次尝试及结论](SII2027_NATIVE_ABLATIONS_20261022_ZH.md)、[函数/行号/SHA](SII2027_ABLATION_CODE_INDEX_20261022.json)、[聚合结果](SII2027_ABLATION_AGGREGATES_20261022.csv)、[患者配对差](SII2027_ABLATION_PAIRED_20261022.csv)。
+
+本批实际是3输入信息组、2个Rot6D监督/损失组，共120新fits；另3个同共同crop/同4视图/同21000步的真实重复与假设虚拟组，共72新fits。简单当前帧Ridge参考8模型/48VALID候选另列，不能称完整Guo框架复现。旧raw12参考24fits只读复用。全数据角色和测试段不变，1537预测记录/9222角度指标与额外1908SO3指标可追溯，N仍为6测试患者。
+
+虚拟完整context首次0/31失败；共同裁剪后31TRAIN/124视图，12665训练目标帧及18865参考context成本分别记账。原论文有sensor-to-segment标定方法，当前没有逐人实际安装数值，不把假设模拟提升为已标定真实IMU。输入轴与原六投影角含义保持不变。
+
+每患者统计先汇总trial/seed再等患者，64种符号翻转与Holm保持原定义；不能为显著性把窗口/种子当患者或更换检验。本轮未完成原E2的外层患者G/A2×2：下一批需source彻底排除目标、两A共用同target真实适配并记VALID参考成本。草案已在本地形成，不冒充已运行结果。
