@@ -1,0 +1,532 @@
+{
+  "date": "2026-10-21 Asia/Tokyo",
+  "project": "Dataset_Stroke/.../1_2027SII/Project2_submission",
+  "scripts": [
+    {
+      "path": "experiments/raw_source_rebuild_20261021/archive_raw_source.py",
+      "sha256": "3e0f9ff1b3b8d8c4dfeadad032fa9f812796fddc26329f79c22f89a5e2d55cd8",
+      "functions": [
+        {
+          "name": "read",
+          "line": 13,
+          "end_line": 13,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 14,
+          "end_line": 14,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 17,
+          "end_line": 96,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "check",
+          "line": 24,
+          "end_line": 34,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "receipts",
+          "line": 35,
+          "end_line": 40,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/audit_native_candidates.py",
+      "sha256": "08d62208d63fecea49a10883bdde8945908883c56234c102eabf99c30221a884",
+      "functions": [
+        {
+          "name": "read",
+          "line": 12,
+          "end_line": 12,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 13,
+          "end_line": 13,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 16,
+          "end_line": 76,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/cane_evidence.py",
+      "sha256": "00d6684b208826d8dbb4aca4e2b0287cd13cb990c22e1900583f6143f946f071",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 29,
+          "end_line": 34,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "raw_directory",
+          "line": 37,
+          "end_line": 40,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "stream",
+          "line": 44,
+          "end_line": 69,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "gravity_clock",
+          "line": 73,
+          "end_line": 84,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "epoch_bounds",
+          "line": 87,
+          "end_line": 92,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "native_window",
+          "line": 95,
+          "end_line": 105,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "motion_state",
+          "line": 108,
+          "end_line": 114,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "safe_pcc",
+          "line": 117,
+          "end_line": 120,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "describe",
+          "line": 123,
+          "end_line": 167,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write_json",
+          "line": 170,
+          "end_line": 171,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "run",
+          "line": 174,
+          "end_line": 268,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "plot",
+          "line": 271,
+          "end_line": 286,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "markdown",
+          "line": 289,
+          "end_line": 306,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/cane_evidence_crosscheck.py",
+      "sha256": "349f7bd66949b4ec316c4b239e1ade1119e61739ab0ea030d45a52f127b59887",
+      "functions": [
+        {
+          "name": "main",
+          "line": 8,
+          "end_line": 50,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/cane_evidence_test.py",
+      "sha256": "8c9a43ce5fb8c45b31d4fb4b05e75e8e73441fe3ee32d5e1b6e694113f7486c3",
+      "functions": [
+        {
+          "name": "NativeEvidenceTests",
+          "line": 11,
+          "end_line": 47,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_independent_timestamp_and_SI_reader_matches_shared_loader",
+          "line": 12,
+          "end_line": 19,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_absolute_clock_bridge_cannot_reset_native_origins",
+          "line": 21,
+          "end_line": 28,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_missing_support_does_not_fill_or_extrapolate",
+          "line": 30,
+          "end_line": 35,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_all_parents_preserved_and_no_clinical_relabelling",
+          "line": 37,
+          "end_line": 47,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/export_native_candidates.py",
+      "sha256": "63e5ed4231b5b2b34e55a8f9ab2221c79c691f1293351307e7656901655787fd",
+      "functions": [
+        {
+          "name": "read",
+          "line": 15,
+          "end_line": 15,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 18,
+          "end_line": 67,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/marker_pose_audit.py",
+      "sha256": "bb6308604fbc65b3fbff780c6aaf958d448f36f122a8b46c157f5a3f1b665eb6",
+      "functions": [
+        {
+          "name": "read",
+          "line": 54,
+          "end_line": 55,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 58,
+          "end_line": 59,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sides_xlsx",
+          "line": 62,
+          "end_line": 77,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "walking_query",
+          "line": 80,
+          "end_line": 93,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "exact_world",
+          "line": 96,
+          "end_line": 108,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "geometry",
+          "line": 111,
+          "end_line": 119,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "height_events",
+          "line": 122,
+          "end_line": 143,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "summarize_side",
+          "line": 146,
+          "end_line": 149,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "paired_count",
+          "line": 152,
+          "end_line": 164,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "imu_corroboration",
+          "line": 167,
+          "end_line": 186,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 189,
+          "end_line": 300,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "plot_all",
+          "line": 303,
+          "end_line": 340,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write_report",
+          "line": 343,
+          "end_line": 359,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/marker_pose_check.py",
+      "sha256": "20a20d927a9b4812d64b726530edd3644705368a21ad10ed5b77c465b27b2426",
+      "functions": [
+        {
+          "name": "main",
+          "line": 12,
+          "end_line": 70,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/raw_loader.py",
+      "sha256": "33a8f74af9135285b35b6c620b452621e315a73bedb73f69b0260375ab80c050",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 24,
+          "end_line": 24,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "parse_local_timestamp",
+          "line": 27,
+          "end_line": 34,
+          "kind": "FunctionDef",
+          "docstring": "Convert explicit vendor (+0900) timestamp strings to integer UTC ms."
+        },
+        {
+          "name": "native_path",
+          "line": 37,
+          "end_line": 41,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read_native",
+          "line": 44,
+          "end_line": 77,
+          "kind": "FunctionDef",
+          "docstring": "Return epoch_ms,epoch_s,values_si,native_elapsed_s and source receipt.\n\nstrict=False is for an inventory only; unsafe clocks cannot be interpolated."
+        },
+        {
+          "name": "interpolate_native",
+          "line": 80,
+          "end_line": 91,
+          "kind": "FunctionDef",
+          "docstring": "Interpolate only covered finite native intervals, retaining absolute clock."
+        },
+        {
+          "name": "gravity_clock",
+          "line": 94,
+          "end_line": 104,
+          "kind": "FunctionDef",
+          "docstring": "Read derived clock for an absolute bridge; never fit it to motion."
+        },
+        {
+          "name": "derived_elapsed_to_epoch_ms",
+          "line": 107,
+          "end_line": 112,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "source_links",
+          "line": 115,
+          "end_line": 151,
+          "kind": "FunctionDef",
+          "docstring": "Resolve only metadata-level source identity; require per-window coverage.\n\nA derived record can contain short endpoint fills from the historical\nwriter. Full-record containment is not a source identity requirement.\nTwo explicit clock interpretations are tested: recorded UTC and +0900\nwall-clock incorrectly serialized as UTC. No motion-based lag is fitted."
+        },
+        {
+          "name": "main",
+          "line": 154,
+          "end_line": 201,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/raw_loader_test.py",
+      "sha256": "363d8e2ee0370d0351938979afd866f68c280d0a54b0a101a2e960a0a92fc540",
+      "functions": [
+        {
+          "name": "NativeSourceTests",
+          "line": 9,
+          "end_line": 53,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_timezone_and_native_rowzero_are_distinct",
+          "line": 10,
+          "end_line": 15,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_units_do_not_assume_rounded_epoch_is_precise",
+          "line": 17,
+          "end_line": 25,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_no_gap_interpolation_or_extrapolation",
+          "line": 27,
+          "end_line": 31,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_reversed_native_clock_not_silently_sorted",
+          "line": 33,
+          "end_line": 35,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_identity_overlap_does_not_allow_native_tail_extrapolation",
+          "line": 37,
+          "end_line": 45,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_timezone_error_is_discrete_metadata_interpretation",
+          "line": 47,
+          "end_line": 53,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/raw_source_rebuild_20261021/side_metadata_audit.py",
+      "sha256": "bca66447322af1f01d49cb5afb4ff6301350e393758f6eff0ffa1b52a8332ccb",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 24,
+          "end_line": 29,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "workbook_sides",
+          "line": 32,
+          "end_line": 72,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "csv_sides",
+          "line": 75,
+          "end_line": 85,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "endpoints",
+          "line": 88,
+          "end_line": 119,
+          "kind": "FunctionDef",
+          "docstring": "Read only first/last CSV records, preserving timestamp timezone annotation."
+        },
+        {
+          "name": "notebook_provenance",
+          "line": 122,
+          "end_line": 139,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 142,
+          "end_line": 238,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    }
+  ],
+  "source_snapshot": "source_snapshots/46534ecd9fc8a64e",
+  "source_identity_sha256": "46534ecd9fc8a64ed8320ccacafd564a469c2e58513e86fa2b546d642c4b7d15",
+  "completed_manifest_sha256": "1eb9f03c167ac426c4a56092621b4b6db138fff3918ff289e8d08d7de82dc82d",
+  "code_entities_local_only": true,
+  "raw_data_participant_side_tables_or_weights_uploaded": false
+}
