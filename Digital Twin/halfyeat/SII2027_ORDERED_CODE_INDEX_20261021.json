@@ -1,0 +1,579 @@
+{
+  "project": "Dataset_Stroke/.../1_2027SII/Project2_submission",
+  "date": "2026-10-21 Asia/Tokyo",
+  "scripts": [
+    {
+      "path": "experiments/ordered_trial_matching_20261021/archive_ordered_matching.py",
+      "sha256": "c98f3f263fb2f3192949f5f5821cd598c9dc76a09bdff5ddc28428c4df279d70",
+      "functions": [
+        {
+          "name": "read",
+          "line": 15,
+          "end_line": 15,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 16,
+          "end_line": 16,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 19,
+          "end_line": 102,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "check",
+          "line": 21,
+          "end_line": 28,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "receipts",
+          "line": 29,
+          "end_line": 34,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/audit_ordered_matching.py",
+      "sha256": "3e2984eb749868b6719851a86fa7bd8f455561c4a79166741ca8e6d2549e9b47",
+      "functions": [
+        {
+          "name": "read",
+          "line": 17,
+          "end_line": 17,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "direct_pcc",
+          "line": 18,
+          "end_line": 20,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 23,
+          "end_line": 128,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/export_ordered_candidates.py",
+      "sha256": "f7f7a3e63a343f40e4c192f36f3f111b470a00fb2efa7abc94d08c8a7a9721bb",
+      "functions": [
+        {
+          "name": "read",
+          "line": 15,
+          "end_line": 15,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 18,
+          "end_line": 75,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/imu_episode_inventory.py",
+      "sha256": "742ae905011036e5c826f63fbfddda6067c9ae273b439717b7ef7ddc48ddb594",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 47,
+          "end_line": 47,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "dump",
+          "line": 48,
+          "end_line": 48,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "monotonic_parts",
+          "line": 51,
+          "end_line": 63,
+          "kind": "FunctionDef",
+          "docstring": "Return native row slices; exclude all overlapping clock values after reset."
+        },
+        {
+          "name": "subtract_intervals",
+          "line": 66,
+          "end_line": 75,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "common_runs",
+          "line": 78,
+          "end_line": 99,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "marking_blocks",
+          "line": 102,
+          "end_line": 128,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "activity_bouts",
+          "line": 131,
+          "end_line": 142,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "session_id",
+          "line": 145,
+          "end_line": 146,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "document_episodes",
+          "line": 149,
+          "end_line": 181,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "run",
+          "line": 184,
+          "end_line": 261,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "plot",
+          "line": 264,
+          "end_line": 281,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "markdown",
+          "line": 284,
+          "end_line": 298,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/imu_episode_inventory_audit.py",
+      "sha256": "3eb6608684c59a066c34d11a772d29d4ba6c2c5bfcc5b729f0ba5ed15e000c08",
+      "functions": [
+        {
+          "name": "main",
+          "line": 10,
+          "end_line": 62,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/imu_episode_inventory_test.py",
+      "sha256": "95fab317fbf0ddb5b92bf952dc98b606162a8c82dd9ac9690b48c0e413d4570c",
+      "functions": [
+        {
+          "name": "EpisodeCandidatesTests",
+          "line": 7,
+          "end_line": 38,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_backward_clock_overlap_is_excluded_without_sorting_native",
+          "line": 8,
+          "end_line": 21,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_unilateral_repeats_detected_bilateral_walking_not_called_pose",
+          "line": 23,
+          "end_line": 33,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_symmetric_repeated_motion_is_not_healthy_pose",
+          "line": 35,
+          "end_line": 38,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/mocap_catalog.py",
+      "sha256": "a2d4e23df16ff3ef6730c24277a1119ee594ace44c213675cf5056c7ab22287d",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 49,
+          "end_line": 50,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read",
+          "line": 53,
+          "end_line": 54,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "native_world",
+          "line": 57,
+          "end_line": 109,
+          "kind": "FunctionDef",
+          "docstring": "Parse original TRC-style CSV and return explicit marker/clock receipts."
+        },
+        {
+          "name": "make_catalog",
+          "line": 112,
+          "end_line": 160,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "q100",
+          "line": 163,
+          "end_line": 164,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "pose_query",
+          "line": 167,
+          "end_line": 176,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "height_on_block",
+          "line": 179,
+          "end_line": 192,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "pose_evidence",
+          "line": 195,
+          "end_line": 209,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "build_templates",
+          "line": 212,
+          "end_line": 292,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 295,
+          "end_line": 339,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write_readme",
+          "line": 342,
+          "end_line": 366,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/mocap_catalog_check.py",
+      "sha256": "8e773f369e126700d9f9d594342786af530df585992792de06750af96e40edfa",
+      "functions": [
+        {
+          "name": "main",
+          "line": 10,
+          "end_line": 75,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/ordered_assignment.py",
+      "sha256": "a868cb917f7f74cf7331791452531e060a89bf1d5d67b2390be612e9ccdb23c3",
+      "functions": [
+        {
+          "name": "solve",
+          "line": 10,
+          "end_line": 55,
+          "kind": "FunctionDef",
+          "docstring": "Top2 distinct matching-pair sets, with per-chain order and no reuse.\n\nedges[(parent,episode)] contains utility, source_start_ms, source_end_ms.\nSource intervals include marking and walking support; a following match\nmust start at least10ms after the previous interval ends."
+        },
+        {
+          "name": "visit",
+          "line": 28,
+          "end_line": 45,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "edge_margins",
+          "line": 58,
+          "end_line": 66,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/ordered_assignment_oracle_test.py",
+      "sha256": "011e22027c82a00c646ccf471e5f33482a286a021ebd5f978dc75c75486385b8",
+      "functions": [
+        {
+          "name": "enumerate_paths",
+          "line": 8,
+          "end_line": 22,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "ExhaustiveOracleTests",
+          "line": 25,
+          "end_line": 41,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_small_random_two_chain_assignments_and_edge_exclusion",
+          "line": 26,
+          "end_line": 41,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/ordered_assignment_test.py",
+      "sha256": "bbfc86b11a39dfd800b7fe9dd60b1a65ec47ec9f026a91fc7e6a6d92ab7b85bb",
+      "functions": [
+        {
+          "name": "edge",
+          "line": 5,
+          "end_line": 5,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "pairs",
+          "line": 6,
+          "end_line": 6,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "OrderedAssignmentTests",
+          "line": 9,
+          "end_line": 42,
+          "kind": "ClassDef",
+          "docstring": null
+        },
+        {
+          "name": "test_initial_internal_and_final_IMU_skips",
+          "line": 10,
+          "end_line": 13,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_unmatchable_optical_is_not_forced",
+          "line": 15,
+          "end_line": 17,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_no_optical_reorder_within_chain",
+          "line": 19,
+          "end_line": 21,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_two_conditions_can_interleave_without_episode_reuse",
+          "line": 23,
+          "end_line": 26,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_different_episode_ids_cannot_reuse_physical_samples",
+          "line": 28,
+          "end_line": 30,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_gap_permutations_are_not_distinct_runner_up",
+          "line": 32,
+          "end_line": 35,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_equal_periodic_alternatives_remain_ambiguous",
+          "line": 37,
+          "end_line": 39,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "test_all_unmatched_and_no_edges_is_valid",
+          "line": 41,
+          "end_line": 42,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/ordered_matching.py",
+      "sha256": "c2987031c9aee6bebd0ef7651478da2ba4efb928096a10007bb578ab68df64a5",
+      "functions": [
+        {
+          "name": "read",
+          "line": 43,
+          "end_line": 43,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 44,
+          "end_line": 44,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write",
+          "line": 45,
+          "end_line": 47,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sliding_pcc",
+          "line": 50,
+          "end_line": 60,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "best_index",
+          "line": 63,
+          "end_line": 67,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "contract",
+          "line": 70,
+          "end_line": 79,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sessions_for",
+          "line": 82,
+          "end_line": 87,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_template",
+          "line": 90,
+          "end_line": 92,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_runs",
+          "line": 95,
+          "end_line": 105,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "score_candidates",
+          "line": 108,
+          "end_line": 172,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "assign",
+          "line": 175,
+          "end_line": 198,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "pcc",
+          "line": 201,
+          "end_line": 202,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "validate",
+          "line": 205,
+          "end_line": 262,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/ordered_trial_matching_20261021/plot_ordered_matching.py",
+      "sha256": "fa5182114dd532238ce3aa08d403902a65cfbfeb463fff6672643864dea86a48",
+      "functions": [
+        {
+          "name": "main",
+          "line": 12,
+          "end_line": 50,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    }
+  ],
+  "code_entities_local_only": true,
+  "source_snapshot": "source_snapshots/f6c65b5029c9b207",
+  "source_identity_sha256": "f6c65b5029c9b2076a7c187761f995137f05479f6199418c837f34afe927c5ee",
+  "manifest_sha256": "25682309fbe2daf724fef4ed0166c8e5b1122aadacdbd0d7c8c8602a09e3a862",
+  "raw_data_weights_and_participant_identity_tables_uploaded": false
+}
