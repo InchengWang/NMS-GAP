@@ -1,0 +1,583 @@
+{
+  "project": "Dataset_Stroke/.../1_2027SII/Project2_submission",
+  "date": "2026-10-21 Asia/Tokyo",
+  "scripts": [
+    {
+      "path": "experiments/native_training_release_20261021/archive_native_release.py",
+      "sha256": "f0a8f69e82a9b43dd51b18a47e8e7b3273340f9de8e4e4079cc3cd975c92563a",
+      "functions": [
+        {
+          "name": "read",
+          "line": 24,
+          "end_line": 24,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 25,
+          "end_line": 25,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "engine_source_paths",
+          "line": 28,
+          "end_line": 40,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "review_count",
+          "line": 43,
+          "end_line": 63,
+          "kind": "FunctionDef",
+          "docstring": "Accept explicit independently reported counts, including check lists.\n\nA required count must be present; evaluation manifest counts alone cannot\nmasquerade as an independent audit. Several keys allow that audit to use\ndescriptive naming while this archive script is prepared in parallel."
+        },
+        {
+          "name": "visit",
+          "line": 51,
+          "end_line": 59,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 66,
+          "end_line": 255,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "check",
+          "line": 68,
+          "end_line": 74,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "source_map",
+          "line": 75,
+          "end_line": 76,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "receipts",
+          "line": 77,
+          "end_line": 83,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/audit_native_baseline.py",
+      "sha256": "213663892dc357da1df8c688ab7d1b6430a745a2fbf1a4a21fca703ace6c74bd",
+      "functions": [
+        {
+          "name": "read",
+          "line": 27,
+          "end_line": 28,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 31,
+          "end_line": 32,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "arrays",
+          "line": 35,
+          "end_line": 37,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "scalar",
+          "line": 40,
+          "end_line": 41,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "close",
+          "line": 44,
+          "end_line": 52,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "starts",
+          "line": 55,
+          "end_line": 60,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "independent_angle_metrics",
+          "line": 63,
+          "end_line": 80,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "fisher",
+          "line": 83,
+          "end_line": 87,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "grouped",
+          "line": 90,
+          "end_line": 103,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "compare_table",
+          "line": 106,
+          "end_line": 118,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "engine_source_path",
+          "line": 121,
+          "end_line": 135,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 138,
+          "end_line": 440,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/cane53_evidence.py",
+      "sha256": "6ce45911de751dd7c8660f9f070acc9ced5b07fd305e3d81d3f68144f42df06a",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 27,
+          "end_line": 28,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "dump",
+          "line": 31,
+          "end_line": 32,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "freeze",
+          "line": 35,
+          "end_line": 64,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "native_source",
+          "line": 68,
+          "end_line": 71,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "window_quality",
+          "line": 74,
+          "end_line": 103,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "run",
+          "line": 106,
+          "end_line": 203,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "plots",
+          "line": 206,
+          "end_line": 243,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "markdown",
+          "line": 246,
+          "end_line": 266,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/cane53_independent_check.py",
+      "sha256": "6a687d71a7dc07b3f9def258b8811996f4e186dd6bcc5d2382b03e9b002fcf49",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 19,
+          "end_line": 20,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_csv",
+          "line": 24,
+          "end_line": 41,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "describe_independent",
+          "line": 44,
+          "end_line": 65,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "run",
+          "line": 68,
+          "end_line": 151,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/input_geometry_audit.py",
+      "sha256": "0e6b3adf6b2f31454759d28cdd15b208772949aa2fedcb6f816c3af5f6ecc686",
+      "functions": [
+        {
+          "name": "read",
+          "line": 29,
+          "end_line": 29,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sha",
+          "line": 30,
+          "end_line": 30,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write",
+          "line": 31,
+          "end_line": 31,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "maximum",
+          "line": 32,
+          "end_line": 32,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "unit",
+          "line": 33,
+          "end_line": 33,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "decode6",
+          "line": 36,
+          "end_line": 43,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "composed_z",
+          "line": 46,
+          "end_line": 51,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "signed_projected",
+          "line": 54,
+          "end_line": 58,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "angles",
+          "line": 61,
+          "end_line": 66,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "interpolate",
+          "line": 69,
+          "end_line": 77,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "native_values",
+          "line": 80,
+          "end_line": 89,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "sample_native",
+          "line": 92,
+          "end_line": 97,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "world_rows",
+          "line": 100,
+          "end_line": 124,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "world_geometry",
+          "line": 127,
+          "end_line": 170,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "synthetic_plane_checks",
+          "line": 173,
+          "end_line": 186,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 189,
+          "end_line": 297,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/make_native_report.py",
+      "sha256": "53dfa369b0f5e9105408028b333d9c92e52b9daef4f6a189cace5bb82bd33352",
+      "functions": [
+        {
+          "name": "main",
+          "line": 9,
+          "end_line": 61,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/native_baseline.py",
+      "sha256": "a891c56cb52c0bfea8eabe5c2936043ed7911d6e1bbca7a40af055137879770a",
+      "functions": [
+        {
+          "name": "contract",
+          "line": 29,
+          "end_line": 43,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "folder",
+          "line": 45,
+          "end_line": 45,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "valid_metric",
+          "line": 47,
+          "end_line": 53,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "worker",
+          "line": 55,
+          "end_line": 104,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "train",
+          "line": 106,
+          "end_line": 119,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "dispatch",
+          "line": 109,
+          "end_line": 113,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "verify_all_fits",
+          "line": 121,
+          "end_line": 135,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "save_prediction",
+          "line": 137,
+          "end_line": 145,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "evaluate",
+          "line": 147,
+          "end_line": 181,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "fisher",
+          "line": 183,
+          "end_line": 185,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "aggregate",
+          "line": 187,
+          "end_line": 196,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "summarize",
+          "line": 198,
+          "end_line": 216,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/plot_native_baseline.py",
+      "sha256": "5c8357e1d49628ca5587f355e1a0a9e4ba16b9752e5c92045d5995afd89b2c41",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 28,
+          "end_line": 29,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read",
+          "line": 32,
+          "end_line": 33,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "selected",
+          "line": 36,
+          "end_line": 41,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "scalar_bars",
+          "line": 44,
+          "end_line": 54,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "public_summary",
+          "line": 57,
+          "end_line": 141,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "waveforms",
+          "line": 144,
+          "end_line": 192,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "run",
+          "line": 195,
+          "end_line": 229,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_training_release_20261021/release_data.py",
+      "sha256": "37fe43e7a2b518641afd6576177575aa953fc340eb7a38eb55a93ec0a20d33ac",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 12,
+          "end_line": 12,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "read",
+          "line": 13,
+          "end_line": 13,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "write",
+          "line": 14,
+          "end_line": 16,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "load_trials",
+          "line": 18,
+          "end_line": 28,
+          "kind": "FunctionDef",
+          "docstring": null
+        },
+        {
+          "name": "main",
+          "line": 30,
+          "end_line": 90,
+          "kind": "FunctionDef",
+          "docstring": null
+        }
+      ]
+    }
+  ],
+  "source_snapshot": "source_snapshots/199ac8e3d870d0ad",
+  "source_identity_sha256": "199ac8e3d870d0adfed4a65ea0387b2f5899801ab6de611af96bb2c2f720e09f",
+  "manifest_sha256": "5d71f9f48207d9732423575df1e0daa59bc09e7b8d59099a1fdc1feb4df19f24",
+  "code_entities_local_only": true,
+  "raw_data_weights_or_participant_identity_tables_uploaded": false
+}
