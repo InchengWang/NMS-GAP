@@ -1,0 +1,722 @@
+{
+  "status": "both_lines_independently_accepted_exploratory_VALID_aggregates",
+  "date": "2026-10-23 Asia/Tokyo",
+  "new_neural_fits": 90,
+  "new_optimizer_updates": 118600,
+  "closed_form_calibrations": 36,
+  "unique_old_networks_reused": 54,
+  "new_TEST_predictions": 0,
+  "new_direction_stress_predictions": 0,
+  "lines": {
+    "GEN5": {
+      "status": "independently_accepted_historical_VALID_diagnostic",
+      "equal_patient_aggregates": [
+        {
+          "method": "A_full_final",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 3.379874762487048,
+          "mae_deg": 2.5431963676621234,
+          "bias_deg": -0.46508169809551814,
+          "centered_rmse_deg": 3.074878740151895,
+          "rom_error_deg": 4.74915261519317
+        },
+        {
+          "method": "A_full_final",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 3.8307703677215916,
+          "mae_deg": 2.778471593943143,
+          "bias_deg": -1.098731735538865,
+          "centered_rmse_deg": 3.3901089972995337,
+          "rom_error_deg": 4.812767447783364
+        },
+        {
+          "method": "A_full_final",
+          "endpoint": "six_angles",
+          "rmse_deg": 3.1325106302097665,
+          "mae_deg": 2.3939908879819525,
+          "bias_deg": 0.090605498981757,
+          "centered_rmse_deg": 2.7621367026543773,
+          "rom_error_deg": 3.8371472005606595
+        },
+        {
+          "method": "A_head",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 4.941579631585577,
+          "mae_deg": 3.8349569050317656,
+          "bias_deg": -0.002761457020712473,
+          "centered_rmse_deg": 4.537951702128616,
+          "rom_error_deg": 7.902669073759159
+        },
+        {
+          "method": "A_head",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 5.183036452784232,
+          "mae_deg": 4.0248416498845145,
+          "bias_deg": -0.8974959825614115,
+          "centered_rmse_deg": 4.790236530728136,
+          "rom_error_deg": 7.356302381705427
+        },
+        {
+          "method": "A_head",
+          "endpoint": "six_angles",
+          "rmse_deg": 4.467757921627095,
+          "mae_deg": 3.4913078651158904,
+          "bias_deg": 0.2473582117427456,
+          "centered_rmse_deg": 4.026137548167728,
+          "rom_error_deg": 6.06242982894993
+        },
+        {
+          "method": "C_affine",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 6.547832881544431,
+          "mae_deg": 5.120216154239647,
+          "bias_deg": 0.08110029878874836,
+          "centered_rmse_deg": 6.143103860927295,
+          "rom_error_deg": 8.255388432858988
+        },
+        {
+          "method": "C_affine",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 6.262901783987956,
+          "mae_deg": 4.879501303415252,
+          "bias_deg": -0.8147316955827293,
+          "centered_rmse_deg": 5.881268080555099,
+          "rom_error_deg": 7.927927538411968
+        },
+        {
+          "method": "C_affine",
+          "endpoint": "six_angles",
+          "rmse_deg": 5.998137657471858,
+          "mae_deg": 4.758996087324175,
+          "bias_deg": 0.2659886075619646,
+          "centered_rmse_deg": 5.60919076923756,
+          "rom_error_deg": 8.397145905060748
+        },
+        {
+          "method": "C_offset",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 7.442332213242492,
+          "mae_deg": 6.010315506364141,
+          "bias_deg": -0.117953879061801,
+          "centered_rmse_deg": 7.131913770868327,
+          "rom_error_deg": 10.160710089467758
+        },
+        {
+          "method": "C_offset",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 7.774236741984869,
+          "mae_deg": 6.324639634740919,
+          "bias_deg": -0.7513359588931592,
+          "centered_rmse_deg": 7.393485577571172,
+          "rom_error_deg": 14.10367876864665
+        },
+        {
+          "method": "C_offset",
+          "endpoint": "six_angles",
+          "rmse_deg": 6.863747755069845,
+          "mae_deg": 5.530919070403452,
+          "bias_deg": 0.002051391703253478,
+          "centered_rmse_deg": 6.470293237125236,
+          "rom_error_deg": 8.809016737802688
+        },
+        {
+          "method": "G",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 9.917655091923448,
+          "mae_deg": 8.410818545570221,
+          "bias_deg": 0.30932384436375004,
+          "centered_rmse_deg": 7.131913770868327,
+          "rom_error_deg": 10.160710089467758
+        },
+        {
+          "method": "G",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 11.936503515910308,
+          "mae_deg": 10.132024422651456,
+          "bias_deg": 0.7069867379997099,
+          "centered_rmse_deg": 7.393485577571172,
+          "rom_error_deg": 14.10367876864665
+        },
+        {
+          "method": "G",
+          "endpoint": "six_angles",
+          "rmse_deg": 10.927372903097327,
+          "mae_deg": 9.560132918394606,
+          "bias_deg": 1.6114912767934646,
+          "centered_rmse_deg": 6.470293237125236,
+          "rom_error_deg": 8.809016737802688
+        },
+        {
+          "method": "I_final",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 3.962290380792686,
+          "mae_deg": 2.9468420672408393,
+          "bias_deg": -0.6597060385476999,
+          "centered_rmse_deg": 3.673974598912166,
+          "rom_error_deg": 4.594695469013161
+        },
+        {
+          "method": "I_final",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 4.1662446310090635,
+          "mae_deg": 3.031412947419554,
+          "bias_deg": -1.09092592696312,
+          "centered_rmse_deg": 3.7336008712054323,
+          "rom_error_deg": 4.417821548155482
+        },
+        {
+          "method": "I_final",
+          "endpoint": "six_angles",
+          "rmse_deg": 3.4927982771322377,
+          "mae_deg": 2.668118851206007,
+          "bias_deg": 0.10966380609125759,
+          "centered_rmse_deg": 3.125589475565762,
+          "rom_error_deg": 4.036945230797343
+        }
+      ],
+      "paired_patient_direction_counts": [
+        {
+          "contrast": "A_head",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 1.5617048690985287,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "A_head",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": 1.3522660850626405,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "A_head",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": 1.335247291417329,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "C_affine",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 3.167958119057383,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "C_affine",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": 2.432131416266364,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "C_affine",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": 2.8656270272620916,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "C_offset",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 4.062457450755445,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "C_offset",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": 3.9434663742632785,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "C_offset",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": 3.7312371248600784,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "G",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 6.537780329436401,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "G",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": 8.105733148188715,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "G",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": 7.794862272887559,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "I_final",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 0.5824156183056383,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "I_final",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": 0.33547426328747226,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        },
+        {
+          "contrast": "I_final",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": 0.36028764692247145,
+          "patients_lower_error": 0,
+          "patients_higher_error": 6,
+          "patients_equal_error": 0,
+          "reference": "A_full_final"
+        }
+      ],
+      "independent_patients": 6,
+      "independent_new_cohort": false,
+      "target_VALID_checkpoint_selection": false,
+      "source_and_target_costs_reported_separately": true,
+      "new_TEST_predictions": 0,
+      "accepted_receipts": [
+        {
+          "relative_path": "native_generalization_20261023/GEN5_one_v1/training_independent_audit.json",
+          "sha256": "dfb5a0fa8673fba2c001d05521366563869805dfcbcc7e2ec5ba2afe8a659db9",
+          "status": "passed_independent_GEN5_TRAIN_audit"
+        },
+        {
+          "relative_path": "native_generalization_20261023/GEN5_one_v1/validation_independent_audit.json",
+          "sha256": "e356064322f41637ee4fd8887bf5b91200a3a389a49fa9530c821ed8a4ec5624",
+          "status": "passed_independent_GEN5_VALID_audit"
+        },
+        {
+          "relative_path": "native_generalization_20261023/GEN5_one_v1/VALID_diagnosis_v1/completion.json",
+          "sha256": "221e94214c99e518808da42d82fbc78fcf4d0d7789ada51e1eb93e2d11d62615",
+          "status": "complete_GEN5_VALID_diagnosis"
+        }
+      ],
+      "accepted_table_metadata": {
+        "equal_patient_aggregates": {
+          "relative_path": "native_generalization_20261023/GEN5_one_v1/VALID_diagnosis_v1/equal_patient_aggregates.csv",
+          "sha256": "6bd3786ad2ce5c7d566103624851df1fb0abe65abb80fe6951c99813a67462e0"
+        },
+        "subject_endpoints": {
+          "relative_path": "native_generalization_20261023/GEN5_one_v1/VALID_diagnosis_v1/subject_endpoints.csv",
+          "sha256": "eccd09672e675dda7588e16317e618e4f3c3a3bea35021988716027e96e98978"
+        },
+        "paired_patient_differences": {
+          "relative_path": "native_generalization_20261023/GEN5_one_v1/VALID_diagnosis_v1/paired_patient_differences.csv",
+          "sha256": "1d046185acac2b399996018db261b818bfe206a0a03f27296bff7d5c30edfdb3"
+        }
+      }
+    },
+    "COMB1": {
+      "status": "independently_accepted_historical_VALID_diagnostic",
+      "equal_patient_aggregates": [
+        {
+          "method": "A_replay4__replay4",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 3.379874762487048,
+          "mae_deg": 2.5431963676621234,
+          "pcc": 0.9753953319751522
+        },
+        {
+          "method": "A_replay4__replay4",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 3.8307703677215916,
+          "mae_deg": 2.778471593943143,
+          "pcc": 0.944565946846683
+        },
+        {
+          "method": "A_replay4__replay4",
+          "endpoint": "six_angles",
+          "rmse_deg": 3.1325106302097665,
+          "mae_deg": 2.3939908879819525,
+          "pcc": 0.9618912914135503
+        },
+        {
+          "method": "A_replay4__static_SO3",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 3.3837698322308376,
+          "mae_deg": 2.541247765512127,
+          "pcc": 0.9748714298651665
+        },
+        {
+          "method": "A_replay4__static_SO3",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 3.8206982910693768,
+          "mae_deg": 2.753011353831333,
+          "pcc": 0.9433772855330277
+        },
+        {
+          "method": "A_replay4__static_SO3",
+          "endpoint": "six_angles",
+          "rmse_deg": 3.1298727522857903,
+          "mae_deg": 2.3918443783221908,
+          "pcc": 0.9616041807080681
+        },
+        {
+          "method": "A_static_SO3__replay4",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 3.316475403336568,
+          "mae_deg": 2.490757248303072,
+          "pcc": 0.9760654440436929
+        },
+        {
+          "method": "A_static_SO3__replay4",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 3.781367564741681,
+          "mae_deg": 2.7334459786598444,
+          "pcc": 0.9459520043420361
+        },
+        {
+          "method": "A_static_SO3__replay4",
+          "endpoint": "six_angles",
+          "rmse_deg": 3.083476606176251,
+          "mae_deg": 2.360628498173695,
+          "pcc": 0.9624503954462574
+        },
+        {
+          "method": "A_static_SO3__static_SO3",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 3.331918671776681,
+          "mae_deg": 2.4990195674541327,
+          "pcc": 0.9753525104083669
+        },
+        {
+          "method": "A_static_SO3__static_SO3",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 3.783813624944239,
+          "mae_deg": 2.7313997818664557,
+          "pcc": 0.9444361978280588
+        },
+        {
+          "method": "A_static_SO3__static_SO3",
+          "endpoint": "six_angles",
+          "rmse_deg": 3.088561327546774,
+          "mae_deg": 2.360833588139837,
+          "pcc": 0.9621919132231789
+        },
+        {
+          "method": "G_replay4",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 9.917655091923448,
+          "mae_deg": 8.410818545570221,
+          "pcc": 0.8872594688837028
+        },
+        {
+          "method": "G_replay4",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 11.936503515910308,
+          "mae_deg": 10.132024422651456,
+          "pcc": 0.8184937338064475
+        },
+        {
+          "method": "G_replay4",
+          "endpoint": "six_angles",
+          "rmse_deg": 10.927372903097327,
+          "mae_deg": 9.560132918394606,
+          "pcc": 0.8084264296461007
+        },
+        {
+          "method": "G_static_SO3",
+          "endpoint": "bilateral_knee",
+          "rmse_deg": 9.046524479840395,
+          "mae_deg": 7.657871437322011,
+          "pcc": 0.9039751906848461
+        },
+        {
+          "method": "G_static_SO3",
+          "endpoint": "paretic_knee",
+          "rmse_deg": 11.222277075586783,
+          "mae_deg": 9.606245789618713,
+          "pcc": 0.8181530082858582
+        },
+        {
+          "method": "G_static_SO3",
+          "endpoint": "six_angles",
+          "rmse_deg": 10.47536841379837,
+          "mae_deg": 9.226234469745497,
+          "pcc": 0.8319277591814395
+        }
+      ],
+      "paired_patient_direction_counts": [
+        {
+          "contrast": "combined_vs_no_aug",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": -0.047956090710366585,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "combined_vs_no_aug",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": -0.046956742777352733,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "combined_vs_no_aug",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": -0.04394930266299246,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_A_target_SO3",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": -0.051851160454156574,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_A_target_SO3",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": -0.03688466612513822,
+          "patients_lower_error": 3,
+          "patients_higher_error": 3,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_A_target_SO3",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": -0.04131142473901687,
+          "patients_lower_error": 5,
+          "patients_higher_error": 1,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_A_target_replay",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": -0.06339935915047963,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_A_target_replay",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": -0.04940280297991073,
+          "patients_lower_error": 3,
+          "patients_higher_error": 3,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_A_target_replay",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": -0.049034024033515346,
+          "patients_lower_error": 5,
+          "patients_higher_error": 1,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_G",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": -0.8711306120830549,
+          "patients_lower_error": 5,
+          "patients_higher_error": 1,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_G",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": -0.7142264403235249,
+          "patients_lower_error": 5,
+          "patients_higher_error": 1,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_on_G",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": -0.45200448929895726,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_target_interaction",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 0.011548198696323064,
+          "patients_lower_error": 3,
+          "patients_higher_error": 3,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_target_interaction",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": 0.012518136854772507,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "source_target_interaction",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": 0.007722599294498478,
+          "patients_lower_error": 2,
+          "patients_higher_error": 4,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "target_on_A_source_SO3",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 0.015443268440113048,
+          "patients_lower_error": 3,
+          "patients_higher_error": 3,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "target_on_A_source_SO3",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": 0.002446060202557998,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "target_on_A_source_SO3",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": 0.005084721370522886,
+          "patients_lower_error": 2,
+          "patients_higher_error": 4,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "target_on_A_source_replay",
+          "endpoint": "bilateral_knee",
+          "mean_paired_difference_deg": 0.003895069743789984,
+          "patients_lower_error": 4,
+          "patients_higher_error": 2,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "target_on_A_source_replay",
+          "endpoint": "paretic_knee",
+          "mean_paired_difference_deg": -0.010072076652214509,
+          "patients_lower_error": 5,
+          "patients_higher_error": 1,
+          "patients_equal_error": 0
+        },
+        {
+          "contrast": "target_on_A_source_replay",
+          "endpoint": "six_angles",
+          "mean_paired_difference_deg": -0.002637877923975592,
+          "patients_lower_error": 3,
+          "patients_higher_error": 3,
+          "patients_equal_error": 0
+        }
+      ],
+      "independent_patients": 6,
+      "independent_new_cohort": false,
+      "target_VALID_checkpoint_selection": false,
+      "source_and_target_costs_reported_separately": true,
+      "new_TEST_predictions": 0,
+      "accepted_receipts": [
+        {
+          "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/independent_training_VALID_audit.json",
+          "sha256": "0170bfc58fc3a30de1ec974fa90ebcb8c953a026be071471e22b738ee75f6ca4",
+          "status": "passed_COMB1_independent_training_VALID_audit"
+        },
+        {
+          "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/independent_target_VALID_results_audit.json",
+          "sha256": "14cc4cf282594a2eed6ce68bd513f90d20b8c685cc900c8e8fa9fcf527c88a90",
+          "status": "passed_COMB1_independent_target_VALID_results_audit"
+        },
+        {
+          "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/VALID_diagnosis_v2/complete.json",
+          "sha256": "ef5d8f26ea2bc104cd84415a6f13b8727fd2cd1bf70639662488dbf82e18e458",
+          "status": "complete_COMB1_clean_target_VALID_diagnosis"
+        }
+      ],
+      "accepted_table_metadata": {
+        "equal_patient_aggregates": {
+          "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/VALID_diagnosis_v2/equal_patient_aggregates.csv",
+          "sha256": "354bc4a96b0a9582497d24cdbc27676b82a13ed7a17a156ec36f8d2815deacd2"
+        },
+        "subject_endpoints": {
+          "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/VALID_diagnosis_v2/subject_endpoints.csv",
+          "sha256": "158f52cdaf20c25083e13ef4dd1e31ef5ee83903b37a151a048d490935ba809a"
+        },
+        "paired_patient_differences": {
+          "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/VALID_diagnosis_v2/paired_patient_differences.csv",
+          "sha256": "59ae4e0c49d4c392d4a7985b40ee685ee83c77964d4637211d844b7400c65eb0"
+        }
+      }
+    }
+  },
+  "reference_costs": {
+    "unit": "frame-equivalent seconds from frozen budget metadata",
+    "aggregation": "18 target-seed settings, equal seed within each of six targets; settings are not independent patients",
+    "target_VALID_used_for_training_or_checkpoint_selection": false,
+    "target_VALID_diagnosis_reference_cost_included_separately": true,
+    "values": {
+      "target_crop_supervision_seconds": {
+        "mean": 3.7794444444444455,
+        "min": 1.23,
+        "max": 6.859999999999999
+      },
+      "target_full_selected_reference_seconds": {
+        "mean": 5.7794444444444455,
+        "min": 3.23,
+        "max": 8.86
+      },
+      "target_post_training_VALID_diagnosis_reference_seconds": {
+        "mean": 9.805,
+        "min": 3.07,
+        "max": 16.5
+      },
+      "source_TRAIN_full_reference_seconds": {
+        "mean": 162.98166666666663,
+        "min": 142.06,
+        "max": 184.48000000000002
+      },
+      "source_VALID_full_reference_seconds": {
+        "mean": 62.574999999999996,
+        "min": 55.88,
+        "max": 69.31
+      }
+    }
+  }
+}

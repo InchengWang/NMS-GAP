@@ -1,0 +1,447 @@
+{
+  "status": "frozen_by_explicit_user_decision",
+  "date": "2026-10-23 Asia/Tokyo",
+  "user_decision": "冻结架构方向，推进泛化线并新开第三条线：（两线结合）少量适配＋方向增强",
+  "frozen_branch": "ARCH_AUG including original six cells, ARCH2 and ARCH3",
+  "action": "No further architecture search, training or re-selection; reuse immutable implementations and receipts only",
+  "published_commit": "e0108f5a18b6b1864cbd5a1e1e3ffe2aa88d43b4",
+  "accepted_new_fits": 120,
+  "accepted_new_optimizer_updates": 105000,
+  "read_only_reused_reference_fits": 48,
+  "accepted_independent_audits": {
+    "original_training_VALID": {
+      "status": "passed_independent_ARCH_AUG_144fits_TRAIN_VALID_audit",
+      "sha256": "1baba4e1cf1a09bf6342ccefe864d1ab50995043bb0f7e4dc5e480de15cd8b88"
+    },
+    "original_results": {
+      "status": "passed_independent_ARCH_AUG_results_audit",
+      "sha256": "98be49b4e0930a6e5f6c5d93f2415c3220b6b88f8534752d3b312c74ca1f8717"
+    },
+    "ARCH2_VALID_rotation": {
+      "status": "passed_independent_ARCH2_VALID_rotation_audit",
+      "sha256": "dbfc377c6eed971b2d22261f9ef3425070e53678fd4713967d8e74596ef1e01b"
+    },
+    "ARCH3_training_VALID": {
+      "status": "passed_independent_ARCH3_VALID_selection_audit",
+      "sha256": "ccd3ad86ee3de50cb719fc173e9c9d4c78849ca1199953cd3b165888d7700130"
+    },
+    "ARCH3_results": {
+      "status": "passed_independent_ARCH3_results_audit",
+      "sha256": "54c023633deb2413372f57f2aa3b9193cc77e618067e7a8c05407962b86a12ad"
+    }
+  },
+  "scope": "Code, protocols, contracts, metadata, audit receipts, aggregate results and nine fixed figures",
+  "excluded_from_read_and_hash": [
+    "raw patient files",
+    "NPZ input arrays",
+    "prediction NPZ arrays",
+    "weights/checkpoints",
+    "run directories"
+  ],
+  "live_bookkeeping_excluded": [
+    "ARCH_AUG_PROGRESS_ZH.md",
+    "research_fork_20261022/running_sessions.json",
+    "research_fork_20261022/RUN_STATE_ZH.md"
+  ],
+  "historical_status_note": "The frozen original pipeline_status.json is historical; later accepted audits and publication receipt supersede any earlier pending status",
+  "third_line_boundary": "The new adaptation plus orientation line reuses FrameTCN and the fixed SO3 coordinate operation; it does not reopen architecture selection",
+  "data_or_weights_opened": 0,
+  "TEST_dynamic_arrays_or_weight_hashes_opened": 0,
+  "files": [
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH2_VALID_ROTATION_PROTOCOL_ZH.md",
+      "sha256": "c944749c1cb48fae1298f3d2cc5028742e46c90ceed3a743c0cc73da6c4eb2c6",
+      "bytes": 1833
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH2_VALID_rotation_v1/complete.json",
+      "sha256": "e3b60dde6e13a981bddb8653bc7adea1fdcf7c074aea689f4a957176140c15b9",
+      "bytes": 392833
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH2_VALID_rotation_v1/contract.json",
+      "sha256": "5366ab089db3bef83c59425abe10c65a921cc48ebe61d5661498bd430367be18",
+      "bytes": 150539
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH2_VALID_rotation_v1/independent_audit.json",
+      "sha256": "dbfc377c6eed971b2d22261f9ef3425070e53678fd4713967d8e74596ef1e01b",
+      "bytes": 150976
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH2_VALID_rotation_v1/preflight.json",
+      "sha256": "264f2d3211f74b81e9d1438c0a1dad3cae0cf07cb499b91d213848699c9762e5",
+      "bytes": 335
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH2_VALID_rotation_v1/required_independent_audits_gate.json",
+      "sha256": "8b23e2ee5963cfaa5e6c9db636de94ca6cea8d94e9a4d3175e9b522f0bd2fe50",
+      "bytes": 866
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_NONLINEAR_ANALYSIS_PROTOCOL_ZH.md",
+      "sha256": "51096906ed6f8c3511bbc0e988780f73154a35c3d4399c3bf361ef20d21a0ed2",
+      "bytes": 2113
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_NONLINEAR_FUSION_PROTOCOL_ZH.md",
+      "sha256": "c6c209e6e9cb8dd0725ccb476c35a557fa18197a36995d1fb360811c1ba64dca",
+      "bytes": 3550
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/all24_fits_verified_before_TEST.json",
+      "sha256": "e85ad5274fc8f022b299bbd335acd8d14398c568d073734e40b4bd3cd5eecd74",
+      "bytes": 47904
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/analysis_v1/access_receipt.json",
+      "sha256": "3f3ceb85eae655428fd054b0dd14079d63d1dd56d30e9b29ee4f63d7e496e6ad",
+      "bytes": 68711
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/analysis_v1/analysis_complete.json",
+      "sha256": "2004eb99760010ba1746dbaf43ff4ba657c0016fa563dc5d9b2fed0f3f928954",
+      "bytes": 78342
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/analysis_v1/analysis_contract.json",
+      "sha256": "40070f8de075dde8239119dc4fc8af6b09e6f49c634dbd32fd1126c0af76e628",
+      "bytes": 48220
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/analysis_v1/independent_results_audit.json",
+      "sha256": "54c023633deb2413372f57f2aa3b9193cc77e618067e7a8c05407962b86a12ad",
+      "bytes": 45737
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/dispatch_status.json",
+      "sha256": "65b8aa9078a3d2ef4152c7abce4d00248c7152f03cdc106a98138112a5185e7d",
+      "bytes": 9662
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/training_contract.json",
+      "sha256": "890b8244d87ef1fbe4b67ee0b13b92771f6db40f4df9d4190875f7b8b03d0908",
+      "bytes": 30116
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH3_nonlinear_v1/validation_independent_audit.json",
+      "sha256": "ccd3ad86ee3de50cb719fc173e9c9d4c78849ca1199953cd3b165888d7700130",
+      "bytes": 8172
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/aggregate_public.json",
+      "sha256": "0d591667ba00bd874a6b8e969ce1a8c61f4d49c25153b9048c9ec866275dd81f",
+      "bytes": 305972
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/all_fits_verified_before_TEST.json",
+      "sha256": "a28e181b4425e13149c55f8326a63776eaa6609e59f7a6ba04852eb433ad21da",
+      "bytes": 101249
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/analysis_contract.json",
+      "sha256": "adee93188fe356f6b7a1b7ea67b0970307388ad4be54cb2dddf3583945997e61",
+      "bytes": 8126
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/dispatch_all.json",
+      "sha256": "2e90101171810620d2c2fc66fb9a60d86938dc7c00d3ced29f830dfafadce7f1",
+      "bytes": 52518
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/dispatch_stage1.json",
+      "sha256": "831e5ed56cc583696ab508c563bf9cecb4bd687af8e655dee2fd73c8ac2bf659",
+      "bytes": 12995
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/dispatch_stage2.json",
+      "sha256": "fdd944d3f0bb60256c60bcc9b32944ed5e9e5a196418840e9ce09769a0b6bb29",
+      "bytes": 39623
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/evaluation_complete.json",
+      "sha256": "bbf846456f9c382ab67a6ff7417d4aac211683a0127fa473295384d3096c5717",
+      "bytes": 703727
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH2_VALID_coordinate_stress_20261022.pdf",
+      "sha256": "16cfdf434365e55a5cb36512e89d7815cbdf24f8dcb6663967de9365751da000",
+      "bytes": 34920
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH2_VALID_coordinate_stress_20261022.png",
+      "sha256": "da862b8e81fd23ea56894ed736a2d656ccecc63a25b2d0a6691bb9b614c8876f",
+      "bytes": 420497
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH2_VALID_coordinate_stress_20261022.svg",
+      "sha256": "2c41eb38da3c24cbd5dd63539faeed4f129ea030d5c5a9fc02f7e750dcc8aad7",
+      "bytes": 108834
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH2_figure_receipt.json",
+      "sha256": "5a045e4bcdf1598010d338d036091a7b674bc434538375bb4883393a546a8175",
+      "bytes": 1513
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH3_figure_receipt.json",
+      "sha256": "cb8f82eebf36f2fbebf1b597af452854ad21d5a264c894a780db51aa7d240794",
+      "bytes": 1460
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH3_nonlinear_fusion_TEST_20261022.pdf",
+      "sha256": "e8a99a568ae0a97a0524e1607d3b36aead4fc6851cbe2c336bc8c044c40907a9",
+      "bytes": 34445
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH3_nonlinear_fusion_TEST_20261022.png",
+      "sha256": "b9668b7e04d03d42a4a0d8ee7abec75cdb95e0ca87ef206ba253b588500ebcb0",
+      "bytes": 335800
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH3_nonlinear_fusion_TEST_20261022.svg",
+      "sha256": "bd352f65cfe93cdd5c334917cbcc704fed2b9f021f03750a2c81ae2828aafea5",
+      "bytes": 104810
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH_AUG_six_cells_20261022.pdf",
+      "sha256": "87c07fcafe62e03542e68d61a47d491285c013d33aa299b13c719b3839da5f89",
+      "bytes": 39927
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH_AUG_six_cells_20261022.png",
+      "sha256": "f924b9deebba7f91b4c8ebfc27bfd9374223e234ded167d782c4c017bc8eae3c",
+      "bytes": 503408
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/ARCH_AUG_six_cells_20261022.svg",
+      "sha256": "b1e7521775444ad03af97ae282d1627eaeea3b5a88a2ece42959ed1eb6c3377a",
+      "bytes": 170624
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/figures/figure_receipt.json",
+      "sha256": "f71505d211fa8cfbc15f060bc19b133702611b69b72b5b20ce349f009f845bf6",
+      "bytes": 2207
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/independent_results_audit.json",
+      "sha256": "98be49b4e0930a6e5f6c5d93f2415c3220b6b88f8534752d3b312c74ca1f8717",
+      "bytes": 11086
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/paired_statistics.json",
+      "sha256": "6511cd0df2976b5965142ad7309d13bb2329212c2123fcd26d3133e56d2b3473",
+      "bytes": 4755
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/pipeline_status.json",
+      "sha256": "9ee5eb6e52870524c8cbbb83f5066df991fd55152dcb8ef48d6d44fb7bf15f64",
+      "bytes": 446
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/summary.json",
+      "sha256": "69784d7eb298f7e761e2f0e6baa4f3c1fb1b6ecf049f2bf14dd3c490fe684d2d",
+      "bytes": 92230
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/training_VALID_independent_audit.json",
+      "sha256": "1baba4e1cf1a09bf6342ccefe864d1ab50995043bb0f7e4dc5e480de15cd8b88",
+      "bytes": 81481
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_AUG_v1/training_contract.json",
+      "sha256": "6a8b4b59e0fc49d24aa6f4bff2a60d1cb2ac768988914b7a9075060b37a569cd",
+      "bytes": 197181
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/ARCH_DESIGN_INTERPRETATION_ZH.md",
+      "sha256": "fc999cea0227ec969ca27aaf594f697c48d49e3c15e401c87a13f1a86c37b795",
+      "bytes": 10442
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/README_ZH.md",
+      "sha256": "a045ec4ecf22bd16398a1eadd554ef7d8943321670d9bd0aeb2e672d53aac2e4",
+      "bytes": 2743
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/analysis_review.json",
+      "sha256": "0e2d567fbcc12f4eb65a84de4c42763a5cdea031b2298a2e01b365c121d2f98f",
+      "bytes": 3204
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/analysis_review_ZH.md",
+      "sha256": "d397c47588418b61e0e5487a705cc0174c0e185ef380bc4437efea8da1659d4c",
+      "bytes": 577
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_analysis_preflight.json",
+      "sha256": "4b0ffdd9bc19de0072caeff60c19ca1756ebdfb89e18fe8f5b945ac91078c1a1",
+      "bytes": 3056
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_analysis_preflight.md",
+      "sha256": "d7cb4443eae3cd6df0129b26ce68d0cf32f8adbc46d1f006cc31e6e4561f2894",
+      "bytes": 1431
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_analysis_preflight.py",
+      "sha256": "1af52974c87155d82a30aeef8cf805fa66e839993ccf16b9e19219ba0085e16c",
+      "bytes": 8901
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_evaluation.py",
+      "sha256": "51718ad0cc9019bd2607fd964da80aceed3a9a0469dc0b4f0e0e6167fc06ea8e",
+      "bytes": 16801
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_nonlinear_analysis_preflight.json",
+      "sha256": "21c7e6695b124d6af9814005358e6ffa2b4b0f007519440efb193754fcb9d9cd",
+      "bytes": 3742
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_nonlinear_analysis_preflight.py",
+      "sha256": "87f65260a7cf17406579c3f930aa2b9821919945685af37f675289f06addd1f8",
+      "bytes": 7891
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_nonlinear_evaluation.py",
+      "sha256": "7111aa5157fea42e5ccf4a094262893fe4a702a843166d3364ae589b0f4bb168",
+      "bytes": 16328
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_nonlinear_preflight.json",
+      "sha256": "a08764b55ca22cb0e729735989aa21c3ec7cd84da3b089ad33ae20a8820cfbfc",
+      "bytes": 172884
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_nonlinear_preflight.py",
+      "sha256": "daba364ae434d6b75fa4d6e79a99689f1cb5422553ec6e8e1fc9fb3a5dae9104",
+      "bytes": 10679
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_nonlinear_training.py",
+      "sha256": "68487493c33d0e746182d5c961eabd5b4486881f8e0b5ec346e7febb31cc3b87",
+      "bytes": 17178
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_training.py",
+      "sha256": "7e51afd4265d840c3eafe9d45c5500a135797d384696f8686c91dc020d8d8321",
+      "bytes": 28099
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_training_preflight.json",
+      "sha256": "2939981ad7959225fe222cd1a833a9315ee0746785165b0de521847737f4a3f7",
+      "bytes": 516877
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_training_preflight.md",
+      "sha256": "456065a4e8c25b15c036d4b8a5bc27169708c6eb7e88579f0640c2a56c24a197",
+      "bytes": 2080
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_training_preflight.py",
+      "sha256": "8c920946576abf8fc24863135249cbfb86d28c92c51719bd8cfc642b567882a8",
+      "bytes": 11720
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/arch_valid_rotation_diagnosis.py",
+      "sha256": "c3be315a9ff4331cda41f5f048df61e470bb45a330ec803b893a2cabbf099c22",
+      "bytes": 16277
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/architecture_augmentation_preflight.json",
+      "sha256": "0f7abdafdf9722bf8c939b7e7dc11728ad649f644c2d73ee277436a2be3def88",
+      "bytes": 102844
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/architecture_augmentation_preflight.md",
+      "sha256": "a60472e7be797ab9502483fbb7ffd460550269b239ac6e642f43e6f03b90e580",
+      "bytes": 1924
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/architecture_augmentation_preflight.py",
+      "sha256": "8526b645a8a8006c3f4871646c686ff2043fcadebceb03ab79860013fdc8dbfb",
+      "bytes": 12013
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/architecture_cost_benchmark.json",
+      "sha256": "f7ce23ed9451b3afc61da9ac02eb9855e04321b73674dea38434da5e6d6317cf",
+      "bytes": 1705
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/architecture_package_benchmark_v1.json",
+      "sha256": "c916244e662ef40dcc0ec86966be8f97878d4f7e58730d56d8f396496154905f",
+      "bytes": 3440
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/architecture_package_benchmark_v1_EXCLUDED_FROM_PUBLICATION.json",
+      "sha256": "f79ceb1a46e37ea271d0c643804b255af779d9c21d0e0039b033d996baeba0b9",
+      "bytes": 1012
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/audit_ARCH3_results.py",
+      "sha256": "600e571857ac72e24d614925ee8355d78cfc292ba7e023f78a25b2c42d79e5de",
+      "bytes": 20905
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/audit_ARCH3_validation.py",
+      "sha256": "df3396596741d56e9cdc0241f1b3bd12fe056953e838bcdea231ba5f1d41f20c",
+      "bytes": 7372
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/audit_arch_results.py",
+      "sha256": "69856f6d265f06de773082c7a9b7ba4636bec276b21f2a1a25bab5bac70910e3",
+      "bytes": 28281
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/audit_arch_training.py",
+      "sha256": "ee82f48f39fd20d2d4846b9b8002c64e09613edc4dc1e9ce5819988d95de26a5",
+      "bytes": 27590
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/audit_arch_valid_rotation.py",
+      "sha256": "77861146eb6c9e8fdf94e2f583b923b79b6bf00d901b1f3911114b73b01b8b20",
+      "bytes": 20255
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/benchmark_arch_cost.py",
+      "sha256": "574a1e4e63f3be3141c9636e2c379cff011962fe4f157270b0f6f9f88cadcddc",
+      "bytes": 2708
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/benchmark_architecture_packages.py",
+      "sha256": "b2e492962c41104051b970677ba8f7ba400c76ed5e9e385c6cdc78c957a62994",
+      "bytes": 4219
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/branch_plan.json",
+      "sha256": "02820a2d7430e4b64d21dc41b168286c5e452e2ac05a35037e85ae3482882e82",
+      "bytes": 5893
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/design_independent_review.json",
+      "sha256": "d1efa51a597e51065d7f868ccbe22dc3db123cb2da0332dbcbd478499dbff481",
+      "bytes": 10293
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/plot_arch_results.py",
+      "sha256": "909fd4ebdbce76947cc765ba9e6884462652d494909acce730b69f8059e58046",
+      "bytes": 35277
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/real_axis_augmentation.py",
+      "sha256": "bff11026170707c46d7ad76c90923aff65348cc5433f5f24cc834bb544dcd92d",
+      "bytes": 3765
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/shared_shank_model.py",
+      "sha256": "40e8ecd8d431aa16c5ece723392cc9c5884ad34bee19460f7bce1036727273ce",
+      "bytes": 1821
+    },
+    {
+      "relative_path": "native_architecture_augmentation_20261022/shared_shank_nonlinear_model.py",
+      "sha256": "f4fe0fa9ca582ccd31843ec27736fb9435228a0403559a6184f4fd186a8bdb58",
+      "bytes": 923
+    }
+  ]
+}

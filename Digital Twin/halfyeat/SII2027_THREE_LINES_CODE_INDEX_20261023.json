@@ -1,0 +1,930 @@
+{
+  "status": "registered_current_execution_source_index",
+  "architecture_frozen_commit": "e0108f5a18b6b1864cbd5a1e1e3ffe2aa88d43b4",
+  "architecture_freeze_manifest_sha256": "d22350d16347d2942ea3cc81011cfb51f45fa01f6c5e412b5c34efb38b8fe675",
+  "architecture_files": 79,
+  "branches": {
+    "GEN5": {
+      "phase_zh": "固定训练与一次clean目标VALID诊断完成",
+      "new_fits_completed": 18,
+      "new_fits_planned": 18,
+      "independent_audit_zh": "训练/角色门控及目标VALID预测、指标独立数值复核通过",
+      "scope_zh": "native_generalization_20261023/GEN5_one_v1；已完成18个head神经fit/5200更新、36次闭式校准，54个旧网络只读引用；source G与目标one预算冻结，当前实现只允许完训后目标VALID诊断。"
+    },
+    "ADAPT_ORIENT": {
+      "phase_zh": "固定训练与一次clean目标VALID诊断完成",
+      "new_fits_completed": 72,
+      "new_fits_planned": 72,
+      "independent_audit_zh": "训练/角色门控及目标VALID预测、指标独立数值复核通过",
+      "scope_zh": "native_adaptation_orientation_20261023/COMB1_v1；已完成18个新源SO3与54个目标one适配/113400更新，36个旧fit只读引用；当前只实现完训后的目标VALID clean诊断，方向压力与TEST另立合同。"
+    }
+  },
+  "contracts": [
+    {
+      "relative_path": "native_adaptation_orientation_20261023/COMB1_PROTOCOL_ZH.md",
+      "sha256": "01037f54e39ba78bbc7b6a67786796fa4e0759affd9a8cab90410f2a87383e49"
+    },
+    {
+      "relative_path": "native_adaptation_orientation_20261023/COMB1_VALID_DIAGNOSIS_PROTOCOL_ZH.md",
+      "sha256": "ec1bb67b21b5116c8894c0e7c280176c0f7922eac5d8bca980cd5cea0eb741af"
+    },
+    {
+      "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/VALID_diagnosis_v2/analysis_contract.json",
+      "sha256": "319d4e10cf40a7977e2c8fb24e51f9f37f50b5e3b07dc0d9c92dcadf8bac15c7"
+    },
+    {
+      "relative_path": "native_adaptation_orientation_20261023/COMB1_v1/training_contract.json",
+      "sha256": "7ff0ff8f660b6a25c7848d26388c670820be30ec8793e8b8dcde6daffe8f87fc"
+    },
+    {
+      "relative_path": "native_generalization_20261023/GEN5_PROTOCOL_ZH.md",
+      "sha256": "d2d044f98841441af6078fdf8c1461d97fae37d8e14da5c83d8e48a4572e9a4a"
+    },
+    {
+      "relative_path": "native_generalization_20261023/GEN5_one_v1/VALID_diagnosis_v1/diagnosis_contract.json",
+      "sha256": "09a1ec377443933e152851951b48b7aab34b71d5be3af1ab951528cccbad5a4c"
+    },
+    {
+      "relative_path": "native_generalization_20261023/GEN5_one_v1/training_contract.json",
+      "sha256": "51196a8cd8fd141db8af087204e6a8117fac1fdf597f84323db23b49c0015888"
+    }
+  ],
+  "open_data_candidate_evidence": [
+    {
+      "relative_path": "native_adaptation_orientation_20261023/OPEN_DATASET_FEASIBILITY_20261023_ZH.md",
+      "sha256": "f941fc008be85160a50b7d7fca7b9b704a2cefe46d82575a1b066facf4cf0b30"
+    },
+    {
+      "relative_path": "native_adaptation_orientation_20261023/OPEN_DATASET_FEASIBILITY_20261023.json",
+      "sha256": "f1919d4c18132476d649520ee6b16931cdecc50ebc71c7ac645af2cff8985fff"
+    }
+  ],
+  "source_scripts": [
+    {
+      "relative_path": "experiments/native_adaptation_orientation_20261023/COMB_audit_target_VALID_results.py",
+      "sha256": "dbc82bdf9bd02884900b01d47fae898c6a9234ae4818b1bfb6e18b761372dabd",
+      "entities": [
+        {
+          "name": "independent_prediction",
+          "kind": "FunctionDef",
+          "line": 30,
+          "end_line": 44,
+          "function_source_sha256": "9d4bb4b02adc94c6abda6058733fbe797b4867457790d2b1d745e049a69837f0"
+        },
+        {
+          "name": "angle_metrics",
+          "kind": "FunctionDef",
+          "line": 47,
+          "end_line": 60,
+          "function_source_sha256": "6069258893feade0700aed6260cbd00a91d3eb8e46a3594f103f47b8eb5d6e35"
+        },
+        {
+          "name": "group",
+          "kind": "FunctionDef",
+          "line": 63,
+          "end_line": 74,
+          "function_source_sha256": "182860e7ddfda526ea0b2486ed9b2746dea41afe243822be820af56231b9e0b5"
+        },
+        {
+          "name": "compare_table",
+          "kind": "FunctionDef",
+          "line": 77,
+          "end_line": 82,
+          "function_source_sha256": "e22ce541c4a7766153ca2c2fa2178777bb267c0f3c6885a1b6c73ae5325a8679"
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 85,
+          "end_line": 196,
+          "function_source_sha256": "b9d24ba06095900a9b4f3eccc4d6451fa8c291448de3e6b565ce727d87c81a71"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_adaptation_orientation_20261023/COMB_audit_training_valid.py",
+      "sha256": "7df8ad07122c9b1f6fe0d1b0f01426f1f77565381e53df399c9400a5a87be858",
+      "entities": [
+        {
+          "name": "close",
+          "kind": "FunctionDef",
+          "line": 24,
+          "end_line": 28,
+          "function_source_sha256": "9b5c32b3d823c47f1783f77350a6f97f70e3cad003300387de16e903ffb1cac7"
+        },
+        {
+          "name": "directory",
+          "kind": "FunctionDef",
+          "line": 31,
+          "end_line": 32,
+          "function_source_sha256": "cfcab1ff3b464e17e106315974383bd5003606b3b90242f2e92fb8112c842717"
+        },
+        {
+          "name": "source_path",
+          "kind": "FunctionDef",
+          "line": 35,
+          "end_line": 37,
+          "function_source_sha256": "8fe0da18803e80ba3b7eff719acab5d5e98d2c5439d8a7db47f3ee93dd87dbd3"
+        },
+        {
+          "name": "source_metric",
+          "kind": "FunctionDef",
+          "line": 40,
+          "end_line": 46,
+          "function_source_sha256": "c3da6cd4365537d774d6a49b300fca18970c0fbb36e630be543edf5d17071d65"
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 49,
+          "end_line": 216,
+          "function_source_sha256": "8e9cc669f6ef4f5388bc53981da978771ade00b1aca45446be2a49353b1ba97e"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_adaptation_orientation_20261023/comb_training.py",
+      "sha256": "31830cd1aa5907f0dc6546c5ea9b8d14b4046d9217768c1a1e3be02db5b6fe38",
+      "entities": [
+        {
+          "name": "source_check",
+          "kind": "FunctionDef",
+          "line": 28,
+          "end_line": 30,
+          "function_source_sha256": "cee6f88cd9b3539cbb7ce9dc4d8415d7999aa5011b5a116beef1c7f8f39ecead"
+        },
+        {
+          "name": "source_inputs",
+          "kind": "FunctionDef",
+          "line": 32,
+          "end_line": 40,
+          "function_source_sha256": "3fc0ef1593ebd9c70575ca6c76ecfc442d841d673bc55619c039fa39f78cdefc"
+        },
+        {
+          "name": "old_folder",
+          "kind": "FunctionDef",
+          "line": 42,
+          "end_line": 45,
+          "function_source_sha256": "d325e02a11d967d34f926836a147d64af2dcc85fc3f63791c3398111e658be32"
+        },
+        {
+          "name": "folder",
+          "kind": "FunctionDef",
+          "line": 47,
+          "end_line": 49,
+          "function_source_sha256": "597193091459ea6ca007ce8c5c8fa4a23a94f6866c7621a35c94fb63ca4c6727"
+        },
+        {
+          "name": "fold_for",
+          "kind": "FunctionDef",
+          "line": 51,
+          "end_line": 52,
+          "function_source_sha256": "84d5fe0be32074a528cd21eb89aebd51a741d81fa164d3924a922d031218a273"
+        },
+        {
+          "name": "budget_for",
+          "kind": "FunctionDef",
+          "line": 54,
+          "end_line": 55,
+          "function_source_sha256": "17cca0a52b7eb6d47551b62586613496609efeb9c5cadd1224dd24f59055ee1d"
+        },
+        {
+          "name": "reused_paths",
+          "kind": "FunctionDef",
+          "line": 57,
+          "end_line": 67,
+          "function_source_sha256": "0a62e055a53157e9993328a7d24c959e35b75ca181ec7f0856f8ab6bc750c916"
+        },
+        {
+          "name": "contract",
+          "kind": "FunctionDef",
+          "line": 69,
+          "end_line": 104,
+          "function_source_sha256": "09f620ae5e6eb15187886b021a101805f30f9b646360e5d6675fce0714c9d0a8"
+        },
+        {
+          "name": "Access",
+          "kind": "ClassDef",
+          "line": 106,
+          "end_line": 111,
+          "function_source_sha256": "d5de79c35de349727e656717cff1c8dcde26d106a9ede0ec7ef5a811454c4f32"
+        },
+        {
+          "name": "__init__",
+          "kind": "FunctionDef",
+          "line": 107,
+          "end_line": 111,
+          "function_source_sha256": "f0ebd81560044be34f6d38401c172259e704dcae04067b0b5cccac134c79d1fb"
+        },
+        {
+          "name": "arrays",
+          "kind": "FunctionDef",
+          "line": 113,
+          "end_line": 128,
+          "function_source_sha256": "c88f23ca91c938d51294a79cc2fe89c0a7312263d8bf77dba7c150e8109121f1"
+        },
+        {
+          "name": "preflight",
+          "kind": "FunctionDef",
+          "line": 130,
+          "end_line": 194,
+          "function_source_sha256": "caa12130b33a711184b3d8ef81c4a148d627aae23034274a6c62635b768f59a6"
+        },
+        {
+          "name": "preflight_gate",
+          "kind": "FunctionDef",
+          "line": 196,
+          "end_line": 200,
+          "function_source_sha256": "a7f3672670a65a4b34a790a6023cbd1327e98e915c29713bf9b86650559f64b6"
+        },
+        {
+          "name": "proof_for",
+          "kind": "FunctionDef",
+          "line": 202,
+          "end_line": 203,
+          "function_source_sha256": "f53ff6302ebec85a000458096bf1d2ed4b4b329c4352edf34000df4871ec9944"
+        },
+        {
+          "name": "new_jobs",
+          "kind": "FunctionDef",
+          "line": 205,
+          "end_line": 208,
+          "function_source_sha256": "f0410205fe4ad24f7f6d0b7e333be759587e0425c39bec8aa76978c91e8ba776"
+        },
+        {
+          "name": "source_checkpoint",
+          "kind": "FunctionDef",
+          "line": 210,
+          "end_line": 211,
+          "function_source_sha256": "a86e7ddd44de580bd8f364b714de12b0f78d92b072f4b11904a6c7871b7a8654"
+        },
+        {
+          "name": "worker",
+          "kind": "FunctionDef",
+          "line": 213,
+          "end_line": 295,
+          "function_source_sha256": "ba21184991a66252ed59ca2600c2cd68ddbe8ef5fa2a7270f4951eaadfaef3c4"
+        },
+        {
+          "name": "save",
+          "kind": "FunctionDef",
+          "line": 250,
+          "end_line": 255,
+          "function_source_sha256": "4e0f1c0099d228887e38988d1bdb2dea1b93fe1b556217453c8d370da209e315"
+        },
+        {
+          "name": "completed",
+          "kind": "FunctionDef",
+          "line": 297,
+          "end_line": 330,
+          "function_source_sha256": "6bb31434617ddc17baac6ec56c26cafeea1041fe9efc7e2a0ba934fff5dc6feb"
+        },
+        {
+          "name": "verify_G",
+          "kind": "FunctionDef",
+          "line": 332,
+          "end_line": 342,
+          "function_source_sha256": "6616d679857bbc652037905229c999676da5b2b34dfa618b5412ec66061bc883"
+        },
+        {
+          "name": "verify",
+          "kind": "FunctionDef",
+          "line": 344,
+          "end_line": 354,
+          "function_source_sha256": "499f5bb3b092a7a14c298fcb028a4153442bc0b93342d2c60edf9af004f1ffdd"
+        },
+        {
+          "name": "train",
+          "kind": "FunctionDef",
+          "line": 356,
+          "end_line": 373,
+          "function_source_sha256": "0a1c8d3bde972ab4d52dac7b2052f1dfcf785d57bc385a36d9cbf1b71b17491d"
+        },
+        {
+          "name": "run",
+          "kind": "FunctionDef",
+          "line": 361,
+          "end_line": 366,
+          "function_source_sha256": "44bb07db8e4ce28d22cd995e3cceab6754908ae5b89e8c6c840515952fa4084d"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_adaptation_orientation_20261023/comb_valid_diagnosis.py",
+      "sha256": "e967151fa80d0adb70dfde18964c6ffcc4352c55a9cf2722a33fa1fe6a38f48a",
+      "entities": [
+        {
+          "name": "contract",
+          "kind": "FunctionDef",
+          "line": 14,
+          "end_line": 25,
+          "function_source_sha256": "e0db26683ba17f571a07901ee3bf3304421c6ed61a4fe98cf9c1b14292dbaa01"
+        },
+        {
+          "name": "fits",
+          "kind": "FunctionDef",
+          "line": 27,
+          "end_line": 39,
+          "function_source_sha256": "c334268ec5578a6d0d7dde009bc71d7d6c4dbabaa34bc9c62a81f45ff4c1aa14"
+        },
+        {
+          "name": "prediction_path",
+          "kind": "FunctionDef",
+          "line": 41,
+          "end_line": 42,
+          "function_source_sha256": "13119aaf0baad79dbf72df93e26c12fe83c0106423701049a7b4fc9a673df6f2"
+        },
+        {
+          "name": "Access",
+          "kind": "ClassDef",
+          "line": 44,
+          "end_line": 48,
+          "function_source_sha256": "d58d278958c488e7ed359680e62585a6c0d27987dd299022b758a2c2587b90d7"
+        },
+        {
+          "name": "__init__",
+          "kind": "FunctionDef",
+          "line": 45,
+          "end_line": 48,
+          "function_source_sha256": "05de9ab3bdab1d623add5547c2e225b514d68856653451dc6aece895fe94804e"
+        },
+        {
+          "name": "preflight",
+          "kind": "FunctionDef",
+          "line": 50,
+          "end_line": 63,
+          "function_source_sha256": "52c3253dad7a09d5c88f6dccc5a6773d4a75aee244c380cbdf535dd3b70e7d32"
+        },
+        {
+          "name": "summaries",
+          "kind": "FunctionDef",
+          "line": 65,
+          "end_line": 93,
+          "function_source_sha256": "ee9e6f605fd17b5079ebc07c46ba734c31b9d0f95df38ed8f5bb8a0454f19cbb"
+        },
+        {
+          "name": "evaluate",
+          "kind": "FunctionDef",
+          "line": 95,
+          "end_line": 139,
+          "function_source_sha256": "27cccbad17024c3190846130a45c13f2e7722a1619a46cf1b6ab67a4c9feced6"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_generalization_20261023/GEN5_audit_VALID_results.py",
+      "sha256": "e4b144ee58b5d18f1a27b07764494984bdb43c30f07503850ab0b2015e8d8557",
+      "entities": [
+        {
+          "name": "validation_audit",
+          "kind": "FunctionDef",
+          "line": 17,
+          "end_line": 115,
+          "function_source_sha256": "440af174039ae8b99d80667fb0a8939520523a394357c202fa108cf6be3fd8c4"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_generalization_20261023/GEN5_audit_training_valid.py",
+      "sha256": "17f427f4c4cb2c7a270507e6dd6c9ba3f5f21de63924f602f3808d94678eda3d",
+      "entities": [
+        {
+          "name": "reused_paths",
+          "kind": "FunctionDef",
+          "line": 27,
+          "end_line": 37,
+          "function_source_sha256": "c8dfc5b26956eeaf49d3cd5f1ee73188c6592d71a167c72dcf17dc5e1e7a9bd2"
+        },
+        {
+          "name": "close",
+          "kind": "FunctionDef",
+          "line": 40,
+          "end_line": 47,
+          "function_source_sha256": "c262c0ac877f1ab32a9cb30afc4a9be88a3489e0fad9cfe8f1b164e3299a3bb4"
+        },
+        {
+          "name": "independent_coefficients",
+          "kind": "FunctionDef",
+          "line": 50,
+          "end_line": 63,
+          "function_source_sha256": "c427053f2993ed43908f10d2f2869366e48af399d57bb47341fd85e185576ab7"
+        },
+        {
+          "name": "training_audit",
+          "kind": "FunctionDef",
+          "line": 66,
+          "end_line": 190,
+          "function_source_sha256": "badd5cadd76d00b02ba7133ead09d5adbd30be4ede56c0bca5299f010988e0e7"
+        },
+        {
+          "name": "metrics",
+          "kind": "FunctionDef",
+          "line": 193,
+          "end_line": 198,
+          "function_source_sha256": "d795cc14f618132fb1e2cb3d203bbb7ffb407a819b339905c60aa76bd5574e7a"
+        },
+        {
+          "name": "group",
+          "kind": "FunctionDef",
+          "line": 204,
+          "end_line": 214,
+          "function_source_sha256": "83f2ad7788b80941297f64b8858db2d5a5817e4dd52fef6c83b084f684d4a435"
+        },
+        {
+          "name": "compare_table",
+          "kind": "FunctionDef",
+          "line": 217,
+          "end_line": 225,
+          "function_source_sha256": "ad20d4bdd858f6ba43405d25f34252ee7e1ef7990efbb41e82b70f31d7e36620"
+        },
+        {
+          "name": "validation_audit",
+          "kind": "FunctionDef",
+          "line": 228,
+          "end_line": 326,
+          "function_source_sha256": "551cec70376d3e2e8fa80f30c7064714cf57189cde10c6aee5a67c91eb196baa"
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 329,
+          "end_line": 334,
+          "function_source_sha256": "49dcf8365acec00025483ed7a3dc83d59b00d2d61c466410172a810c7453f1bf"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_generalization_20261023/gen5_training.py",
+      "sha256": "b7fd2127b9061876a8d62f01c23a5483ec0aad8f6c97e7f2afbccca4d523de62",
+      "entities": [
+        {
+          "name": "rows",
+          "kind": "FunctionDef",
+          "line": 28,
+          "end_line": 29,
+          "function_source_sha256": "eef9c033df08e3be8a43a1ac799959244adda01da83730d0a992b87b62590108"
+        },
+        {
+          "name": "fold",
+          "kind": "FunctionDef",
+          "line": 32,
+          "end_line": 33,
+          "function_source_sha256": "b5e5c66c5c050d0cbc4ea200e86619258fcdd8169d762643bbcaaac4b62dd137"
+        },
+        {
+          "name": "row_for",
+          "kind": "FunctionDef",
+          "line": 36,
+          "end_line": 37,
+          "function_source_sha256": "7de0454f4196073713ae9250897c3e76d37c5f8b06875bb428805e2b4cca9d22"
+        },
+        {
+          "name": "directory",
+          "kind": "FunctionDef",
+          "line": 40,
+          "end_line": 41,
+          "function_source_sha256": "cdfb6914aec9081601110b370db82c16b6df4d5db036f460d8db5aee34ee00c6"
+        },
+        {
+          "name": "reused_paths",
+          "kind": "FunctionDef",
+          "line": 44,
+          "end_line": 50,
+          "function_source_sha256": "4c9a268edacd00a706b108615835645edd2d365275e1d7c3ad66e698bd5fbe32"
+        },
+        {
+          "name": "load_old",
+          "kind": "FunctionDef",
+          "line": 53,
+          "end_line": 63,
+          "function_source_sha256": "77475a084f66a592217859a6640d92a3ff17eaed5e66ef6f38e307fe00d9709f"
+        },
+        {
+          "name": "sources",
+          "kind": "FunctionDef",
+          "line": 66,
+          "end_line": 77,
+          "function_source_sha256": "55b5da27c84a95625ebd6cb7c43e9355c8e87517eec6f637c6cebf3b25920935"
+        },
+        {
+          "name": "contract",
+          "kind": "FunctionDef",
+          "line": 80,
+          "end_line": 92,
+          "function_source_sha256": "c02c2bce4f1621c412a66010107414e31b7e039840aba1a9b2593c8df1b4151f"
+        },
+        {
+          "name": "paths_for",
+          "kind": "FunctionDef",
+          "line": 95,
+          "end_line": 97,
+          "function_source_sha256": "8b767abfa67092bb581c661d14193484331226e7f9c1baf3e01cf3f88eddcf1d"
+        },
+        {
+          "name": "guard",
+          "kind": "FunctionDef",
+          "line": 100,
+          "end_line": 101,
+          "function_source_sha256": "84ca1493218ab8b63cb54a8bd5789ea1cbe4d2d9ff3c8314d986bb832f954972"
+        },
+        {
+          "name": "arrays",
+          "kind": "FunctionDef",
+          "line": 104,
+          "end_line": 112,
+          "function_source_sha256": "6584aa70ad918e7713134afc224f420538a76111b445dd5a750498e7b91d8e19"
+        },
+        {
+          "name": "head_model",
+          "kind": "FunctionDef",
+          "line": 115,
+          "end_line": 119,
+          "function_source_sha256": "4e63da913326097c067afd7977725e7eba3fbdcdbe1d7c7702a4d7aa0816a0f4"
+        },
+        {
+          "name": "fit_coefficients",
+          "kind": "FunctionDef",
+          "line": 122,
+          "end_line": 129,
+          "function_source_sha256": "901fa208c265f9c6400517649b7f445603d52131bdd2629505d8fe5f60127f80"
+        },
+        {
+          "name": "preflight",
+          "kind": "FunctionDef",
+          "line": 132,
+          "end_line": 167,
+          "function_source_sha256": "c62f2995f27247fb53db524fb41bf216580711052d6eab026c7712baa4d4dbc7"
+        },
+        {
+          "name": "worker",
+          "kind": "FunctionDef",
+          "line": 170,
+          "end_line": 216,
+          "function_source_sha256": "c73b2593141d3cfd1f993375a8a07caf1e13fac35402a1c2ee413cda6ed174af"
+        },
+        {
+          "name": "verify",
+          "kind": "FunctionDef",
+          "line": 219,
+          "end_line": 227,
+          "function_source_sha256": "6c60212b1273b0003710d1889a4a43ff8b09d8f605086caeeff3f7cab843b637"
+        },
+        {
+          "name": "train",
+          "kind": "FunctionDef",
+          "line": 230,
+          "end_line": 246,
+          "function_source_sha256": "c2cf7e7c3523f347c1b34ded4f9a1abdf0af934c0c1f8eb0935f17a9fdb2eaec"
+        },
+        {
+          "name": "run",
+          "kind": "FunctionDef",
+          "line": 232,
+          "end_line": 237,
+          "function_source_sha256": "3634755422268b7ed9ed380e8050b23286ce3de291ce35dd2445b7cef88d61d1"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_generalization_20261023/gen5_valid_diagnosis.py",
+      "sha256": "42b4a5a7a17380350bc4cb8a35a34ea2229919e496f12ba88c37b7744eab1209",
+      "entities": [
+        {
+          "name": "coefficients_apply",
+          "kind": "FunctionDef",
+          "line": 13,
+          "end_line": 15,
+          "function_source_sha256": "45a17163dcd4a72b8ca7a5dbcce37e33702b390a30cd4e38738672eb58061273"
+        },
+        {
+          "name": "metric",
+          "kind": "FunctionDef",
+          "line": 18,
+          "end_line": 22,
+          "function_source_sha256": "766e749b061aa79a2fa7cb3751bf36f67e9fa84371592f55171202923e497fd0"
+        },
+        {
+          "name": "tables",
+          "kind": "FunctionDef",
+          "line": 25,
+          "end_line": 45,
+          "function_source_sha256": "bbfd315587a53411e6198a1c541670f9ac53b659115b5ef4ba1e7ed1eb4459ee"
+        },
+        {
+          "name": "run",
+          "kind": "FunctionDef",
+          "line": 48,
+          "end_line": 104,
+          "function_source_sha256": "10d6a3b1b1d8427e1c9de28641923656de98962f82d7b37411b39546ac158801"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/native_generalization_20261023/new_branch_audit_common.py",
+      "sha256": "077f21f8c19fc87e3f2a7fd02a8d0799e80d8cd5da929f3a6524048df723ffde",
+      "entities": [
+        {
+          "name": "read",
+          "kind": "FunctionDef",
+          "line": 20,
+          "end_line": 21,
+          "function_source_sha256": "ee1455dc9dd6ad26cd1947eca5c2c5ed8c824d6509daab38424bf08f40ed1ae8"
+        },
+        {
+          "name": "sha",
+          "kind": "FunctionDef",
+          "line": 24,
+          "end_line": 25,
+          "function_source_sha256": "c989b6adfc22cd15923df959361c4c4b20c84b0bc1c88b39f0779db41d92460c"
+        },
+        {
+          "name": "array_sha",
+          "kind": "FunctionDef",
+          "line": 28,
+          "end_line": 29,
+          "function_source_sha256": "6663a388c8054a66f7ef5698ea680dddce834c49ee2093af90d13914e1512ac8"
+        },
+        {
+          "name": "fingerprint",
+          "kind": "FunctionDef",
+          "line": 32,
+          "end_line": 34,
+          "function_source_sha256": "cc96b72c0802385ea1950382362b63fd144bc5c0452d37464e79b3da6f9b5bd9"
+        },
+        {
+          "name": "state_sha",
+          "kind": "FunctionDef",
+          "line": 37,
+          "end_line": 43,
+          "function_source_sha256": "5525c530980e4def028ad1b25bb8db27eb08b05087a54a78b565b0eb0775861d"
+        },
+        {
+          "name": "starts",
+          "kind": "FunctionDef",
+          "line": 46,
+          "end_line": 51,
+          "function_source_sha256": "6840c3ded38f5bd3c73f9455226e753081b47ea36bc3873e8e6d8a971ac3218a"
+        },
+        {
+          "name": "ReadGuard",
+          "kind": "ClassDef",
+          "line": 54,
+          "end_line": 100,
+          "function_source_sha256": "54406c32fd18c5996de67cb848446d3c2521cc001d83ffdfdd5bd0ff7dcf2010"
+        },
+        {
+          "name": "__init__",
+          "kind": "FunctionDef",
+          "line": 56,
+          "end_line": 59,
+          "function_source_sha256": "d911e6b8e10c4404d6ad719f8e0e8391168b5463a426605adf2a1c05b818a3a6"
+        },
+        {
+          "name": "check",
+          "kind": "FunctionDef",
+          "line": 61,
+          "end_line": 78,
+          "function_source_sha256": "ef3d85164bd969900126e627c3f2b652ffd57c25742184ff9b65df3c77fadda9"
+        },
+        {
+          "name": "__enter__",
+          "kind": "FunctionDef",
+          "line": 80,
+          "end_line": 96,
+          "function_source_sha256": "13fc6aa5d7aab778ebcd332c26eed80c3c7276a299b03121d71de21bc3dbe3e9"
+        },
+        {
+          "name": "audit",
+          "kind": "FunctionDef",
+          "line": 83,
+          "end_line": 85,
+          "function_source_sha256": "663c39eedb08a0b2e83e04e0961f110d229cf963b113bba9920bf653f1af50bd"
+        },
+        {
+          "name": "builtin",
+          "kind": "FunctionDef",
+          "line": 87,
+          "end_line": 88,
+          "function_source_sha256": "c4edf46aa930d49e17ce709dfecf571447f11037512aba0c9992f53dd91abe37"
+        },
+        {
+          "name": "io_open",
+          "kind": "FunctionDef",
+          "line": 89,
+          "end_line": 90,
+          "function_source_sha256": "70fc7dedd308c4f1150aa6ae171a63ee2f357031f95e1d24f42e0eff8b6caefe"
+        },
+        {
+          "name": "path_open",
+          "kind": "FunctionDef",
+          "line": 91,
+          "end_line": 92,
+          "function_source_sha256": "77adba54e08e42ddd2ec937ebb93a8bbb9e8d3f39f305d566598d40b9b78465c"
+        },
+        {
+          "name": "np_load",
+          "kind": "FunctionDef",
+          "line": 93,
+          "end_line": 94,
+          "function_source_sha256": "e618f5f64ace633da04d108a35d43ea50aee7a8bf8625dd91e7ad890ac572b6d"
+        },
+        {
+          "name": "__exit__",
+          "kind": "FunctionDef",
+          "line": 98,
+          "end_line": 100,
+          "function_source_sha256": "8a30841cab2c6b28adeaae2bc7dbfd85d5c1ef6d5ddd046680536f1cf0372a44"
+        },
+        {
+          "name": "reference_arrays",
+          "kind": "FunctionDef",
+          "line": 103,
+          "end_line": 115,
+          "function_source_sha256": "a68e11204b97b11960088a7478304709e5d9f3daeca889a12367c89e71c13f5a"
+        },
+        {
+          "name": "crop",
+          "kind": "FunctionDef",
+          "line": 118,
+          "end_line": 119,
+          "function_source_sha256": "2a81127697d8e38eb024e946f0be99bab617c3711f3263f6c54e5f47a0229d1a"
+        },
+        {
+          "name": "scalers_for",
+          "kind": "FunctionDef",
+          "line": 122,
+          "end_line": 128,
+          "function_source_sha256": "c732c6ab3f0af364d3a938a9d3f5974967a98f1dc488ee331c99322f134d6f63"
+        },
+        {
+          "name": "same_scalers",
+          "kind": "FunctionDef",
+          "line": 131,
+          "end_line": 136,
+          "function_source_sha256": "24dc2a58f2f72519899926c92c7264fa5a9f4bc9f8c27602a95e0fe562f93567"
+        },
+        {
+          "name": "FunctionalFrame",
+          "kind": "ClassDef",
+          "line": 139,
+          "end_line": 155,
+          "function_source_sha256": "5877ee74477c717f5ebaf2ec1d8be0d3bb2ead80d401e70b64d4c4fac54ec02e"
+        },
+        {
+          "name": "__init__",
+          "kind": "FunctionDef",
+          "line": 140,
+          "end_line": 143,
+          "function_source_sha256": "07d95d61d39c0410da2154a7c2bc0509f5ec8965010810301e1f95e28a68b7e0"
+        },
+        {
+          "name": "__call__",
+          "kind": "FunctionDef",
+          "line": 145,
+          "end_line": 155,
+          "function_source_sha256": "9c7159cd35e855b906cc51081d1fad6424a4a8c8db67508a3548096a1500cb40"
+        },
+        {
+          "name": "infer",
+          "kind": "FunctionDef",
+          "line": 158,
+          "end_line": 172,
+          "function_source_sha256": "7213831430a6a7e8dd6195e12af472f36ffaf0a2bef9ad292d31b43cc8f8c833"
+        },
+        {
+          "name": "windows",
+          "kind": "FunctionDef",
+          "line": 175,
+          "end_line": 185,
+          "function_source_sha256": "bde0c31c2262d61c1e52aac53d8ae24c97e748e475389e4c2db44e6ad8d8d426"
+        },
+        {
+          "name": "rotation_matrix",
+          "kind": "FunctionDef",
+          "line": 188,
+          "end_line": 202,
+          "function_source_sha256": "18b321b49112a29f141708bb9b9fd741e365f4665eb6841d99e9bc22ca7bc06b"
+        },
+        {
+          "name": "rotate",
+          "kind": "FunctionDef",
+          "line": 205,
+          "end_line": 213,
+          "function_source_sha256": "f0017ac8cd65ca512b0efa396c2d828f67cf32debe853d863b4040a31b774b8e"
+        },
+        {
+          "name": "bilateral_rmse",
+          "kind": "FunctionDef",
+          "line": 216,
+          "end_line": 217,
+          "function_source_sha256": "d387ddea401063ca2fdee5ccc8c905f6422c9564ca6ff22ac25222d2d648c0f0"
+        },
+        {
+          "name": "write",
+          "kind": "FunctionDef",
+          "line": 220,
+          "end_line": 222,
+          "function_source_sha256": "20e4febc279d650002e808bf4c1962693a8e6270a6cab6ad3ea00ebc04a0cf99"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/research_fork_20261022/create_architecture_freeze_20261023.py",
+      "sha256": "c8b6544484da1a9f295c4ee98cefa272a7bd3bc76d07feba0ad9d11295d85290",
+      "entities": [
+        {
+          "name": "sha256",
+          "kind": "FunctionDef",
+          "line": 20,
+          "end_line": 21,
+          "function_source_sha256": "d019fd27285a602578689ac7d4dcdea60b85181c7a1eec2166f110436c894f03"
+        },
+        {
+          "name": "frozen_metadata_files",
+          "kind": "FunctionDef",
+          "line": 24,
+          "end_line": 42,
+          "function_source_sha256": "acbde1eb350a1e686c1958789aac8bdd1321e76c29dcb5a54a7a0074f60221d3"
+        },
+        {
+          "name": "verify",
+          "kind": "FunctionDef",
+          "line": 45,
+          "end_line": 52,
+          "function_source_sha256": "235d3b7afb89af78b33e0a14c14be712e3ecb2892d7bd2fee9a4afd3f8d41a5d"
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 55,
+          "end_line": 96,
+          "function_source_sha256": "9f5421f6d6d0fc0921faae9bcb1c6e04ae66fd9587c44073e00740afe48f6e31"
+        }
+      ]
+    },
+    {
+      "relative_path": "experiments/research_fork_20261022/plot_GEN5_COMB1_VALID_20261023.py",
+      "sha256": "feff3f19477a21af9d184820930fb14bdb890e17e1b92d06d0d562be60583d6e",
+      "entities": [
+        {
+          "name": "sha",
+          "kind": "FunctionDef",
+          "line": 35,
+          "end_line": 36,
+          "function_source_sha256": "35b5b3454a88d2449f46f4dc3ad36a7e13b940072403c2b416b4dbef88e39ae5"
+        },
+        {
+          "name": "metadata_path",
+          "kind": "FunctionDef",
+          "line": 39,
+          "end_line": 44,
+          "function_source_sha256": "1506cfdb5597379a9a41abe2f62ff94ad1b47466492256ecd71e858e308a6ea1"
+        },
+        {
+          "name": "accepted_tables",
+          "kind": "FunctionDef",
+          "line": 47,
+          "end_line": 71,
+          "function_source_sha256": "d2070548a63f0648d72ca8836312d6257477d31b14a4d7411134b17c80edcef6"
+        },
+        {
+          "name": "validate_tables",
+          "kind": "FunctionDef",
+          "line": 74,
+          "end_line": 88,
+          "function_source_sha256": "6a19fb2b03219f30bdd016b456605a625fd7ca89f8dcaa9bea7cb7ff8caabc7a"
+        },
+        {
+          "name": "draw_bars",
+          "kind": "FunctionDef",
+          "line": 91,
+          "end_line": 104,
+          "function_source_sha256": "31f70bcc1de90523ba4fc7d963b787ce077f97800d2303ed05b2a83abee2cf79"
+        },
+        {
+          "name": "draw_paired",
+          "kind": "FunctionDef",
+          "line": 107,
+          "end_line": 131,
+          "function_source_sha256": "a6d6b9516813b5d88bd51f41507f8edb2b0f9a5ee4aa31a46be623ecfc66578f"
+        },
+        {
+          "name": "render",
+          "kind": "FunctionDef",
+          "line": 134,
+          "end_line": 166,
+          "function_source_sha256": "3aae511e388b1bf1fba866d90048a1a69901e03ed8e5b31f53adafba20ec244c"
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "line": 169,
+          "end_line": 175,
+          "function_source_sha256": "3a49775ec7ec3051946fbc6aff97b15148cfbc1819a9950b1c58886c38cb1461"
+        }
+      ]
+    }
+  ],
+  "code_uploaded": false,
+  "raw_data_or_weights_uploaded": false
+}
