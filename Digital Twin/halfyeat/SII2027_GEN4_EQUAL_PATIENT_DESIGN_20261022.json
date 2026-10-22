@@ -1,0 +1,42 @@
+{
+  "status": "fixed_before_new_equal_patient_fits",
+  "selection_basis": "TRAIN_only_source_window_concentration_not_TEST_ranking",
+  "source_domain": "real_replay4",
+  "new_source_G_fits": 18,
+  "new_target_A_fits": 48,
+  "new_fits": 66,
+  "reference_uniform_fits_read_only": 66,
+  "source_updates": 97800,
+  "target_updates": 30400,
+  "total_new_updates": 128200,
+  "source_loss": "mean(per_window_standardized_angle_MSE*N_total_windows/(7*N_patient_windows))",
+  "normalize_by_batch_sum_weights": false,
+  "resample_windows": false,
+  "source_scaler_policy": "same_frame_pooled_unique_real_source_TRAIN_crop_as_uniform",
+  "target_budget_plan": "frozen_GEN2_all48_A_real_unique_target_seed_k",
+  "target_loss": "ordinary_standardized_angle_MSE",
+  "source_G_checkpoints": "equal_source_patient_VALID_strict_less_every10_tie_earliest",
+  "target_A_checkpoints": "same_target_VALID_strict_less_every10_tie_earliest",
+  "all18_G_verified_before_A": true,
+  "all66_verified_before_any_new_TEST": true,
+  "primary_endpoint": "equal_patient_paretic_knee_RMSE",
+  "secondary_endpoints": [
+    "bilateral_knee",
+    "six_angles"
+  ],
+  "new_significance_tests": 0,
+  "all_patients_seeds_budgets_retained": true,
+  "patients": 6,
+  "seeds": [
+    20261021,
+    20261022,
+    20261023
+  ],
+  "untouched_TEST_claim": false,
+  "clinical_JCS_certified": false,
+  "local_original_design_sha256": "3a2fca21ad1dded8296152e22ac8916d120e44e295b49cfb1d4e01517a720b78",
+  "public_source_fingerprints": {
+    "TRAIN_input_public_aggregate": "1ec26962915607e45fff9e9e7535a677e6e0c0ae4b42db287bf637f910d6871b",
+    "GEN2_budget_plan": "342a5b8b9cb41f4e76af1511a4262504c0f2e51656726d79af56dffdb8314ee1"
+  }
+}

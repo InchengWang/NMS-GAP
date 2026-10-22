@@ -1,0 +1,675 @@
+{
+  "status": "GEN3_audited_GEN4_design_fixed_before_new_TEST",
+  "source_scripts": [
+    {
+      "path": "experiments/native_generalization_20261022/gen_train_distribution_diagnosis.py",
+      "sha256": "806c55cf1bd3036cf38152cfb9d05a497c115d0ed0a42f4b852163e7cd567e62",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 32,
+          "end_line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 36,
+          "end_line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write",
+          "line": 40,
+          "end_line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "csv_write",
+          "line": 44,
+          "end_line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 53,
+          "end_line": 59,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "angle_deg",
+          "line": 62,
+          "end_line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "describe",
+          "line": 69,
+          "end_line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "TrainGate",
+          "line": 79,
+          "end_line": 168,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 86,
+          "end_line": 98,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_path",
+          "line": 100,
+          "end_line": 103,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_is_dynamic",
+          "line": 105,
+          "end_line": 106,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_deny",
+          "line": 108,
+          "end_line": 111,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 113,
+          "end_line": 124,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 126,
+          "end_line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_role",
+          "line": 141,
+          "end_line": 146,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rejection_self_test",
+          "line": 148,
+          "end_line": 168,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sensor_stats",
+          "line": 171,
+          "end_line": 186,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "label_stats",
+          "line": 189,
+          "end_line": 202,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "formulas",
+          "line": 205,
+          "end_line": 222,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 225,
+          "end_line": 525,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_error_diagnosis.py",
+      "sha256": "b9142dad194e9d55ce748b9816dcd959e5367e9ac0769f5895c3079767c66398",
+      "entities": [
+        {
+          "name": "read",
+          "line": 24,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 25,
+          "end_line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write",
+          "line": 26,
+          "end_line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "inventory",
+          "line": 31,
+          "end_line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 47,
+          "end_line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "DynamicGuard",
+          "line": 64,
+          "end_line": 98,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 65,
+          "end_line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 68,
+          "end_line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__enter__",
+          "line": 76,
+          "end_line": 94,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 80,
+          "end_line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "builtin",
+          "line": 83,
+          "end_line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "io_open",
+          "line": 85,
+          "end_line": 86,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 87,
+          "end_line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "path_open",
+          "line": 90,
+          "end_line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__exit__",
+          "line": 95,
+          "end_line": 98,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "decomposition",
+          "line": 101,
+          "end_line": 114,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "derived",
+          "line": 117,
+          "end_line": 121,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "endpoints",
+          "line": 124,
+          "end_line": 131,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "levels",
+          "line": 134,
+          "end_line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 142,
+          "end_line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 167,
+          "end_line": 267,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/audit_GEN3_train_valid_numpy.py",
+      "sha256": "7be060c7daf5546b2085c2ee6d2386e5b7dee840928c65f848e564bc30ea5d7a",
+      "entities": [
+        {
+          "name": "audit",
+          "line": 29,
+          "end_line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "equal",
+          "line": 43,
+          "end_line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "table",
+          "line": 53,
+          "end_line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "formula",
+          "line": 64,
+          "end_line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "derived",
+          "line": 84,
+          "end_line": 88,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "average",
+          "line": 91,
+          "end_line": 102,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "endpoints",
+          "line": 105,
+          "end_line": 112,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare",
+          "line": 115,
+          "end_line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "identity",
+          "line": 116,
+          "end_line": 116,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/plot_GEN3_valid_diagnosis.py",
+      "sha256": "97886f1ca5d2d4d2f7ac4e46b8d8d0c68728a452dadfabbeceac9bdebb9ffa9a",
+      "entities": [
+        {
+          "name": "read",
+          "line": 14,
+          "end_line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 15,
+          "end_line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 18,
+          "end_line": 76,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_balanced_training.py",
+      "sha256": "f300ff6bbb8f8ee13fdad4259431c827757cb5dc0f73c12fe5f7a6afea76c962",
+      "entities": [
+        {
+          "name": "bytes_hash",
+          "line": 42,
+          "end_line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rng_summary",
+          "line": 46,
+          "end_line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "restore_rng",
+          "line": 52,
+          "end_line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "records",
+          "line": 56,
+          "end_line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "folder",
+          "line": 60,
+          "end_line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fold_for",
+          "line": 71,
+          "end_line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "budget_for",
+          "line": 78,
+          "end_line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reference_folder",
+          "line": 85,
+          "end_line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "frozen_inputs",
+          "line": 92,
+          "end_line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 110,
+          "end_line": 174,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "DynamicAccess",
+          "line": 177,
+          "end_line": 266,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 185,
+          "end_line": 197,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "path",
+          "line": 200,
+          "end_line": 201,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "deny",
+          "line": 203,
+          "end_line": 205,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 207,
+          "end_line": 222,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "process_audit",
+          "line": 224,
+          "end_line": 226,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__enter__",
+          "line": 228,
+          "end_line": 248,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "path_open",
+          "line": 232,
+          "end_line": 234,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 235,
+          "end_line": 246,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__exit__",
+          "line": 250,
+          "end_line": 252,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "role",
+          "line": 255,
+          "end_line": 266,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_exact",
+          "line": 269,
+          "end_line": 270,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "replay",
+          "line": 273,
+          "end_line": 274,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "make_arrays",
+          "line": 277,
+          "end_line": 283,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_weights",
+          "line": 286,
+          "end_line": 298,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "balanced_loss",
+          "line": 301,
+          "end_line": 304,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "make_loader",
+          "line": 307,
+          "end_line": 308,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "initialize",
+          "line": 311,
+          "end_line": 317,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "first_shuffle",
+          "line": 320,
+          "end_line": 324,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "array_proof",
+          "line": 327,
+          "end_line": 330,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ledger",
+          "line": 333,
+          "end_line": 356,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_self_test",
+          "line": 359,
+          "end_line": 371,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reject_wrong_role",
+          "line": 374,
+          "end_line": 385,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_checks",
+          "line": 388,
+          "end_line": 442,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "infer",
+          "line": 391,
+          "end_line": 393,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "parent_artifact_guard_check",
+          "line": 445,
+          "end_line": 463,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 466,
+          "end_line": 558,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight_gate",
+          "line": 561,
+          "end_line": 567,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_proof",
+          "line": 570,
+          "end_line": 573,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler_proof",
+          "line": 576,
+          "end_line": 577,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "artifact_hashes",
+          "line": 580,
+          "end_line": 581,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require_G_gate",
+          "line": 584,
+          "end_line": 592,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "atomic_save",
+          "line": 595,
+          "end_line": 597,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 600,
+          "end_line": 706,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save",
+          "line": 662,
+          "end_line": 669,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "completed",
+          "line": 709,
+          "end_line": 778,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_G",
+          "line": 781,
+          "end_line": 797,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 800,
+          "end_line": 814,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require_all66_gate",
+          "line": 817,
+          "end_line": 826,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 829,
+          "end_line": 861,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 839,
+          "end_line": 848,
+          "kind": "FunctionDef"
+        }
+      ]
+    }
+  ],
+  "local_source_index_only": true,
+  "error_diagnostic_contract_sha256": "783dca5e4d285be4e6543263b6597e9d22d6b0c8ef258034a7aa9328e36ddf3f",
+  "error_audit_sha256": "94f56d0c17d0b0a66f102ef31e0926cbb08b55c5909e42f418c402312bdb335a",
+  "input_audit_sha256": "57b42b26536b433b46dc4dc91416aa9f2e9a09f822494774998a1d9445bdb723",
+  "error_audit_assertions": 125605,
+  "input_audit_assertions": 783,
+  "v2_error_TRAIN_VALID_predictions": 540,
+  "v2_error_offset_fits": 96,
+  "new_TEST_accuracy_reported": false,
+  "historical_v1_preflight_TEST_original_hash_reads": 1,
+  "v2_formal_TEST_dynamic_bytes_read": 0,
+  "next_design_new_fits": 66,
+  "next_design_updates": 128200,
+  "untouched_TEST_claim": false,
+  "raw_data_or_weights_uploaded": false,
+  "GEN4_training_contract_sha256": "9e6abf713686e8b68a9bbfe2b0db12d9da6701d65ebb8b4605393ce098195ff5"
+}
