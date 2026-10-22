@@ -1,0 +1,1445 @@
+{
+  "status": "accepted_ARCH_AUG_function_SHA_index",
+  "source_scripts": [
+    {
+      "basename": "shared_shank_model.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/shared_shank_model.py",
+      "sha256": "40e8ecd8d431aa16c5ece723392cc9c5884ad34bee19460f7bce1036727273ce",
+      "entities": [
+        {
+          "name": "SharedShankTCN",
+          "line": 17,
+          "end_line": 42,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 20,
+          "end_line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "encode_shank",
+          "line": 29,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 34,
+          "end_line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build",
+          "line": 45,
+          "end_line": 46,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "real_axis_augmentation.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/real_axis_augmentation.py",
+      "sha256": "bff11026170707c46d7ad76c90923aff65348cc5433f5f24cc834bb544dcd92d",
+      "entities": [
+        {
+          "name": "_key",
+          "line": 16,
+          "end_line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_rotation",
+          "line": 28,
+          "end_line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rotation_matrix",
+          "line": 46,
+          "end_line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "view_receipt",
+          "line": 51,
+          "end_line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "augment_native_input",
+          "line": 64,
+          "end_line": 81,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "architecture_augmentation_preflight.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/architecture_augmentation_preflight.py",
+      "sha256": "8526b645a8a8006c3f4871646c686ff2043fcadebceb03ab79860013fdc8dbfb",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 19,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "convolution_macs",
+          "line": 21,
+          "end_line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hook",
+          "line": 23,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "timing",
+          "line": 31,
+          "end_line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 41,
+          "end_line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "capture",
+          "line": 62,
+          "end_line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "RouteEncoder",
+          "line": 76,
+          "end_line": 80,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "forward",
+          "line": 77,
+          "end_line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "markdown",
+          "line": 154,
+          "end_line": 165,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "arch_training.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/arch_training.py",
+      "sha256": "7e51afd4265d840c3eafe9d45c5500a135797d384696f8686c91dc020d8d8321",
+      "entities": [
+        {
+          "name": "write",
+          "line": 34,
+          "end_line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest_array",
+          "line": 40,
+          "end_line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_sources",
+          "line": 44,
+          "end_line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "release",
+          "line": 48,
+          "end_line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cell_name",
+          "line": 56,
+          "end_line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "is_reused",
+          "line": 57,
+          "end_line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stage_of",
+          "line": 59,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_folder",
+          "line": 61,
+          "end_line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_ledger",
+          "line": 65,
+          "end_line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_model",
+          "line": 80,
+          "end_line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "real_trials",
+          "line": 85,
+          "end_line": 88,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_views",
+          "line": 90,
+          "end_line": 103,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_arrays",
+          "line": 105,
+          "end_line": 117,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 119,
+          "end_line": 135,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_reference_fits",
+          "line": 137,
+          "end_line": 213,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 215,
+          "end_line": 242,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_metric",
+          "line": 244,
+          "end_line": 250,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 252,
+          "end_line": 305,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_new_fit",
+          "line": 307,
+          "end_line": 334,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 336,
+          "end_line": 369,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 355,
+          "end_line": 361,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 371,
+          "end_line": 383,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "audit_arch_training.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/audit_arch_training.py",
+      "sha256": "ee82f48f39fd20d2d4846b9b8002c64e09613edc4dc1e9ce5819988d95de26a5",
+      "entities": [
+        {
+          "name": "read",
+          "line": 35,
+          "end_line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 39,
+          "end_line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest",
+          "line": 43,
+          "end_line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "close",
+          "line": 48,
+          "end_line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 55,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ReadGuard",
+          "line": 63,
+          "end_line": 95,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 64,
+          "end_line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 73,
+          "end_line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 85,
+          "end_line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 91,
+          "end_line": 95,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "IndependentCausal",
+          "line": 98,
+          "end_line": 105,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 99,
+          "end_line": 102,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 104,
+          "end_line": 105,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "IndependentResidual",
+          "line": 108,
+          "end_line": 123,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 109,
+          "end_line": 115,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 117,
+          "end_line": 123,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "IndependentModel",
+          "line": 126,
+          "end_line": 145,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 127,
+          "end_line": 135,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 137,
+          "end_line": 145,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_forward",
+          "line": 148,
+          "end_line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rotation",
+          "line": 167,
+          "end_line": 185,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "make_subject",
+          "line": 188,
+          "end_line": 240,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "static_review",
+          "line": 243,
+          "end_line": 264,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 267,
+          "end_line": 464,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "arch_evaluation.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/arch_evaluation.py",
+      "sha256": "51718ad0cc9019bd2607fd964da80aceed3a9a0469dc0b4f0e0e6167fc06ea8e",
+      "entities": [
+        {
+          "name": "analysis_sources",
+          "line": 21,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analysis_contract",
+          "line": 26,
+          "end_line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_TEST_gate",
+          "line": 44,
+          "end_line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded_trials",
+          "line": 53,
+          "end_line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "canonical_record",
+          "line": 59,
+          "end_line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_support",
+          "line": 65,
+          "end_line": 69,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 71,
+          "end_line": 150,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 83,
+          "end_line": 86,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 152,
+          "end_line": 174,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "factorial_differences",
+          "line": 176,
+          "end_line": 186,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "get",
+          "line": 177,
+          "end_line": 180,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "signed_flip_p",
+          "line": 188,
+          "end_line": 192,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "holm",
+          "line": 194,
+          "end_line": 200,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "statistics",
+          "line": 202,
+          "end_line": 236,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "audit_arch_results.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/audit_arch_results.py",
+      "sha256": "69856f6d265f06de773082c7a9b7ba4636bec276b21f2a1a25bab5bac70910e3",
+      "entities": [
+        {
+          "name": "check",
+          "line": 45,
+          "end_line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 52,
+          "end_line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 56,
+          "end_line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 60,
+          "end_line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scalar",
+          "line": 65,
+          "end_line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "numeric",
+          "line": 69,
+          "end_line": 77,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_guard",
+          "line": 80,
+          "end_line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cell",
+          "line": 85,
+          "end_line": 86,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gate",
+          "line": 89,
+          "end_line": 136,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "FunctionalTCN",
+          "line": 139,
+          "end_line": 169,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 141,
+          "end_line": 146,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "encoder",
+          "line": 148,
+          "end_line": 159,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__call__",
+          "line": 161,
+          "end_line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "infer",
+          "line": 172,
+          "end_line": 188,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "angle_metrics",
+          "line": 191,
+          "end_line": 207,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "group",
+          "line": 210,
+          "end_line": 225,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_table",
+          "line": 228,
+          "end_line": 239,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 242,
+          "end_line": 452,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "plot_arch_results.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/plot_arch_results.py",
+      "sha256": "909fd4ebdbce76947cc765ba9e6884462652d494909acce730b69f8059e58046",
+      "entities": [
+        {
+          "name": "read",
+          "line": 29,
+          "end_line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 33,
+          "end_line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_guard",
+          "line": 37,
+          "end_line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "accepted_tables",
+          "line": 43,
+          "end_line": 73,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "public_aggregate",
+          "line": 76,
+          "end_line": 103,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "style",
+          "line": 106,
+          "end_line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save",
+          "line": 112,
+          "end_line": 121,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "base_figure",
+          "line": 124,
+          "end_line": 199,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "accepted_arch2",
+          "line": 202,
+          "end_line": 242,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "arch2_figure",
+          "line": 245,
+          "end_line": 273,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "arch2_report",
+          "line": 276,
+          "end_line": 315,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "change",
+          "line": 294,
+          "end_line": 297,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "accepted_benchmark",
+          "line": 318,
+          "end_line": 336,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "accepted_arch3",
+          "line": 339,
+          "end_line": 394,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "arch3_figure",
+          "line": 397,
+          "end_line": 447,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "arch3_report",
+          "line": 450,
+          "end_line": 489,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "append_report_sections",
+          "line": 492,
+          "end_line": 493,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "branch_inventory",
+          "line": 496,
+          "end_line": 501,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 504,
+          "end_line": 526,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "benchmark_arch_cost.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/benchmark_arch_cost.py",
+      "sha256": "574a1e4e63f3be3141c9636e2c379cff011962fe4f157270b0f6f9f88cadcddc",
+      "entities": [
+        {
+          "name": "main",
+          "line": 11,
+          "end_line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hook",
+          "line": 18,
+          "end_line": 18,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "arch_valid_rotation_diagnosis.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/arch_valid_rotation_diagnosis.py",
+      "sha256": "c3be315a9ff4331cda41f5f048df61e470bb45a330ec803b893a2cabbf099c22",
+      "entities": [
+        {
+          "name": "cases",
+          "line": 26,
+          "end_line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rotation",
+          "line": 34,
+          "end_line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "perturb",
+          "line": 42,
+          "end_line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Guard",
+          "line": 51,
+          "end_line": 78,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 53,
+          "end_line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 57,
+          "end_line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__enter__",
+          "line": 65,
+          "end_line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hook",
+          "line": 67,
+          "end_line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "path_open",
+          "line": 70,
+          "end_line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 72,
+          "end_line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__exit__",
+          "line": 77,
+          "end_line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "access_receipt",
+          "line": 81,
+          "end_line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 92,
+          "end_line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 116,
+          "end_line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_gate",
+          "line": 142,
+          "end_line": 163,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prediction_path",
+          "line": 166,
+          "end_line": 167,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summaries",
+          "line": 170,
+          "end_line": 188,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 191,
+          "end_line": 256,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "audit_arch_valid_rotation.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/audit_arch_valid_rotation.py",
+      "sha256": "77861146eb6c9e8fdf94e2f583b923b79b6bf00d901b1f3911114b73b01b8b20",
+      "entities": [
+        {
+          "name": "read",
+          "line": 32,
+          "end_line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 36,
+          "end_line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "close",
+          "line": 40,
+          "end_line": 47,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Guard",
+          "line": 50,
+          "end_line": 81,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 53,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 62,
+          "end_line": 69,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 71,
+          "end_line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 77,
+          "end_line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cases",
+          "line": 84,
+          "end_line": 90,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rotate_native",
+          "line": 93,
+          "end_line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "expected_path",
+          "line": 110,
+          "end_line": 111,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_table",
+          "line": 114,
+          "end_line": 126,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 129,
+          "end_line": 332,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "shared_shank_nonlinear_model.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/shared_shank_nonlinear_model.py",
+      "sha256": "f4fe0fa9ca582ccd31843ec27736fb9435228a0403559a6184f4fd186a8bdb58",
+      "entities": [
+        {
+          "name": "SharedShankNonlinearTCN",
+          "line": 11,
+          "end_line": 19,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 14,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build",
+          "line": 22,
+          "end_line": 23,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "arch_nonlinear_preflight.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/arch_nonlinear_preflight.py",
+      "sha256": "daba364ae434d6b75fa4d6e79a99689f1cb5422553ec6e8e1fc9fb3a5dae9104",
+      "entities": [
+        {
+          "name": "macs",
+          "line": 17,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hook",
+          "line": 19,
+          "end_line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interaction",
+          "line": 27,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 35,
+          "end_line": 174,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fake_infer",
+          "line": 134,
+          "end_line": 136,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "arch_nonlinear_training.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/arch_nonlinear_training.py",
+      "sha256": "68487493c33d0e746182d5c961eabd5b4486881f8e0b5ec346e7febb31cc3b87",
+      "entities": [
+        {
+          "name": "DynamicGuard",
+          "line": 25,
+          "end_line": 84,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 35,
+          "end_line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 41,
+          "end_line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__enter__",
+          "line": 56,
+          "end_line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded_open",
+          "line": 61,
+          "end_line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded_load",
+          "line": 65,
+          "end_line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 69,
+          "end_line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__exit__",
+          "line": 77,
+          "end_line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "receipt",
+          "line": 80,
+          "end_line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "release",
+          "line": 87,
+          "end_line": 90,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "role_paths",
+          "line": 93,
+          "end_line": 95,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 98,
+          "end_line": 111,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ledger",
+          "line": 114,
+          "end_line": 119,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 122,
+          "end_line": 149,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "arrays",
+          "line": 152,
+          "end_line": 153,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build",
+          "line": 156,
+          "end_line": 157,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "selection_best",
+          "line": 160,
+          "end_line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 167,
+          "end_line": 225,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_fit",
+          "line": 228,
+          "end_line": 263,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 266,
+          "end_line": 277,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 280,
+          "end_line": 297,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 283,
+          "end_line": 288,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "audit_ARCH3_validation.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/audit_ARCH3_validation.py",
+      "sha256": "df3396596741d56e9cdc0241f1b3bd12fe056953e838bcdea231ba5f1d41f20c",
+      "entities": [
+        {
+          "name": "read",
+          "line": 19,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 20,
+          "end_line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "NonlinearFunctional",
+          "line": 25,
+          "end_line": 35,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 26,
+          "end_line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__call__",
+          "line": 30,
+          "end_line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 38,
+          "end_line": 113,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "arch_nonlinear_analysis_preflight.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/arch_nonlinear_analysis_preflight.py",
+      "sha256": "87f65260a7cf17406579c3f930aa2b9821919945685af37f675289f06addd1f8",
+      "entities": [
+        {
+          "name": "run",
+          "line": 12,
+          "end_line": 117,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "incomplete",
+          "line": 54,
+          "end_line": 54,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "arch_nonlinear_evaluation.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/arch_nonlinear_evaluation.py",
+      "sha256": "7111aa5157fea42e5ccf4a094262893fe4a702a843166d3364ae589b0f4bb168",
+      "entities": [
+        {
+          "name": "AnalysisGuard",
+          "line": 24,
+          "end_line": 66,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 28,
+          "end_line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 31,
+          "end_line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unlock",
+          "line": 43,
+          "end_line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__enter__",
+          "line": 47,
+          "end_line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded_open",
+          "line": 51,
+          "end_line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded_load",
+          "line": 55,
+          "end_line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit",
+          "line": 59,
+          "end_line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__exit__",
+          "line": 66,
+          "end_line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reference_ledger",
+          "line": 69,
+          "end_line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 83,
+          "end_line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analysis_contract",
+          "line": 92,
+          "end_line": 108,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_gate_metadata",
+          "line": 111,
+          "end_line": 121,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "full_gate",
+          "line": 124,
+          "end_line": 148,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "new_path",
+          "line": 151,
+          "end_line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_support",
+          "line": 155,
+          "end_line": 159,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 162,
+          "end_line": 198,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 201,
+          "end_line": 276,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load",
+          "line": 214,
+          "end_line": 216,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "record_metrics",
+          "line": 217,
+          "end_line": 225,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "basename": "audit_ARCH3_results.py",
+      "relative_path": "experiments/native_architecture_augmentation_20261022/audit_ARCH3_results.py",
+      "sha256": "600e571857ac72e24d614925ee8355d78cfc292ba7e023f78a25b2c42d79e5de",
+      "entities": [
+        {
+          "name": "forward_arrays",
+          "line": 34,
+          "end_line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_table",
+          "line": 54,
+          "end_line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 68,
+          "end_line": 306,
+          "kind": "FunctionDef"
+        }
+      ]
+    }
+  ],
+  "local_source_index_only": true,
+  "accepted_gate": {
+    "training_VALID_audit_sha256": "1baba4e1cf1a09bf6342ccefe864d1ab50995043bb0f7e4dc5e480de15cd8b88",
+    "independent_results_audit_sha256": "98be49b4e0930a6e5f6c5d93f2415c3220b6b88f8534752d3b312c74ca1f8717",
+    "design_review_sha256": "d1efa51a597e51065d7f868ccbe22dc3db123cb2da0332dbcbd478499dbff481",
+    "architecture_preflight_sha256": "0f7abdafdf9722bf8c939b7e7dc11728ad649f644c2d73ee277436a2be3def88",
+    "training_contract_sha256": "6a8b4b59e0fc49d24aa6f4bff2a60d1cb2ac768988914b7a9075060b37a569cd",
+    "analysis_contract_sha256": "adee93188fe356f6b7a1b7ea67b0970307388ad4be54cb2dddf3583945997e61",
+    "evaluation_complete_sha256": "bbf846456f9c382ab67a6ff7417d4aac211683a0127fa473295384d3096c5717",
+    "all_fits_gate_sha256": "a28e181b4425e13149c55f8326a63776eaa6609e59f7a6ba04852eb433ad21da"
+  },
+  "new_base_fits": 96,
+  "reused_base_fits": 48,
+  "new_base_optimizer_updates": 84000,
+  "base_predictions": 954,
+  "base_angle_metric_rows": 5724,
+  "independent_TEST_patients": 6,
+  "raw_data_or_weights_uploaded": false,
+  "untouched_TEST_claim": false,
+  "ARCH2": {
+    "independent_audit_sha256": "dbfc377c6eed971b2d22261f9ef3425070e53678fd4713967d8e74596ef1e01b",
+    "contract_sha256": "5366ab089db3bef83c59425abe10c65a921cc48ebe61d5661498bd430367be18",
+    "models": 144,
+    "case_predictions": 4104,
+    "angle_metric_rows": 24624,
+    "new_fits": 0,
+    "new_p_values": 0
+  },
+  "ARCH3": {
+    "independent_VALID_audit_sha256": "ccd3ad86ee3de50cb719fc173e9c9d4c78849ca1199953cd3b165888d7700130",
+    "independent_results_audit_sha256": "54c023633deb2413372f57f2aa3b9193cc77e618067e7a8c05407962b86a12ad",
+    "training_contract_sha256": "890b8244d87ef1fbe4b67ee0b13b92771f6db40f4df9d4190875f7b8b03d0908",
+    "analysis_contract_sha256": "40070f8de075dde8239119dc4fc8af6b09e6f49c634dbd32fd1126c0af76e628",
+    "new_fits": 24,
+    "new_optimizer_updates": 21000,
+    "new_predictions": 30,
+    "imported_predictions": 60,
+    "angle_metric_rows": 540,
+    "new_p_values": false
+  },
+  "branch_inventory": {
+    "new_fits": 120,
+    "new_optimizer_updates": 105000,
+    "logical_fits": 168,
+    "immutable_reference_fits": 48,
+    "immutable_reference_optimizer_updates": 42000,
+    "new_model_comparison_predictions": 666,
+    "new_model_comparison_angle_metrics": 3996,
+    "mechanism_ARCH2_prediction_archives": 216,
+    "mechanism_ARCH2_case_predictions": 4104,
+    "mechanism_ARCH2_angle_metrics": 24624,
+    "independent_TEST_patients": 6,
+    "old_reference_predictions_not_counted_as_new": true
+  }
+}
