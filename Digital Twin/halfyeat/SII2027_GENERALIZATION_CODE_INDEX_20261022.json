@@ -1,0 +1,1425 @@
+{
+  "status": "GEN_all180_fits_and_three_independent_result_audits_complete",
+  "client_date": "2026-10-22 Asia/Tokyo",
+  "source_scripts": [
+    {
+      "path": "experiments/native_generalization_20261022/gen_data.py",
+      "sha256": "9119cfa905e431396c4cd456e2071e01e416bde163edebac463404860f169e28",
+      "entities": [
+        {
+          "name": "FitData",
+          "line": 10,
+          "end_line": 39,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 11,
+          "end_line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_check",
+          "line": 18,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unique_training",
+          "line": 25,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validation",
+          "line": 27,
+          "end_line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_views",
+          "line": 29,
+          "end_line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler_training",
+          "line": 36,
+          "end_line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test",
+          "line": 39,
+          "end_line": 39,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_training.py",
+      "sha256": "70384e4f9a2b9caae9979ad708ca9c65b97139c44c266f155cbd49fb70a54c44",
+      "entities": [
+        {
+          "name": "folder",
+          "line": 19,
+          "end_line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 20,
+          "end_line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight_gate",
+          "line": 39,
+          "end_line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_metric",
+          "line": 44,
+          "end_line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "completed",
+          "line": 53,
+          "end_line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_phase",
+          "line": 65,
+          "end_line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 69,
+          "end_line": 125,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 126,
+          "end_line": 147,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 131,
+          "end_line": 135,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 148,
+          "end_line": 150,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_preflight.py",
+      "sha256": "aa822acf51d084fa086bd03be6d0a1ab210df8cdc1710af91c0342399410db27",
+      "entities": [
+        {
+          "name": "main",
+          "line": 12,
+          "end_line": 111,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded",
+          "line": 20,
+          "end_line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fake_infer",
+          "line": 81,
+          "end_line": 82,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_evaluation.py",
+      "sha256": "c645bcd68331aff307256289d6b0cbe8e7047a617a0bc7d37b44acad56a37e07",
+      "entities": [
+        {
+          "name": "evaluate",
+          "line": 11,
+          "end_line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 52,
+          "end_line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "statistics",
+          "line": 66,
+          "end_line": 90,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_analysis_preflight.py",
+      "sha256": "9277871aa8e31f44060b3c8c109bfc07cc8177fd16dc31341aad8eff15e6bf52",
+      "entities": [
+        {
+          "name": "main",
+          "line": 11,
+          "end_line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "deny_dynamic",
+          "line": 13,
+          "end_line": 14,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_scratch_reference.py",
+      "sha256": "cc505dba2ebca4685834761fe759368ede7bfeccc8dacdcab25e945811e3dafc",
+      "entities": [
+        {
+          "name": "folder",
+          "line": 31,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "frozen_gen_contract",
+          "line": 35,
+          "end_line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 48,
+          "end_line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "records",
+          "line": 83,
+          "end_line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "dynamic_guard",
+          "line": 88,
+          "end_line": 103,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded",
+          "line": 93,
+          "end_line": 98,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_scalers_independent",
+          "line": 106,
+          "end_line": 112,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_scalers_equal",
+          "line": 115,
+          "end_line": 120,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler_json",
+          "line": 123,
+          "end_line": 124,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler_from_json",
+          "line": 127,
+          "end_line": 128,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "completed_G_scaler_checks",
+          "line": 131,
+          "end_line": 153,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "capture_rng",
+          "line": 156,
+          "end_line": 157,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_rng_equal",
+          "line": 160,
+          "end_line": 162,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_training",
+          "line": 165,
+          "end_line": 178,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_metric",
+          "line": 181,
+          "end_line": 182,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "is_better",
+          "line": 185,
+          "end_line": 186,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "state_hash",
+          "line": 189,
+          "end_line": 194,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fresh_model",
+          "line": 197,
+          "end_line": 199,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ledger",
+          "line": 202,
+          "end_line": 231,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 234,
+          "end_line": 335,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fake_infer",
+          "line": 285,
+          "end_line": 287,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight_gate",
+          "line": 338,
+          "end_line": 346,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "completed",
+          "line": 349,
+          "end_line": 398,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 401,
+          "end_line": 463,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save_checkpoint",
+          "line": 431,
+          "end_line": 437,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 466,
+          "end_line": 476,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 479,
+          "end_line": 501,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 483,
+          "end_line": 489,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_scratch_evaluation.py",
+      "sha256": "300cf3659f07ad3c4c14e612644cb774dc4e7e553f0b7cbf6103f7ef1147974f",
+      "entities": [
+        {
+          "name": "contract",
+          "line": 28,
+          "end_line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analysis_preflight_gate",
+          "line": 69,
+          "end_line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gate_documents",
+          "line": 78,
+          "end_line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_checkpoint_map",
+          "line": 94,
+          "end_line": 97,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_gate",
+          "line": 100,
+          "end_line": 165,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "dynamic_guard",
+          "line": 169,
+          "end_line": 180,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded",
+          "line": 171,
+          "end_line": 175,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "target_inventory",
+          "line": 183,
+          "end_line": 185,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_raw",
+          "line": 188,
+          "end_line": 204,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_prediction",
+          "line": 207,
+          "end_line": 209,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 212,
+          "end_line": 282,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluation_receipt_gate",
+          "line": 285,
+          "end_line": 293,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summaries",
+          "line": 296,
+          "end_line": 309,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 312,
+          "end_line": 322,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "paired_statistics",
+          "line": 325,
+          "end_line": 349,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summary_receipt_gate",
+          "line": 352,
+          "end_line": 359,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "statistics",
+          "line": 362,
+          "end_line": 373,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 376,
+          "end_line": 426,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 429,
+          "end_line": 557,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "deny_dynamic",
+          "line": 431,
+          "end_line": 432,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_budget_plan.py",
+      "sha256": "b4af3ee854a7ec5dc394bb20bdbe54bb525109440c6d6b5fb1c43b560a6e285b",
+      "entities": [
+        {
+          "name": "read",
+          "line": 7,
+          "end_line": 7,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 8,
+          "end_line": 8,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "windows",
+          "line": 9,
+          "end_line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 12,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_nested_training.py",
+      "sha256": "b2440efd4483d0d3385b4e578909e11b570532a8646b655e9aec7b1b270a381a",
+      "entities": [
+        {
+          "name": "fingerprint",
+          "line": 35,
+          "end_line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "frozen_sources",
+          "line": 39,
+          "end_line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 59,
+          "end_line": 104,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "records",
+          "line": 107,
+          "end_line": 108,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fold_for",
+          "line": 111,
+          "end_line": 115,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "budget_for",
+          "line": 118,
+          "end_line": 123,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "folder",
+          "line": 126,
+          "end_line": 127,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "DynamicAccess",
+          "line": 130,
+          "end_line": 171,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 132,
+          "end_line": 138,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__enter__",
+          "line": 140,
+          "end_line": 154,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guarded",
+          "line": 142,
+          "end_line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__exit__",
+          "line": 156,
+          "end_line": 157,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "role",
+          "line": 160,
+          "end_line": 171,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_exact",
+          "line": 174,
+          "end_line": 193,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_arrays",
+          "line": 196,
+          "end_line": 207,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "make_loader",
+          "line": 210,
+          "end_line": 211,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "initialize",
+          "line": 214,
+          "end_line": 226,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_history",
+          "line": 229,
+          "end_line": 239,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "completed_G",
+          "line": 242,
+          "end_line": 272,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "artifact_hashes",
+          "line": 275,
+          "end_line": 277,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_G_gate",
+          "line": 280,
+          "end_line": 298,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require_G_gate",
+          "line": 301,
+          "end_line": 307,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ledger",
+          "line": 310,
+          "end_line": 327,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 330,
+          "end_line": 481,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_infer",
+          "line": 435,
+          "end_line": 437,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight_gate",
+          "line": 484,
+          "end_line": 491,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler_proof",
+          "line": 494,
+          "end_line": 495,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 498,
+          "end_line": 585,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save",
+          "line": 546,
+          "end_line": 553,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "completed_low",
+          "line": 588,
+          "end_line": 644,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_low",
+          "line": 647,
+          "end_line": 659,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 662,
+          "end_line": 707,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require_budget_TEST_gate",
+          "line": 710,
+          "end_line": 721,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 724,
+          "end_line": 755,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "one",
+          "line": 737,
+          "end_line": 743,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_nested_evaluation.py",
+      "sha256": "bab6ab1de38aa4d01545c9210e15761751e0a568ff07720eea8ea8f6cacccbde",
+      "entities": [
+        {
+          "name": "contract",
+          "line": 22,
+          "end_line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "accepted_sources",
+          "line": 53,
+          "end_line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gate",
+          "line": 63,
+          "end_line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard",
+          "line": 74,
+          "end_line": 87,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "loader",
+          "line": 77,
+          "end_line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tables",
+          "line": 90,
+          "end_line": 126,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 129,
+          "end_line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forbidden",
+          "line": 133,
+          "end_line": 135,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 172,
+          "end_line": 242,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 245,
+          "end_line": 256,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/gen_condition_feasibility.py",
+      "sha256": "d825fb91aedb12d01c4c8d2bf49256438e5dc318bfe2e12baf53fb628ad2958f",
+      "entities": [
+        {
+          "name": "main",
+          "line": 11,
+          "end_line": 77,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/audit_GEN1_results.py",
+      "sha256": "a974c88cb287863c10f712a20c1419fe77de80664e067d5123cec94b90c6b083",
+      "entities": [
+        {
+          "name": "write",
+          "line": 33,
+          "end_line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "folder",
+          "line": 38,
+          "end_line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_definitions",
+          "line": 42,
+          "end_line": 105,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_arrays",
+          "line": 108,
+          "end_line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaler_for",
+          "line": 142,
+          "end_line": 148,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_fit",
+          "line": 151,
+          "end_line": 225,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_evidence",
+          "line": 228,
+          "end_line": 247,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "code_review",
+          "line": 250,
+          "end_line": 300,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "factorial",
+          "line": 303,
+          "end_line": 330,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_table",
+          "line": 333,
+          "end_line": 344,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_angle_forward",
+          "line": 347,
+          "end_line": 374,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "equal_patient_validation",
+          "line": 377,
+          "end_line": 385,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_G_source_validation",
+          "line": 388,
+          "end_line": 446,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 449,
+          "end_line": 679,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "self_test",
+          "line": 682,
+          "end_line": 712,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "SyntheticModel",
+          "line": 696,
+          "end_line": 698,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "forward",
+          "line": 697,
+          "end_line": 698,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/audit_GEN2_full_results.py",
+      "sha256": "969d24196ce99f772cf11b0dbcf506aed3fb6488c02ce2f2499099b55482f043",
+      "entities": [
+        {
+          "name": "statistics",
+          "line": 26,
+          "end_line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 48,
+          "end_line": 200,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/audit_GEN2_budget_results.py",
+      "sha256": "1f694c04f2b81f3838a2ab2ced9d7b937dfb92de81769cc551a4714f6569c5c0",
+      "entities": [
+        {
+          "name": "main",
+          "line": 19,
+          "end_line": 168,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/run_gen_result_acceptance.py",
+      "sha256": "e2f84eab4ffc1c966ff12305147ca156058bfbbd43ea168e67c49a6cfb113a54",
+      "entities": [
+        {
+          "name": "sha",
+          "line": 21,
+          "end_line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 25,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write",
+          "line": 29,
+          "end_line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bind_contract",
+          "line": 35,
+          "end_line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ready",
+          "line": 54,
+          "end_line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 70,
+          "end_line": 107,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/plot_gen_patient_results.py",
+      "sha256": "da43b5e5d6b2b46be5279cea571d6393c1d8d0880a36e567ccbec1330cad4fbc",
+      "entities": [
+        {
+          "name": "read",
+          "line": 21,
+          "end_line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 25,
+          "end_line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gate",
+          "line": 29,
+          "end_line": 47,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "render",
+          "line": 50,
+          "end_line": 104,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "patient_table",
+          "line": 107,
+          "end_line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "self_test",
+          "line": 125,
+          "end_line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 142,
+          "end_line": 158,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "experiments/native_generalization_20261022/plot_gen_calibration_results.py",
+      "sha256": "03ac8868ecc2d670f45b851a2160612a6f2ff0990fbb7f193e52bc086fe09638",
+      "entities": [
+        {
+          "name": "reports",
+          "line": 20,
+          "end_line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save",
+          "line": 34,
+          "end_line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "plot",
+          "line": 46,
+          "end_line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "budget_plan_distinct_k",
+          "line": 116,
+          "end_line": 117,
+          "kind": "FunctionDef"
+        }
+      ]
+    }
+  ],
+  "local_source_index_only_not_uploaded_executable_source_bundle": true,
+  "contracts_sha256": {
+    "GEN1_training": "4c4b72ee5735e7d3f2a54473735dbd7d70e317c1d8c119ac233b971a2700cf23",
+    "full_I_training": "13160e608033e55ed3308227293b36d3a95bb52233271d514269f461155c3af4",
+    "full_auxiliary_analysis": "f8310573bf549bdefbe165082847e0764969cc546c229f245723730044a5ac5b",
+    "nested_training": "8d69039c685749561f851e3ec23db8bdbe653f7c1a582cd8995fa2400fe5242f",
+    "nested_analysis": "4768c463658304ee332849f158393f68788a220a58dd863ae8c66944cfe9bc9b"
+  },
+  "independent_audits_sha256": {
+    "GEN1_results_independent_audit.json": "7e237549056aecdc9fbc550ae0ce03813372ae6752086a39f11e54993f3f0816",
+    "GEN2_full_results_independent_audit.json": "5472b644dc319c5c6d845d197f9e72e17575745764302e0a4dfc3574c536551b",
+    "GEN2_budget_results_independent_audit.json": "637d79fbb9baca5c1a05b874493776c252cda3e968013e679af8ede280d04824"
+  },
+  "completed_new_fits": 180,
+  "new_optimizer_updates": 286800,
+  "new_prediction_npz": 852,
+  "new_angle_metric_rows": 5112,
+  "target_budget_models": 144,
+  "source_G_models": 36,
+  "n_independent_patients": 6,
+  "all_methods_TEST_RMSE": [
+    {
+      "method": "G_real",
+      "bilateral_knee": 9.138239907300571,
+      "paretic_knee": 11.07607338100138,
+      "six_angles": 10.41733115289975
+    },
+    {
+      "method": "G_mixed",
+      "bilateral_knee": 9.425187498449143,
+      "paretic_knee": 11.322244528423035,
+      "six_angles": 10.474993347238703
+    },
+    {
+      "method": "I_source_scaler",
+      "bilateral_knee": 2.705857273314003,
+      "paretic_knee": 3.1738428042788733,
+      "six_angles": 2.4413406882139594
+    },
+    {
+      "method": "A_real",
+      "bilateral_knee": 2.4507305956860828,
+      "paretic_knee": 2.9490619753858827,
+      "six_angles": 2.3044179368714612
+    },
+    {
+      "method": "A_mixed",
+      "bilateral_knee": 2.534602401934654,
+      "paretic_knee": 2.966957462484174,
+      "six_angles": 2.331119022991962
+    }
+  ],
+  "GEN1_factorial_statistics": [
+    {
+      "effect": "domain",
+      "endpoint": "paretic_knee",
+      "n_patients": 6,
+      "mean_difference_deg": 0.1320333172599726,
+      "patient_SD_difference_deg": 0.863720286826572,
+      "bootstrap_patient_lower_deg": -0.4579590550779296,
+      "bootstrap_patient_upper_deg": 0.7777787820415596,
+      "exact_two_sided_sign_flip_p": 0.75,
+      "patterns": 64,
+      "patients_negative": 4,
+      "patients_positive": 2,
+      "Holm_p_three_effects": 1.0
+    },
+    {
+      "effect": "adaptation",
+      "endpoint": "paretic_knee",
+      "n_patients": 6,
+      "mean_difference_deg": -8.24114923577718,
+      "patient_SD_difference_deg": 3.1400852865825115,
+      "bootstrap_patient_lower_deg": -10.695212417136352,
+      "bootstrap_patient_upper_deg": -6.059855106699779,
+      "exact_two_sided_sign_flip_p": 0.03125,
+      "patterns": 64,
+      "patients_negative": 6,
+      "patients_positive": 0,
+      "Holm_p_three_effects": 0.09375
+    },
+    {
+      "effect": "interaction",
+      "endpoint": "paretic_knee",
+      "n_patients": 6,
+      "mean_difference_deg": -0.2282756603233631,
+      "patient_SD_difference_deg": 1.6070150598358783,
+      "bootstrap_patient_lower_deg": -1.4548238232199509,
+      "bootstrap_patient_upper_deg": 0.8589540469341714,
+      "exact_two_sided_sign_flip_p": 0.75,
+      "patterns": 64,
+      "patients_negative": 2,
+      "patients_positive": 4,
+      "Holm_p_three_effects": 1.0
+    }
+  ],
+  "full_paired_statistics": [
+    {
+      "contrast": "A_real-I_source_scaler",
+      "mean_difference_deg": -0.22478082889299011,
+      "patient_SD_difference_deg": 0.17945131356965321,
+      "bootstrap_patient_lower_deg": -0.36702575764640927,
+      "bootstrap_patient_upper_deg": -0.10513624861561595,
+      "exact_two_sided_sign_flip_p": 0.03125,
+      "patterns": 64,
+      "n_patients": 6,
+      "patients_negative": 6,
+      "patients_positive": 0,
+      "Holm_p_two_contrasts": 0.0625
+    },
+    {
+      "contrast": "A_mixed-I_source_scaler",
+      "mean_difference_deg": -0.20688534179469908,
+      "patient_SD_difference_deg": 0.16090578917931506,
+      "bootstrap_patient_lower_deg": -0.33625150556719596,
+      "bootstrap_patient_upper_deg": -0.11224600006295893,
+      "exact_two_sided_sign_flip_p": 0.03125,
+      "patterns": 64,
+      "n_patients": 6,
+      "patients_negative": 6,
+      "patients_positive": 0,
+      "Holm_p_two_contrasts": 0.0625
+    }
+  ],
+  "budget_descriptive_aggregates": [
+    {
+      "method": "I_source_scaler",
+      "category": "one",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 4.31572563901254,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "half",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 3.5844219085242166,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "full",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 3.173842804278873,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "one",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 3.9884684306477225,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "half",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 3.1116480899893713,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "full",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 2.705857273314003,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "one",
+      "endpoint": "six_angles",
+      "rmse_deg": 3.4925491219064337,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "half",
+      "endpoint": "six_angles",
+      "rmse_deg": 2.7513949422579227,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "I_source_scaler",
+      "category": "full",
+      "endpoint": "six_angles",
+      "rmse_deg": 2.4413406882139594,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "one",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 3.9220120768493625,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "half",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 3.385850438335236,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "full",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 2.949061975385883,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "one",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 3.3970911048381995,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "half",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 2.818868375744971,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "full",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 2.4507305956860823,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "one",
+      "endpoint": "six_angles",
+      "rmse_deg": 3.112607471607893,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "half",
+      "endpoint": "six_angles",
+      "rmse_deg": 2.6025184441861615,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_real",
+      "category": "full",
+      "endpoint": "six_angles",
+      "rmse_deg": 2.3044179368714612,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "one",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 3.9878892287784615,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "half",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 3.398776238755898,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "full",
+      "endpoint": "paretic_knee",
+      "rmse_deg": 2.9669574624841744,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "one",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 3.6291867802398503,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "half",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 2.9313516390243683,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "full",
+      "endpoint": "bilateral_knee",
+      "rmse_deg": 2.534602401934654,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "one",
+      "endpoint": "six_angles",
+      "rmse_deg": 3.193825164272598,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "half",
+      "endpoint": "six_angles",
+      "rmse_deg": 2.6188709060109083,
+      "n_independent_patients": 6
+    },
+    {
+      "method": "A_mixed",
+      "category": "full",
+      "endpoint": "six_angles",
+      "rmse_deg": 2.331119022991962,
+      "n_independent_patients": 6
+    }
+  ],
+  "condition_feasibility": {
+    "TRAIN": {
+      "with_cane": {
+        "trials": 18,
+        "patients": 6
+      },
+      "without_cane": {
+        "trials": 13,
+        "patients": 7
+      }
+    },
+    "VALID": {
+      "with_cane": {
+        "trials": 5,
+        "patients": 5
+      },
+      "without_cane": {
+        "trials": 7,
+        "patients": 6
+      }
+    },
+    "TEST": {
+      "with_cane": {
+        "trials": 3,
+        "patients": 2
+      },
+      "without_cane": {
+        "trials": 7,
+        "patients": 5
+      }
+    }
+  },
+  "untouched_TEST_claim": false,
+  "source_scalers_include_source_labels": true,
+  "source_plus_target_compute_matched": false,
+  "raw_data_weights_or_role_tables_uploaded": false
+}
