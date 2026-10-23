@@ -167,3 +167,14 @@ GEN5初版审计的VALID分支曾以float32 GT计算ROM，而原指标使用floa
 |COMB1|independent_target_VALID_results_audit.json|`14cc4cf282594a2eed6ce68bd513f90d20b8c685cc900c8e8fa9fcf527c88a90`|
 
 图入口重新核验独立审计状态、完成收据与CSV双重SHA绑定，并核对六患者均值；源码/合同的函数级SHA和行号列于[代码索引](SII2027_THREE_LINES_CODE_INDEX_20261023.json)。表和图仅公开总体值及匿名患者点/方向计数，不公开患者标识；本次冻结/报告/图流程不打开原始数组、预测NPZ或权重。
+
+
+---
+
+### 2026-10-23 外部输入质量纠错与25fit已验收增量
+
+ARCH保持79项冻结。WMCG完整公开源接入后，物理QC发现P05/P06/P07/P10右小腿ACCY5长期近−16g，源CSV有限前缀确认其已存在于发布值。旧45fit批次停止：12源fit启动、0完成、0target/外层预测、≥7200更新，日志与partial全保留且不复用；旧形式通过回执不能覆盖物理失败。
+
+新训练前固定输入质量规则，保留6名健康人，P01仅开发/源角色，另外5人整人排除外层目标。字节不变release_v4独审通过后，全新完成25fit/26000更新：每人normal6秒适配，在其slow/fast/vfast不同完整parents评价。完整clean双膝RMSE：G_R 8.394743°、G_S 7.967532°、A_R 8.050971°、A_S 8.021340°、I_R 10.365379°；独立20秒10°坐标压力增量A_R 0.322786°、A_S 0.158372°。75完整＋1425压力case、9000逐角及11表/3统计已独立复算。五目标最小双侧exact p=.0625，不作统计优越性、真实重戴或卒中临床泛化结论。
+
+详见[目的—尝试—结论与代码入口](SII2027_OPEN_EXTERNAL_VALIDATION_20261023_ZH.md)、[验收/历史失败机器摘要](SII2027_OPEN_EXTERNAL_READINESS_20261023.json)、[函数行号与SHA](SII2027_OPEN_EXTERNAL_CODE_INDEX_20261023.json)及[完整聚合](SII2027_OPEN_EXTERNAL_AGGREGATES_20261023.json)。本条取代此前外部数据仍仅候选的状态，保留旧历史原文。

@@ -1,0 +1,141 @@
+{
+  "status": "accepted_quality_filtered_external_technical_pilot_not_original10person_release",
+  "date": "2026-10-23",
+  "WMCG": {
+    "DOI": "10.25452/figshare.plus.29328746.v2",
+    "license": "CC BY 4.0",
+    "original_population": 10,
+    "healthy_only": true,
+    "quality_admitted_participants": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P08",
+      "P09"
+    ],
+    "excluded_participants": [
+      "P05",
+      "P06",
+      "P07",
+      "P10"
+    ],
+    "excluded_parents": 16,
+    "source_fault": "right_shank_IMU5_ACCY5_sustained_near_minus16g",
+    "original_CSV_proof": "limited_prefix_float32_matches_HDF5_not_whole_CSV_CRC",
+    "archive_md5": "b824f89999e5b0e8eda475823241f1e0",
+    "archive_sha256": "7c09dbf82519da6aa2f02889c503de229bc6641afad280db824646a40f00541e",
+    "source_hdf5_sha256": "8fb6531183536032a577903e47c36dbd44670eadd3c4c27eef84c2f301217bdf",
+    "input_left_sensor": 6,
+    "input_right_sensor": 5,
+    "acc_source_unit": "g",
+    "gyro_source_unit": "deg/s",
+    "units": "SI_after_determined_conversion",
+    "gravity_bias_filter_preprocessing": "as_released_unknown_prior_operations_no_new_removal",
+    "original_raw_layout_attribute_wrong": true,
+    "signed_OpenSim_six_angle_labels_preserved": true,
+    "physically_quantified_millisecond_sync": false
+  },
+  "retired_stage45": {
+    "source_fits_started": 12,
+    "completed_fits": 0,
+    "target_fits_started": 0,
+    "optimizer_updates_lower_bound": 7200,
+    "exact_interrupted_updates_known": false,
+    "outer_predictions": 0,
+    "reusable_weights": false
+  },
+  "accepted_stage25": {
+    "qualified_participants": 6,
+    "outer_targets": 5,
+    "source_train_people_per_fold": 4,
+    "source_valid_people_per_fold": 1,
+    "source_train_unique_frames": 4800,
+    "source_valid_frames": 8000,
+    "target_calibration_unique_frames": 600,
+    "target_calibration_seconds": 6,
+    "source_fits": 10,
+    "target_fits": 15,
+    "total_fits": 25,
+    "optimizer_updates": 26000,
+    "seeds": [
+      20261021
+    ],
+    "clean_predictions": 75,
+    "pressure_multicase_archives": 75,
+    "pressure_case_predictions": 1425,
+    "independent_clean_and_pressure_angle_rows": 9000,
+    "primary_endpoint": "equal_bilateral_knee_RMSE_deg_equal_speed_equal_person",
+    "pressure": "fixed20s_19cases_10deg_synthetic_native_coordinate_change_after_clean_calibration",
+    "target_evaluation": "full_separate_slow_fast_vfast_parents_normal_remainder_isolated",
+    "source_checkpoint": "source_VALID_best",
+    "target_checkpoint": "fixed_epoch200_final_no_target_VALID",
+    "independent_prediction_max_difference": 0.0,
+    "all11_tables_recomputed": true,
+    "independently_replayed_all_intermediate_training_trajectory": false
+  },
+  "optical_reference_cost_seconds": {
+    "target_gradient_per_person": 6,
+    "calibration_full_normal_parent_per_person": {
+      "P02": 121.19,
+      "P03": 134.35,
+      "P04": 120.5,
+      "P08": 124.49,
+      "P09": 132.41
+    },
+    "calibration_full_normal_parent_mean": 126.588,
+    "final_EVAL_15_distinct_full_parents_total": 1900.89,
+    "source_TRAIN_per_fold": 48,
+    "source_VALID_per_fold": 80,
+    "offline_QC_original40_full_parent_reference_total": 5062.240000000001,
+    "duration_definition": "n_frames_div100_not_last_minus_first_timestamp",
+    "role_costs_overlap_do_not_sum_as_disjoint_unique_collection": true
+  },
+  "limits": [
+    "input_quality_selected_healthy_pilot",
+    "five_targets_not_confirmatory_superiority",
+    "fold_training_sets_overlap",
+    "single_seed",
+    "all_array_QC_and_prior_partial_source_exposure",
+    "no_real_remount",
+    "no_new_stroke",
+    "no_Stroke_checkpoint_direct_transfer",
+    "as_released_signal_preprocessing_not_fully_documented"
+  ],
+  "Dorschky": {
+    "status": "schema_clock_fixed_mapping_physical_consistency_checked_no_neural_fit",
+    "license": "CC BY 4.0",
+    "DOI": "10.5281/zenodo.11522050",
+    "development_subjects": [
+      "P02"
+    ],
+    "verified_subject_count": 1,
+    "ready_for_training": false,
+    "whole_source_Parquet_MD5_verified": false,
+    "real_IMU_timestamps_or_strict_drift_certified": false,
+    "task_switch_requires_separate_definition": true
+  },
+  "source_receipts_sha256": {
+    "downloads/download_receipt.json": "aad86334819eaca3b72edd3fe808871362bae1afa37f0b856f2d81771b6033a7",
+    "wmcg_evidence/WMCG_UNITS_COORDINATES_SYNC_EVIDENCE_v2.json": "e3f18050987d14f0dda3705d673516fc9a3373b82cbb5ce96580909835413561",
+    "wmcg_evidence/original_CSV_fault_probe.json": "981fa227b0d1c3f2e35bce749f12e91da0184023207fe0724381b712dd0120a4",
+    "physical_QC_v1/superseding_physical_quality_audit.json": "e1ff2a63c46cc4641f7cabcf62728ad7c23d7563acc76bc5c3c3cc89ed0369da",
+    "physical_cohort_gate_v1/cohort_quality_contract.json": "3645417b5d9cce29d2c22ec5f254399c73712f16c2294f9dcf2aeeaa88a7e2e5",
+    "physical_cohort_gate_v1/cohort_quality_decision.json": "5bbc4f03d2f26aa8d78cae90f863bc642592d5a786b79cbfe76f8b85bbefaf1f",
+    "release_v4/data_contract.json": "156b3cba5573469b88d65bfae228b67de0325b01a9e6dbd7bfe6fbec770820cb",
+    "release_v4/data_manifest.json": "4beb5455ec8bd083f9202610ffc43cd6444c1e4994dfee56da20d8ddefa3457b",
+    "release_v4/independent_release_audit.json": "2c9e74fff58590a8d85079b1a92effbbeaff4203548612bd0bd25b3820e515ba",
+    "WMCG_stage45_v1/QC_RETIREMENT_RECEIPT.json": "83ac1d9f4bc934b9048ff78dd1e1126ac09a42f0dabdcabcb854fa55dfa2e551",
+    "machineplan_stage25.json": "5b79d806d7c047d99a133670a1a993dcfeb34183817cba8d047593cce841c116",
+    "EXTERNAL_EXECUTION_STAGE25_PROTOCOL_ZH.md": "01332771b63b43eaa47a74e36222a0099a128f4015f0292698000f7c068a2de6",
+    "WMCG_stage25_v1/training_contract.json": "1f03ef72f2f46615a04e828544dd20c92705b1f615723a0c38ddc0e264fa7f3c",
+    "WMCG_stage25_v1/preflight.json": "0d7b78551982ccfd565ddfaa35242495041aa4843fd72b8efcd3263a5515191e",
+    "WMCG_stage25_v1/independent_training_audit.json": "591e7de970f8cae30268a271f13583ba389d957f5e9065c92501048dfc4daa77",
+    "WMCG_stage25_v1/analysis_contract.json": "8c41ccfeb2057a01496ea7a0cf032a371ed95122dd5985d3897c77750e0c118c",
+    "WMCG_stage25_v1/evaluation_preflight.json": "413faa990fd985cbabf409711487fe492da9c3ed0ffa97b1e8b8725390c81730",
+    "WMCG_stage25_v1/analysis_v1/evaluation_complete.json": "2ca764245d26752d99f827585fc6b0b08333e7dd16281ffc31a5a72ea7672f29",
+    "WMCG_stage25_v1/analysis_v1/independent_results_audit.json": "c2d8b56163414486ed59003ec179c0d4feb773275ad3b5cf0dfbb93966d02819",
+    "dorschky_evidence/dorschky_readiness.json": "26e9c1d861591e86fc854cfec124d1223c3d9f7783be405148aac0709329b631",
+    "dorschky_evidence/evidence_manifest.json": "50a374ade3e4fb885dffbf44d0dff7008c2b4c941191fb0aa018ff2a21adc6d0"
+  }
+}

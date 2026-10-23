@@ -1,0 +1,1782 @@
+{
+  "status": "accepted_external_experiment_function_and_SHA_index",
+  "date": "2026-10-23",
+  "source_root_relative_to_submission": "experiments/open_external_validation_20261023",
+  "architecture_79_file_freeze_verified": true,
+  "files": [
+    {
+      "path": "audit_development_failures/native_container_h5_unsorted_column_v0.py",
+      "sha256": "24b4a6c7a3e698f292f95a061172076b40640300c89e6d1328d74a946674a994",
+      "bytes": 7251,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha_file",
+          "line": 24,
+          "end_line": 29
+        },
+        {
+          "type": "FunctionDef",
+          "name": "names",
+          "line": 32,
+          "end_line": 33
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_digest",
+          "line": 36,
+          "end_line": 38
+        },
+        {
+          "type": "FunctionDef",
+          "name": "inspect",
+          "line": 41,
+          "end_line": 123
+        }
+      ]
+    },
+    {
+      "path": "audit_wmcg_stage25_results.py",
+      "sha256": "2a8df62d7a92fc014fa9b441f22505ddb54637b3a610bd9f62a4bbe161f0d8ea",
+      "bytes": 17671,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 30,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 34,
+          "end_line": 35
+        },
+        {
+          "type": "FunctionDef",
+          "name": "metrics",
+          "line": 38,
+          "end_line": 52
+        },
+        {
+          "type": "FunctionDef",
+          "name": "endpoint_rows",
+          "line": 55,
+          "end_line": 62
+        },
+        {
+          "type": "FunctionDef",
+          "name": "reconstruct_tables",
+          "line": 65,
+          "end_line": 105
+        },
+        {
+          "type": "FunctionDef",
+          "name": "compare_frame",
+          "line": 108,
+          "end_line": 125
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_statistics",
+          "line": 128,
+          "end_line": 163
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 166,
+          "end_line": 284
+        }
+      ]
+    },
+    {
+      "path": "dorschky_evidence/download_tibia_selected_chunks.py",
+      "sha256": "73d3189dc0c45452874930a483e135fc96776ea434c28bb451c47e4146a6a438",
+      "bytes": 5112,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "get",
+          "line": 32,
+          "end_line": 56
+        }
+      ]
+    },
+    {
+      "path": "dorschky_evidence/inspect_dorschky_arrays.py",
+      "sha256": "b2916a5bccffe5aa1540ee16190e902535985b7fc300a2c2fcfa7c49967d0c35",
+      "bytes": 4895,
+      "definitions": [
+        {
+          "type": "ClassDef",
+          "name": "BoundedRemote",
+          "line": 18,
+          "end_line": 37
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 19,
+          "end_line": 20
+        },
+        {
+          "type": "FunctionDef",
+          "name": "readable",
+          "line": 21,
+          "end_line": 21
+        },
+        {
+          "type": "FunctionDef",
+          "name": "seekable",
+          "line": 22,
+          "end_line": 22
+        },
+        {
+          "type": "FunctionDef",
+          "name": "tell",
+          "line": 23,
+          "end_line": 23
+        },
+        {
+          "type": "FunctionDef",
+          "name": "seek",
+          "line": 24,
+          "end_line": 27
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 28,
+          "end_line": 37
+        },
+        {
+          "type": "FunctionDef",
+          "name": "stats",
+          "line": 40,
+          "end_line": 43
+        }
+      ]
+    },
+    {
+      "path": "dorschky_evidence/physical_clock_QC.py",
+      "sha256": "826d7863f762479fc1250ec92cdedc15bc471bdf0cd3dfa2baa5884fe025babb",
+      "bytes": 5265,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 16,
+          "end_line": 16
+        },
+        {
+          "type": "FunctionDef",
+          "name": "longest",
+          "line": 19,
+          "end_line": 23
+        }
+      ]
+    },
+    {
+      "path": "dorschky_evidence/probe_dorschky.py",
+      "sha256": "d1034763005d91315ff2be62335f4532cacc0dfaf5b38ec6967246b794f00bb1",
+      "bytes": 3244,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "fetch_range",
+          "line": 21,
+          "end_line": 36
+        },
+        {
+          "type": "FunctionDef",
+          "name": "footer",
+          "line": 39,
+          "end_line": 63
+        }
+      ]
+    },
+    {
+      "path": "external_data_independent_audit.py",
+      "sha256": "f346dc17c12d940945ab1316e7518ff23853bb1cbc60de2253695c2fc4f23852",
+      "bytes": 9513,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 13,
+          "end_line": 18
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_digest",
+          "line": 21,
+          "end_line": 22
+        },
+        {
+          "type": "FunctionDef",
+          "name": "decode",
+          "line": 25,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 29,
+          "end_line": 156
+        }
+      ]
+    },
+    {
+      "path": "external_data_stage25_independent_audit.py",
+      "sha256": "131f223b4c3cd51cd82e10b6fef3d1638b2e535a8f7b626220cee1bcc9ac6fc6",
+      "bytes": 10521,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 13,
+          "end_line": 18
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_digest",
+          "line": 21,
+          "end_line": 22
+        },
+        {
+          "type": "FunctionDef",
+          "name": "decode",
+          "line": 25,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 29,
+          "end_line": 171
+        }
+      ]
+    },
+    {
+      "path": "external_native_container_audit.py",
+      "sha256": "52c8f060735630955ec3112d1b7dcbefa0237298c45c8d46a73dde0f8fdee475",
+      "bytes": 7471,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha_file",
+          "line": 24,
+          "end_line": 29
+        },
+        {
+          "type": "FunctionDef",
+          "name": "names",
+          "line": 32,
+          "end_line": 33
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_digest",
+          "line": 36,
+          "end_line": 38
+        },
+        {
+          "type": "FunctionDef",
+          "name": "inspect",
+          "line": 41,
+          "end_line": 124
+        }
+      ]
+    },
+    {
+      "path": "external_stage25_training_independent_audit.py",
+      "sha256": "63a9f9c91f319892d62b7d2387a1662ee6f7d6a086192f7b9ad17decde014aba",
+      "bytes": 20115,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 38,
+          "end_line": 39
+        },
+        {
+          "type": "FunctionDef",
+          "name": "ah",
+          "line": 42,
+          "end_line": 43
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 46,
+          "end_line": 47
+        },
+        {
+          "type": "FunctionDef",
+          "name": "install_guard",
+          "line": 50,
+          "end_line": 67
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 51,
+          "end_line": 66
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folder",
+          "line": 70,
+          "end_line": 71
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role",
+          "line": 74,
+          "end_line": 75
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_supports",
+          "line": 78,
+          "end_line": 92
+        },
+        {
+          "type": "FunctionDef",
+          "name": "scalers",
+          "line": 95,
+          "end_line": 100
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_scalers",
+          "line": 103,
+          "end_line": 106
+        },
+        {
+          "type": "FunctionDef",
+          "name": "rotation",
+          "line": 109,
+          "end_line": 122
+        },
+        {
+          "type": "FunctionDef",
+          "name": "windows",
+          "line": 125,
+          "end_line": 152
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fresh_and_shuffle",
+          "line": 155,
+          "end_line": 163
+        },
+        {
+          "type": "FunctionDef",
+          "name": "state_equal",
+          "line": 166,
+          "end_line": 170
+        },
+        {
+          "type": "FunctionDef",
+          "name": "source_valid_metric",
+          "line": 173,
+          "end_line": 193
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 196,
+          "end_line": 358
+        }
+      ]
+    },
+    {
+      "path": "fetch_wmcg_compact.py",
+      "sha256": "ef1f8e2c7654d894d9d5a44d6b4b7b8af06b26ba4a1a83cf4a26c0c089f833f7",
+      "bytes": 2747,
+      "definitions": []
+    },
+    {
+      "path": "inspect_wmcg_hdf5.py",
+      "sha256": "1488cf09ca2832c1407d359a9a4b1fe1f6fb80622c99fd01d3e6253843d2edb7",
+      "bytes": 3165,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "plain",
+          "line": 9,
+          "end_line": 14
+        },
+        {
+          "type": "FunctionDef",
+          "name": "visitor",
+          "line": 22,
+          "end_line": 29
+        }
+      ]
+    },
+    {
+      "path": "physical_channel_quality_audit.py",
+      "sha256": "72e9ccd2da1196555d1acff980c40a6442abe88789cdc78c0f4b8df1da49979f",
+      "bytes": 11920,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 23,
+          "end_line": 28
+        },
+        {
+          "type": "FunctionDef",
+          "name": "ash",
+          "line": 31,
+          "end_line": 32
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 35,
+          "end_line": 36
+        },
+        {
+          "type": "FunctionDef",
+          "name": "decode",
+          "line": 39,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "stats",
+          "line": 43,
+          "end_line": 47
+        },
+        {
+          "type": "FunctionDef",
+          "name": "contract",
+          "line": 50,
+          "end_line": 77
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 80,
+          "end_line": 187
+        }
+      ]
+    },
+    {
+      "path": "physical_cohort_gate.py",
+      "sha256": "65e9e8b9d45839ab7e4f24848522a154cabd25571527d714b71cddf4f7ce2847",
+      "bytes": 6541,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 15,
+          "end_line": 20
+        },
+        {
+          "type": "FunctionDef",
+          "name": "put",
+          "line": 23,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "longest",
+          "line": 27,
+          "end_line": 29
+        },
+        {
+          "type": "FunctionDef",
+          "name": "metrics",
+          "line": 32,
+          "end_line": 46
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 49,
+          "end_line": 114
+        }
+      ]
+    },
+    {
+      "path": "plot_wmcg_results.py",
+      "sha256": "aced749f2832eee3c6513a43a83126eff8d2d44a4c63c0a3b409f30aec4d80b4",
+      "bytes": 5618,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 17,
+          "end_line": 17
+        },
+        {
+          "type": "FunctionDef",
+          "name": "style",
+          "line": 19,
+          "end_line": 21
+        },
+        {
+          "type": "FunctionDef",
+          "name": "main",
+          "line": 23,
+          "end_line": 96
+        }
+      ]
+    },
+    {
+      "path": "plot_wmcg_stage25_results.py",
+      "sha256": "9fc17eb9864a221c76be5dc078620fda543ec1217ddba4c07c62d5ac1b544b2d",
+      "bytes": 6270,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 18,
+          "end_line": 18
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 19,
+          "end_line": 19
+        },
+        {
+          "type": "FunctionDef",
+          "name": "style",
+          "line": 20,
+          "end_line": 22
+        },
+        {
+          "type": "FunctionDef",
+          "name": "main",
+          "line": 24,
+          "end_line": 101
+        }
+      ]
+    },
+    {
+      "path": "prepare_external_accepted_publication.py",
+      "sha256": "1b789b7d310ada3ed89b85beb9e3ece0d540fd4d5ec7fce8c110bcdcffd32b28",
+      "bytes": 29839,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 23,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 27,
+          "end_line": 28
+        },
+        {
+          "type": "FunctionDef",
+          "name": "dump",
+          "line": 31,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "portable",
+          "line": 32,
+          "end_line": 39
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build",
+          "line": 43,
+          "end_line": 317
+        },
+        {
+          "type": "FunctionDef",
+          "name": "c",
+          "line": 173,
+          "end_line": 173
+        },
+        {
+          "type": "FunctionDef",
+          "name": "s",
+          "line": 174,
+          "end_line": 174
+        },
+        {
+          "type": "FunctionDef",
+          "name": "improved",
+          "line": 176,
+          "end_line": 178
+        }
+      ]
+    },
+    {
+      "path": "prepare_external_publication.py",
+      "sha256": "18ef55d3aec2acc69ad44a420b93656874149ae61d89192c813233dd14c218d3",
+      "bytes": 13506,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 16,
+          "end_line": 17
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load",
+          "line": 20,
+          "end_line": 21
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write_json",
+          "line": 24,
+          "end_line": 25
+        },
+        {
+          "type": "FunctionDef",
+          "name": "index_source",
+          "line": 28,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build",
+          "line": 43,
+          "end_line": 150
+        }
+      ]
+    },
+    {
+      "path": "probe_original_fault_csv.py",
+      "sha256": "1b34a3d9eaf9cf0e502ccab36ffb11f7ecc9adce009d71482bb4838dc60df77c",
+      "bytes": 4274,
+      "definitions": [
+        {
+          "type": "ClassDef",
+          "name": "RemoteZip",
+          "line": 10,
+          "end_line": 34
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 11,
+          "end_line": 12
+        },
+        {
+          "type": "FunctionDef",
+          "name": "readable",
+          "line": 13,
+          "end_line": 13
+        },
+        {
+          "type": "FunctionDef",
+          "name": "seekable",
+          "line": 14,
+          "end_line": 14
+        },
+        {
+          "type": "FunctionDef",
+          "name": "tell",
+          "line": 15,
+          "end_line": 15
+        },
+        {
+          "type": "FunctionDef",
+          "name": "seek",
+          "line": 16,
+          "end_line": 19
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 20,
+          "end_line": 34
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 36,
+          "end_line": 65
+        }
+      ]
+    },
+    {
+      "path": "release_v1/failed_pre_release_source/wmcg_data_release.py",
+      "sha256": "a6696f0be157e393a7d3bad0747f34c85642a1e8280dcf1bf28119d265093eb5",
+      "bytes": 10784,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 20,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_sha",
+          "line": 26,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 28,
+          "end_line": 28
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 30,
+          "end_line": 32
+        },
+        {
+          "type": "FunctionDef",
+          "name": "names",
+          "line": 34,
+          "end_line": 34
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build_contract",
+          "line": 36,
+          "end_line": 65
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folds",
+          "line": 67,
+          "end_line": 75
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 77,
+          "end_line": 165
+        }
+      ]
+    },
+    {
+      "path": "release_v2/failed_pre_release_source/wmcg_data_release.py",
+      "sha256": "1b4b701028fd1300c5d22671a310aa7ee00bc539d0eb53bde3f4f671e9f0f152",
+      "bytes": 10787,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 20,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_sha",
+          "line": 26,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 28,
+          "end_line": 28
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 30,
+          "end_line": 32
+        },
+        {
+          "type": "FunctionDef",
+          "name": "names",
+          "line": 34,
+          "end_line": 34
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build_contract",
+          "line": 36,
+          "end_line": 65
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folds",
+          "line": 67,
+          "end_line": 75
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 77,
+          "end_line": 165
+        }
+      ]
+    },
+    {
+      "path": "wmcg_data_release.py",
+      "sha256": "4859241d4076e1a31eb3b9eab6a4a7828c187e2ea75b92608ce5a7e86200a0cf",
+      "bytes": 10833,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 20,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_sha",
+          "line": 26,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 28,
+          "end_line": 28
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 30,
+          "end_line": 32
+        },
+        {
+          "type": "FunctionDef",
+          "name": "names",
+          "line": 34,
+          "end_line": 34
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build_contract",
+          "line": 36,
+          "end_line": 65
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folds",
+          "line": 67,
+          "end_line": 75
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 77,
+          "end_line": 165
+        }
+      ]
+    },
+    {
+      "path": "wmcg_data_release_v4.py",
+      "sha256": "1663f0040aad710780da3c5004d35bee0ed84685f85a0bf67f4eef46c55b3e22",
+      "bytes": 7205,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 17,
+          "end_line": 22
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 25,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write_frozen",
+          "line": 29,
+          "end_line": 35
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 38,
+          "end_line": 134
+        }
+      ]
+    },
+    {
+      "path": "wmcg_evaluation_stage25.py",
+      "sha256": "4e40aeab4007a352c5294fc0b5248495813c2e13bad5cc6010fc1d6f7c296011",
+      "bytes": 28944,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 40,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 41,
+          "end_line": 41
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 42,
+          "end_line": 42
+        },
+        {
+          "type": "FunctionDef",
+          "name": "record",
+          "line": 44,
+          "end_line": 46
+        },
+        {
+          "type": "FunctionDef",
+          "name": "prediction_paths",
+          "line": 48,
+          "end_line": 50
+        },
+        {
+          "type": "FunctionDef",
+          "name": "cases",
+          "line": 53,
+          "end_line": 66
+        },
+        {
+          "type": "FunctionDef",
+          "name": "qmatrix",
+          "line": 69,
+          "end_line": 78
+        },
+        {
+          "type": "FunctionDef",
+          "name": "perturb",
+          "line": 81,
+          "end_line": 88
+        },
+        {
+          "type": "ClassDef",
+          "name": "EvaluationGuard",
+          "line": 91,
+          "end_line": 137
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 94,
+          "end_line": 99
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 100,
+          "end_line": 117
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 118,
+          "end_line": 129
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load",
+          "line": 122,
+          "end_line": 124
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 125,
+          "end_line": 127
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 130,
+          "end_line": 130
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 131,
+          "end_line": 137
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_support",
+          "line": 140,
+          "end_line": 153
+        },
+        {
+          "type": "FunctionDef",
+          "name": "angle_metrics",
+          "line": 156,
+          "end_line": 169
+        },
+        {
+          "type": "FunctionDef",
+          "name": "endpoints",
+          "line": 172,
+          "end_line": 174
+        },
+        {
+          "type": "FunctionDef",
+          "name": "exact_signflip",
+          "line": 177,
+          "end_line": 181
+        },
+        {
+          "type": "FunctionDef",
+          "name": "statistics",
+          "line": 184,
+          "end_line": 216
+        },
+        {
+          "type": "FunctionDef",
+          "name": "aggregate",
+          "line": 219,
+          "end_line": 258
+        },
+        {
+          "type": "FunctionDef",
+          "name": "trial_endpoints",
+          "line": 222,
+          "end_line": 228
+        },
+        {
+          "type": "FunctionDef",
+          "name": "contract",
+          "line": 261,
+          "end_line": 293
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_analysis_contract",
+          "line": 296,
+          "end_line": 299
+        },
+        {
+          "type": "FunctionDef",
+          "name": "unlock_gate",
+          "line": 302,
+          "end_line": 339
+        },
+        {
+          "type": "FunctionDef",
+          "name": "evaluate",
+          "line": 342,
+          "end_line": 409
+        },
+        {
+          "type": "FunctionDef",
+          "name": "synthetic_preflight",
+          "line": 412,
+          "end_line": 465
+        }
+      ]
+    },
+    {
+      "path": "wmcg_evidence/build_wmcg_evidence.py",
+      "sha256": "698759db079faae3d303d91e21116775d93a74962c83115089bbc7311165d362",
+      "bytes": 10945,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 18,
+          "end_line": 19
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build",
+          "line": 22,
+          "end_line": 138
+        }
+      ]
+    },
+    {
+      "path": "wmcg_evidence/build_wmcg_evidence_v2.py",
+      "sha256": "d3e0767d982178bb3685cf7f373dd1280e2856da095cc190ab97e0ebc7c953a4",
+      "bytes": 6957,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "load",
+          "line": 13,
+          "end_line": 14
+        },
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 17,
+          "end_line": 18
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build",
+          "line": 21,
+          "end_line": 111
+        }
+      ]
+    },
+    {
+      "path": "wmcg_results_audit_common.py",
+      "sha256": "60b6d63d4e5112150fdd8087f914e534374571975e27170b7fdd76fbf78b2033",
+      "bytes": 9163,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "pressure_cases",
+          "line": 28,
+          "end_line": 44
+        },
+        {
+          "type": "FunctionDef",
+          "name": "proper_q",
+          "line": 47,
+          "end_line": 55
+        },
+        {
+          "type": "FunctionDef",
+          "name": "pressure_inputs",
+          "line": 58,
+          "end_line": 70
+        },
+        {
+          "type": "FunctionDef",
+          "name": "infer_many",
+          "line": 73,
+          "end_line": 95
+        },
+        {
+          "type": "FunctionDef",
+          "name": "per_angle",
+          "line": 98,
+          "end_line": 113
+        },
+        {
+          "type": "FunctionDef",
+          "name": "endpoints",
+          "line": 116,
+          "end_line": 119
+        },
+        {
+          "type": "FunctionDef",
+          "name": "exact_p",
+          "line": 122,
+          "end_line": 127
+        },
+        {
+          "type": "FunctionDef",
+          "name": "bootstrap_ci",
+          "line": 130,
+          "end_line": 135
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fixed_family",
+          "line": 138,
+          "end_line": 153
+        },
+        {
+          "type": "ClassDef",
+          "name": "EvaluationReadGuard",
+          "line": 156,
+          "end_line": 213
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 163,
+          "end_line": 168
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 170,
+          "end_line": 192
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 194,
+          "end_line": 203
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 197,
+          "end_line": 198
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load",
+          "line": 200,
+          "end_line": 201
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 205,
+          "end_line": 206
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 208,
+          "end_line": 213
+        }
+      ]
+    },
+    {
+      "path": "wmcg_training.py",
+      "sha256": "27ecb2511dedf68a732cdb53fd28d89264906a9090f2dba4196c186d165c9180",
+      "bytes": 22944,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 31,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 32,
+          "end_line": 32
+        },
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 33,
+          "end_line": 33
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 34,
+          "end_line": 37
+        },
+        {
+          "type": "FunctionDef",
+          "name": "manifest",
+          "line": 40,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folds",
+          "line": 41,
+          "end_line": 41
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fold",
+          "line": 42,
+          "end_line": 42
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folder",
+          "line": 43,
+          "end_line": 43
+        },
+        {
+          "type": "FunctionDef",
+          "name": "record",
+          "line": 44,
+          "end_line": 45
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_supports",
+          "line": 48,
+          "end_line": 55
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_paths",
+          "line": 58,
+          "end_line": 59
+        },
+        {
+          "type": "ClassDef",
+          "name": "RoleGuard",
+          "line": 62,
+          "end_line": 115
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 69,
+          "end_line": 74
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 75,
+          "end_line": 95
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 96,
+          "end_line": 110
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_open",
+          "line": 100,
+          "end_line": 102
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_load",
+          "line": 103,
+          "end_line": 105
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 106,
+          "end_line": 107
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 111,
+          "end_line": 111
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 112,
+          "end_line": 115
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_trials",
+          "line": 118,
+          "end_line": 135
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fit_scalers",
+          "line": 138,
+          "end_line": 140
+        },
+        {
+          "type": "FunctionDef",
+          "name": "arrays",
+          "line": 143,
+          "end_line": 157
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fresh_model",
+          "line": 160,
+          "end_line": 164
+        },
+        {
+          "type": "FunctionDef",
+          "name": "static_sources",
+          "line": 167,
+          "end_line": 179
+        },
+        {
+          "type": "FunctionDef",
+          "name": "contract",
+          "line": 182,
+          "end_line": 218
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_contract",
+          "line": 221,
+          "end_line": 224
+        },
+        {
+          "type": "FunctionDef",
+          "name": "preflight_gate",
+          "line": 227,
+          "end_line": 232
+        },
+        {
+          "type": "FunctionDef",
+          "name": "valid_metric",
+          "line": 235,
+          "end_line": 241
+        },
+        {
+          "type": "FunctionDef",
+          "name": "job",
+          "line": 244,
+          "end_line": 244
+        },
+        {
+          "type": "FunctionDef",
+          "name": "jobs",
+          "line": 245,
+          "end_line": 245
+        },
+        {
+          "type": "FunctionDef",
+          "name": "parent_arm",
+          "line": 246,
+          "end_line": 246
+        },
+        {
+          "type": "FunctionDef",
+          "name": "augmentation",
+          "line": 247,
+          "end_line": 247
+        },
+        {
+          "type": "FunctionDef",
+          "name": "checkpoint",
+          "line": 250,
+          "end_line": 251
+        },
+        {
+          "type": "FunctionDef",
+          "name": "verify",
+          "line": 254,
+          "end_line": 270
+        },
+        {
+          "type": "FunctionDef",
+          "name": "worker",
+          "line": 273,
+          "end_line": 348
+        },
+        {
+          "type": "FunctionDef",
+          "name": "train",
+          "line": 351,
+          "end_line": 384
+        },
+        {
+          "type": "FunctionDef",
+          "name": "one",
+          "line": 358,
+          "end_line": 363
+        }
+      ]
+    },
+    {
+      "path": "wmcg_training_preflight.py",
+      "sha256": "cc646a507f6687feaf2d4af7e97516ecef10b59eb58b1c03e6526375cf1c4f1d",
+      "bytes": 6063,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "serial_scalers",
+          "line": 9,
+          "end_line": 10
+        },
+        {
+          "type": "FunctionDef",
+          "name": "main",
+          "line": 13,
+          "end_line": 90
+        }
+      ]
+    },
+    {
+      "path": "wmcg_training_stage25.py",
+      "sha256": "eb2308bd1a478c64998a4605457f0fc92b4d69cf2b1cc821ddf3c2723a634b0b",
+      "bytes": 24068,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 31,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 32,
+          "end_line": 32
+        },
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 33,
+          "end_line": 33
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 34,
+          "end_line": 37
+        },
+        {
+          "type": "FunctionDef",
+          "name": "manifest",
+          "line": 40,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folds",
+          "line": 41,
+          "end_line": 41
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fold",
+          "line": 42,
+          "end_line": 42
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folder",
+          "line": 43,
+          "end_line": 43
+        },
+        {
+          "type": "FunctionDef",
+          "name": "record",
+          "line": 44,
+          "end_line": 45
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_supports",
+          "line": 48,
+          "end_line": 55
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_paths",
+          "line": 58,
+          "end_line": 59
+        },
+        {
+          "type": "ClassDef",
+          "name": "RoleGuard",
+          "line": 62,
+          "end_line": 115
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 69,
+          "end_line": 74
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 75,
+          "end_line": 95
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 96,
+          "end_line": 110
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_open",
+          "line": 100,
+          "end_line": 102
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_load",
+          "line": 103,
+          "end_line": 105
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 106,
+          "end_line": 107
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 111,
+          "end_line": 111
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 112,
+          "end_line": 115
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_trials",
+          "line": 118,
+          "end_line": 135
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fit_scalers",
+          "line": 138,
+          "end_line": 140
+        },
+        {
+          "type": "FunctionDef",
+          "name": "arrays",
+          "line": 143,
+          "end_line": 157
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fresh_model",
+          "line": 160,
+          "end_line": 164
+        },
+        {
+          "type": "FunctionDef",
+          "name": "static_sources",
+          "line": 167,
+          "end_line": 184
+        },
+        {
+          "type": "FunctionDef",
+          "name": "contract",
+          "line": 187,
+          "end_line": 233
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_contract",
+          "line": 236,
+          "end_line": 239
+        },
+        {
+          "type": "FunctionDef",
+          "name": "preflight_gate",
+          "line": 242,
+          "end_line": 247
+        },
+        {
+          "type": "FunctionDef",
+          "name": "valid_metric",
+          "line": 250,
+          "end_line": 256
+        },
+        {
+          "type": "FunctionDef",
+          "name": "job",
+          "line": 259,
+          "end_line": 259
+        },
+        {
+          "type": "FunctionDef",
+          "name": "jobs",
+          "line": 260,
+          "end_line": 260
+        },
+        {
+          "type": "FunctionDef",
+          "name": "parent_arm",
+          "line": 261,
+          "end_line": 261
+        },
+        {
+          "type": "FunctionDef",
+          "name": "augmentation",
+          "line": 262,
+          "end_line": 262
+        },
+        {
+          "type": "FunctionDef",
+          "name": "checkpoint",
+          "line": 265,
+          "end_line": 266
+        },
+        {
+          "type": "FunctionDef",
+          "name": "verify",
+          "line": 269,
+          "end_line": 285
+        },
+        {
+          "type": "FunctionDef",
+          "name": "worker",
+          "line": 288,
+          "end_line": 363
+        },
+        {
+          "type": "FunctionDef",
+          "name": "train",
+          "line": 366,
+          "end_line": 399
+        },
+        {
+          "type": "FunctionDef",
+          "name": "one",
+          "line": 373,
+          "end_line": 378
+        }
+      ]
+    },
+    {
+      "path": "wmcg_training_stage25_preflight.py",
+      "sha256": "05c8a032b4085baf53f4c0379234b91d0105dfe031047099b2eb07d9843f3350",
+      "bytes": 6070,
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "serial_scalers",
+          "line": 9,
+          "end_line": 10
+        },
+        {
+          "type": "FunctionDef",
+          "name": "main",
+          "line": 13,
+          "end_line": 90
+        }
+      ]
+    }
+  ],
+  "frozen_training_source_and_metadata_sha256": {
+    "experiments/open_external_validation_20261023/wmcg_training_stage25.py": "eb2308bd1a478c64998a4605457f0fc92b4d69cf2b1cc821ddf3c2723a634b0b",
+    "experiments/open_external_validation_20261023/machineplan_stage25.json": "5b79d806d7c047d99a133670a1a993dcfeb34183817cba8d047593cce841c116",
+    "experiments/open_external_validation_20261023/EXTERNAL_EXECUTION_STAGE25_PROTOCOL_ZH.md": "01332771b63b43eaa47a74e36222a0099a128f4015f0292698000f7c068a2de6",
+    "experiments/open_external_validation_20261023/wmcg_training_stage25_preflight.py": "05c8a032b4085baf53f4c0379234b91d0105dfe031047099b2eb07d9843f3350",
+    "experiments/open_external_validation_20261023/wmcg_data_release_v4.py": "1663f0040aad710780da3c5004d35bee0ed84685f85a0bf67f4eef46c55b3e22",
+    "experiments/open_external_validation_20261023/release_v4/data_manifest.json": "4beb5455ec8bd083f9202610ffc43cd6444c1e4994dfee56da20d8ddefa3457b",
+    "experiments/open_external_validation_20261023/release_v4/data_contract.json": "156b3cba5573469b88d65bfae228b67de0325b01a9e6dbd7bfe6fbec770820cb",
+    "experiments/open_external_validation_20261023/release_v4/independent_release_audit.json": "2c9e74fff58590a8d85079b1a92effbbeaff4203548612bd0bd25b3820e515ba",
+    "experiments/open_external_validation_20261023/physical_QC_v1/superseding_physical_quality_audit.json": "e1ff2a63c46cc4641f7cabcf62728ad7c23d7563acc76bc5c3c3cc89ed0369da",
+    "experiments/open_external_validation_20261023/physical_cohort_gate_v1/cohort_quality_contract.json": "3645417b5d9cce29d2c22ec5f254399c73712f16c2294f9dcf2aeeaa88a7e2e5",
+    "experiments/open_external_validation_20261023/physical_cohort_gate_v1/cohort_quality_decision.json": "5bbc4f03d2f26aa8d78cae90f863bc642592d5a786b79cbfe76f8b85bbefaf1f",
+    "experiments/open_external_validation_20261023/physical_cohort_gate.py": "65e9e8b9d45839ab7e4f24848522a154cabd25571527d714b71cddf4f7ce2847",
+    "experiments/open_external_validation_20261023/wmcg_evidence/original_CSV_fault_probe.json": "981fa227b0d1c3f2e35bce749f12e91da0184023207fe0724381b712dd0120a4",
+    "experiments/open_external_validation_20261023/WMCG_stage45_v1/QC_RETIREMENT_RECEIPT.json": "83ac1d9f4bc934b9048ff78dd1e1126ac09a42f0dabdcabcb854fa55dfa2e551",
+    "experiments/native_ablation_20261022/ablation_models.py": "6d618bdd5912c5411d28142a832d12a4c1b15ba59d8e4514614294734502b317",
+    "experiments/external_validation_20261020_deduplicated/external_models.py": "ee252b3574a7acec4a6d5c1f488e311f6f406d02a83321f8a20517f7e2ae978b",
+    "experiments/native_architecture_augmentation_20261022/real_axis_augmentation.py": "bff11026170707c46d7ad76c90923aff65348cc5433f5f24cc834bb544dcd92d",
+    "experiments/stroke_dynamic_diagnosis_20261021/diag_runner.py": "894f27d9c4488982b06118a94336a6a1a57abb9596d1d1596faf012ee207791b",
+    "experiments/stroke_dynamic_diagnosis_20261021/diag_models.py": "bf2a22668d7dfc7ec8933793ac056cd610f3b599afd1b614ca7966b3d61b4746",
+    "experiments/stroke_dynamic_diagnosis_20261021/diag_data.py": "afd58e54a82185ea1f191794c2576d36c735f8f34e9ec3c815a46b4ff4c1ed36",
+    "experiments/stroke_dynamic_diagnosis_20261021/diagnosis_metrics.py": "ec247dea1d7fe383c07cda8557be50ff5346353acdcc6ea395100152270167f6",
+    "experiments/stroke_dynamic_diagnosis_20261021/run_diagnosis.py": "d3e1a6e38f2af5cd7774e6386ea5d1e8e3156453e762ce6ee366eab8ad0838f9",
+    "experiments/midterm_20261019/data.py": "57cc82fdb3c6928d244729afe7c6a4dd85616d4f2a840d295451331ee0263a44",
+    "experiments/midterm_20261019/models.py": "75ad55885581da8148d666d102760e3104484902c93000527d4005a73dff9e06",
+    "model_code/model_stage3.py": "43ac20b9e1da104c4f07d346c1cabb72fd61d307be2077b17f9c3caf93f45265"
+  },
+  "primary_sources": [
+    "wmcg_data_release_v4.py",
+    "physical_cohort_gate.py",
+    "wmcg_training_stage25.py",
+    "external_stage25_training_independent_audit.py",
+    "wmcg_evaluation_stage25.py",
+    "audit_wmcg_stage25_results.py"
+  ],
+  "historical_retired": [
+    "wmcg_data_release.py release_v1/v2 snapshots; v3 format-only population superseded",
+    "wmcg_training.py WMCG_stage45_v1 stopped, no reuse"
+  ],
+  "code_definitions_index_only_not_standalone_reproduction_package": true
+}
