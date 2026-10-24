@@ -1,0 +1,210 @@
+{
+  "status": "passed_synthetic_only_architecture_interface_probe",
+  "date": "2026-10-25",
+  "seed": 20261025,
+  "python": "3.10.12",
+  "torch": "2.5.1+cu121",
+  "threads": 2,
+  "models_and_heads": [
+    {
+      "name": "hur_lstm128_adapted",
+      "provenance": {
+        "paper_doi": "10.1038/s41598-025-89716-4",
+        "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+        "implementation": "independently_written_from_architecture_specification",
+        "hidden_size": 128,
+        "layers": 3,
+        "dropout": 0.2,
+        "bidirectional": false,
+        "input_channels": 12,
+        "output_channels": 6,
+        "output_layout": "batch_time_output",
+        "recurrent_state": "reset_on_each_forward_call",
+        "native_article_input_channels": 72,
+        "native_article_output_channels": 10,
+        "native_article_window_frames": 50,
+        "exact_article_reproduction": false,
+        "capacity_control_not_paper_setting": false
+      },
+      "parameters": 337670,
+      "checked_output_shapes": [
+        [
+          3,
+          50,
+          6
+        ],
+        [
+          3,
+          120,
+          6
+        ],
+        [
+          3,
+          200,
+          6
+        ]
+      ],
+      "parameter_tensors_with_finite_nonzero_gradient": 14,
+      "synthetic_input_gradient_finite": true,
+      "repeated_call_after_unrelated_call_max_difference": 0.0,
+      "prefix_max_difference_eval_mode": 0.0
+    },
+    {
+      "name": "hur_lstm128_adapted",
+      "provenance": {
+        "paper_doi": "10.1038/s41598-025-89716-4",
+        "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+        "implementation": "independently_written_from_architecture_specification",
+        "hidden_size": 128,
+        "layers": 3,
+        "dropout": 0.2,
+        "bidirectional": false,
+        "input_channels": 12,
+        "output_channels": 2,
+        "output_layout": "batch_time_output",
+        "recurrent_state": "reset_on_each_forward_call",
+        "native_article_input_channels": 72,
+        "native_article_output_channels": 10,
+        "native_article_window_frames": 50,
+        "exact_article_reproduction": false,
+        "capacity_control_not_paper_setting": false
+      },
+      "parameters": 337154,
+      "checked_output_shapes": [
+        [
+          3,
+          50,
+          2
+        ],
+        [
+          3,
+          120,
+          2
+        ],
+        [
+          3,
+          200,
+          2
+        ]
+      ],
+      "parameter_tensors_with_finite_nonzero_gradient": 14,
+      "synthetic_input_gradient_finite": true,
+      "repeated_call_after_unrelated_call_max_difference": 0.0,
+      "prefix_max_difference_eval_mode": 0.0
+    },
+    {
+      "name": "hur_lstm85_capacity_control",
+      "provenance": {
+        "paper_doi": "10.1038/s41598-025-89716-4",
+        "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+        "implementation": "independently_written_from_architecture_specification",
+        "hidden_size": 85,
+        "layers": 3,
+        "dropout": 0.2,
+        "bidirectional": false,
+        "input_channels": 12,
+        "output_channels": 6,
+        "output_layout": "batch_time_output",
+        "recurrent_state": "reset_on_each_forward_call",
+        "native_article_input_channels": 72,
+        "native_article_output_channels": 10,
+        "native_article_window_frames": 50,
+        "exact_article_reproduction": false,
+        "capacity_control_not_paper_setting": true
+      },
+      "parameters": 151136,
+      "checked_output_shapes": [
+        [
+          3,
+          50,
+          6
+        ],
+        [
+          3,
+          120,
+          6
+        ],
+        [
+          3,
+          200,
+          6
+        ]
+      ],
+      "parameter_tensors_with_finite_nonzero_gradient": 14,
+      "synthetic_input_gradient_finite": true,
+      "repeated_call_after_unrelated_call_max_difference": 0.0,
+      "prefix_max_difference_eval_mode": 0.0
+    },
+    {
+      "name": "hur_lstm85_capacity_control",
+      "provenance": {
+        "paper_doi": "10.1038/s41598-025-89716-4",
+        "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+        "implementation": "independently_written_from_architecture_specification",
+        "hidden_size": 85,
+        "layers": 3,
+        "dropout": 0.2,
+        "bidirectional": false,
+        "input_channels": 12,
+        "output_channels": 2,
+        "output_layout": "batch_time_output",
+        "recurrent_state": "reset_on_each_forward_call",
+        "native_article_input_channels": 72,
+        "native_article_output_channels": 10,
+        "native_article_window_frames": 50,
+        "exact_article_reproduction": false,
+        "capacity_control_not_paper_setting": true
+      },
+      "parameters": 150792,
+      "checked_output_shapes": [
+        [
+          3,
+          50,
+          2
+        ],
+        [
+          3,
+          120,
+          2
+        ],
+        [
+          3,
+          200,
+          2
+        ]
+      ],
+      "parameter_tensors_with_finite_nonzero_gradient": 14,
+      "synthetic_input_gradient_finite": true,
+      "repeated_call_after_unrelated_call_max_difference": 0.0,
+      "prefix_max_difference_eval_mode": 0.0
+    }
+  ],
+  "deferred_not_implemented": {
+    "hur_cnn": {
+      "status": "not_implemented_unresolved_paper_code_mismatch",
+      "paper_convolution_outputs": [
+        24,
+        8,
+        10
+      ],
+      "released_code_convolution_outputs": [
+        24,
+        8,
+        3
+      ],
+      "released_code_temporal_readout": "Linear(50, 50)",
+      "reason": "Paper methods do not specify that temporal readout; no guess is made."
+    }
+  },
+  "shape_cases": 12,
+  "gradient_cases": 4,
+  "optimizer_steps": 0,
+  "real_data_arrays_or_old_weights_opened": false,
+  "neural_training_fits": 0,
+  "benchmark_protocol_frozen": false,
+  "meaning": "interface readiness only, not training correctness or performance evidence",
+  "source_sha256": {
+    "architecture_baselines.py": "fb0e9486dbfeedd29f11a630f03b6746fc6b55688c2d7e38905b6817330eca64",
+    "probe_architecture_baselines.py": "668a4722ffd4da7db3aa61aee0bcbb0549e68638cf5d2bbc5312ce564d202ae0"
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "status": "literature_audit_and_synthetic_prototypes_complete_formal_benchmark_not_started",
+  "date": "2026-10-25",
+  "task": "measured_bilateral_shank_IMU_to_continuous_kinematics",
+  "old_ARCH_frozen": true,
+  "new_comparison_branch": true,
+  "recommended_primary_architectures": [
+    "existing_FrameTCN_with_new_matched_control",
+    "Hur_LSTM128_adapted",
+    "LSTM85_capacity_control_not_paper_setting"
+  ],
+  "recommended_primary_augmentation": [
+    "replay4",
+    "existing_static_proper_SO3",
+    "fixed_SD_measurement_noise_adapted",
+    "parent_constant_gyro_bias_adapted"
+  ],
+  "formal_benchmark_contract_frozen": false,
+  "training_runner_implemented": false,
+  "new_formal_fits": 0,
+  "new_performance_results": 0,
+  "planned_fresh_control_matrix": {
+    "independent_cells": 6,
+    "patients": 8,
+    "seeds": 3,
+    "fits": 144,
+    "optimizer_updates": 126000,
+    "shared_Frame_replay_counted_once": true,
+    "old_48_Frame_models_default_reused": false,
+    "noise_plus_bias_included": false,
+    "initial_evaluation": "within_patient_cross_trial_not_patient_generalization",
+    "source_target_GIA_extension": "separate_protocol_pending"
+  },
+  "prototype_architecture_probe": {
+    "status": "passed_synthetic_only_architecture_interface_probe",
+    "date": "2026-10-25",
+    "seed": 20261025,
+    "python": "3.10.12",
+    "torch": "2.5.1+cu121",
+    "threads": 2,
+    "models_and_heads": [
+      {
+        "name": "hur_lstm128_adapted",
+        "provenance": {
+          "paper_doi": "10.1038/s41598-025-89716-4",
+          "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+          "implementation": "independently_written_from_architecture_specification",
+          "hidden_size": 128,
+          "layers": 3,
+          "dropout": 0.2,
+          "bidirectional": false,
+          "input_channels": 12,
+          "output_channels": 6,
+          "output_layout": "batch_time_output",
+          "recurrent_state": "reset_on_each_forward_call",
+          "native_article_input_channels": 72,
+          "native_article_output_channels": 10,
+          "native_article_window_frames": 50,
+          "exact_article_reproduction": false,
+          "capacity_control_not_paper_setting": false
+        },
+        "parameters": 337670,
+        "checked_output_shapes": [
+          [
+            3,
+            50,
+            6
+          ],
+          [
+            3,
+            120,
+            6
+          ],
+          [
+            3,
+            200,
+            6
+          ]
+        ],
+        "parameter_tensors_with_finite_nonzero_gradient": 14,
+        "synthetic_input_gradient_finite": true,
+        "repeated_call_after_unrelated_call_max_difference": 0.0,
+        "prefix_max_difference_eval_mode": 0.0
+      },
+      {
+        "name": "hur_lstm128_adapted",
+        "provenance": {
+          "paper_doi": "10.1038/s41598-025-89716-4",
+          "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+          "implementation": "independently_written_from_architecture_specification",
+          "hidden_size": 128,
+          "layers": 3,
+          "dropout": 0.2,
+          "bidirectional": false,
+          "input_channels": 12,
+          "output_channels": 2,
+          "output_layout": "batch_time_output",
+          "recurrent_state": "reset_on_each_forward_call",
+          "native_article_input_channels": 72,
+          "native_article_output_channels": 10,
+          "native_article_window_frames": 50,
+          "exact_article_reproduction": false,
+          "capacity_control_not_paper_setting": false
+        },
+        "parameters": 337154,
+        "checked_output_shapes": [
+          [
+            3,
+            50,
+            2
+          ],
+          [
+            3,
+            120,
+            2
+          ],
+          [
+            3,
+            200,
+            2
+          ]
+        ],
+        "parameter_tensors_with_finite_nonzero_gradient": 14,
+        "synthetic_input_gradient_finite": true,
+        "repeated_call_after_unrelated_call_max_difference": 0.0,
+        "prefix_max_difference_eval_mode": 0.0
+      },
+      {
+        "name": "hur_lstm85_capacity_control",
+        "provenance": {
+          "paper_doi": "10.1038/s41598-025-89716-4",
+          "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+          "implementation": "independently_written_from_architecture_specification",
+          "hidden_size": 85,
+          "layers": 3,
+          "dropout": 0.2,
+          "bidirectional": false,
+          "input_channels": 12,
+          "output_channels": 6,
+          "output_layout": "batch_time_output",
+          "recurrent_state": "reset_on_each_forward_call",
+          "native_article_input_channels": 72,
+          "native_article_output_channels": 10,
+          "native_article_window_frames": 50,
+          "exact_article_reproduction": false,
+          "capacity_control_not_paper_setting": true
+        },
+        "parameters": 151136,
+        "checked_output_shapes": [
+          [
+            3,
+            50,
+            6
+          ],
+          [
+            3,
+            120,
+            6
+          ],
+          [
+            3,
+            200,
+            6
+          ]
+        ],
+        "parameter_tensors_with_finite_nonzero_gradient": 14,
+        "synthetic_input_gradient_finite": true,
+        "repeated_call_after_unrelated_call_max_difference": 0.0,
+        "prefix_max_difference_eval_mode": 0.0
+      },
+      {
+        "name": "hur_lstm85_capacity_control",
+        "provenance": {
+          "paper_doi": "10.1038/s41598-025-89716-4",
+          "author_code_commit_inspected": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+          "implementation": "independently_written_from_architecture_specification",
+          "hidden_size": 85,
+          "layers": 3,
+          "dropout": 0.2,
+          "bidirectional": false,
+          "input_channels": 12,
+          "output_channels": 2,
+          "output_layout": "batch_time_output",
+          "recurrent_state": "reset_on_each_forward_call",
+          "native_article_input_channels": 72,
+          "native_article_output_channels": 10,
+          "native_article_window_frames": 50,
+          "exact_article_reproduction": false,
+          "capacity_control_not_paper_setting": true
+        },
+        "parameters": 150792,
+        "checked_output_shapes": [
+          [
+            3,
+            50,
+            2
+          ],
+          [
+            3,
+            120,
+            2
+          ],
+          [
+            3,
+            200,
+            2
+          ]
+        ],
+        "parameter_tensors_with_finite_nonzero_gradient": 14,
+        "synthetic_input_gradient_finite": true,
+        "repeated_call_after_unrelated_call_max_difference": 0.0,
+        "prefix_max_difference_eval_mode": 0.0
+      }
+    ],
+    "deferred_not_implemented": {
+      "hur_cnn": {
+        "status": "not_implemented_unresolved_paper_code_mismatch",
+        "paper_convolution_outputs": [
+          24,
+          8,
+          10
+        ],
+        "released_code_convolution_outputs": [
+          24,
+          8,
+          3
+        ],
+        "released_code_temporal_readout": "Linear(50, 50)",
+        "reason": "Paper methods do not specify that temporal readout; no guess is made."
+      }
+    },
+    "shape_cases": 12,
+    "gradient_cases": 4,
+    "optimizer_steps": 0,
+    "real_data_arrays_or_old_weights_opened": false,
+    "neural_training_fits": 0,
+    "benchmark_protocol_frozen": false,
+    "meaning": "interface readiness only, not training correctness or performance evidence",
+    "source_sha256": {
+      "architecture_baselines.py": "fb0e9486dbfeedd29f11a630f03b6746fc6b55688c2d7e38905b6817330eca64",
+      "probe_architecture_baselines.py": "668a4722ffd4da7db3aa61aee0bcbb0549e68638cf5d2bbc5312ce564d202ae0"
+    }
+  },
+  "prototype_measurement_probe": {
+    "status": "passed_synthetic_only_measurement_control_probe",
+    "date": "2026-10-25",
+    "checks": {
+      "replay_deterministic_no_input_mutation": true,
+      "measurement_noise_deterministic_no_input_mutation": true,
+      "constant_gyro_bias_deterministic_no_input_mutation": true,
+      "noise_plus_bias_deterministic_no_input_mutation": true,
+      "replay_identity": true,
+      "gyro_bias_constant_and_acc_unchanged": true,
+      "empirical_modality_SD_units": true,
+      "float32_preserved": true
+    },
+    "invalid_inputs_blocked": 5,
+    "empirical_ACC_noise_SD_m_s2": 0.019981130675134115,
+    "empirical_GYRO_noise_SD_rad_s": 0.0026162193014254136,
+    "provenance": {
+      "paper_doi": "10.3390/s23177458",
+      "source_task": "nine_axis_orientation_estimation",
+      "project_task": "twelve_input_joint_kinematics_regression",
+      "exact_article_reproduction": false,
+      "implementation": "independent_fixed_SD_SI_control",
+      "ACC_noise_SD_m_s2": 0.02,
+      "GYRO_noise_SD_rad_s": 0.002617993877991494,
+      "GYRO_bias_SD_rad_s": 0.008726646259971648,
+      "sample_axis": "full_parent_once_then_window",
+      "bias_constant_over_time": true,
+      "real_device_error_distribution_verified": false,
+      "roles_enforced_by_this_module": false
+    },
+    "real_data_or_weights_read": false,
+    "optimizer_steps": 0,
+    "formal_training_fits": 0,
+    "benchmark_protocol_frozen": false,
+    "training_role_guard_verified": false,
+    "source_sha256": {
+      "measurement_augmentations.py": "3214454cce70d65eb55cef4b9181e115fb7046bfb40b3893c7636a0219b4763f",
+      "probe_measurement_augmentations.py": "fd8cd835a9ba07e2079267697135d621abee0304b7c16da00e2c4bcfc39b7256"
+    }
+  },
+  "author_architecture_source": {
+    "verified_date": "2026-10-25",
+    "repository": "mintlabkorea/Learning-Based-Lower-Limb-Joint-Kinematic-Estimation-Using-Open-Source-IMU-Data",
+    "official_relationship": "article_data_availability_link",
+    "commit": "62af9e446bd52e3ab500c166847d690dc0a944c9",
+    "license": null,
+    "license_file_in_tree": false,
+    "files": [
+      {
+        "path": "Codes/main_lstm_angle.py",
+        "git_blob_sha1": "253025a744c24d5a7be033733c96428cbd8657c5",
+        "size": 1684
+      },
+      {
+        "path": "Codes/model_angle.py",
+        "git_blob_sha1": "d95e7188f3efeaf38bc8181f6a7f9f1a70b7f5e0",
+        "size": 963
+      },
+      {
+        "path": "Codes/model_cnn.py",
+        "git_blob_sha1": "caec9ae91ddcbba1ef11062449623d89c0fec817",
+        "size": 1007
+      },
+      {
+        "path": "Codes/model_combination.py",
+        "git_blob_sha1": "63d01f49d8e1138b2d654249b508e11b94a5483d",
+        "size": 967
+      },
+      {
+        "path": "Codes/params_angle.py",
+        "git_blob_sha1": "18f162325a751912f6287b9a587907c8a233d6ef",
+        "size": 2599
+      },
+      {
+        "path": "Codes/trainertoy_angle3_alter.py",
+        "git_blob_sha1": "64d75127c533122fc95cec64411588e4a19807f6",
+        "size": 19037
+      }
+    ],
+    "paper_code_CNN_discrepancy": {
+      "paper": [
+        72,
+        24,
+        8,
+        10
+      ],
+      "code": [
+        72,
+        24,
+        8,
+        3
+      ],
+      "code_temporal_readout": "Linear(50,50)",
+      "status": "unresolved_not_silently_corrected"
+    },
+    "parameter_count_check": {
+      "framework": "local_torch_instantiation_only",
+      "input_channels": 12,
+      "layers": 3,
+      "dropout": 0.2,
+      "hidden128_output6": 337670,
+      "hidden128_output2": 337154,
+      "hidden85_output6": 151136,
+      "hidden85_output2": 150792,
+      "training_steps": 0,
+      "data_arrays_read": 0
+    },
+    "Guo_public_code": "not_located_in_this_review_not_a_nonexistence_claim",
+    "new_training": false
+  },
+  "augmentation_primary_sources": {
+    "status": "primary_source_augmentation_review_complete_no_training",
+    "date": "2026-10-25 Asia/Tokyo",
+    "sources": [
+      {
+        "id": "Choi_Lee_2023",
+        "doi": "10.3390/s23177458",
+        "url": "https://www.mdpi.com/1424-8220/23/17/7458",
+        "input": "9_axis_ACC_GYRO_MAG",
+        "target": "sensor_orientation_quaternion",
+        "immediate_adaptation": [
+          "constant_gyro_bias",
+          "Gaussian_ACC_GYRO_noise"
+        ],
+        "exact_current_task": false,
+        "official_code_verified": false,
+        "reference_bias_std_rad_s": 0.008726646259971648,
+        "reference_acc_noise_m_s2": 0.02,
+        "reference_gyro_noise_rad_s": 0.002617993877991494,
+        "negative_std_description_requires_explicit_convention": true
+      },
+      {
+        "id": "MODA_CVPR2025",
+        "doi": "10.1109/CVPR52734.2025.02586",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wu_MODA_Motion-Drift_Augmentation_for_Inertial_Human_Motion_Analysis_CVPR_2025_paper.pdf",
+        "supplement_url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Wu_MODA_Motion-Drift_Augmentation_CVPR_2025_supplemental.pdf",
+        "input": "six_IMU_orientation_matrices_and_acceleration_for_HPE",
+        "target": "full_body_joint_rotation",
+        "exact_current_task": false,
+        "official_code_verified": false,
+        "four_additional_views": true,
+        "raw_gyro_bridge_audited": false,
+        "signed_scale_and_time_unit_conventions_require_resolution": true
+      },
+      {
+        "id": "Dorschky2020",
+        "doi": "10.3389/fbioe.2020.00604",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2020.00604/full",
+        "input": "four_IMUs_three_sagittal_channels_each",
+        "target": "right_sagittal_angles_moments_GRF_cycle100",
+        "exact_current_task": false,
+        "cnn_implementation_referenced_in_paper_supplement": true,
+        "complete_augmentation_pipeline_verified": false,
+        "symmetry_half_cycle_not_directly_valid_for_hemiparesis": true
+      },
+      {
+        "id": "Sharifi_Renani2021",
+        "doi": "10.3390/s21175876",
+        "url": "https://www.mdpi.com/1424-8220/21/17/5876",
+        "input": "pelvis_left_thigh_shank_foot_IMUs",
+        "target": "3D_hip_and_knee_kinematics",
+        "exact_current_task": false,
+        "official_code_verified": false,
+        "requires_regenerating_IMU_after_kinematics_augmentation": true,
+        "offset_std_degrees": 5,
+        "spline_knots": 7,
+        "warp_std": 0.2
+      },
+      {
+        "id": "Mundt2020",
+        "doi": "10.3389/fbioe.2020.00041",
+        "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2020.00041/full",
+        "input": "five_IMUs_ACC_GYRO30_channels",
+        "target": "18_angles_normalized101_cycle",
+        "exact_current_task": false,
+        "official_code_verified": false,
+        "position_optimization_bound_m": 0.05,
+        "position_bound_is_not_random_augmentation_distribution": true
+      },
+      {
+        "id": "Yamada_NatCommun2025",
+        "doi": "10.1038/s41467-025-61292-1",
+        "url": "https://www.nature.com/articles/s41467-025-61292-1",
+        "wearable_regression_task": "single_accelerometer_to_gait_speed",
+        "exact_current_task": false,
+        "paper_code_availability_checked": true
+      }
+    ],
+    "repositories": [
+      {
+        "repository": "mad-lab-fau/BioMAC-Sim-Toolbox",
+        "commit": "e03e20c03439816c2707616884ef3fa941fe4807",
+        "license": "Apache-2.0",
+        "scope": "simulation_engine_not_complete_2020_pipeline"
+      },
+      {
+        "repository": "namjohn10/GenerativeGaitNet",
+        "commit": "eaf3e256925c8b0acc3e95b539535beba105b511",
+        "license": "Apache-2.0",
+        "scope": "musculoskeletal_gait_generator_not_kinematic_regression"
+      },
+      {
+        "repository": "ai-for-sensor-data-analytics-ulm/imu_augment_sim",
+        "commit": "97ebe4bac073bf681c40c395abb0193a5bd1cb93",
+        "license": "MIT",
+        "scope": "quaternion_trajectories_exercise_classification_example_data_pending"
+      }
+    ],
+    "review_sha256": "a46d29a171a4f86e496958dceba2ebb2ef5fcbb83e810e8bf27f33e8d41eaa02",
+    "full_papers_for_local_read_only_do_not_publish": true,
+    "models_or_raw_patient_arrays_opened": false,
+    "new_training": false,
+    "old_experimental_artifacts_modified": false
+  },
+  "additional_primary_source_and_review": {
+    "date": "2026-10-25",
+    "repository": "InchengWang/NMS-GAP",
+    "base_commit": "c21e49c60d06b2ba2f097e70ed0a710ba28ee893",
+    "MIE": {
+      "repository": "Shurun-Wang/MIE-TCN",
+      "commit": "8e5b05a77b95c0d8a4b09ca83368d01830f3b31d",
+      "license_metadata": null,
+      "readme_claim": "MIT",
+      "actual_license_file_in_inspected_tree": false,
+      "files": [
+        {
+          "path": "README.md",
+          "git_blob_sha1": "fcfc04095808b51574c7e87e5e41317fa1e32819"
+        },
+        {
+          "path": "data/features.py",
+          "git_blob_sha1": "fc7ef2098155a954d2c82d8012bde4f81f1a23d7"
+        },
+        {
+          "path": "main_dl.py",
+          "git_blob_sha1": "f8126896c0c51bfac08ebc8269d091b0dd387477"
+        },
+        {
+          "path": "models/model.py",
+          "git_blob_sha1": "43dba17f136387c63500e0fe3273fe54011e1241"
+        },
+        {
+          "path": "models/tcn.py",
+          "git_blob_sha1": "539527c6b003d1898233ba4854a1b65df049002e"
+        }
+      ],
+      "verified_output_readout": "last_step_only",
+      "native_features": 14,
+      "twelve_channel_direct_feature_function_supported": false
+    },
+    "C_Mixup": {
+      "repository": "huaxiuyao/C-Mixup",
+      "commit": "0b88fb314075dbb2bebf4c6041a8116fb7604762",
+      "license": "MIT",
+      "algorithm_git_blob_sha1": "25fc12bd6c8195e2a8c894831216fc1b2da56fb3",
+      "status": "secondary_sequence_regression_adaptation_pending"
+    },
+    "independent_prototype_review": {
+      "status": "passed_independent_readonly_prototype_review",
+      "date": "2026-10-25",
+      "scope": [
+        "LSTM_input_output_and_state_reset",
+        "SI_units_and_ACC_GYRO_column_mapping",
+        "parent_constant_gyro_bias",
+        "six_cell_budget_arithmetic"
+      ],
+      "architecture_cases": 12,
+      "measurement_properties": 8,
+      "invalid_measurement_inputs": 5,
+      "real_training_data_or_old_weights_read": false,
+      "new_fits": 0,
+      "optimizer_steps": 0,
+      "full_training_runner_implemented": false,
+      "role_guard_verified": false,
+      "full_paper_reproduction_claimed": false,
+      "noise_plus_bias_in_primary_six_cell_matrix": false,
+      "old_79_freeze_to_verify_before_publication": true
+    }
+  },
+  "local_review_sha256": {
+    "architecture_primary_review.md": "8f9127f4e2eed8909652e1af4a9703e970b1c55df2da2b17fb4419d88344e656",
+    "augmentation_primary_review.md": "a46d29a171a4f86e496958dceba2ebb2ef5fcbb83e810e8bf27f33e8d41eaa02",
+    "local_comparison_feasibility.md": "c42f6665c2b43c64992996b2ba997eb741d0232b2b3cc3da1e1816a7ef081ede"
+  },
+  "public_code_sha256": {
+    "architecture_baselines.py": "fb0e9486dbfeedd29f11a630f03b6746fc6b55688c2d7e38905b6817330eca64",
+    "probe_architecture_baselines.py": "668a4722ffd4da7db3aa61aee0bcbb0549e68638cf5d2bbc5312ce564d202ae0",
+    "probe_receipt.json": "c0564c198202a13075f1bc1dfbf0324e3a346c317a9ca0b2411aa730e5d2c552",
+    "measurement_augmentations.py": "3214454cce70d65eb55cef4b9181e115fb7046bfb40b3893c7636a0219b4763f",
+    "probe_measurement_augmentations.py": "fd8cd835a9ba07e2079267697135d621abee0304b7c16da00e2c4bcfc39b7256",
+    "measurement_probe_receipt.json": "53f84cfd59fa7219a8e5d19e9d3b3eb43a23fcacacb95b4b954135cc719ab40d"
+  },
+  "independent_prototype_review_not_full_training_audit": true,
+  "whole_papers_models_or_raw_arrays_included": false
+}

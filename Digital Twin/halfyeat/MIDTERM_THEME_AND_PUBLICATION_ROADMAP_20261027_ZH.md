@@ -103,3 +103,13 @@ The delivered visual deck expands the earlier 13-page outline to 14 main slides 
 推荐答辩结论：**我们已建立可追溯的稀疏IMU运动重建与个体适配评测体系；现有卒中结果支持有限监督个体化，跨患者零标定迁移仍有明显不足。健康公开数据补充了跨速度与合成方向敏感性的技术证据。下一阶段将检验如何以明确的参考成本保留跨条件能力，并补足更独立的卒中证据。**
 
 本页仅调整近期主题、证据组织和拟议目标；未启动新训练、未重选模型、未修改任何冻结数据/实验合同。长期入组与交接安排保留，旧一月首投日期仍是受证据门槛约束的规划目标。
+
+---
+
+## 2026-10-25 文献baseline补充：先补对照，再解释架构与增强收益
+
+用户要求用类似优质文章中的baseline对比。[文献baseline核查与比较方案](SII2027_LITERATURE_BASELINES_20261025_ZH.md)已完成一手论文和作者代码核查；优先Hur-LSTM128及参数匹配LSTM85，增强先加入测量噪声/constant gyro bias。Guo完整physics-informed、MIE-TCN、MODA、物理仿真与C-Mixup分别记录输入/标定/读出条件，不把改编当全文复现。
+
+两个独立LSTM和SI扰动原型通过合成接口检查，正式新增fit/性能评价仍为0。旧ARCH79项继续冻结；新比较分支拟采用独立数据洗牌RNG和新Frame匹配控制，6个独立cell共144fit/126000更新。它首先是Stroke患者内跨trial比较，后续跨患者G/I/A和Dorschky需另立协议。未把它或旧内部消融写成已发表方法优越性结论。
+
+代码/输入差异、来源commit、原型与预算见新报告及[机器索引](SII2027_LITERATURE_BASELINE_INDEX_20261025.json)。当前全英文答辩稿已验结果不变，拟议baseline不进入已有成绩表。

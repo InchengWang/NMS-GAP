@@ -1,5 +1,7 @@
 # halfyeat：稀疏IMU运动重建的泛化与个体化
 
+**2026-10-25研究更新：** [文献baseline核查与比较方案](SII2027_LITERATURE_BASELINES_20261025_ZH.md)与[代码/来源索引](SII2027_LITERATURE_BASELINE_INDEX_20261025.json)。新原型已通过合成检查，正式比较尚未训练；旧架构与答辩已验成绩保持。
+
 **English defense presentation — 27 October 2026:** [Open the 14-slide visual deck](MIDTERM_DEFENSE_20261027_EN.md) · [English speaking script](MIDTERM_DEFENSE_20261027_SPEAKER_NOTES_EN.md) · [4 backup slides and references](MIDTERM_DEFENSE_20261027_APPENDIX_EN.md). Yincheng Wang · Mitsuhiro Hayashibe · Tohoku University · Robotics. Main talk: 14:30 + 0:30 buffer; all slides and speaking notes are English.
 
 **当前主题更新（2026-10-25）：** 用户确认2026-10-27中期答辩题目为 **Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs**。近期以真实双小腿IMU、跨患者建模与有限标签个体化为中心；三层目标为现有可组织投稿内容、适当优化、期刊证据包，见[当前主题与路线](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md)及[当前答辩大纲](MASTER_MIDTERM_OUTLINE_ZH.md)。现有证据更支持个体适配，零标定卒中泛化仍待验证；健康外部数据仅作技术复核。架构继续冻结，本次不启动新训练。以下旧日期、标题和未完成状态按各自记录日期保留，当前答辩日期以10月27日为准。

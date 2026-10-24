@@ -1,0 +1,40 @@
+{
+  "status": "passed_synthetic_only_measurement_control_probe",
+  "date": "2026-10-25",
+  "checks": {
+    "replay_deterministic_no_input_mutation": true,
+    "measurement_noise_deterministic_no_input_mutation": true,
+    "constant_gyro_bias_deterministic_no_input_mutation": true,
+    "noise_plus_bias_deterministic_no_input_mutation": true,
+    "replay_identity": true,
+    "gyro_bias_constant_and_acc_unchanged": true,
+    "empirical_modality_SD_units": true,
+    "float32_preserved": true
+  },
+  "invalid_inputs_blocked": 5,
+  "empirical_ACC_noise_SD_m_s2": 0.019981130675134115,
+  "empirical_GYRO_noise_SD_rad_s": 0.0026162193014254136,
+  "provenance": {
+    "paper_doi": "10.3390/s23177458",
+    "source_task": "nine_axis_orientation_estimation",
+    "project_task": "twelve_input_joint_kinematics_regression",
+    "exact_article_reproduction": false,
+    "implementation": "independent_fixed_SD_SI_control",
+    "ACC_noise_SD_m_s2": 0.02,
+    "GYRO_noise_SD_rad_s": 0.002617993877991494,
+    "GYRO_bias_SD_rad_s": 0.008726646259971648,
+    "sample_axis": "full_parent_once_then_window",
+    "bias_constant_over_time": true,
+    "real_device_error_distribution_verified": false,
+    "roles_enforced_by_this_module": false
+  },
+  "real_data_or_weights_read": false,
+  "optimizer_steps": 0,
+  "formal_training_fits": 0,
+  "benchmark_protocol_frozen": false,
+  "training_role_guard_verified": false,
+  "source_sha256": {
+    "measurement_augmentations.py": "3214454cce70d65eb55cef4b9181e115fb7046bfb40b3893c7636a0219b4763f",
+    "probe_measurement_augmentations.py": "fd8cd835a9ba07e2079267697135d621abee0304b7c16da00e2c4bcfc39b7256"
+  }
+}

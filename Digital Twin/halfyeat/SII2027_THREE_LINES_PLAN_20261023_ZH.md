@@ -193,3 +193,13 @@ ARCH保持79项冻结。WMCG完整公开源接入后，物理QC发现P05/P06/P07
 45新fit/34200更新及独立训练/结果验收完成。每目标2秒梯度/2.4秒marker预处理，完整trial/公开QC/作者功能标定另计。cross-speed双膝RMSE G_R 5.384334°、G_S 5.031603°、A_R 4.425045°、A_S 4.520874°、I_R 6.897207°；相同2秒固定10°压力差A_R +0.193454°、A_S +0.082787°。same-speed另报，预定三项统计只用cross-speed；1160模型-parent包/22040case（clean计一次）/44080角行、12表及三统计已独立复算。保留适配未必优于无适配G_S等负结果，不据外层成绩调参数。
 
 目的—尝试—结论与函数入口见[新实验报告](SII2027_DORSCHKY_EXTERNAL_20261024_ZH.md)、[来源/成本/验收摘要](SII2027_DORSCHKY_READINESS_20261024.json)、[函数行号/SHA](SII2027_DORSCHKY_CODE_INDEX_20261024.json)与[完整聚合](SII2027_DORSCHKY_AGGREGATES_20261024.json)；新增Kiel/Grouvel/GAITEX/Twente候选核验见[简报](SII2027_PUBLIC_DATASET_CANDIDATES_20261024_ZH.md)。Kiel公开21健康、不是公开卒中，许可来源差异和标定配对待核；未将任何候选包装为已完成训练或真实重戴证据。
+
+---
+
+## 2026-10-25 文献baseline补充：先补对照，再解释架构与增强收益
+
+用户要求用类似优质文章中的baseline对比。[文献baseline核查与比较方案](SII2027_LITERATURE_BASELINES_20261025_ZH.md)已完成一手论文和作者代码核查；优先Hur-LSTM128及参数匹配LSTM85，增强先加入测量噪声/constant gyro bias。Guo完整physics-informed、MIE-TCN、MODA、物理仿真与C-Mixup分别记录输入/标定/读出条件，不把改编当全文复现。
+
+两个独立LSTM和SI扰动原型通过合成接口检查，正式新增fit/性能评价仍为0。旧ARCH79项继续冻结；新比较分支拟采用独立数据洗牌RNG和新Frame匹配控制，6个独立cell共144fit/126000更新。它首先是Stroke患者内跨trial比较，后续跨患者G/I/A和Dorschky需另立协议。未把它或旧内部消融写成已发表方法优越性结论。
+
+代码/输入差异、来源commit、原型与预算见新报告及[机器索引](SII2027_LITERATURE_BASELINE_INDEX_20261025.json)。当前全英文答辩稿已验结果不变，拟议baseline不进入已有成绩表。
