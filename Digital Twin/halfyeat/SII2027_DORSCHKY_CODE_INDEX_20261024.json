@@ -1,0 +1,2071 @@
+{
+  "status": "accepted_function_line_SHA_index",
+  "date": "2026-10-25",
+  "experiment_date": "2026-10-24",
+  "source_root_relative_to_submission": "experiments/dorschky_external_20261024",
+  "source_files": [
+    {
+      "path": "acquire_selected_sources.py",
+      "sha256": "e97c8b5aff81f94bef5413cebd796eb8bc72b32146f11bed90986ac8e15bd70e",
+      "bytes": 13406,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 36,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write_json",
+          "line": 43,
+          "end_line": 44
+        },
+        {
+          "type": "FunctionDef",
+          "name": "record",
+          "line": 47,
+          "end_line": 58
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fetch_range",
+          "line": 64,
+          "end_line": 95
+        },
+        {
+          "type": "FunctionDef",
+          "name": "footer",
+          "line": 98,
+          "end_line": 116
+        },
+        {
+          "type": "FunctionDef",
+          "name": "column_spans",
+          "line": 119,
+          "end_line": 127
+        },
+        {
+          "type": "FunctionDef",
+          "name": "decode_selected",
+          "line": 130,
+          "end_line": 145
+        },
+        {
+          "type": "FunctionDef",
+          "name": "full_omc",
+          "line": 148,
+          "end_line": 157
+        },
+        {
+          "type": "FunctionDef",
+          "name": "trigger",
+          "line": 160,
+          "end_line": 170
+        },
+        {
+          "type": "FunctionDef",
+          "name": "metadata_stage",
+          "line": 173,
+          "end_line": 192
+        },
+        {
+          "type": "FunctionDef",
+          "name": "selected_stage",
+          "line": 195,
+          "end_line": 230
+        }
+      ]
+    },
+    {
+      "path": "audit_dorschky_results.py",
+      "sha256": "44af78b9674529282074878f27ed68a46b4171ab4dc02365a3fa6b7c56cbdb67",
+      "bytes": 20224,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 26,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 27,
+          "end_line": 27
+        },
+        {
+          "type": "ClassDef",
+          "name": "ReadGuard",
+          "line": 30,
+          "end_line": 66
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 31,
+          "end_line": 35
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 37,
+          "end_line": 50
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 52,
+          "end_line": 62
+        },
+        {
+          "type": "FunctionDef",
+          "name": "event",
+          "line": 55,
+          "end_line": 56
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load",
+          "line": 58,
+          "end_line": 60
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 64,
+          "end_line": 66
+        },
+        {
+          "type": "FunctionDef",
+          "name": "cases",
+          "line": 69,
+          "end_line": 82
+        },
+        {
+          "type": "FunctionDef",
+          "name": "rotate",
+          "line": 85,
+          "end_line": 96
+        },
+        {
+          "type": "FunctionDef",
+          "name": "predict_many",
+          "line": 99,
+          "end_line": 113
+        },
+        {
+          "type": "FunctionDef",
+          "name": "metrics",
+          "line": 116,
+          "end_line": 127
+        },
+        {
+          "type": "FunctionDef",
+          "name": "average",
+          "line": 130,
+          "end_line": 131
+        },
+        {
+          "type": "FunctionDef",
+          "name": "rebuild_tables",
+          "line": 134,
+          "end_line": 180
+        },
+        {
+          "type": "FunctionDef",
+          "name": "compare",
+          "line": 183,
+          "end_line": 199
+        },
+        {
+          "type": "FunctionDef",
+          "name": "statistics",
+          "line": 202,
+          "end_line": 232
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 235,
+          "end_line": 332
+        }
+      ]
+    },
+    {
+      "path": "audit_dorschky_training.py",
+      "sha256": "13e522b327f209b5e929cdcb0e9c67283e96270a8bab5c9cb772b54ff31d3c15",
+      "bytes": 36055,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 47,
+          "end_line": 48
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 51,
+          "end_line": 52
+        },
+        {
+          "type": "FunctionDef",
+          "name": "ah",
+          "line": 55,
+          "end_line": 56
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 59,
+          "end_line": 65
+        },
+        {
+          "type": "ClassDef",
+          "name": "ExactReadGuard",
+          "line": 68,
+          "end_line": 130
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 70,
+          "end_line": 78
+        },
+        {
+          "type": "FunctionDef",
+          "name": "set_roles",
+          "line": 80,
+          "end_line": 82
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 84,
+          "end_line": 108
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 110,
+          "end_line": 121
+        },
+        {
+          "type": "FunctionDef",
+          "name": "event_hook",
+          "line": 113,
+          "end_line": 115
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load",
+          "line": 117,
+          "end_line": 119
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 123,
+          "end_line": 125
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 127,
+          "end_line": 130
+        },
+        {
+          "type": "ClassDef",
+          "name": "LiteralTwoKneeTCN",
+          "line": 133,
+          "end_line": 157
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 135,
+          "end_line": 140
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__call__",
+          "line": 142,
+          "end_line": 157
+        },
+        {
+          "type": "FunctionDef",
+          "name": "locations",
+          "line": 160,
+          "end_line": 165
+        },
+        {
+          "type": "FunctionDef",
+          "name": "infer",
+          "line": 168,
+          "end_line": 184
+        },
+        {
+          "type": "FunctionDef",
+          "name": "source_metric",
+          "line": 187,
+          "end_line": 194
+        },
+        {
+          "type": "FunctionDef",
+          "name": "architecture_class",
+          "line": 197,
+          "end_line": 206
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fresh_and_shuffle",
+          "line": 209,
+          "end_line": 221
+        },
+        {
+          "type": "FunctionDef",
+          "name": "scalers",
+          "line": 224,
+          "end_line": 230
+        },
+        {
+          "type": "FunctionDef",
+          "name": "equal_scalers",
+          "line": 233,
+          "end_line": 238
+        },
+        {
+          "type": "FunctionDef",
+          "name": "same_state",
+          "line": 241,
+          "end_line": 244
+        },
+        {
+          "type": "FunctionDef",
+          "name": "rotation",
+          "line": 247,
+          "end_line": 262
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build_windows",
+          "line": 265,
+          "end_line": 289
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_views",
+          "line": 292,
+          "end_line": 314
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_rows",
+          "line": 317,
+          "end_line": 341
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folder",
+          "line": 344,
+          "end_line": 345
+        },
+        {
+          "type": "FunctionDef",
+          "name": "select_path",
+          "line": 348,
+          "end_line": 349
+        },
+        {
+          "type": "FunctionDef",
+          "name": "expected_roles",
+          "line": 352,
+          "end_line": 362
+        },
+        {
+          "type": "FunctionDef",
+          "name": "inspect_fit",
+          "line": 365,
+          "end_line": 474
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 477,
+          "end_line": 595
+        },
+        {
+          "type": "FunctionDef",
+          "name": "synthetic_preflight",
+          "line": 598,
+          "end_line": 638
+        }
+      ]
+    },
+    {
+      "path": "audit_reference_time_sensitivity.py",
+      "sha256": "4eaf55c71a7cda19aa961ae5b40d3f5e0efc27e4606a432437e954d120a759bd",
+      "bytes": 8992,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 19,
+          "end_line": 20
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 23,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 27,
+          "end_line": 159
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guard",
+          "line": 50,
+          "end_line": 64
+        }
+      ]
+    },
+    {
+      "path": "candidate_engine_synthetic_review.py",
+      "sha256": "7288c844671072fbc76952842335bb218aca530c90ac0e986455c1fab9a6b278",
+      "bytes": 6050,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "ClassDef",
+          "name": "Passthrough",
+          "line": 30,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "forward",
+          "line": 31,
+          "end_line": 31
+        }
+      ]
+    },
+    {
+      "path": "candidate_source_history/before_label_name_alignment/dorschky_training.py",
+      "sha256": "c8cbe3174cff8fcd6955e16f39f36e6fbea133a54b9472d0292383c953395a7b",
+      "bytes": 27866,
+      "syntax": "parsed",
+      "status": "retired_history",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 28,
+          "end_line": 28
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 29,
+          "end_line": 29
+        },
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 30,
+          "end_line": 30
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 31,
+          "end_line": 34
+        },
+        {
+          "type": "FunctionDef",
+          "name": "augmentation_module",
+          "line": 37,
+          "end_line": 41
+        },
+        {
+          "type": "FunctionDef",
+          "name": "manifest",
+          "line": 47,
+          "end_line": 47
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folds",
+          "line": 48,
+          "end_line": 48
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fold",
+          "line": 49,
+          "end_line": 49
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folder",
+          "line": 50,
+          "end_line": 50
+        },
+        {
+          "type": "FunctionDef",
+          "name": "record",
+          "line": 51,
+          "end_line": 51
+        },
+        {
+          "type": "FunctionDef",
+          "name": "expected_role_ids",
+          "line": 54,
+          "end_line": 67
+        },
+        {
+          "type": "FunctionDef",
+          "name": "ordered",
+          "line": 55,
+          "end_line": 55
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_supports",
+          "line": 70,
+          "end_line": 74
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_paths",
+          "line": 77,
+          "end_line": 78
+        },
+        {
+          "type": "ClassDef",
+          "name": "RoleGuard",
+          "line": 81,
+          "end_line": 133
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 88,
+          "end_line": 93
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 94,
+          "end_line": 113
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 114,
+          "end_line": 128
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_open",
+          "line": 118,
+          "end_line": 120
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_load",
+          "line": 121,
+          "end_line": 123
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 124,
+          "end_line": 125
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 129,
+          "end_line": 129
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 130,
+          "end_line": 133
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_trials",
+          "line": 136,
+          "end_line": 159
+        },
+        {
+          "type": "FunctionDef",
+          "name": "arrays",
+          "line": 162,
+          "end_line": 181
+        },
+        {
+          "type": "FunctionDef",
+          "name": "parent_arm",
+          "line": 184,
+          "end_line": 184
+        },
+        {
+          "type": "FunctionDef",
+          "name": "augmentation",
+          "line": 185,
+          "end_line": 185
+        },
+        {
+          "type": "FunctionDef",
+          "name": "checkpoint",
+          "line": 186,
+          "end_line": 186
+        },
+        {
+          "type": "FunctionDef",
+          "name": "valid_metric",
+          "line": 189,
+          "end_line": 198
+        },
+        {
+          "type": "FunctionDef",
+          "name": "job",
+          "line": 201,
+          "end_line": 205
+        },
+        {
+          "type": "FunctionDef",
+          "name": "jobs",
+          "line": 208,
+          "end_line": 210
+        },
+        {
+          "type": "FunctionDef",
+          "name": "static_sources",
+          "line": 213,
+          "end_line": 218
+        },
+        {
+          "type": "FunctionDef",
+          "name": "validate_manifest",
+          "line": 221,
+          "end_line": 246
+        },
+        {
+          "type": "FunctionDef",
+          "name": "contract",
+          "line": 249,
+          "end_line": 283
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_contract",
+          "line": 286,
+          "end_line": 290
+        },
+        {
+          "type": "FunctionDef",
+          "name": "preflight_gate",
+          "line": 293,
+          "end_line": 298
+        },
+        {
+          "type": "FunctionDef",
+          "name": "source_audit_gate",
+          "line": 301,
+          "end_line": 308
+        },
+        {
+          "type": "FunctionDef",
+          "name": "verify",
+          "line": 311,
+          "end_line": 329
+        },
+        {
+          "type": "FunctionDef",
+          "name": "worker",
+          "line": 332,
+          "end_line": 403
+        },
+        {
+          "type": "FunctionDef",
+          "name": "train",
+          "line": 406,
+          "end_line": 441
+        },
+        {
+          "type": "FunctionDef",
+          "name": "one",
+          "line": 411,
+          "end_line": 418
+        }
+      ]
+    },
+    {
+      "path": "candidate_v1/retired_source/prepare_release.py",
+      "sha256": "7910429e023d03590f9e79972bd76f043828c25ad80eae22503d03ba4b78b52e",
+      "bytes": 16756,
+      "syntax": "parsed",
+      "status": "retired_history",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 22,
+          "end_line": 27
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 30,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write_frozen",
+          "line": 34,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "qc_contract",
+          "line": 43,
+          "end_line": 63
+        },
+        {
+          "type": "FunctionDef",
+          "name": "crossmodal_consistency",
+          "line": 66,
+          "end_line": 85
+        },
+        {
+          "type": "FunctionDef",
+          "name": "inspect_person",
+          "line": 88,
+          "end_line": 181
+        },
+        {
+          "type": "FunctionDef",
+          "name": "release",
+          "line": 184,
+          "end_line": 258
+        }
+      ]
+    },
+    {
+      "path": "dorschky_evaluation.py",
+      "sha256": "17add9d2a9b7099d4978e2365bcc01d28ad65db6603864519d2f40909033c921",
+      "bytes": 33928,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 41,
+          "end_line": 42
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 45,
+          "end_line": 46
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 49,
+          "end_line": 50
+        },
+        {
+          "type": "FunctionDef",
+          "name": "manifest",
+          "line": 54,
+          "end_line": 55
+        },
+        {
+          "type": "FunctionDef",
+          "name": "targets",
+          "line": 58,
+          "end_line": 59
+        },
+        {
+          "type": "FunctionDef",
+          "name": "record",
+          "line": 62,
+          "end_line": 63
+        },
+        {
+          "type": "FunctionDef",
+          "name": "evaluation_parents",
+          "line": 66,
+          "end_line": 78
+        },
+        {
+          "type": "FunctionDef",
+          "name": "prediction_path",
+          "line": 81,
+          "end_line": 82
+        },
+        {
+          "type": "FunctionDef",
+          "name": "cases",
+          "line": 85,
+          "end_line": 98
+        },
+        {
+          "type": "FunctionDef",
+          "name": "qmatrix",
+          "line": 101,
+          "end_line": 114
+        },
+        {
+          "type": "FunctionDef",
+          "name": "perturb",
+          "line": 117,
+          "end_line": 125
+        },
+        {
+          "type": "ClassDef",
+          "name": "EvaluationGuard",
+          "line": 128,
+          "end_line": 196
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 133,
+          "end_line": 141
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 143,
+          "end_line": 168
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 170,
+          "end_line": 186
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load",
+          "line": 174,
+          "end_line": 177
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 178,
+          "end_line": 180
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 188,
+          "end_line": 189
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 191,
+          "end_line": 196
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_support",
+          "line": 199,
+          "end_line": 219
+        },
+        {
+          "type": "FunctionDef",
+          "name": "angle_metrics",
+          "line": 222,
+          "end_line": 236
+        },
+        {
+          "type": "FunctionDef",
+          "name": "endpoint_rows",
+          "line": 239,
+          "end_line": 247
+        },
+        {
+          "type": "FunctionDef",
+          "name": "exact_signflip",
+          "line": 250,
+          "end_line": 255
+        },
+        {
+          "type": "FunctionDef",
+          "name": "statistics",
+          "line": 258,
+          "end_line": 286
+        },
+        {
+          "type": "FunctionDef",
+          "name": "aggregate",
+          "line": 289,
+          "end_line": 332
+        },
+        {
+          "type": "FunctionDef",
+          "name": "contract",
+          "line": 335,
+          "end_line": 370
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_contract",
+          "line": 373,
+          "end_line": 377
+        },
+        {
+          "type": "FunctionDef",
+          "name": "unlock_gate",
+          "line": 380,
+          "end_line": 424
+        },
+        {
+          "type": "FunctionDef",
+          "name": "evaluate",
+          "line": 427,
+          "end_line": 507
+        },
+        {
+          "type": "FunctionDef",
+          "name": "synthetic_preflight",
+          "line": 510,
+          "end_line": 596
+        }
+      ]
+    },
+    {
+      "path": "dorschky_model_engine.py",
+      "sha256": "6ab60f038829f917881ae75b3c0cbb74cc98c60466bda2292df0c7703d2b4499",
+      "bytes": 6069,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 27,
+          "end_line": 27
+        },
+        {
+          "type": "FunctionDef",
+          "name": "architecture_namespace",
+          "line": 30,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "seed_all",
+          "line": 47,
+          "end_line": 48
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fresh_model",
+          "line": 51,
+          "end_line": 56
+        },
+        {
+          "type": "FunctionDef",
+          "name": "starts",
+          "line": 59,
+          "end_line": 64
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fit_scaler",
+          "line": 67,
+          "end_line": 73
+        },
+        {
+          "type": "FunctionDef",
+          "name": "standardize",
+          "line": 76,
+          "end_line": 77
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fit_scalers",
+          "line": 80,
+          "end_line": 81
+        },
+        {
+          "type": "FunctionDef",
+          "name": "make_windows",
+          "line": 84,
+          "end_line": 96
+        },
+        {
+          "type": "FunctionDef",
+          "name": "infer",
+          "line": 99,
+          "end_line": 127
+        },
+        {
+          "type": "FunctionDef",
+          "name": "source_description",
+          "line": 130,
+          "end_line": 136
+        }
+      ]
+    },
+    {
+      "path": "dorschky_signal.py",
+      "sha256": "03d384aacdab5fe520704b32864c9b3e8c30b280208a01b65412133d8b3e176f",
+      "bytes": 8680,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 22,
+          "end_line": 23
+        },
+        {
+          "type": "FunctionDef",
+          "name": "filters",
+          "line": 26,
+          "end_line": 29
+        },
+        {
+          "type": "FunctionDef",
+          "name": "longest_run",
+          "line": 32,
+          "end_line": 38
+        },
+        {
+          "type": "FunctionDef",
+          "name": "signed_knee",
+          "line": 41,
+          "end_line": 58
+        },
+        {
+          "type": "FunctionDef",
+          "name": "construct",
+          "line": 61,
+          "end_line": 118
+        },
+        {
+          "type": "FunctionDef",
+          "name": "input_quality",
+          "line": 121,
+          "end_line": 141
+        },
+        {
+          "type": "FunctionDef",
+          "name": "synthetic_preflight",
+          "line": 144,
+          "end_line": 164
+        }
+      ]
+    },
+    {
+      "path": "dorschky_training.py",
+      "sha256": "61ce4fbfba9981f67dfc9aa8cf8a83dfa8d03d129bb07f29427573272856039b",
+      "bytes": 28182,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 28,
+          "end_line": 28
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 29,
+          "end_line": 29
+        },
+        {
+          "type": "FunctionDef",
+          "name": "digest",
+          "line": 30,
+          "end_line": 30
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 31,
+          "end_line": 34
+        },
+        {
+          "type": "FunctionDef",
+          "name": "augmentation_module",
+          "line": 37,
+          "end_line": 41
+        },
+        {
+          "type": "FunctionDef",
+          "name": "manifest",
+          "line": 47,
+          "end_line": 47
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folds",
+          "line": 48,
+          "end_line": 48
+        },
+        {
+          "type": "FunctionDef",
+          "name": "fold",
+          "line": 49,
+          "end_line": 49
+        },
+        {
+          "type": "FunctionDef",
+          "name": "folder",
+          "line": 50,
+          "end_line": 50
+        },
+        {
+          "type": "FunctionDef",
+          "name": "record",
+          "line": 51,
+          "end_line": 51
+        },
+        {
+          "type": "FunctionDef",
+          "name": "expected_role_ids",
+          "line": 54,
+          "end_line": 67
+        },
+        {
+          "type": "FunctionDef",
+          "name": "ordered",
+          "line": 55,
+          "end_line": 55
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_supports",
+          "line": 70,
+          "end_line": 74
+        },
+        {
+          "type": "FunctionDef",
+          "name": "role_paths",
+          "line": 77,
+          "end_line": 78
+        },
+        {
+          "type": "ClassDef",
+          "name": "RoleGuard",
+          "line": 81,
+          "end_line": 133
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__init__",
+          "line": 88,
+          "end_line": 93
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check",
+          "line": 94,
+          "end_line": 113
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__enter__",
+          "line": 114,
+          "end_line": 128
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_open",
+          "line": 118,
+          "end_line": 120
+        },
+        {
+          "type": "FunctionDef",
+          "name": "guarded_load",
+          "line": 121,
+          "end_line": 123
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 124,
+          "end_line": 125
+        },
+        {
+          "type": "FunctionDef",
+          "name": "__exit__",
+          "line": 129,
+          "end_line": 129
+        },
+        {
+          "type": "FunctionDef",
+          "name": "receipt",
+          "line": 130,
+          "end_line": 133
+        },
+        {
+          "type": "FunctionDef",
+          "name": "load_trials",
+          "line": 136,
+          "end_line": 159
+        },
+        {
+          "type": "FunctionDef",
+          "name": "arrays",
+          "line": 162,
+          "end_line": 181
+        },
+        {
+          "type": "FunctionDef",
+          "name": "parent_arm",
+          "line": 184,
+          "end_line": 184
+        },
+        {
+          "type": "FunctionDef",
+          "name": "augmentation",
+          "line": 185,
+          "end_line": 185
+        },
+        {
+          "type": "FunctionDef",
+          "name": "checkpoint",
+          "line": 186,
+          "end_line": 186
+        },
+        {
+          "type": "FunctionDef",
+          "name": "valid_metric",
+          "line": 189,
+          "end_line": 198
+        },
+        {
+          "type": "FunctionDef",
+          "name": "job",
+          "line": 201,
+          "end_line": 205
+        },
+        {
+          "type": "FunctionDef",
+          "name": "jobs",
+          "line": 208,
+          "end_line": 210
+        },
+        {
+          "type": "FunctionDef",
+          "name": "static_sources",
+          "line": 213,
+          "end_line": 218
+        },
+        {
+          "type": "FunctionDef",
+          "name": "validate_manifest",
+          "line": 221,
+          "end_line": 250
+        },
+        {
+          "type": "FunctionDef",
+          "name": "contract",
+          "line": 253,
+          "end_line": 287
+        },
+        {
+          "type": "FunctionDef",
+          "name": "check_contract",
+          "line": 290,
+          "end_line": 294
+        },
+        {
+          "type": "FunctionDef",
+          "name": "preflight_gate",
+          "line": 297,
+          "end_line": 302
+        },
+        {
+          "type": "FunctionDef",
+          "name": "source_audit_gate",
+          "line": 305,
+          "end_line": 312
+        },
+        {
+          "type": "FunctionDef",
+          "name": "verify",
+          "line": 315,
+          "end_line": 333
+        },
+        {
+          "type": "FunctionDef",
+          "name": "worker",
+          "line": 336,
+          "end_line": 407
+        },
+        {
+          "type": "FunctionDef",
+          "name": "train",
+          "line": 410,
+          "end_line": 445
+        },
+        {
+          "type": "FunctionDef",
+          "name": "one",
+          "line": 415,
+          "end_line": 422
+        }
+      ]
+    },
+    {
+      "path": "dorschky_training_preflight.py",
+      "sha256": "90a74e15a44e5b8c0acfd05b6dc78cae07f4fb0de75e37437ce5aef484307b11",
+      "bytes": 16881,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "state_fingerprint",
+          "line": 22,
+          "end_line": 23
+        },
+        {
+          "type": "FunctionDef",
+          "name": "functional_forward",
+          "line": 26,
+          "end_line": 41
+        },
+        {
+          "type": "FunctionDef",
+          "name": "conv",
+          "line": 31,
+          "end_line": 33
+        },
+        {
+          "type": "FunctionDef",
+          "name": "norm",
+          "line": 34,
+          "end_line": 36
+        },
+        {
+          "type": "FunctionDef",
+          "name": "independent_starts",
+          "line": 44,
+          "end_line": 46
+        },
+        {
+          "type": "FunctionDef",
+          "name": "independent_hann_oracle",
+          "line": 49,
+          "end_line": 62
+        },
+        {
+          "type": "FunctionDef",
+          "name": "synthetic_model_gates",
+          "line": 65,
+          "end_line": 102
+        },
+        {
+          "type": "FunctionDef",
+          "name": "scaler_oracle",
+          "line": 105,
+          "end_line": 113
+        },
+        {
+          "type": "FunctionDef",
+          "name": "window_oracle",
+          "line": 116,
+          "end_line": 134
+        },
+        {
+          "type": "FunctionDef",
+          "name": "augmentation_invariants",
+          "line": 137,
+          "end_line": 158
+        },
+        {
+          "type": "FunctionDef",
+          "name": "first_epoch_shuffle",
+          "line": 161,
+          "end_line": 168
+        },
+        {
+          "type": "FunctionDef",
+          "name": "rejection_proofs",
+          "line": 171,
+          "end_line": 208
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 211,
+          "end_line": 284
+        }
+      ]
+    },
+    {
+      "path": "finalize_source_acquisition.py",
+      "sha256": "13c9225af889a2278ac2e6d915ab9f3e985f8dc9ce1ce56ce23af85897d45c73",
+      "bytes": 3525,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 9,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "path": "freeze_execution.py",
+      "sha256": "56f989b88342f3620300a9abad87ffe99b8b9b48accb040ec0e61c4c0d0fcc74",
+      "bytes": 6899,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 10,
+          "end_line": 11
+        },
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 14,
+          "end_line": 15
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write",
+          "line": 18,
+          "end_line": 22
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 25,
+          "end_line": 98
+        }
+      ]
+    },
+    {
+      "path": "independent_audit_source_history/prefreeze_declared_supports_only_138eeaa2fa3c0c6a15902923e5d3fbb6e571a8e28751390a0ff2863e292b9ad0.py",
+      "sha256": "138eeaa2fa3c0c6a15902923e5d3fbb6e571a8e28751390a0ff2863e292b9ad0",
+      "bytes": 16999,
+      "syntax": "parsed",
+      "status": "retired_history",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "file_sha",
+          "line": 26,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_sha",
+          "line": 34,
+          "end_line": 35
+        },
+        {
+          "type": "FunctionDef",
+          "name": "require",
+          "line": 38,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "centered_decimate",
+          "line": 43,
+          "end_line": 49
+        },
+        {
+          "type": "FunctionDef",
+          "name": "longest_finite_span",
+          "line": 52,
+          "end_line": 59
+        },
+        {
+          "type": "FunctionDef",
+          "name": "signed_proxy",
+          "line": 62,
+          "end_line": 74
+        },
+        {
+          "type": "FunctionDef",
+          "name": "events_from_trigger",
+          "line": 77,
+          "end_line": 85
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read_subject",
+          "line": 88,
+          "end_line": 114
+        },
+        {
+          "type": "FunctionDef",
+          "name": "rebuild",
+          "line": 117,
+          "end_line": 177
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 180,
+          "end_line": 290
+        }
+      ]
+    },
+    {
+      "path": "independent_release_audit_v1.py",
+      "sha256": "7b6554e4db44d42774c1e099e1f565586deea4c25e6e99bfe9b55604d34365e9",
+      "bytes": 26696,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "file_sha",
+          "line": 26,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "array_sha",
+          "line": 34,
+          "end_line": 35
+        },
+        {
+          "type": "FunctionDef",
+          "name": "require",
+          "line": 38,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "centered_decimate",
+          "line": 43,
+          "end_line": 49
+        },
+        {
+          "type": "FunctionDef",
+          "name": "longest_finite_span",
+          "line": 52,
+          "end_line": 59
+        },
+        {
+          "type": "FunctionDef",
+          "name": "signed_proxy",
+          "line": 62,
+          "end_line": 74
+        },
+        {
+          "type": "FunctionDef",
+          "name": "events_from_trigger",
+          "line": 77,
+          "end_line": 85
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read_subject",
+          "line": 88,
+          "end_line": 122
+        },
+        {
+          "type": "FunctionDef",
+          "name": "rebuild",
+          "line": 125,
+          "end_line": 186
+        },
+        {
+          "type": "FunctionDef",
+          "name": "input_is_physical",
+          "line": 189,
+          "end_line": 200
+        },
+        {
+          "type": "FunctionDef",
+          "name": "crossmodal_is_physical",
+          "line": 203,
+          "end_line": 223
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 226,
+          "end_line": 428
+        }
+      ]
+    },
+    {
+      "path": "inspect_all_source_identity.py",
+      "sha256": "7b86354c86a7f9bf346d76ff81e48ff59415162a1ac279c8c343e7af145eb563",
+      "bytes": 5849,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 20,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "longest",
+          "line": 27,
+          "end_line": 30
+        }
+      ]
+    },
+    {
+      "path": "metadata_cached_driver.py",
+      "sha256": "7fe5ff092cda07d2213bb3bfd4028acf9affbee0af8e45b097772cccd079a3d9",
+      "bytes": 4584,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 18,
+          "end_line": 18
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 19,
+          "end_line": 19
+        },
+        {
+          "type": "FunctionDef",
+          "name": "canonical",
+          "line": 20,
+          "end_line": 20
+        },
+        {
+          "type": "FunctionDef",
+          "name": "frozen_write",
+          "line": 23,
+          "end_line": 26
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 29,
+          "end_line": 77
+        }
+      ]
+    },
+    {
+      "path": "plot_dorschky_results.py",
+      "sha256": "f2db08cb7b0591e0efd74b2c447abeffc011077f5473952340d5093c104ca009",
+      "bytes": 8476,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 19,
+          "end_line": 20
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 23,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "style",
+          "line": 27,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "paired_points",
+          "line": 34,
+          "end_line": 43
+        },
+        {
+          "type": "FunctionDef",
+          "name": "main",
+          "line": 46,
+          "end_line": 154
+        },
+        {
+          "type": "FunctionDef",
+          "name": "save",
+          "line": 68,
+          "end_line": 73
+        }
+      ]
+    },
+    {
+      "path": "prepare_dorschky_publication.py",
+      "sha256": "a561cfb1d3e65f887125e1a4daa4aeeacd0cee0e7ef449c4a15615b2a607067b",
+      "bytes": 52939,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 39,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 43,
+          "end_line": 44
+        },
+        {
+          "type": "FunctionDef",
+          "name": "portable",
+          "line": 47,
+          "end_line": 56
+        },
+        {
+          "type": "FunctionDef",
+          "name": "dump",
+          "line": 59,
+          "end_line": 60
+        },
+        {
+          "type": "FunctionDef",
+          "name": "dump_compact",
+          "line": 63,
+          "end_line": 64
+        },
+        {
+          "type": "FunctionDef",
+          "name": "relative",
+          "line": 67,
+          "end_line": 68
+        },
+        {
+          "type": "FunctionDef",
+          "name": "metadata",
+          "line": 71,
+          "end_line": 109
+        },
+        {
+          "type": "FunctionDef",
+          "name": "code_index",
+          "line": 112,
+          "end_line": 144
+        },
+        {
+          "type": "FunctionDef",
+          "name": "candidate_files",
+          "line": 147,
+          "end_line": 166
+        },
+        {
+          "type": "FunctionDef",
+          "name": "source_receipts",
+          "line": 169,
+          "end_line": 186
+        },
+        {
+          "type": "FunctionDef",
+          "name": "reference_time_diagnostic",
+          "line": 189,
+          "end_line": 212
+        },
+        {
+          "type": "FunctionDef",
+          "name": "readonly_metadata_driver",
+          "line": 215,
+          "end_line": 259
+        },
+        {
+          "type": "FunctionDef",
+          "name": "readiness",
+          "line": 262,
+          "end_line": 329
+        },
+        {
+          "type": "FunctionDef",
+          "name": "static_report",
+          "line": 332,
+          "end_line": 442
+        },
+        {
+          "type": "FunctionDef",
+          "name": "accepted_results",
+          "line": 445,
+          "end_line": 473
+        },
+        {
+          "type": "FunctionDef",
+          "name": "results_section",
+          "line": 476,
+          "end_line": 522
+        },
+        {
+          "type": "FunctionDef",
+          "name": "clean",
+          "line": 488,
+          "end_line": 489
+        },
+        {
+          "type": "FunctionDef",
+          "name": "stress",
+          "line": 490,
+          "end_line": 491
+        },
+        {
+          "type": "FunctionDef",
+          "name": "absolute_stress",
+          "line": 492,
+          "end_line": 495
+        },
+        {
+          "type": "FunctionDef",
+          "name": "improvements",
+          "line": 496,
+          "end_line": 497
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build_draft",
+          "line": 525,
+          "end_line": 539
+        },
+        {
+          "type": "FunctionDef",
+          "name": "build_accepted",
+          "line": 542,
+          "end_line": 621
+        },
+        {
+          "type": "FunctionDef",
+          "name": "clean",
+          "line": 585,
+          "end_line": 586
+        },
+        {
+          "type": "FunctionDef",
+          "name": "stress",
+          "line": 587,
+          "end_line": 588
+        }
+      ]
+    },
+    {
+      "path": "prepare_release.py",
+      "sha256": "68e778b68926baa65fe0194a540c113ff207166aeaeef0d04844b6ac7717dc48",
+      "bytes": 17189,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 22,
+          "end_line": 27
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 30,
+          "end_line": 31
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write_frozen",
+          "line": 34,
+          "end_line": 40
+        },
+        {
+          "type": "FunctionDef",
+          "name": "persist_support",
+          "line": 43,
+          "end_line": 56
+        },
+        {
+          "type": "FunctionDef",
+          "name": "qc_contract",
+          "line": 59,
+          "end_line": 79
+        },
+        {
+          "type": "FunctionDef",
+          "name": "crossmodal_consistency",
+          "line": 82,
+          "end_line": 101
+        },
+        {
+          "type": "FunctionDef",
+          "name": "inspect_person",
+          "line": 104,
+          "end_line": 191
+        },
+        {
+          "type": "FunctionDef",
+          "name": "release",
+          "line": 194,
+          "end_line": 268
+        }
+      ]
+    },
+    {
+      "path": "reference_time_sensitivity.py",
+      "sha256": "3ec1ad869c063f1ae12841052a9a573c704924b6607046ae96c1b940bf838d10",
+      "bytes": 4669,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "sha",
+          "line": 17,
+          "end_line": 17
+        },
+        {
+          "type": "FunctionDef",
+          "name": "read",
+          "line": 18,
+          "end_line": 18
+        },
+        {
+          "type": "FunctionDef",
+          "name": "write_frozen",
+          "line": 21,
+          "end_line": 24
+        },
+        {
+          "type": "FunctionDef",
+          "name": "run",
+          "line": 27,
+          "end_line": 83
+        },
+        {
+          "type": "FunctionDef",
+          "name": "audit",
+          "line": 42,
+          "end_line": 49
+        }
+      ]
+    },
+    {
+      "path": "review_signal_and_geometry.py",
+      "sha256": "a11ce054eecd99d09368378cbf8f4ce248095f67469e1c916840379a067c5295",
+      "bytes": 5833,
+      "syntax": "parsed",
+      "status": "current_or_supporting_source",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "byte_hash",
+          "line": 10,
+          "end_line": 11
+        },
+        {
+          "type": "FunctionDef",
+          "name": "kernel",
+          "line": 13,
+          "end_line": 20
+        },
+        {
+          "type": "FunctionDef",
+          "name": "yaw",
+          "line": 25,
+          "end_line": 27
+        },
+        {
+          "type": "FunctionDef",
+          "name": "proxy",
+          "line": 29,
+          "end_line": 34
+        }
+      ]
+    },
+    {
+      "path": "watch_fixed_evaluation.py",
+      "sha256": "479e85c4947cc5dd6448e8a36396908a3c819c114677a73e0fa81fe37625ba53",
+      "bytes": 1484,
+      "syntax": "parsed",
+      "status": "retired_history",
+      "definitions": [
+        {
+          "type": "FunctionDef",
+          "name": "document",
+          "line": 12,
+          "end_line": 16
+        },
+        {
+          "type": "FunctionDef",
+          "name": "log",
+          "line": 19,
+          "end_line": 20
+        }
+      ]
+    }
+  ],
+  "source_file_count": 24,
+  "definitions_count": 302,
+  "original_architecture_files_unchanged": true,
+  "task_head_dimension": [
+    6,
+    2
+  ],
+  "parameters": 150850,
+  "code_index_is_not_standalone_executable_reproduction_package": true,
+  "primary_sources": [
+    "dorschky_signal.py",
+    "prepare_release.py",
+    "independent_release_audit_v1.py",
+    "dorschky_model_engine.py",
+    "dorschky_training.py",
+    "audit_dorschky_training.py",
+    "dorschky_evaluation.py",
+    "audit_dorschky_results.py",
+    "plot_dorschky_results.py"
+  ],
+  "frozen_training_sources_metadata_sha256": {
+    "experiments/dorschky_external_20261024/dorschky_training.py": "61ce4fbfba9981f67dfc9aa8cf8a83dfa8d03d129bb07f29427573272856039b",
+    "experiments/dorschky_external_20261024/dorschky_model_engine.py": "6ab60f038829f917881ae75b3c0cbb74cc98c60466bda2292df0c7703d2b4499",
+    "experiments/dorschky_external_20261024/dorschky_signal.py": "03d384aacdab5fe520704b32864c9b3e8c30b280208a01b65412133d8b3e176f",
+    "experiments/dorschky_external_20261024/machineplan.json": "882050dc480f2b06fd3903343648325e4296e3a7a3fa5407c09bbcb3adb8f12e",
+    "experiments/dorschky_external_20261024/EXECUTION_PROTOCOL_ZH.md": "eb21dc26979701f815012451538a364a417e9ac2dfa7d73b6c3004229350eb5b",
+    "experiments/dorschky_external_20261024/dorschky_training_preflight.py": "90a74e15a44e5b8c0acfd05b6dc78cae07f4fb0de75e37437ce5aef484307b11",
+    "experiments/dorschky_external_20261024/signal_math_review.json": "caecb12a5e349a20a339d0040955574ff6161c647f42ae3aa2cd3c3d8963d186",
+    "experiments/dorschky_external_20261024/release_v1/data_manifest.json": "80b77bbe734b9de92c7928eb8be26bef5d03ee132cb84fe27b5da3df1ac23bc7",
+    "experiments/dorschky_external_20261024/release_v1/data_contract.json": "2b67e8e4544394c27453b8c9a7d3560b40303939095ff8c8b0d5c8a2910b89f4",
+    "experiments/dorschky_external_20261024/release_v1/independent_release_audit.json": "c20c7e71dffc7d3e917e51ce1de72f4b57f5979d420f1ac5978ccdabd5c60c7f",
+    "experiments/native_architecture_augmentation_20261022/real_axis_augmentation.py": "bff11026170707c46d7ad76c90923aff65348cc5433f5f24cc834bb544dcd92d",
+    "experiments/external_validation_20261020_deduplicated/external_models.py": "ee252b3574a7acec4a6d5c1f488e311f6f406d02a83321f8a20517f7e2ae978b",
+    "experiments/native_ablation_20261022/ablation_models.py": "6d618bdd5912c5411d28142a832d12a4c1b15ba59d8e4514614294734502b317"
+  }
+}

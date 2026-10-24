@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-24",
+  "scope": "public_intake_only_no_training_no_new_collection",
+  "architecture_changed": false,
+  "neural_fits": 0,
+  "evaluation_predictions_opened": 0,
+  "download_budget_bytes": 30000000,
+  "all_candidates_data_ready": false,
+  "candidates": [
+    {
+      "id": "GROUVEL_2023",
+      "priority": "backup_after_sync_and_label_definition",
+      "subjects": 10,
+      "population": "healthy_asymptomatic",
+      "license": "CC-BY-4.0",
+      "repository": "https://yareta.unige.ch/archives/e72b9ec2-d097-45ac-8126-d04035407f51",
+      "doi": "10.26037/yareta:xkxgaw6ewjdhfntdhtj7upepxy",
+      "paper": "https://doi.org/10.1038/s41597-023-02077-3",
+      "input": "measured_Physilog6S_LS_RS_acc_g_gyro_deg_s_native256Hz",
+      "input_indices0_Lacc_Lgyro_Racc_Rgyro": [
+        234,
+        235,
+        236,
+        258,
+        259,
+        260,
+        243,
+        244,
+        245,
+        267,
+        268,
+        269
+      ],
+      "reference": "independent_Qualisys_marker_positions_mm_100Hz_not_native_6angle",
+      "synchronization": "manual_start_end_impact_and_cross_correlation_reported_approx_0.1s; synced_csv_resampled100Hz",
+      "real_remount_evidence": false,
+      "zip_download_public_anonymous_range_verified": true,
+      "whole_archive_hash_verified": false,
+      "member_CRC_verified": true,
+      "sample": "P01_Gait_01_405x279; Static_01_50x279; no_timestamp_column_or_joint_angle_column",
+      "evidence": [
+        "evidence/grouvel_selected_member_receipt.json",
+        "evidence/grouvel_sample_schema.json",
+        "evidence/sample_physical_sanity.json"
+      ],
+      "hold_reasons": [
+        "sync precision",
+        "new independent optical labels required",
+        "short individual trials",
+        "full cohort QC not done"
+      ]
+    },
+    {
+      "id": "KIEL_FULLBODY_MOBILITY_2022",
+      "priority": "next_independent_third_source_intake_after_Dorschky",
+      "public_subjects_figshare": 21,
+      "public_subjects_early_GitHub": 10,
+      "population": "healthy_only_public; full167_including23stroke_requires_agreement_for_patients",
+      "repository": "https://doi.org/10.6084/m9.figshare.20238006.v2",
+      "fixed_api": "https://api.figshare.com/v2/articles/20238006/versions/2",
+      "api_snapshot": "evidence/kiel_figshare_version2.json",
+      "release_version": 2,
+      "release_published_date": "2022-09-05T08:01:59Z",
+      "release_license_api": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "license_paper": "CC-BY-NC-SA",
+      "license_early_GitHub": "GPL-3.0",
+      "license_conflict_resolved": false,
+      "official_files": [
+        {
+          "name": "4-6_data.rar",
+          "size": 1933792775,
+          "download_url": "https://ndownloader.figshare.com/files/36191166",
+          "supplied_md5": "163a111a9e5f8d443d2613074029e413",
+          "server_computed_md5_from_API": "163a111a9e5f8d443d2613074029e413",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        },
+        {
+          "name": "7-9_data.rar",
+          "size": 1727418236,
+          "download_url": "https://ndownloader.figshare.com/files/36191172",
+          "supplied_md5": "1d7ca4d9765a2a46f14fa9c744e630f4",
+          "server_computed_md5_from_API": "1d7ca4d9765a2a46f14fa9c744e630f4",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        },
+        {
+          "name": "10-12_data.rar",
+          "size": 2052667189,
+          "download_url": "https://ndownloader.figshare.com/files/36191187",
+          "supplied_md5": "cdff9d9b796a456357c0892c85e32306",
+          "server_computed_md5_from_API": "cdff9d9b796a456357c0892c85e32306",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        },
+        {
+          "name": "15-18_data.rar",
+          "size": 2391156774,
+          "download_url": "https://ndownloader.figshare.com/files/36191205",
+          "supplied_md5": "86138cbd708381f9361037695bd69f65",
+          "server_computed_md5_from_API": "86138cbd708381f9361037695bd69f65",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        },
+        {
+          "name": "19-21_data.rar",
+          "size": 2154579703,
+          "download_url": "https://ndownloader.figshare.com/files/36191211",
+          "supplied_md5": "3e0f186140186d07ac503835a3299879",
+          "server_computed_md5_from_API": "3e0f186140186d07ac503835a3299879",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        },
+        {
+          "name": "1-3_data.rar",
+          "size": 2672623955,
+          "download_url": "https://ndownloader.figshare.com/files/36191226",
+          "supplied_md5": "0df04d77a42c6fd3ed2f44e33bf96928",
+          "server_computed_md5_from_API": "0df04d77a42c6fd3ed2f44e33bf96928",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        },
+        {
+          "name": "13-15_data.rar",
+          "size": 2320163612,
+          "download_url": "https://ndownloader.figshare.com/files/36203655",
+          "supplied_md5": "03d22c677752f932a200f1a1c9151d80",
+          "server_computed_md5_from_API": "03d22c677752f932a200f1a1c9151d80",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        },
+        {
+          "name": "demographics_scores_extern.xlsx",
+          "size": 37690,
+          "download_url": "https://ndownloader.figshare.com/files/37208827",
+          "supplied_md5": "37f404e4ffe2d712c893be30b5c74a83",
+          "server_computed_md5_from_API": "37f404e4ffe2d712c893be30b5c74a83",
+          "local_complete_file_MD5_verified_by_this_intake": false
+        }
+      ],
+      "paper": "https://doi.org/10.3390/data7100136",
+      "protocol": "https://doi.org/10.3390/s21175833",
+      "input": "published_measured_acc_g_gyro_deg_s_200Hz_no_sensor_to_segment_transform_applied_here",
+      "left_right_shank_index0": [
+        8,
+        11
+      ],
+      "sample_frame_count": 1789,
+      "sample_imu_shape": [
+        1789,
+        3,
+        16
+      ],
+      "sample_omc_shape": [
+        1789,
+        4,
+        51
+      ],
+      "reference": "independent_Qualisys_marker_positions_mm_not_native_6angle",
+      "synchronization": "start_TTL; long_record_drift_not_tested",
+      "preferred_trial_counts_GitHub_first10": {
+        "pp001": 1,
+        "pp002": 1,
+        "pp003": 1,
+        "pp004": 1,
+        "pp005": 1,
+        "pp006": 1,
+        "pp007": 1,
+        "pp008": 1,
+        "pp009": 1,
+        "pp010": 1
+      },
+      "preferred_trial_counts_Figshare_21": null,
+      "real_remount_evidence": false,
+      "static_marker_names": [
+        "l/r_st_fem",
+        "l/r_st_fel",
+        "l/r_st_mm",
+        "l/r_ank",
+        "l/r_th1-4",
+        "l/r_sk1-4"
+      ],
+      "possible_label_route": "static_anatomical_knee_axis_and_centers_registered_to_dynamic_clusters; freeze_signed_2knee_proxy_definition_before_fit",
+      "paired_calibration_file_resolved": false,
+      "static_calibration4_is_proof_of_schema_only": true,
+      "sample_bilateral_cluster_atleast3_fraction": 0.7887087758524315,
+      "sample_max_contiguous_bilateral_cluster_seconds": 3.22,
+      "sample_geometry_validated": false,
+      "hold_reasons": [
+        "license source mismatch",
+        "Figshare21 per subject inventory not checked",
+        "calibration_file MCOS pointer not decoded",
+        "optical gaps and geometry",
+        "new independent label task required"
+      ],
+      "evidence": [
+        "evidence/kiel_sample_schema.json",
+        "evidence/kiel_marker_calibration_probe.json",
+        "evidence/kiel_cluster_support_probe.json",
+        "evidence/kiel_preferred_trial_inventory_GitHub_first10.json"
+      ],
+      "api_snapshot_sha256": "0bc1a254a1c067b37dd37c6b4de4637ae8e082c998857e235cde72b0d0b0d442",
+      "figshare_release_total_file_bytes": 15252439934,
+      "complete_Figshare_archives_downloaded_in_this_intake": false
+    },
+    {
+      "id": "GAITEX",
+      "priority": "not_qualified_for_12D_task",
+      "subjects": 19,
+      "population": "healthy_with_simulated_or_restricted_gait_not_stroke",
+      "repository": "https://zenodo.org/records/15729056",
+      "license": "CC-BY-4.0",
+      "paper": "https://doi.org/10.1038/s41597-025-06439-x",
+      "zip_bytes": 17660082002,
+      "imu_ACC_GYRO_columns_confirmed": false,
+      "confirmed_release_code_input": "raw_and_segment_registered_quaternions",
+      "published_IK_source": "IMUInverseKinematicsTool_not_independent_optical_GT",
+      "independent_optical_markers_available_in_description": true,
+      "download_probe_status": "both_public_range_URLs_HTTP403; metadata_API200; no_actual_CSV_headers_obtained",
+      "coordinate_caveat": "right_lower_leg_heading_reference_difference_documented; processed_orientation_compensated",
+      "real_remount_evidence": false,
+      "hold_reasons": [
+        "ACC_GYRO channels not verified",
+        "published IK not independent",
+        "raw small sample inaccessible in this environment"
+      ]
+    },
+    {
+      "id": "TWENTE_SIMONETTI_STROKE_10787523",
+      "priority": "exclude_from_bilateral_shank_task",
+      "subjects": 4,
+      "population": "male_poststroke",
+      "repository": "https://zenodo.org/records/10787523",
+      "institution": "https://research.utwente.nl/en/datasets/kinematics-kinetic-and-emg-dataset-of-overground-locomotion-with-/",
+      "imu_locations": [
+        "sacrum",
+        "left_foot",
+        "right_foot",
+        "affected_thigh",
+        "affected_tibia"
+      ],
+      "bilateral_shank_present": false,
+      "license_explicit_in_API": null,
+      "hold_reasons": [
+        "no_unaffected_shank_measured_IMU",
+        "license_not_verified"
+      ]
+    }
+  ],
+  "publication_allowlist": [
+    "PUBLIC_DATASET_CANDIDATES_20261024_ZH.md",
+    "PUBLIC_DATASET_CANDIDATES_20261024.json",
+    "evidence_manifest.json",
+    "probe_grouvel_members.py"
+  ],
+  "do_not_publish": [
+    "paper_fulltexts",
+    "original_data_samples",
+    "whole_raw_download_archives"
+  ],
+  "checksum_semantics": "Kiel supplied/computed MD5 strings originate in official API metadata; no complete RAR was downloaded or locally hashed in this intake.",
+  "source_intake_JSON_sha256": "c7cb697c2700543acf3b59f662ab69906ad7097440a47b8959e7740da50e6291",
+  "source_intake_brief_sha256": "b2401f9420eb8d45dffa14f65f8243bda8a542b04e8a13c2b2430d5c47313e47",
+  "evidence_manifest_sha256": "b7a7e62d712c1532a9ac37ead1c70217788a1b700583e5160c62886fe1f137e9",
+  "this_publication_includes_no_source_samples_or_paper_fulltexts": true,
+  "evidence_paths_refer_to_local_receipt_index_not_public_raw_files": true
+}

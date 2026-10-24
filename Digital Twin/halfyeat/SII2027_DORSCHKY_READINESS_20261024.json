@@ -1,0 +1,571 @@
+{
+  "status": "accepted_independent_two_knee_external_experiment",
+  "date": "2026-10-25",
+  "experiment_date": "2026-10-24",
+  "dataset": {
+    "record": "https://zenodo.org/records/11522050",
+    "license": "CC BY 4.0",
+    "population": "10 healthy male adults",
+    "development_subject": "P02",
+    "outer_targets": [
+      "P01",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10"
+    ],
+    "original_OMC_trials": 592,
+    "candidate_walking_parents": 297,
+    "admitted_walking_parents": 271,
+    "rejected_walking_parents": 26,
+    "rejected_reason": "common_finite_six_marker_XYZ_context_shorter_than_480_at_200Hz",
+    "subjects_excluded": 0,
+    "admitted_parent_counts": {
+      "P01": {
+        "slowwalking": 9,
+        "normwalking": 10,
+        "fastwalking": 10
+      },
+      "P02": {
+        "slowwalking": 10,
+        "normwalking": 10,
+        "fastwalking": 10
+      },
+      "P03": {
+        "slowwalking": 10,
+        "normwalking": 10,
+        "fastwalking": 10
+      },
+      "P04": {
+        "slowwalking": 10,
+        "normwalking": 7,
+        "fastwalking": 2
+      },
+      "P05": {
+        "slowwalking": 9,
+        "normwalking": 9,
+        "fastwalking": 10
+      },
+      "P06": {
+        "slowwalking": 10,
+        "normwalking": 10,
+        "fastwalking": 10
+      },
+      "P07": {
+        "slowwalking": 10,
+        "normwalking": 10,
+        "fastwalking": 9
+      },
+      "P08": {
+        "slowwalking": 6,
+        "normwalking": 8,
+        "fastwalking": 10
+      },
+      "P09": {
+        "slowwalking": 10,
+        "normwalking": 10,
+        "fastwalking": 9
+      },
+      "P10": {
+        "slowwalking": 10,
+        "normwalking": 9,
+        "fastwalking": 4
+      }
+    }
+  },
+  "source_integrity": {
+    "complete_OMC_official_MD5_verified": 10,
+    "selected_measured_12D_and_TRIGGER_verified_people": 10,
+    "complete_original_IMU_file_MD5_verified": false,
+    "zero_filled_decoder_images_are_not_sources": true,
+    "verified_HTTP206_received_bytes_this_intake": 3227347372,
+    "prior_P02_selected_source_bytes_reused_separately": true,
+    "failed_HTTP_attempt_reserved_bytes": 12000000,
+    "early_metadata_stage_start_SHA_not_captured": true,
+    "metadata_JSON_count_serialization_failure_retried_same_source_bytes": true
+  },
+  "input": {
+    "dimension": 12,
+    "measured_hardware": true,
+    "optical_virtual_IMU": false,
+    "axes": "author_functionally_calibrated_segment_axes_not_unprocessed_native_sensor_axes",
+    "order": [
+      "TIBIA_L_ACC_X",
+      "TIBIA_L_ACC_Y",
+      "TIBIA_L_ACC_Z",
+      "TIBIA_L_GYRO_X",
+      "TIBIA_L_GYRO_Y",
+      "TIBIA_L_GYRO_Z",
+      "TIBIA_R_ACC_X",
+      "TIBIA_R_ACC_Y",
+      "TIBIA_R_ACC_Z",
+      "TIBIA_R_GYRO_X",
+      "TIBIA_R_GYRO_Y",
+      "TIBIA_R_GYRO_Z"
+    ],
+    "acc_unit": "m/s^2",
+    "gyro_unit": "rad/s",
+    "gravity_retained": true,
+    "new_gravity_bias_or_target_scaler_fit": false,
+    "extra_IMU_or_marker_channels_as_model_input": false
+  },
+  "reference": {
+    "dimension": 2,
+    "names": [
+      "left_heading_sagittal_knee_proxy_deg",
+      "right_heading_sagittal_knee_proxy_deg"
+    ],
+    "optical_markers_only": true,
+    "units": "degrees",
+    "signed_flexion_positive_both_knees": true,
+    "abs_or_zero_offset_fit": false,
+    "plane": "per_trial_forward_and_world_up_heading_sagittal_not_anatomical_three_plane_JCS",
+    "reference_values_from_optical_geometry_not_IMU_predictions": true,
+    "published_mean_angle_pairing": false,
+    "WMCG_native6_or_Stroke_legacy_label_equivalence": false
+  },
+  "clock": {
+    "IMU_rate_nominal_Hz": 1000,
+    "IMU_has_recorded_per_frame_timestamps": false,
+    "marker_container_Hz": 1000,
+    "marker_observation_Hz": 200,
+    "model_Hz": 100,
+    "fixed_author_empirical_offset_s": 0.02,
+    "new_lag_axis_sign_search": false,
+    "hardware_precise_delay_or_drift_certification": false,
+    "event_identity": "matching_code_actual_N_contiguous_TRIAL_order_structural_candidates_not_absolute_identity_proof"
+  },
+  "split": {
+    "source_people_per_fold": 8,
+    "source_VALID_people_per_fold": 1,
+    "outer_target_people_per_fold": 1,
+    "source_TRAIN": "minimum_accepted_trial_per_source_person_speed",
+    "source_VALID": "separate_person_all_accepted_walking_parents",
+    "target_CALIB": "minimum_accepted_normal_parent_entire_parent_excluded_from_evaluation",
+    "cross_speed_primary": [
+      "slowwalking",
+      "fastwalking"
+    ],
+    "same_speed_diagnostic": "other_normwalking_parents",
+    "same_continuous_IMU_source_file_per_person": true,
+    "model_and_filter_contexts_nonoverlapping_between_parents": true,
+    "distinct_session_or_remount_claim": false
+  },
+  "reference_cost": {
+    "per_fold": {
+      "P01": {
+        "CALIB_parent": "DORSCHKY/P01/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.87,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P03",
+        "source_VALID_parents": 30,
+        "source_VALID_score_support_s": 60.0,
+        "source_VALID_marker_context_s": 72.0,
+        "cross_speed_EVAL_parents": 19,
+        "same_speed_EVAL_parents": 9
+      },
+      "P03": {
+        "CALIB_parent": "DORSCHKY/P03/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.62,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P04",
+        "source_VALID_parents": 19,
+        "source_VALID_score_support_s": 38.0,
+        "source_VALID_marker_context_s": 45.6,
+        "cross_speed_EVAL_parents": 20,
+        "same_speed_EVAL_parents": 9
+      },
+      "P04": {
+        "CALIB_parent": "DORSCHKY/P04/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 2.58,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P05",
+        "source_VALID_parents": 28,
+        "source_VALID_score_support_s": 56.0,
+        "source_VALID_marker_context_s": 67.2,
+        "cross_speed_EVAL_parents": 12,
+        "same_speed_EVAL_parents": 6
+      },
+      "P05": {
+        "CALIB_parent": "DORSCHKY/P05/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.75,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P06",
+        "source_VALID_parents": 30,
+        "source_VALID_score_support_s": 60.0,
+        "source_VALID_marker_context_s": 72.0,
+        "cross_speed_EVAL_parents": 19,
+        "same_speed_EVAL_parents": 8
+      },
+      "P06": {
+        "CALIB_parent": "DORSCHKY/P06/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.57,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P07",
+        "source_VALID_parents": 29,
+        "source_VALID_score_support_s": 58.0,
+        "source_VALID_marker_context_s": 69.6,
+        "cross_speed_EVAL_parents": 20,
+        "same_speed_EVAL_parents": 9
+      },
+      "P07": {
+        "CALIB_parent": "DORSCHKY/P07/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.2,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P08",
+        "source_VALID_parents": 24,
+        "source_VALID_score_support_s": 48.0,
+        "source_VALID_marker_context_s": 57.599999999999994,
+        "cross_speed_EVAL_parents": 19,
+        "same_speed_EVAL_parents": 9
+      },
+      "P08": {
+        "CALIB_parent": "DORSCHKY/P08/normwalking/TRIAL03",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.39,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P09",
+        "source_VALID_parents": 29,
+        "source_VALID_score_support_s": 58.0,
+        "source_VALID_marker_context_s": 69.6,
+        "cross_speed_EVAL_parents": 16,
+        "same_speed_EVAL_parents": 7
+      },
+      "P09": {
+        "CALIB_parent": "DORSCHKY/P09/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.57,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P10",
+        "source_VALID_parents": 23,
+        "source_VALID_score_support_s": 46.0,
+        "source_VALID_marker_context_s": 55.199999999999996,
+        "cross_speed_EVAL_parents": 19,
+        "same_speed_EVAL_parents": 9
+      },
+      "P10": {
+        "CALIB_parent": "DORSCHKY/P10/normwalking/TRIAL01",
+        "target_gradient_s": 2.0,
+        "target_marker_context_s": 2.4,
+        "full_CALIB_OMC_container_sample_seconds": 3.505,
+        "source_TRAIN_parents": 24,
+        "source_TRAIN_gradient_s": 48.0,
+        "source_TRAIN_marker_context_s": 57.599999999999994,
+        "source_VALID_subject": "P01",
+        "source_VALID_parents": 29,
+        "source_VALID_score_support_s": 58.0,
+        "source_VALID_marker_context_s": 69.6,
+        "cross_speed_EVAL_parents": 14,
+        "same_speed_EVAL_parents": 8
+      }
+    },
+    "duration_definition": "sample_count_div_nominal_rate",
+    "unique_target_gradient_s": 18.0,
+    "unique_target_marker_preprocessing_context_s": 21.6,
+    "unique_EVAL_parents": 232,
+    "unique_EVAL_scored_reference_s": 464.0,
+    "unique_EVAL_marker_context_s": 556.8,
+    "all592_OMC_container_reference_scanned_s": 1442.43,
+    "all297_walking_OMC_container_reference_scanned_s": 1066.055,
+    "full_trial_capture_QC_and_author_functional_calibration_additional": true,
+    "roles_overlap_across_folds_do_not_sum_as_independent_collection": true
+  },
+  "fixed_experiment": {
+    "count_status": "completed_independently_accepted",
+    "planned_fits": 45,
+    "source_fits": 18,
+    "target_fits": 27,
+    "optimizer_updates": 34200,
+    "seed": 20261021,
+    "architecture": "frozen_FrameTCN_body_task_output_6_to2",
+    "parameters": 150850,
+    "model_parent_archives": 1160,
+    "cases_per_archive": 19,
+    "total_case_predictions_including_clean_once": 22040,
+    "angle_rows": 44080,
+    "clean_predictions_are_case0_not_additional_cases": true,
+    "primary_tests": 3,
+    "multiple_testing": "Holm3_exact_person_sign_flip",
+    "bootstrap": 10000,
+    "pressure_is_synthetic_coordinate_change_on_functional_segment_representation": true,
+    "source_and_target_augmentation_effects_not_separately_identifiable": true,
+    "I_R_uses_G_R_source_x_and_y_scalers_not_source_free": true
+  },
+  "retired_QC_candidate_v1": {
+    "NPZ": 0,
+    "neural_fits": 0,
+    "reason": "whole_file_finite_scope_and_artifact_mismatch_cannot_be_parent_exclusion"
+  },
+  "limits": [
+    "healthy_only",
+    "engineering_proxy_not_clinical_JCS",
+    "single_seed",
+    "overlapping_source_folds",
+    "public_reference_and_QC_exposure_not_blind",
+    "nominal_clock_author_empirical_offset",
+    "tracking_support_selection",
+    "source_file_shared_across_trials",
+    "no_true_remount",
+    "no_pooled_RMSE_or_N_across_datasets"
+  ],
+  "reference_only_time_sensitivity": {
+    "status": "independently_accepted_reference_only_hypothetical_time_sensitivity",
+    "population": [
+      {
+        "hypothetical_abs_lag_ms": 10,
+        "participants": 10,
+        "mean_bilateral_difference_RMS_deg": 1.6408404499427764,
+        "participant_min_max_deg": [
+          1.4891173017097572,
+          1.7655871361073583
+        ]
+      },
+      {
+        "hypothetical_abs_lag_ms": 20,
+        "participants": 10,
+        "mean_bilateral_difference_RMS_deg": 3.274424257727182,
+        "participant_min_max_deg": [
+          2.974087371403751,
+          3.5199219909227195
+        ]
+      }
+    ],
+    "subject_results": [
+      {
+        "subject": "P01",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.6586854585504873
+      },
+      {
+        "subject": "P01",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.311923141147364
+      },
+      {
+        "subject": "P02",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.7363915737917084
+      },
+      {
+        "subject": "P02",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.4637444942364137
+      },
+      {
+        "subject": "P03",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.4891173017097572
+      },
+      {
+        "subject": "P03",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 2.974087371403751
+      },
+      {
+        "subject": "P04",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.5505464138887632
+      },
+      {
+        "subject": "P04",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.096370395235938
+      },
+      {
+        "subject": "P05",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.7655871361073583
+      },
+      {
+        "subject": "P05",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.5199219909227195
+      },
+      {
+        "subject": "P06",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.6885432190763627
+      },
+      {
+        "subject": "P06",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.3689343235855325
+      },
+      {
+        "subject": "P07",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.7116802143525884
+      },
+      {
+        "subject": "P07",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.416013341693501
+      },
+      {
+        "subject": "P08",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.6426398974243241
+      },
+      {
+        "subject": "P08",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.2765206700122302
+      },
+      {
+        "subject": "P09",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.6283872337533918
+      },
+      {
+        "subject": "P09",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.2488090396862126
+      },
+      {
+        "subject": "P10",
+        "hypothetical_abs_lag_ms": 10,
+        "bilateral_difference_RMS_deg": 1.5368260507730227
+      },
+      {
+        "subject": "P10",
+        "hypothetical_abs_lag_ms": 20,
+        "bilateral_difference_RMS_deg": 3.0679178093481574
+      }
+    ],
+    "participants": 10,
+    "development_P02_included": true,
+    "overlap_frames_for_10ms_20ms": [
+      199,
+      198
+    ],
+    "actual_lag_or_sync_error_estimated": false,
+    "neural_model_RMSE": false,
+    "paired_model_advantage_invalidated_by_this_diagnostic": false,
+    "primary_200frame_model_support_or_labels_changed": false,
+    "additional_hypothesis_tests": 0,
+    "aggregation": "per_knee_RMS_difference_then_equal_parent_speed_person",
+    "source_receipts_sha256": {
+      "reference_time_sensitivity_v1/contract.json": "5c6e2235caaf06aa8205218f1fd02a85505ff7ce8e05f902f14d81ff1de26179",
+      "reference_time_sensitivity_v1/results.json": "cc3d32eb95927f6eb2d123069cc5e9dbfa84d81bfb6350ba549a029545fa8049",
+      "reference_time_sensitivity_v1/independent_audit.json": "2361399a535701b6a5a55d7b62321cff9afb7f5534adb759bbd869b3ba7c4710",
+      "reference_time_sensitivity.py": "3ec1ad869c063f1ae12841052a9a573c704924b6607046ae96c1b940bf838d10",
+      "audit_reference_time_sensitivity.py": "4eaf55c71a7cda19aa961ae5b40d3f5e0efc27e4606a432437e954d120a759bd"
+    }
+  },
+  "readonly_metadata_execution_driver": {
+    "status": "accepted_readonly_metadata_dispatch_maintenance",
+    "retired_target_fits_or_optimizer_steps": 0,
+    "old_waiter_EVAL_predictions": 0,
+    "old_waiter_restarted": false,
+    "original_source_G_models_retrained": false,
+    "original_train_and_eval_sources_modified": false,
+    "change": "parent_process_train_manifest_lru_cache_only",
+    "child_workers_original_trainer_CLI": true,
+    "scientific_model_hyperparameters_data_and_checkpoint_selection_unchanged": true,
+    "phases": {
+      "target": {
+        "status": "completed_original_frozen_phase_with_metadata_cache_only",
+        "cache_hits": 182710,
+        "cache_misses": 1,
+        "immutable_manifest_disk_sha256": "80b77bbe734b9de92c7928eb8be26bef5d03ee132cb84fe27b5da3df1ac23bc7",
+        "immutable_manifest_canonical_sha256": "f07f23575c2c18e61f2c685ede1f2bbb5f3cddeb84a97ca29f2aa5938bd2766a"
+      },
+      "evaluate": {
+        "status": "completed_original_frozen_phase_with_metadata_cache_only",
+        "cache_hits": 90904,
+        "cache_misses": 1,
+        "immutable_manifest_disk_sha256": "80b77bbe734b9de92c7928eb8be26bef5d03ee132cb84fe27b5da3df1ac23bc7",
+        "immutable_manifest_canonical_sha256": "f07f23575c2c18e61f2c685ede1f2bbb5f3cddeb84a97ca29f2aa5938bd2766a"
+      }
+    },
+    "source_receipts_sha256": {
+      "metadata_cached_driver.py": "7fe5ff092cda07d2213bb3bfd4028acf9affbee0af8e45b097772cccd079a3d9",
+      "metadata_driver_v1/driver_contract.json": "8c88e7e5f41e5fdf4f832c98993ad185f8c73019f6e9aa079355d9b028b4f60f",
+      "metadata_driver_supersession_receipt.json": "db662fa61b9c12d2db096dddd354c3997d3d98a24fdbc548c34df53301dc6b6f",
+      "target_dispatch_attempt1_receipt.json": "09ceac84eeafcf4c1b692e11a646181c1d0d79894cc6b9f666b9bc604abbdd72",
+      "old_evaluation_watcher_stop_receipt.json": "016951d8817bc575487fdef11d7857efa5b88e10b718b8c093f1b0e0fffcd417"
+    }
+  },
+  "source_receipts_sha256": {
+    "receipts/all_subject_source_acquisition_complete.json": "1a1bbd25ec0f24dd90d0368b6ba28b3173f11ea2a12a59d182b7821bae8a0f86",
+    "receipts/all_subject_source_identity_inventory.json": "048e38a5a85befda6a8304195795cc8b97d8f79930fc60f11672ddcaf19b20cc",
+    "receipts/all_source_parquet_formats.json": "519a9fc175a6873ac43d09e0e6ea0f9d312feeaa536e47c26993755ded368970",
+    "candidate_v1/retirement_receipt.json": "2e0556ba7240101cb839d74e65573e0308c60a3e42332d357784f8f7a14f8cf7",
+    "candidate_v2/QC_contract.json": "bf052bf6e1854d692f65a13c3c4b1a6bf43e0a5cabecbc96f88053b5e5ea045a",
+    "PRESTUDY_PROTOCOL_ZH.md": "84649aef79b9d36fd68f9fdadb336dc7811d4edab52e30a39e6db06d879f6d26",
+    "signal_math_review.json": "caecb12a5e349a20a339d0040955574ff6161c647f42ae3aa2cd3c3d8963d186",
+    "machine_readable_review.json": "be7e66f7caaa00007c534fe7a80ddbf9d160079491e345b2eedeecba8532858b",
+    "release_v1/data_contract.json": "2b67e8e4544394c27453b8c9a7d3560b40303939095ff8c8b0d5c8a2910b89f4",
+    "release_v1/data_manifest.json": "80b77bbe734b9de92c7928eb8be26bef5d03ee132cb84fe27b5da3df1ac23bc7",
+    "release_v1/quality_gate.json": "c32ecfbd49ff595adcd43e46e07e6ce1de1a1fd2d38f7229c2a48fd963752193",
+    "release_v1/independent_release_audit.json": "c20c7e71dffc7d3e917e51ce1de72f4b57f5979d420f1ac5978ccdabd5c60c7f",
+    "machineplan.json": "882050dc480f2b06fd3903343648325e4296e3a7a3fa5407c09bbcb3adb8f12e",
+    "EXECUTION_PROTOCOL_ZH.md": "eb21dc26979701f815012451538a364a417e9ac2dfa7d73b6c3004229350eb5b",
+    "DORSCHKY_pilot_v1/training_contract.json": "adb0cd91d6060921aa5e3657be1fc4208ee27757928a495702c42b24cd5ccb9f",
+    "DORSCHKY_pilot_v1/preflight.json": "011784aad8cf8ec8be010198156fc77ebf14d99f61ee5b0db820bc4adcb1dcb0",
+    "DORSCHKY_pilot_v1/independent_source_training_audit.json": "ff2647c558ca393f34cbd139092b7c9292a2e743605ac51a6c18e6520e1c177d",
+    "DORSCHKY_pilot_v1/independent_all_training_audit.json": "61dce2c68d8f4c03bfd6b3d4623d3762b0e93237bca75358b2a15c9d3a23661b",
+    "DORSCHKY_pilot_v1/analysis_contract.json": "8048d3ac9140237c358ddb8c683c0b64b1bdfc921c7c15629362f9e28002f319",
+    "DORSCHKY_pilot_v1/evaluation_preflight.json": "8aace6c6b043e3655251a6ea2b135f57413cb49c9208a5731bd8c38be6b5a098",
+    "DORSCHKY_pilot_v1/analysis_v1/evaluation_complete.json": "e299a9c859e07d229086bea329c1e2d7e954c9d17de0b698069ec0cc49d5dfdb",
+    "DORSCHKY_pilot_v1/analysis_v1/independent_results_audit.json": "ae5245ecd43f8d208f32f22b1fdc6466c92213f4cb3a096b5dd7b7b339ecdaa1",
+    "DORSCHKY_pilot_v1/analysis_v1/figures/figure_receipt.json": "5aba852975e3ca964d0ad7ab154640f413458ce0c01cc09a43cf150be589a2ae",
+    "reference_time_sensitivity_v1/contract.json": "5c6e2235caaf06aa8205218f1fd02a85505ff7ce8e05f902f14d81ff1de26179",
+    "reference_time_sensitivity_v1/results.json": "cc3d32eb95927f6eb2d123069cc5e9dbfa84d81bfb6350ba549a029545fa8049",
+    "reference_time_sensitivity_v1/independent_audit.json": "2361399a535701b6a5a55d7b62321cff9afb7f5534adb759bbd869b3ba7c4710",
+    "target_dispatch_attempt1_receipt.json": "09ceac84eeafcf4c1b692e11a646181c1d0d79894cc6b9f666b9bc604abbdd72",
+    "metadata_driver_supersession_receipt.json": "db662fa61b9c12d2db096dddd354c3997d3d98a24fdbc548c34df53301dc6b6f",
+    "old_evaluation_watcher_stop_receipt.json": "016951d8817bc575487fdef11d7857efa5b88e10b718b8c093f1b0e0fffcd417",
+    "metadata_driver_v1/driver_contract.json": "8c88e7e5f41e5fdf4f832c98993ad185f8c73019f6e9aa079355d9b028b4f60f",
+    "metadata_driver_v1/target_start.json": "079385129bf2a9648c444db624909f49ebcb00023a84ae487f4ac93c94d5014d",
+    "metadata_driver_v1/target_complete.json": "c22ae6bc1818ca406e1d212e439ded4124027adcd9b93eac3f500323d6dd603d",
+    "metadata_driver_v1/evaluate_start.json": "7432a6df4eeebe55712e0e570141465845db64970f003ef12a2b3e5ed07785ed",
+    "metadata_driver_v1/evaluate_complete.json": "eef006f79a3eee40f55962878231075a98fe2382cdb772291eaf51fb5ee0403f"
+  },
+  "accepted_model_and_result_counts": true,
+  "accepted_counts": {
+    "neural_fits": 45,
+    "source_fits": 18,
+    "target_fits": 27,
+    "optimizer_updates": 34200,
+    "prediction_archives": 1160,
+    "total_case_predictions_including_clean_once": 22040,
+    "angle_rows": 44080,
+    "source_best_and_final_replay_is_not_full_training_trajectory": true
+  },
+  "maximum_independent_prediction_difference": 0.0
+}
