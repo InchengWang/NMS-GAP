@@ -1,4 +1,13 @@
-# halfyeat：SII投稿、入组准备与第三篇
+# halfyeat：稀疏IMU运动重建的泛化与个体化
+
+**当前主题更新（2026-10-25）：** 用户确认2026-10-27中期答辩题目为 **Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs**。近期以真实双小腿IMU、跨患者建模与有限标签个体化为中心；三层目标为现有可组织投稿内容、适当优化、期刊证据包，见[当前主题与路线](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md)及[当前答辩大纲](MASTER_MIDTERM_OUTLINE_ZH.md)。现有证据更支持个体适配，零标定卒中泛化仍待验证；健康外部数据仅作技术复核。架构继续冻结，本次不启动新训练。以下旧日期、标题和未完成状态按各自记录日期保留，当前答辩日期以10月27日为准。
+
+| 当前入口 | 内容 |
+|---|---|
+| [10月27日主题与三层目标](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md) | 当前可投稿内容、有限优化和期刊证据要求 |
+| [中期答辩大纲](MASTER_MIDTERM_OUTLINE_ZH.md) | 13页正文、已有结果及问答边界 |
+
+下文长期入组、交接与其他研究安排保留；近期主题以上述入口为准。
 
 **2026-10-23研究决策更新：** 架构方向已冻结，泛化线继续推进，新开第三线“少量适配＋方向增强”。[三线方案、当前阶段及代码索引](SII2027_THREE_LINES_PLAN_20261023_ZH.md)。90个新神经fit及两线固定clean VALID诊断已独立验收；本批无新TEST。
 

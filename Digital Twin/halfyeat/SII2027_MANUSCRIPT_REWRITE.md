@@ -1,4 +1,8 @@
-# SII2027 改稿工作稿：章节、替换段落与证据槽位
+# 运动重建改稿入口与历史英文模板
+
+**当前主题更新（2026-10-25）：** 用户确认2026-10-27中期答辩题目为 **Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs**。近期以真实双小腿IMU、跨患者建模与有限标签个体化为中心；三层目标为现有可组织投稿内容、适当优化、期刊证据包，见[当前主题与路线](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md)及[当前答辩大纲](MASTER_MIDTERM_OUTLINE_ZH.md)。现有证据更支持个体适配，零标定卒中泛化仍待验证；健康外部数据仅作技术复核。架构继续冻结，本次不启动新训练。以下旧日期、标题和未完成状态按各自记录日期保留，当前答辩日期以10月27日为准。
+
+当前工作题目：**Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs**。论文问题与三层目标以当前路线为准。下文原有real–synthetic、staged/direct英文段落完整保留为历史模板，不是现有结果或当前摘要；写正式稿时应按已经验收的G/I/A、预算和跨条件结果重写，不直接沿用未被支持的优势主张。
 
 日期：2026-10-05。承接 [修改方案](SII2027_REVISION_PLAN.md)。本文件将建议转成可编辑文稿；方括号为待核验/填写项，不能直接投稿。英语段落是拟议修订协议的写作模板，不表示审计、重跑或新增实验已经完成。R01–R14的书目信息与访问深度见 [证据账本](SOURCE_AND_GAP_AUDIT.md)。
 
