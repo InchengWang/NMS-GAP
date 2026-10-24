@@ -1,5 +1,9 @@
 # Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs
 
+**English defense presentation — 27 October 2026:** [Open the 14-slide visual deck](MIDTERM_DEFENSE_20261027_EN.md) · [English speaking script](MIDTERM_DEFENSE_20261027_SPEAKER_NOTES_EN.md) · [4 backup slides and references](MIDTERM_DEFENSE_20261027_APPENDIX_EN.md). Yincheng Wang · Mitsuhiro Hayashibe · Tohoku University · Robotics. Main talk: 14:30 + 0:30 buffer; all slides and speaking notes are English.
+
+The delivered visual deck expands the earlier 13-page outline to 14 main slides to provide sufficient background and related work. The three-level research goals below remain unchanged; no proposed experiment was run to make this presentation.
+
 中文工作题目：**基于稀疏IMU的卒中患者运动重建：泛化与个体化适配**。
 
 更新日期：2026-10-25；中期答辩：**2026-10-27**，以用户本次确认替代旧大纲中的11月20日。英文题目保持用户给定文本。本页是当前主题与三层目标的主入口；旧实验日期、数值、失效记录与原始合同保持原义。

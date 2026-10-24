@@ -1,0 +1,284 @@
+{
+  "status": "figures_from_existing_independently_accepted_aggregate_tables",
+  "date": "2026-10-25",
+  "raw_arrays_or_models_opened": false,
+  "new_training": false,
+  "sources_relative_to_experiments_sha256": {
+    "native_generalization_20261022/GEN1_v1/subject_endpoints.csv": "452ef137237019ac193ed4667271de004b3b15c27b13b067397a16fc188cd438",
+    "native_generalization_20261022/GEN2_scratch_v1/analysis_v1/subject_endpoints.csv": "c4bca0e6f55f693e30aae4d28ba3557002167b8348ba3e7118536ae7a5e60800",
+    "native_generalization_20261022/GEN1_v1/equal_subject_aggregates.csv": "d1072ac0a2b103dea3882bc61805a643243695b08f876088c410352da6fc9e4d",
+    "native_generalization_20261022/GEN2_nested_v1/analysis_v1/equal_patient_descriptive_aggregates.csv": "eb334befd0c09da47043433a69d38e25dfccfa4712b791ebf9d897ec0de2c982",
+    "dorschky_external_20261024/DORSCHKY_pilot_v1/analysis_v1/population_domain_case_endpoints.csv": "e17de431f4abc1399d7f1f494565db2629993e7d9184ffc9f1b3496270deec8d"
+  },
+  "values": {
+    "GEN1_G_I_A": {
+      "endpoint": "paretic_knee_rmse_deg",
+      "targets": 6,
+      "seeds_per_target": 3,
+      "aggregation": "trial_then_seed_then_patient_equal",
+      "means": {
+        "G_real": 11.076073381001379,
+        "I_source_scaler": 3.173842804278873,
+        "A_real": 2.949061975385883
+      },
+      "patient_points_anonymous": true,
+      "I_uses_source_x_and_y_scaler": true
+    },
+    "GEN2_budget": {
+      "endpoint": "paretic_knee_rmse_deg",
+      "categories": [
+        "one",
+        "half",
+        "full"
+      ],
+      "A_real": [
+        3.9220120768493625,
+        3.385850438335236,
+        2.9490619753858827
+      ],
+      "I_source_scaler": [
+        4.31572563901254,
+        3.584421908524217,
+        3.173842804278873
+      ],
+      "target_VALID_mean_additional_seconds": [
+        9.805000000000001,
+        9.805000000000001,
+        9.805000000000001
+      ],
+      "n_patients": 6,
+      "budgets_not_clinical_collection_duration": true,
+      "same_budget_comparisons_only": true
+    },
+    "DORSCHKY_tradeoff": {
+      "population": "9 healthy outer targets",
+      "task": "bilateral_heading_sagittal_optical_knee_proxy",
+      "domain": "cross_speed",
+      "clean": {
+        "A_R": 4.425044949344109,
+        "A_S": 4.5208744048789375
+      },
+      "absolute_pressure_18case_mean": {
+        "A_R": 4.618498889513202,
+        "A_S": 4.603661112586248
+      },
+      "pressure_increment": {
+        "A_R": 0.19345394016909356,
+        "A_S": 0.08278670770731011
+      },
+      "same_200frame_support": true,
+      "true_remount": false
+    }
+  },
+  "style": {
+    "navy": "#142B45",
+    "teal": "#007F86",
+    "gold": "#D99A24",
+    "background": "#F5F7FB",
+    "svg_text": "paths",
+    "size_inches": [
+      10,
+      5.5
+    ]
+  },
+  "limitations": [
+    "No pooled RMSE or patient N across datasets",
+    "Patient points anonymized and not additional participants",
+    "No new significance tests",
+    "No clinical JCS or true remount claim"
+  ],
+  "figure_receipt_sha256": "d19cce5a2d6249b604432a1bdf499c9f1de51db377b4eabb0fb047a3f3800701",
+  "speaker_notes_words": 1690,
+  "main_slides": 14,
+  "backup_slides": 4,
+  "talk_seconds": 870,
+  "buffer_seconds": 30,
+  "language": "English",
+  "presenter": "Yincheng Wang",
+  "defense_date": "2026-10-27",
+  "slides": [
+    {
+      "number": 1,
+      "title": "Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs",
+      "seconds": 20,
+      "evidence": [],
+      "sha256": "02663eb1fa6afe7dabadf6bf779bc258584a6c805bd78cf08e603c1b3af8435f"
+    },
+    {
+      "number": 2,
+      "title": "Stroke gait requires both shared models and individual attention",
+      "seconds": 65,
+      "evidence": [
+        "R1",
+        "R2"
+      ],
+      "sha256": "72badc4f0c5f3d39ff1d80267c0c867ff18958cd657f3150a3f1460dd561d5e8"
+    },
+    {
+      "number": 3,
+      "title": "Sparse wearable sensing trades measurement coverage for convenience",
+      "seconds": 55,
+      "evidence": [
+        "R3",
+        "E1"
+      ],
+      "sha256": "2d3d1f96bd5035c5772e15dc87bd1f8a21e42c512309f858a04025541a49ff58"
+    },
+    {
+      "number": 4,
+      "title": "Sparse reconstruction and personalization already have strong precedents",
+      "seconds": 65,
+      "evidence": [
+        "R3",
+        "R4"
+      ],
+      "sha256": "7b6af7aa5f755a75c34b659e656ec589a130cb75a05c5ab3b65dad50975bc3f9"
+    },
+    {
+      "number": 5,
+      "title": "Separate population transfer from the value of individual labels",
+      "seconds": 60,
+      "evidence": [
+        "E3"
+      ],
+      "sha256": "aa397cdc92d954b47606a54142e08e2effeb0b2f31d9907fadeb0146570ddc1a"
+    },
+    {
+      "number": 6,
+      "title": "Reliable pairing is a prerequisite for a meaningful learning result",
+      "seconds": 75,
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "sha256": "c935ca6cccd03f5bfdf7a1a1137ca215597678d7813de1ee6c6b917291e631a7"
+    },
+    {
+      "number": 7,
+      "title": "Keep the network fixed and make the evaluation roles explicit",
+      "seconds": 75,
+      "evidence": [
+        "E1",
+        "E3",
+        "E5",
+        "E6"
+      ],
+      "sha256": "e2a1de81ada4b2b85466841b4ddfe23710261c95f67c309b0099785088e52a31"
+    },
+    {
+      "number": 8,
+      "title": "Verified inputs recover patient-specific motion beyond a constant baseline",
+      "seconds": 45,
+      "evidence": [
+        "E1"
+      ],
+      "sha256": "e8c7399469e4033407c066d98a579e5638601bebcfc91bda28f84bf834bd160c"
+    },
+    {
+      "number": 9,
+      "title": "Individual supervision matters; pretraining adds a modest further benefit",
+      "seconds": 80,
+      "evidence": [
+        "E3"
+      ],
+      "sha256": "de28300abc1262971e807c7004d8d08dc2bd7d45a77b65be1a9c83624215dd57"
+    },
+    {
+      "number": 10,
+      "title": "Personalization benefits depend on how much target reference is available",
+      "seconds": 75,
+      "evidence": [
+        "E3"
+      ],
+      "sha256": "7f6bc927c5b00c00a10f3a7ac010b1df035866c4689865d706773393fb818940"
+    },
+    {
+      "number": 11,
+      "title": "Public healthy cohorts provide technical replication across walking speeds",
+      "seconds": 75,
+      "evidence": [
+        "E5",
+        "E6"
+      ],
+      "sha256": "23f1272fb058ed933f1ce6aee97a27683ac631fb8ef0971398eec8217eca08c1"
+    },
+    {
+      "number": 12,
+      "title": "Direction augmentation reduces sensitivity, with a clean-error trade-off",
+      "seconds": 60,
+      "evidence": [
+        "E6"
+      ],
+      "sha256": "8ae6e74a1239ac37e55f4dd947bb7a23a873152f202bf7799ca813b9bcc1e8da"
+    },
+    {
+      "number": 13,
+      "title": "The current contribution is an auditable study of personalization and its limits",
+      "seconds": 75,
+      "evidence": [
+        "E1",
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "sha256": "8eff0d9be26c3ec24cc0907b8968d5193b2c4984ae6f0d896867fa7eca2c6df0"
+    },
+    {
+      "number": 14,
+      "title": "From a complete exploratory study to stronger publication evidence",
+      "seconds": 45,
+      "evidence": [
+        "E7"
+      ],
+      "sha256": "f9f138356d4157945187d872b8da9144761502cc2aab1d3f647d42791eed95ff"
+    }
+  ],
+  "accepted_project_report_version": {
+    "repository": "InchengWang/NMS-GAP",
+    "commit": "b5484d8a204760d99b16ac3524e151170f0f978d",
+    "git_blob_sha1": {
+      "SII2027_NATIVE_BASELINE_20261021_ZH.md": "6bab59bf5b16071ac57f37a7133ae18c2e03a818",
+      "SII2027_MARKER_RECALL_20261021_ZH.md": "1f46379d3152e0f786c436d346602ae74582ea31",
+      "SII2027_GENERALIZATION_RESULTS_20261022_ZH.md": "0c39f7f7240ef2a88e9549f5001d4ce8fba0fa5d",
+      "SII2027_ARCH_AUG_RESULTS_20261022_ZH.md": "98af90dc20df4a8e934af68d08be44636556d839",
+      "SII2027_OPEN_EXTERNAL_VALIDATION_20261023_ZH.md": "3a366541f3f10ced3e202325bea94cf67d23b39b",
+      "SII2027_DORSCHKY_EXTERNAL_20261024_ZH.md": "9177cc9080a4293212f05190befede90f4777cb4"
+    }
+  },
+  "other_displayed_accepted_summary_values": {
+    "native_patient_specific_baseline": {
+      "endpoint": "bilateral_knee_RMSE_deg",
+      "FrameTCN": 2.5036,
+      "TRAIN_mean_reference": 12.8655,
+      "test_patients": 6,
+      "test_trials": 10,
+      "seeds": 3
+    },
+    "WMCG_cross_speed": {
+      "endpoint": "bilateral_knee_RMSE_deg",
+      "A_R": 8.050971,
+      "I_R": 10.365379,
+      "healthy_outer_targets": 5
+    },
+    "DORSCHKY_same_speed": {
+      "endpoint": "bilateral_knee_proxy_RMSE_deg",
+      "A_R": 2.887500741455106
+    },
+    "GEN5_development_VALID": {
+      "endpoint": "paretic_knee_RMSE_deg",
+      "affine": 6.262902,
+      "head": 5.183036,
+      "full_final": 3.83077,
+      "I_final": 4.166245,
+      "new_TEST": false
+    }
+  },
+  "visual_review": {
+    "rendered_pages": 18,
+    "all_pages_inspected": true,
+    "renderer": "system_librsvg_and_cairo",
+    "layout_overlaps_corrected": true,
+    "not_a_recorded_timing_rehearsal": true
+  }
+}

@@ -1,70 +1,43 @@
-# 2026年10月27日中期答辩大纲
+# Midterm defense — 27 October 2026
 
 **Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs**
 
-中文：**基于稀疏IMU的卒中患者运动重建：泛化与个体化适配**。
+**Yincheng Wang** · Supervisor: **Mitsuhiro Hayashibe** · **Tohoku University · Robotics**
 
-更新：2026-10-25；答辩日期以用户最新确认的2026-10-27为准。当前主题、三层发表目标与证据边界以[主题与发表路线](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md)为主。此前11月20日大纲及历次补记完整保留在[历史大纲](MASTER_MIDTERM_OUTLINE_before_20261025_ZH.md)，其旧日期/未完成状态不代表当前安排。
+The actual English visual presentation is now complete. **14 main slides, 14:30 speaking + 0:30 buffer; 4 backup slides outside the timed talk.** This replaces the earlier 13-page proposed outline; the additional space supports background and related work. The talk duration is a rehearsal target and still needs an aloud rehearsal.
 
-## 1. 一句话主线
+- [Open the GitHub visual slide deck](MIDTERM_DEFENSE_20261027_EN.md).
+- [Continuous English speaking script](MIDTERM_DEFENSE_20261027_SPEAKER_NOTES_EN.md).
+- [Backup slides, questions and primary references](MIDTERM_DEFENSE_20261027_APPENDIX_EN.md).
+- [Numerical evidence and source fingerprints](MIDTERM_DEFENSE_20261027_EVIDENCE.json).
+- [Three-level research and publication goals](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md).
 
-**在真实双小腿IMU与可靠光学参考下，量化群体模型迁移到卒中患者时的局限，以及有限个体参考对其他试次和条件重建的收益。**
+## Talk structure
 
-Generalizable是当前要检验的研究目标，Personalized是现阶段证据较充分的部分。研究范围是下肢步态运动学及明确工程角，不泛称全身3D动捕、临床JCS或康复疗效。架构保持冻结，虚拟数据与方向增强为消融/辅助模块。
+| Slide | Topic | Time | Cumulative |
+|---|---|---:|---:|
+| 01 | Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs | 0:20 | 0:20 |
+| 02 | Stroke gait requires both shared models and individual attention | 1:05 | 1:25 |
+| 03 | Sparse wearable sensing trades measurement coverage for convenience | 0:55 | 2:20 |
+| 04 | Sparse reconstruction and personalization already have strong precedents | 1:05 | 3:25 |
+| 05 | Separate population transfer from the value of individual labels | 1:00 | 4:25 |
+| 06 | Reliable pairing is a prerequisite for a meaningful learning result | 1:15 | 5:40 |
+| 07 | Keep the network fixed and make the evaluation roles explicit | 1:15 | 6:55 |
+| 08 | Verified inputs recover patient-specific motion beyond a constant baseline | 0:45 | 7:40 |
+| 09 | Individual supervision matters; pretraining adds a modest further benefit | 1:20 | 9:00 |
+| 10 | Personalization benefits depend on how much target reference is available | 1:15 | 10:15 |
+| 11 | Public healthy cohorts provide technical replication across walking speeds | 1:15 | 11:30 |
+| 12 | Direction augmentation reduces sensitivity, with a clean-error trade-off | 1:00 | 12:30 |
+| 13 | The current contribution is an auditable study of personalization and its limits | 1:15 | 13:45 |
+| 14 | From a complete exploratory study to stronger publication evidence | 0:45 | 14:30 |
 
-## 2. 建议13页正文
+## Core argument
 
-沿用约15分钟的旧文字模板，建议正文14分15秒、缓冲45秒；如实际限时不同，再压缩背景与辅助机制页。本文件是可制作PPT的文字大纲，没有声称已生成或审阅最终演示文件。
+Measured two-shank IMUs and reliable optical pairing support patient-specific reconstruction. Patient-excluded source models alone remain weak; limited target reference improves reconstruction, and pretrained weights add a modest benefit over a matched target-trained random-weight reference. Public healthy cohorts provide technical replication and reveal cross-speed and synthetic-orientation trade-offs.
 
-| 页 | 标题与核心问题 | 已有证据/主图 | 时长 |
-|---|---|---|---:|
-| 1 | 正式题目与研究问题 | 用户英文题目、双IMU配置、一句话目标 | 0:20 |
-| 2 | 为什么需要兼顾群体规律和卒中个体差异？ | 佩戴负担、患者差异、光学标定成本；不引申疗效 | 0:55 |
-| 3 | 已有双IMU和微调研究之后，我们还需回答什么？ | Guo2025双IMU/TCN与Hur2025个体/群体/适配对比；本项目聚焦卒中证据、参考预算与跨条件保持 | 1:05 |
-| 4 | 原始数据是否可信？ | 真实S1/S2、标记抬腿、允许跳段配对、69→53、未验收16条；S6仅作运动相容证据 | 1:10 |
-| 5 | 怎样区分泛化与个体化？ | source TRAIN/VALID排除目标；目标CALIB与EVAL按完整trial分开；跨患者/跨trial/跨速度/真实重戴四者分别定义 | 1:15 |
-| 6 | 两枚IMU能否恢复患者内动态？ | 原生基线6人TEST：双膝2.504°、TRAIN均值12.866°；工程标签和光学QC暴露限制 | 1:00 |
-| 7 | 群体预训练与目标标签分别贡献多少？ | GEN1患膝G11.076°、I3.174°、A2.949°；6患者配对点；A−I解释预训练权重增益 | 1:25 |
-| 8 | 少量个体参考够不够？ | GEN2一条/半量/全量A3.922/3.386/2.949°，I4.316/3.584/3.174°；额外VALID、context和采集成本 | 1:15 |
-| 9 | 个体化是否只需改偏置或输出头？ | GEN5历史VALID：仿射6.263°、head5.183°、full3.831°；明确本页不是第7页TEST同预算比较 | 0:55 |
-| 10 | 个体化能否迁移到其他行走速度？ | WMCG/Dorschky分别展示；Dorschky A同速2.888°/跨速4.425°；健康技术验证、标签不同不合并 | 1:15 |
-| 11 | 方向增强究竟改善了什么？ | Dorschky clean A_R4.425°/A_S4.521°，绝对压力4.618°/4.604°；增量0.193°/0.083°。保留精度/鲁棒性取舍 | 1:15 |
-| 12 | 目前能发表什么，还缺什么？ | 当前探索性稿、适当优化、期刊证据包三层；更独立卒中、强基线和参考定义为缺口 | 1:20 |
-| 13 | 本人贡献与后续工作 | 据实际分工填写数据/实验/代码贡献；答辩后先机制2×2，再选一种适配优化与独立公开cohort | 1:05 |
+Stroke is the core clinical development population; healthy data do not replace independent stroke validation. Dataset-specific engineering labels, budgets, scored supports and sample sizes remain separate. All results are existing accepted experiments; proposed optimization is shown only as future work. Architecture and experimental contracts remain frozen.
 
-合计14:15。超时时先缩第3/9页，保留第5/7/8/12页的评测定义、配对对照、参考成本和证据缺口。不要用训练次数或复杂网络图代替贡献说明。
+## Preserved history
 
-## 3. 结果与图表选取规则
-
-- Stroke为本题核心患者证据；BLISS为已经参与开发的卒中补充；WMCG/Dorschky为健康人技术复核。
-- 每张图标出数据源、人群、人数、端点、角色、支持与预算；跨数据集不排序RMSE、不合并患者数。Stroke患膝/双膝、GEN5 VALID/GEN1 TEST、WMCG完整parent/Dorschky中心2秒分别标清。
-- 使用已经独立验收的图和聚合；同时展示G、同目标预算I、A和负迁移。I采用source x/y scaler的情况须明示。
-- 方向页同时给clean与非clean case的绝对误差。Dorschky同段可由clean＋增量核对；WMCG完整clean与20秒压力支持不同，不能相加。
-- 三平面用本数据集实际坐标定义解释；sensor XYZ不直接等于解剖平面。Dorschky仅heading-sagittal双膝proxy，不称三平面验证。
-- 原Stroke6患者多重检验能力有限；不因bootstrap区间不含0替代原exact/Holm结论。9名健康人的统计结果也不升级为卒中临床确认。
-
-## 4. 三层目标答辩页的简版文案
-
-| 层次 | 目标 | 判断 |
-|---|---|---|
-| 当前可组织投稿 | 可靠双IMU工程重建、患者排除源训练、匹配预算个体化与标定量曲线，健康公开数据补充 | 探索性会议/技术稿可形成；创新性仍需与最近邻比较，不承诺录用 |
-| 适当优化后 | 冻结架构，补源×目标增强2×2；再检验一种保留跨条件能力的适配策略及多seed稳定性 | 先独立立协议，可能得到机制或阴性结果，不能保证误差下降 |
-| 期刊投稿 | 明确的方法或证据贡献、可靠参考与同步、强基线、成本/失败分析、可执行复现与更独立验证 | 若坚持独立卒中临床泛化，需要新的合适公开卒中证据；健康数据不能替代 |
-
-## 5. 可能追问与简答
-
-| 问题 | 回答要点 |
-|---|---|
-| 既然零标定迁移差，为何题目写Generalizable？ | 它是研究目标与被严格检验的能力；当前已经识别差距，并量化有限标签个体化的改善，不把目标当结论 |
-| 2秒就能完成患者标定吗？ | 2秒仅Dorschky梯度支持；另需2.4秒光学context、完整trial/QC和作者功能标定，且是健康技术任务 |
-| 2.949°和4.425°哪个模型更好？ | 数据、人群、标签与预算不同，不能作直接优劣比较；各自只与同协议G/I/A比较 |
-| 泛化测试是不是不同患者？ | 源训练排除目标人；适配用该目标少量trial，评价其其他trial。适配后的成绩是个体化泛化，不是零目标标签预测 |
-| 方向增强是否解决了重新佩戴？ | 只验证合成坐标变化；没有公开真实重戴证据。clean误差和扰动后总误差需同时看 |
-| 贡献是否仅是微调？ | 微调已有先例；本项目现阶段贡献在可靠卒中数据证据、可追溯公平比较与参考成本/跨条件分析。期刊还需进一步明确增量 |
-| 为什么不继续增加网络？ | 现有架构消融没有稳定clean增益；下一步优先解决跨条件保持和独立证据，架构按用户决定冻结 |
-
-## 6. 附录与后续
-
-附录保留原始配对/QC、单位与符号/平面、完整患者结果、ARCH/虚拟阴性结果、BLISS去重、独立审计方法及BSN前期信号/事件工作。不同任务没有已验证级联，不共用指标。
-
-10/25统一主题与证据，10/26组装图表、计时与问答，10/27答辩。答辩后实验以[三层路线](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md)为准；本次没有启动新训练。长期首投和入组排期仍受证据门槛约束，不将计划日期当录用承诺。
+- [Previous 13-page outline](MASTER_MIDTERM_OUTLINE_before_English_visual_deck_20261025_ZH.md).
+- [Earlier November-date outline and historical updates](MASTER_MIDTERM_OUTLINE_before_20261025_ZH.md).
