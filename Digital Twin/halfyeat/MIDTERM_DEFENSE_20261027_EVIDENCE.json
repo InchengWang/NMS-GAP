@@ -71,15 +71,24 @@
     }
   },
   "style": {
-    "navy": "#142B45",
-    "teal": "#007F86",
-    "gold": "#D99A24",
-    "background": "#F5F7FB",
-    "svg_text": "paths",
+    "reference": "20260202_Master_Thesis_Final_slides_Kemmochi.pptx",
+    "reference_sha256": "1f3cb4deb150643e1a912dec6e923ddd9b57dc9e1b6abc6820b520662e2c717c",
+    "primary_blue": "#1F5C99",
+    "panel_gray": "#F2F2F2",
+    "body_gray": "#595959",
+    "background": "#FFFFFF",
+    "fonts": [
+      "Meiryo",
+      "Times New Roman"
+    ],
     "size_inches": [
-      10,
-      5.5
-    ]
+      13.333333333333334,
+      7.5
+    ],
+    "svg_text": "editable_text_with_embedded_logos_and_vector_figures",
+    "PPTX_text_and_shapes_editable": true,
+    "header_logos": "Tohoku University and Neuro Robotics Lab",
+    "original_reference_pptx_not_distributed": true
   },
   "limitations": [
     "No pooled RMSE or patient N across datasets",
@@ -102,7 +111,8 @@
       "title": "Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs",
       "seconds": 20,
       "evidence": [],
-      "sha256": "02663eb1fa6afe7dabadf6bf779bc258584a6c805bd78cf08e603c1b3af8435f"
+      "sha256": "c071f41f4643762a7ff4713c30f62462b0e791f6be587f82ae1c5950402c7ba8",
+      "asset": "assets/defense_20261027_kemmochi/slide_01.svg"
     },
     {
       "number": 2,
@@ -112,7 +122,8 @@
         "R1",
         "R2"
       ],
-      "sha256": "72badc4f0c5f3d39ff1d80267c0c867ff18958cd657f3150a3f1460dd561d5e8"
+      "sha256": "479102dd80a07904773abb4e10f2cd43f8dcb808cc688988e68293924594463e",
+      "asset": "assets/defense_20261027_kemmochi/slide_02.svg"
     },
     {
       "number": 3,
@@ -122,7 +133,8 @@
         "R3",
         "E1"
       ],
-      "sha256": "2d3d1f96bd5035c5772e15dc87bd1f8a21e42c512309f858a04025541a49ff58"
+      "sha256": "78c29f4aed71ebd3ff02fc8d85d8d60ea6e007ec83d43439f3bca5b5ed56aa74",
+      "asset": "assets/defense_20261027_kemmochi/slide_03.svg"
     },
     {
       "number": 4,
@@ -132,7 +144,8 @@
         "R3",
         "R4"
       ],
-      "sha256": "7b6af7aa5f755a75c34b659e656ec589a130cb75a05c5ab3b65dad50975bc3f9"
+      "sha256": "1b4ee4f73d682c2ffd43a38d3b1af40b83d5dd1df691425eb96194ae66f83bf0",
+      "asset": "assets/defense_20261027_kemmochi/slide_04.svg"
     },
     {
       "number": 5,
@@ -141,7 +154,8 @@
       "evidence": [
         "E3"
       ],
-      "sha256": "aa397cdc92d954b47606a54142e08e2effeb0b2f31d9907fadeb0146570ddc1a"
+      "sha256": "6bfbf335972238c54a417713ccf3b8c5d9acd7d9a4e7a27c6be9dbad73355da2",
+      "asset": "assets/defense_20261027_kemmochi/slide_05.svg"
     },
     {
       "number": 6,
@@ -151,7 +165,8 @@
         "E1",
         "E2"
       ],
-      "sha256": "c935ca6cccd03f5bfdf7a1a1137ca215597678d7813de1ee6c6b917291e631a7"
+      "sha256": "505983a6ed00cf9e8b91a8cd35058771743d9610f2bcb6a135c5ae16e2bd7dad",
+      "asset": "assets/defense_20261027_kemmochi/slide_06.svg"
     },
     {
       "number": 7,
@@ -163,7 +178,8 @@
         "E5",
         "E6"
       ],
-      "sha256": "e2a1de81ada4b2b85466841b4ddfe23710261c95f67c309b0099785088e52a31"
+      "sha256": "92b431653fa89cba185c3e7d52215f8f4a13f323a54f49b1740f4aa6b830c336",
+      "asset": "assets/defense_20261027_kemmochi/slide_07.svg"
     },
     {
       "number": 8,
@@ -172,7 +188,8 @@
       "evidence": [
         "E1"
       ],
-      "sha256": "e8c7399469e4033407c066d98a579e5638601bebcfc91bda28f84bf834bd160c"
+      "sha256": "d9bd59ebf9ecb79a01632a1e34c1e2793e56f34207e25efb4274399cb2664315",
+      "asset": "assets/defense_20261027_kemmochi/slide_08.svg"
     },
     {
       "number": 9,
@@ -181,7 +198,8 @@
       "evidence": [
         "E3"
       ],
-      "sha256": "de28300abc1262971e807c7004d8d08dc2bd7d45a77b65be1a9c83624215dd57"
+      "sha256": "86807635f9a33d43e56a3869163226b3508244b0bbc7d6f4b91922a3eff76552",
+      "asset": "assets/defense_20261027_kemmochi/slide_09.svg"
     },
     {
       "number": 10,
@@ -190,7 +208,8 @@
       "evidence": [
         "E3"
       ],
-      "sha256": "7f6bc927c5b00c00a10f3a7ac010b1df035866c4689865d706773393fb818940"
+      "sha256": "22baaf828b15cb52c3edd705c8bbed901b8dd33c3e3d93d7b26ab87f33698694",
+      "asset": "assets/defense_20261027_kemmochi/slide_10.svg"
     },
     {
       "number": 11,
@@ -200,7 +219,8 @@
         "E5",
         "E6"
       ],
-      "sha256": "23f1272fb058ed933f1ce6aee97a27683ac631fb8ef0971398eec8217eca08c1"
+      "sha256": "be8ecd14ae68d3d45366395732e6e6564bfbdb710460862ca8099b5ab9231cb2",
+      "asset": "assets/defense_20261027_kemmochi/slide_11.svg"
     },
     {
       "number": 12,
@@ -209,7 +229,8 @@
       "evidence": [
         "E6"
       ],
-      "sha256": "8ae6e74a1239ac37e55f4dd947bb7a23a873152f202bf7799ca813b9bcc1e8da"
+      "sha256": "dfee532f2a947f1a86252dbb5353d0ecfdd31afcaa21ecf1266bb2cb082220b0",
+      "asset": "assets/defense_20261027_kemmochi/slide_12.svg"
     },
     {
       "number": 13,
@@ -222,7 +243,8 @@
         "E5",
         "E6"
       ],
-      "sha256": "8eff0d9be26c3ec24cc0907b8968d5193b2c4984ae6f0d896867fa7eca2c6df0"
+      "sha256": "8b1af1c7fad305c4b80f5553e4147f1a1a370b1f66632a469ace2aedb1c0966c",
+      "asset": "assets/defense_20261027_kemmochi/slide_13.svg"
     },
     {
       "number": 14,
@@ -231,7 +253,8 @@
       "evidence": [
         "E7"
       ],
-      "sha256": "f9f138356d4157945187d872b8da9144761502cc2aab1d3f647d42791eed95ff"
+      "sha256": "0a2209c5a002207346127c239b0972d7015601680b9941428fd4b32e9f260635",
+      "asset": "assets/defense_20261027_kemmochi/slide_14.svg"
     }
   ],
   "accepted_project_report_version": {
@@ -275,10 +298,63 @@
     }
   },
   "visual_review": {
-    "rendered_pages": 18,
+    "rendered_SVG_pages": 18,
+    "rendered_native_PPTX_PDF_pages": 18,
     "all_pages_inspected": true,
-    "renderer": "system_librsvg_and_cairo",
+    "SVG_renderer": "system_librsvg_and_cairo",
+    "PPTX_PDF_renderer": "LibreOffice_Impress",
+    "final_PDF_sha256": "a1686535b68b8e6104f44421beee70662b997acdadcf1a75a02daabd34427ccf",
     "layout_overlaps_corrected": true,
+    "notes_verified_unchanged": true,
     "not_a_recorded_timing_rehearsal": true
+  },
+  "previous_style": {
+    "navy": "#142B45",
+    "teal": "#007F86",
+    "gold": "#D99A24",
+    "background": "#F5F7FB",
+    "svg_text": "paths",
+    "size_inches": [
+      10,
+      5.5
+    ]
+  },
+  "backup_assets": [
+    {
+      "asset": "assets/defense_20261027_kemmochi/appendix_A1_coordinates.svg",
+      "sha256": "d761837c9c23602b716047b6de6a49ed434afba1420ab6edfbbfd8b0ae0c1091"
+    },
+    {
+      "asset": "assets/defense_20261027_kemmochi/appendix_A2_ablations.svg",
+      "sha256": "5e7299b4e9db746a8bb40cf575d527c9003bb9bfe069ef975c791bd26e9875bc"
+    },
+    {
+      "asset": "assets/defense_20261027_kemmochi/appendix_A3_domains_costs.svg",
+      "sha256": "8f09905e05e3de48767829ea62f3e4623e3879cdbd31cfc9dc831e0449787d27"
+    },
+    {
+      "asset": "assets/defense_20261027_kemmochi/appendix_A4_questions.svg",
+      "sha256": "8cd4f6309d719a9e4963996c6b1ef2ac67e3a5c3891e27054a384e932a4e9a89"
+    }
+  ],
+  "format_update": {
+    "date": "2026-10-25",
+    "scope": "format_only",
+    "base_repository_commit": "351ea0191ab2e3c27c5d84ab1df85f644b23198f",
+    "previous_evidence_sha256": "76d862289aca181dbf331e171ce3d9f851da342d50ca524147e4a723d72c69c6",
+    "notes_unchanged": true,
+    "research_values_unchanged": true,
+    "new_experiments": 0,
+    "new_model_selection": false,
+    "format_review": "MIDTERM_DEFENSE_20261027_FORMAT_REVIEW.json",
+    "PPTX": {
+      "sha256": "cbdbb707e347bccfcb5101cd39ea141100943ca9de353cab029058d89de6bb2f",
+      "file_name": "Yincheng_Wang_Midterm_Defense_20261027_KemmochiStyle.pptx"
+    },
+    "PDF": {
+      "sha256": "a1686535b68b8e6104f44421beee70662b997acdadcf1a75a02daabd34427ccf",
+      "file_name": "Yincheng_Wang_Midterm_Defense_20261027_KemmochiStyle.pdf"
+    },
+    "distribution": "Public GitHub SVG visual deck only; complete PPTX, PDF, and source remain local at the user request."
   }
 }

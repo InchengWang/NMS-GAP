@@ -5,6 +5,8 @@
 
 English visual presentation and English speaking script. **14 main slides: 14 min 30 s + 30 s buffer.** Four backup slides are outside the timed talk. Timing is a rehearsal target, not a measured delivery recording.
 
+**Format update — 25 October 2026:** Rebuilt in the supplied Kemmochi thesis-slide style: blue headers, institutional logos, gray panels, a blue takeaway bar, and a 16:9 canvas. The 14 main slides, four backup slides, English speaking script, research values, and conclusions are retained. [Formatting review](MIDTERM_DEFENSE_20261027_FORMAT_REVIEW.json).
+
 Each 16:9 slide is a GitHub-native SVG. Click an image to inspect it at full size. Expand **Speaker notes** to rehearse. All numerical results come from existing independently checked experiments; no new training or model selection was performed for this presentation.
 
 [Continuous speaking script](MIDTERM_DEFENSE_20261027_SPEAKER_NOTES_EN.md) · [Backup slides and references](MIDTERM_DEFENSE_20261027_APPENDIX_EN.md) · [Evidence manifest](MIDTERM_DEFENSE_20261027_EVIDENCE.json)
@@ -32,7 +34,7 @@ Each 16:9 slide is a GitHub-native SVG. Click an image to inspect it at full siz
 
 ## 01 · Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs
 
-![Slide 01: Population knowledge, individual adaptation, and condition robustness.](assets/defense_20261027/slide_01.svg)
+![Slide 01: Population knowledge, individual adaptation, and condition robustness.](assets/defense_20261027_kemmochi/slide_01.svg)
 
 **Message:** Population knowledge, individual adaptation, and condition robustness.
 
@@ -51,7 +53,7 @@ Good morning. I am Yincheng Wang from Tohoku University, supervised by Professor
 
 ## 02 · Stroke gait requires both shared models and individual attention
 
-![Slide 02: A useful reconstruction model must accommodate both patient and condition differences.](assets/defense_20261027/slide_02.svg)
+![Slide 02: A useful reconstruction model must accommodate both patient and condition differences.](assets/defense_20261027_kemmochi/slide_02.svg)
 
 **Message:** A useful reconstruction model must accommodate both patient and condition differences.
 
@@ -72,7 +74,7 @@ Sources: [R1: Sánchez et al., 2023 · Between-patient and site heterogeneity](h
 
 ## 03 · Sparse wearable sensing trades measurement coverage for convenience
 
-![Slide 03: Two shank IMUs provide measured inputs; optical motion capture provides the reference.](assets/defense_20261027/slide_03.svg)
+![Slide 03: Two shank IMUs provide measured inputs; optical motion capture provides the reference.](assets/defense_20261027_kemmochi/slide_03.svg)
 
 **Message:** Two shank IMUs provide measured inputs; optical motion capture provides the reference.
 
@@ -93,7 +95,7 @@ Sources: [R3: Guo et al., 2025 · Two-IMU physics-informed prediction](https://i
 
 ## 04 · Sparse reconstruction and personalization already have strong precedents
 
-![Slide 04: Our focus is the evidence for stroke personalization, its reference cost, and its limits.](assets/defense_20261027/slide_04.svg)
+![Slide 04: Our focus is the evidence for stroke personalization, its reference cost, and its limits.](assets/defense_20261027_kemmochi/slide_04.svg)
 
 **Message:** Our focus is the evidence for stroke personalization, its reference cost, and its limits.
 
@@ -114,7 +116,7 @@ Sources: [R3: Guo et al., 2025 · Two-IMU physics-informed prediction](https://i
 
 ## 05 · Separate population transfer from the value of individual labels
 
-![Slide 05: G to A measures the effect of personalization; A versus I tests pretrained weights.](assets/defense_20261027/slide_05.svg)
+![Slide 05: G to A measures the effect of personalization; A versus I tests pretrained weights.](assets/defense_20261027_kemmochi/slide_05.svg)
 
 **Message:** G to A measures the effect of personalization; A versus I tests pretrained weights.
 
@@ -135,7 +137,7 @@ Sources: [E3: Stroke GEN1 / GEN2 transfer and budget results](SII2027_GENERALIZA
 
 ## 06 · Reliable pairing is a prerequisite for a meaningful learning result
 
-![Slide 06: The accepted engineering cohort contains 53 trials from 8 patients, with explicit exclusions.](assets/defense_20261027/slide_06.svg)
+![Slide 06: The accepted engineering cohort contains 53 trials from 8 patients, with explicit exclusions.](assets/defense_20261027_kemmochi/slide_06.svg)
 
 **Message:** The accepted engineering cohort contains 53 trials from 8 patients, with explicit exclusions.
 
@@ -156,7 +158,7 @@ Sources: [E1: Accepted stroke release and patient-specific baseline](SII2027_NAT
 
 ## 07 · Keep the network fixed and make the evaluation roles explicit
 
-![Slide 07: Split complete trials before windowing, and charge all reference information to its role.](assets/defense_20261027/slide_07.svg)
+![Slide 07: Split complete trials before windowing, and charge all reference information to its role.](assets/defense_20261027_kemmochi/slide_07.svg)
 
 **Message:** Split complete trials before windowing, and charge all reference information to its role.
 
@@ -177,7 +179,7 @@ Sources: [E1: Accepted stroke release and patient-specific baseline](SII2027_NAT
 
 ## 08 · Verified inputs recover patient-specific motion beyond a constant baseline
 
-![Slide 08: Patient-specific reconstruction is feasible on the accepted data; this is not cross-patient transfer.](assets/defense_20261027/slide_08.svg)
+![Slide 08: Patient-specific reconstruction is feasible on the accepted data; this is not cross-patient transfer.](assets/defense_20261027_kemmochi/slide_08.svg)
 
 **Message:** Patient-specific reconstruction is feasible on the accepted data; this is not cross-patient transfer.
 
@@ -198,7 +200,7 @@ Sources: [E1: Accepted stroke release and patient-specific baseline](SII2027_NAT
 
 ## 09 · Individual supervision matters; pretraining adds a modest further benefit
 
-![Slide 09: The strongest current stroke evidence supports personalization, not reliable zero-label transfer.](assets/defense_20261027/slide_09.svg)
+![Slide 09: The strongest current stroke evidence supports personalization, not reliable zero-label transfer.](assets/defense_20261027_kemmochi/slide_09.svg)
 
 **Message:** The strongest current stroke evidence supports personalization, not reliable zero-label transfer.
 
@@ -219,7 +221,7 @@ Sources: [E3: Stroke GEN1 / GEN2 transfer and budget results](SII2027_GENERALIZA
 
 ## 10 · Personalization benefits depend on how much target reference is available
 
-![Slide 10: Compare A and I within each budget; do not interpret one trial as a complete calibration cost.](assets/defense_20261027/slide_10.svg)
+![Slide 10: Compare A and I within each budget; do not interpret one trial as a complete calibration cost.](assets/defense_20261027_kemmochi/slide_10.svg)
 
 **Message:** Compare A and I within each budget; do not interpret one trial as a complete calibration cost.
 
@@ -240,7 +242,7 @@ Sources: [E3: Stroke GEN1 / GEN2 transfer and budget results](SII2027_GENERALIZA
 
 ## 11 · Public healthy cohorts provide technical replication across walking speeds
 
-![Slide 11: Adaptation also helps in public-data pilots, while cross-speed reconstruction remains harder.](assets/defense_20261027/slide_11.svg)
+![Slide 11: Adaptation also helps in public-data pilots, while cross-speed reconstruction remains harder.](assets/defense_20261027_kemmochi/slide_11.svg)
 
 **Message:** Adaptation also helps in public-data pilots, while cross-speed reconstruction remains harder.
 
@@ -261,7 +263,7 @@ Sources: [E5: Accepted WMCG public-data experiment](SII2027_OPEN_EXTERNAL_VALIDA
 
 ## 12 · Direction augmentation reduces sensitivity, with a clean-error trade-off
 
-![Slide 12: A smaller perturbation increment does not imply a similarly large reduction in total error.](assets/defense_20261027/slide_12.svg)
+![Slide 12: A smaller perturbation increment does not imply a similarly large reduction in total error.](assets/defense_20261027_kemmochi/slide_12.svg)
 
 **Message:** A smaller perturbation increment does not imply a similarly large reduction in total error.
 
@@ -282,7 +284,7 @@ Sources: [E6: Accepted Dorschky optical two-knee experiment](SII2027_DORSCHKY_EX
 
 ## 13 · The current contribution is an auditable study of personalization and its limits
 
-![Slide 13: Personalization is supported; clinical coordinates, independent stroke validation, and deployment remain open.](assets/defense_20261027/slide_13.svg)
+![Slide 13: Personalization is supported; clinical coordinates, independent stroke validation, and deployment remain open.](assets/defense_20261027_kemmochi/slide_13.svg)
 
 **Message:** Personalization is supported; clinical coordinates, independent stroke validation, and deployment remain open.
 
@@ -303,7 +305,7 @@ Sources: [E1: Accepted stroke release and patient-specific baseline](SII2027_NAT
 
 ## 14 · From a complete exploratory study to stronger publication evidence
 
-![Slide 14: Limited individual reference improves reconstruction; cross-condition reliability is the next target.](assets/defense_20261027/slide_14.svg)
+![Slide 14: Limited individual reference improves reconstruction; cross-condition reliability is the next target.](assets/defense_20261027_kemmochi/slide_14.svg)
 
 **Message:** Limited individual reference improves reconstruction; cross-condition reliability is the next target.
 

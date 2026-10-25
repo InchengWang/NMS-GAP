@@ -1,5 +1,7 @@
 # halfyeat：稀疏IMU运动重建的泛化与个体化
 
+**2026-10-25答辩版式更新：** 已按 Kemmochi 毕业答辩模板完成全英文18页重排（14页正文＋4页备份），保留原讲稿、研究数值与结论。[GitHub逐页浏览](MIDTERM_DEFENSE_20261027_EN.md) · [英文讲稿](MIDTERM_DEFENSE_20261027_SPEAKER_NOTES_EN.md) · [版式验收](MIDTERM_DEFENSE_20261027_FORMAT_REVIEW.json)。
+
 **2026-10-25 BSN启发新支线已验收：** [五组分阶段重建开发对照](SII2027_STAGED_RECONSTRUCTION_20261025_ZH.md)，5新fit/2000更新、12VALID同患者跨试次。关节相对位置代理经用户确认；新增S3/S4/S5实测监督。六角direct3.742166°、latent3.781839°、strict4.332027°，中间重建优于常量但未改善运动预测。全部数据/训练/60预测独立复算通过；0新TEST动态读取。旧ARCH79继续冻结，新授权支线另建代码/合同；详见[聚合](SII2027_STAGED_AGGREGATES_20261025.json)与[函数SHA](SII2027_STAGED_CODE_INDEX_20261025.json)。
 
 

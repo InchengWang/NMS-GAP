@@ -4,19 +4,19 @@ These pages are outside the 15-minute talk. [Return to the presentation](MIDTERM
 
 ## A1 · Coordinates and label definitions
 
-![Backup A1: Coordinates and label definitions](assets/defense_20261027/appendix_A1_coordinates.svg)
+![Backup A1: Coordinates and label definitions](assets/defense_20261027_kemmochi/appendix_A1_coordinates.svg)
 
 ## A2 · Architecture, virtual-data and GEN5 results
 
-![Backup A2: Architecture, virtual-data and GEN5 results](assets/defense_20261027/appendix_A2_ablations.svg)
+![Backup A2: Architecture, virtual-data and GEN5 results](assets/defense_20261027_kemmochi/appendix_A2_ablations.svg)
 
 ## A3 · Cohorts and reference costs
 
-![Backup A3: Cohorts and reference costs](assets/defense_20261027/appendix_A3_domains_costs.svg)
+![Backup A3: Cohorts and reference costs](assets/defense_20261027_kemmochi/appendix_A3_domains_costs.svg)
 
 ## A4 · Likely questions
 
-![Backup A4: Likely questions](assets/defense_20261027/appendix_A4_questions.svg)
+![Backup A4: Likely questions](assets/defense_20261027_kemmochi/appendix_A4_questions.svg)
 
 ## Primary research references
 
