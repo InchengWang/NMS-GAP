@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "VALID_TEST_unknown_blocked_before_any_source_hash_or_npz_load": true,
+    "brackets_cannot_escape_owning_full_TRAIN_support": true,
+    "exact_and_between_sample_brackets": true,
+    "existing_output_corruption_is_fatal_not_data_exclusion": true,
+    "explicit_timezone_and_units_clock_parser": true,
+    "external_interpolation_flanks_counted_and_retained": true,
+    "frozen_source_hash_mismatch_is_fatal": true,
+    "identical_subset_rerun_validates_without_overwriting": true,
+    "immutable_artifact_mismatch_never_overwrites": true,
+    "no_extrapolation_large_gap_or_duplicate_clocks": true,
+    "point_time_first_interpolation_root_center_and_meters": true,
+    "streaming_decodes_only_allowed_bracket_values_and_SI_conversion": true,
+    "subset_cannot_claim_complete_31_parent_release": true,
+    "subset_end_to_end_preserves_x_y_and_masks_missing_modality": true
+  },
+  "checks_passed": 14,
+  "complete_real_release_independent_audit_passed": false,
+  "date": "2026-10-25",
+  "model_fits": 0,
+  "new_real_exports": 0,
+  "raw_patient_signal_values_read": false,
+  "real_TRAIN_VALID_TEST_arrays_read": false,
+  "real_experiment_metadata_opened": false,
+  "scope": "synthetic guards, clocks, selected-row SI interpolation, point centering, masks and immutability",
+  "source_sha256": {
+    "build_train_targets.py": "0f2d93a450b1484cb5d4652362b2fa2caab43afa5ede07a9bae33d92f5868e4c",
+    "test_build_train_targets.py": "77c2864ede8ed4e5228abc0f2da5ef11820e18d86f7c8884c83478bf7a26e145"
+  },
+  "status": "passed_synthetic_only_TRAIN_target_producer_preflight"
+}

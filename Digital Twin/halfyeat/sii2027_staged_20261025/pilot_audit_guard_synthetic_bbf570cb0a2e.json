@@ -1,0 +1,9 @@
+{
+  "audit_source_sha256": "bbf570cb0a2e6b55394e730ca252caf34cec4477bc1c1c4ab8912c13f26180a8",
+  "dynamic_artifacts_opened": 0,
+  "forbidden_role_rejected_before_dynamic_hash_or_load": true,
+  "incomplete_pilot_rejected_before_dynamic_hash_or_load": true,
+  "optimizer_steps": 0,
+  "real_data_or_weights_read": false,
+  "status": "passed_independent_pilot_role_and_completion_guard_probes"
+}

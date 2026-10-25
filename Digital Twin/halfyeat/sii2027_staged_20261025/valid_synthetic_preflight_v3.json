@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "TRAIN_TEST_unknown_and_missing_authorization_block_before_hash_or_np_load": true,
+    "VALID_full_no_crop_x_y_queries_indices_and_position_proxy_are_preserved": true,
+    "existing_conflicting_output_is_fatal_and_never_overwritten": true,
+    "external_full_query_endpoint_brackets_are_explicit_and_le_frozen_maxgap": true,
+    "flanks_entering_another_role_walking_interval_are_rejected": true,
+    "flanks_outside_original_native_episode_or_run_are_rejected": true,
+    "frozen_prerequisite_or_checkpoint_hash_mismatch_is_fatal": true,
+    "gate_cannot_hash_a_CSV_or_dynamic_NPZ_as_prerequisite": true,
+    "identical_rerun_is_immutable_and_subset_cannot_claim_full12_release": true,
+    "manifest_and_contract_explicitly_bind_same_analysis_contract_sha256": true,
+    "metadata_preflight_does_not_authorize_dynamic_values": true,
+    "missing_modality_zero_fill_has_false_mask_and_minus_one_indices": true,
+    "pending_gate_or_incomplete_fits_audits_analysis_cannot_hash_sources": true,
+    "prefreeze_metadata_known_11ms_jitter_allowed_and_over_frozen_maxgap_rejected": true,
+    "present_source_failure_does_not_create_a_new_mask_or_exclusion": true,
+    "separate_authorization_binds_code_three_prerequisites_and_five_weights": true,
+    "time_first_streaming_does_not_decode_poisoned_unselected_signal_or_point_tokens": true
+  },
+  "checks_passed": 17,
+  "date": "2026-10-25",
+  "model_fits": 0,
+  "new_real_exports": 0,
+  "numerical_real_VALID_endpoint_gate_passed": false,
+  "real_TRAIN_VALID_TEST_arrays_read": false,
+  "real_experiment_metadata_opened": false,
+  "real_raw_signal_values_read": false,
+  "real_shared_raw_CSV_files_hashed": 0,
+  "scope": "synthetic guards separate authorization endpoint context SI interpolation proxy masks immutability",
+  "source_sha256": {
+    "build_train_targets.py": "0f2d93a450b1484cb5d4652362b2fa2caab43afa5ede07a9bae33d92f5868e4c",
+    "build_valid_targets.py": "96f0c6b6deebe970f1092dde38fc02866e0818c1a7ef997ed5726ad5964764f9",
+    "test_build_valid_targets.py": "568fdd01fb633cd4ea93035dce821d31d13f593ac39ce8ba85f37c94229e448e"
+  },
+  "status": "passed_synthetic_only_VALID_target_preflight"
+}

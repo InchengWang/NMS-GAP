@@ -1,0 +1,94 @@
+{
+  "status": "descriptive_TRAIN_aux_physical_screen_no_selection_or_training_change",
+  "TRAIN_manifest_sha256": "7286bddf6edc7d872c698f2d8bc7a14b9ecc5c7ba91213d22cd9c2aab8fc0b0f",
+  "groups": {
+    "S3_ACC": {
+      "frames": 12665,
+      "units": "m/s^2",
+      "max_abs_axis": 40.45981979370117,
+      "norm_percentiles_0_50_99_100": [
+        4.256009888920894,
+        9.707594379938755,
+        15.909502191659769,
+        43.868339081397586
+      ],
+      "fraction_axis_values_over_descriptive_threshold": 0.0,
+      "descriptive_threshold_SI": 155.925735,
+      "threshold_is_not_a_verified_device_fullscale": true
+    },
+    "S3_GYRO": {
+      "frames": 12665,
+      "units": "rad/s",
+      "max_abs_axis": 7.7850165367126465,
+      "norm_percentiles_0_50_99_100": [
+        0.0159913764977849,
+        0.47167043236291434,
+        2.0321839109706312,
+        8.221354893617118
+      ],
+      "fraction_axis_values_over_descriptive_threshold": 0.0,
+      "descriptive_threshold_SI": 34.73205211468716,
+      "threshold_is_not_a_verified_device_fullscale": true
+    },
+    "S4_ACC": {
+      "frames": 12665,
+      "units": "m/s^2",
+      "max_abs_axis": 70.78875732421875,
+      "norm_percentiles_0_50_99_100": [
+        2.90522103242618,
+        10.44183633668525,
+        31.550836059948605,
+        80.8425090239668
+      ],
+      "fraction_axis_values_over_descriptive_threshold": 0.0,
+      "descriptive_threshold_SI": 155.925735,
+      "threshold_is_not_a_verified_device_fullscale": true
+    },
+    "S4_GYRO": {
+      "frames": 12665,
+      "units": "rad/s",
+      "max_abs_axis": 27.82675552368164,
+      "norm_percentiles_0_50_99_100": [
+        0.011400627308527393,
+        0.812759030166338,
+        8.153095697148384,
+        33.486791795365384
+      ],
+      "fraction_axis_values_over_descriptive_threshold": 0.0,
+      "descriptive_threshold_SI": 34.73205211468716,
+      "threshold_is_not_a_verified_device_fullscale": true
+    },
+    "S5_ACC": {
+      "frames": 12237,
+      "units": "m/s^2",
+      "max_abs_axis": 61.99209976196289,
+      "norm_percentiles_0_50_99_100": [
+        2.468220946554029,
+        10.741797880424048,
+        27.55343690979144,
+        67.98595240006144
+      ],
+      "fraction_axis_values_over_descriptive_threshold": 0.0,
+      "descriptive_threshold_SI": 155.925735,
+      "threshold_is_not_a_verified_device_fullscale": true
+    },
+    "S5_GYRO": {
+      "frames": 11460,
+      "units": "rad/s",
+      "max_abs_axis": 15.538383483886719,
+      "norm_percentiles_0_50_99_100": [
+        0.011420637116131694,
+        0.6774891517827838,
+        6.7758041056611615,
+        15.9729093538928
+      ],
+      "fraction_axis_values_over_descriptive_threshold": 0.0,
+      "descriptive_threshold_SI": 34.73205211468716,
+      "threshold_is_not_a_verified_device_fullscale": true
+    }
+  },
+  "VALID_TEST_arrays_read": 0,
+  "new_fits": 0,
+  "purpose": "screen_extreme_measurements_without_cohort_filtering_not_hardware_or_mounting_certification",
+  "source_full_aggregate_receipt_sha256": "a485dd17a4a761065890cb51a4cf477544c7a86ad701215f5603fc4169f1a064"
+}

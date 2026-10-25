@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "explicit_timezone_and_SI": true,
+    "gap_and_extrapolation_fail_closed": true,
+    "independent_brackets_and_exact_rows": true,
+    "role_guard_precedes_hash_and_path_access": true,
+    "root_center_and_mm_to_m": true,
+    "time_first_selected_tokens_only": true
+  },
+  "code_sha256": "20b7162e342ba9527c94e4ab8c282b5161bb2e677ae7ee03cb47ce85b7f43527",
+  "date": "2026-10-25",
+  "optimizer_steps": 0,
+  "producer_imported": false,
+  "real_data_or_models_read": false,
+  "status": "passed_independent_target_audit_synthetic_checks"
+}

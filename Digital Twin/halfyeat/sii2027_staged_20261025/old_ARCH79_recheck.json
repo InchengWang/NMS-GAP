@@ -1,0 +1,7 @@
+{
+  "status": "passed_old_ARCH79_scientific_artifacts_unchanged",
+  "files_verified": 79,
+  "freeze_manifest_sha256": "d22350d16347d2942ea3cc81011cfb51f45fa01f6c5e412b5c34efb38b8fe675",
+  "raw_arrays_or_weights_opened": false,
+  "new_branch": "staged_reconstruction_20261025"
+}

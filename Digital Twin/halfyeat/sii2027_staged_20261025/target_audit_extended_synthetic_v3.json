@@ -1,0 +1,14 @@
+{
+  "audit_source_sha256": "20b7162e342ba9527c94e4ab8c282b5161bb2e677ae7ee03cb47ce85b7f43527",
+  "checks": {
+    "interpolated_point_hip_center_mm_to_m": true,
+    "native_stream_numpy_interp_SI": true,
+    "no_near_exact_timestamp_snapping": true,
+    "owning_TRAIN_guard_and_hash_cost_accounting": true,
+    "point_stream_numpy_interp_24D": true
+  },
+  "optimizer_steps": 0,
+  "producer_imported": false,
+  "real_data_or_models_read": false,
+  "status": "passed_extended_independent_target_audit_synthetic_checks"
+}

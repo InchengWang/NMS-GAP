@@ -1,0 +1,219 @@
+{
+  "status": "accepted_five_fit_one_VALID_development_pilot_all_four_independent_audits_passed",
+  "date": "2026-10-25",
+  "user_approved_position_proxy": "joint_landmarks_relative_to_bilateral_hip_midpoint_not_IMU_centers",
+  "scope": "same_8_people_new_trials_development_not_LOSO_not_independent_TEST_not_clinical_JCS",
+  "TRAIN": {
+    "parents": 31,
+    "people": 8,
+    "unique_frames": 12665,
+    "sample_seconds": 126.65,
+    "full_source_context_seconds": 188.65,
+    "windows": 492
+  },
+  "VALID": {
+    "parents": 12,
+    "people": 8,
+    "frames": 7238,
+    "sample_seconds": 72.38,
+    "full_support_no_crop": true
+  },
+  "model_input": "measured_native_S1_left_shank_and_S2_right_shank_ACC_GYRO12D",
+  "intermediate_supervision": "measured_S3_S4_S5_signal18D_and_optical_relative_joint_position24D",
+  "no_ground_truth_intermediate_forward_inputs": true,
+  "new_neural_fits": 5,
+  "optimizer_updates": 2000,
+  "seed": 20261025,
+  "fixed_epochs_per_fit": 50,
+  "updates_per_fit": 400,
+  "target_checkpoint_selection": false,
+  "augmentation": "none",
+  "training_config": {
+    "seed": 20261025,
+    "data_seed": 20261126,
+    "dropout_seed": 20261236,
+    "epochs": 50,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "clip_norm": 1.0,
+    "window": 120,
+    "stride": 20,
+    "width": 64,
+    "decoder_width": 64,
+    "dropout": 0.15,
+    "encoder": "tcn",
+    "angle_weight": 1.0,
+    "signal_weight": 0.25,
+    "position_weight": 0.25,
+    "threads": 2,
+    "checkpoint": "fixed_final50",
+    "unique_TRAIN_frames": 12665
+  },
+  "model_reports": {
+    "direct": {
+      "mode": "direct",
+      "encoder": "tcn",
+      "encoder_parameters": 150720,
+      "motion_decoder_parameters": 4550,
+      "intermediate_head_parameters": 0,
+      "total_trainable_parameters": 155270,
+      "parameters_on_motion_path": 155270,
+      "motion_decoder_input_channels": 64,
+      "semantic_auxiliary_supervision": false,
+      "observed_input_skip_to_motion_decoder": false,
+      "receptive_field_frames": 85,
+      "decoder_temporal_context_added": 0,
+      "all_channels_TRAIN_standardized": true,
+      "clinical_JCS_or_sensor_position_claim": false,
+      "forward_accepts_ground_truth": false
+    },
+    "auxiliary_only": {
+      "mode": "auxiliary_only",
+      "encoder": "tcn",
+      "encoder_parameters": 150720,
+      "motion_decoder_parameters": 4550,
+      "intermediate_head_parameters": 2730,
+      "total_trainable_parameters": 158000,
+      "parameters_on_motion_path": 155270,
+      "motion_decoder_input_channels": 64,
+      "semantic_auxiliary_supervision": true,
+      "observed_input_skip_to_motion_decoder": false,
+      "receptive_field_frames": 85,
+      "decoder_temporal_context_added": 0,
+      "all_channels_TRAIN_standardized": true,
+      "clinical_JCS_or_sensor_position_claim": false,
+      "forward_accepts_ground_truth": false
+    },
+    "latent_bottleneck": {
+      "mode": "latent_bottleneck",
+      "encoder": "tcn",
+      "encoder_parameters": 150720,
+      "motion_decoder_parameters": 3142,
+      "intermediate_head_parameters": 2730,
+      "total_trainable_parameters": 156592,
+      "parameters_on_motion_path": 156592,
+      "motion_decoder_input_channels": 42,
+      "semantic_auxiliary_supervision": false,
+      "observed_input_skip_to_motion_decoder": false,
+      "receptive_field_frames": 85,
+      "decoder_temporal_context_added": 0,
+      "all_channels_TRAIN_standardized": true,
+      "clinical_JCS_or_sensor_position_claim": false,
+      "forward_accepts_ground_truth": false
+    },
+    "strict_staged": {
+      "mode": "strict_staged",
+      "encoder": "tcn",
+      "encoder_parameters": 150720,
+      "motion_decoder_parameters": 3142,
+      "intermediate_head_parameters": 2730,
+      "total_trainable_parameters": 156592,
+      "parameters_on_motion_path": 156592,
+      "motion_decoder_input_channels": 42,
+      "semantic_auxiliary_supervision": true,
+      "observed_input_skip_to_motion_decoder": false,
+      "receptive_field_frames": 85,
+      "decoder_temporal_context_added": 0,
+      "all_channels_TRAIN_standardized": true,
+      "clinical_JCS_or_sensor_position_claim": false,
+      "forward_accepts_ground_truth": false
+    },
+    "residual_staged": {
+      "mode": "residual_staged",
+      "encoder": "tcn",
+      "encoder_parameters": 150720,
+      "motion_decoder_parameters": 3910,
+      "intermediate_head_parameters": 2730,
+      "total_trainable_parameters": 157360,
+      "parameters_on_motion_path": 157360,
+      "motion_decoder_input_channels": 54,
+      "semantic_auxiliary_supervision": true,
+      "observed_input_skip_to_motion_decoder": true,
+      "receptive_field_frames": 85,
+      "decoder_temporal_context_added": 0,
+      "all_channels_TRAIN_standardized": true,
+      "clinical_JCS_or_sensor_position_claim": false,
+      "forward_accepts_ground_truth": false
+    }
+  },
+  "environment": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu121",
+    "device": "cpu",
+    "deterministic_algorithms": true,
+    "threads": 2
+  },
+  "training_contract_sha256": "153b7592adf27272549c114b92709df6eca7f68fcbbf25c4d926566f587e0f64",
+  "analysis_contract_sha256": "d6711416e5208e7697fc4534001582d23bd06143d19dc122551c68cc3ce276e2",
+  "TRAIN_manifest_sha256": "7286bddf6edc7d872c698f2d8bc7a14b9ecc5c7ba91213d22cd9c2aab8fc0b0f",
+  "VALID_manifest_sha256": "c9a2c39a1702c10c33172701732fe50b6577065eccaf0c97b73a2f565c4f360c",
+  "audits": {
+    "TRAIN_targets": {
+      "sha256": "4fdce629b827a4b2265c66aa06b49b14c1f2a348c16a9958997695c9ca2f7ab4",
+      "status": "passed_independent_TRAIN_staged_target_audit"
+    },
+    "TRAIN_fits": {
+      "sha256": "e736b01300c3d8e655be64f15976f17c602604e67714f60638f01a532f5e8c3a",
+      "status": "passed_independent_TRAIN_pilot_audit"
+    },
+    "VALID_targets": {
+      "sha256": "1965f371c802c513aa68bca37731a77a8eb481e40eb6e1f1e84e2b06c6962a23",
+      "status": "passed_independent_VALID_staged_target_audit"
+    },
+    "VALID_results": {
+      "sha256": "fe2f714832d8d2c11b2b5ba8db2331a2befd1827c9e2d33e4b8240e7c257a081",
+      "status": "passed_independent_VALID_diagnostic_results_audit"
+    }
+  },
+  "independent_prediction_max_abs_difference": 0.0,
+  "independent_aggregate_max_abs_difference": 1.4210854715202004e-14,
+  "prediction_packages": 60,
+  "old_ARCH79_recheck": {
+    "status": "passed_old_ARCH79_scientific_artifacts_unchanged",
+    "files_verified": 79,
+    "freeze_manifest_sha256": "d22350d16347d2942ea3cc81011cfb51f45fa01f6c5e412b5c34efb38b8fe675",
+    "raw_arrays_or_weights_opened": false,
+    "new_branch": "staged_reconstruction_20261025"
+  },
+  "TEST_dynamic_arrays_or_predictions_in_new_branch": 0,
+  "shared_native_file_hashing_can_read_other_role_bytes": true,
+  "all_shared_clock_rows_scanned": true,
+  "numeric_auxiliary_values_decoded_only_authorized_role_brackets": true,
+  "zero_TEST_source_byte_claim": false,
+  "hardware_synchronization_or_sensor_mounting_certification": false,
+  "position_is_engineering_proxy": true,
+  "comparisons_descriptive_no_statistical_tests": {
+    "auxiliary_only_minus_direct": {
+      "six_angle_mean_difference_deg": 0.1517765254578194,
+      "six_angle_people_improved": 3,
+      "people": 8
+    },
+    "latent_bottleneck_minus_direct": {
+      "six_angle_mean_difference_deg": 0.039673080749457856,
+      "six_angle_people_improved": 2,
+      "people": 8
+    },
+    "strict_staged_minus_latent_bottleneck": {
+      "six_angle_mean_difference_deg": 0.5501877760755107,
+      "six_angle_people_improved": 2,
+      "people": 8
+    },
+    "strict_staged_minus_direct": {
+      "six_angle_mean_difference_deg": 0.5898608568249686,
+      "six_angle_people_improved": 1,
+      "people": 8
+    },
+    "residual_staged_minus_direct": {
+      "six_angle_mean_difference_deg": 0.8710493202854015,
+      "six_angle_people_improved": 0,
+      "people": 8
+    }
+  },
+  "planned_statistical_tests": 0,
+  "main_conclusion": "intermediate_reconstruction_better_than_TRAIN_means_but_no_motion_accuracy_gain_in_this_pilot",
+  "large_literature_comparison_still_pending": true,
+  "new_source_or_target_finetuning_runs_in_this_pilot": 0,
+  "no_public_raw_arrays_weights_per_frame_predictions_or_papers": true
+}

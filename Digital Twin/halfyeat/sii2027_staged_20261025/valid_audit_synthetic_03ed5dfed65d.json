@@ -1,0 +1,25 @@
+{
+  "analysis_contract_or_real_targets_opened": false,
+  "audit_source_sha256": "03ed5dfed65d8a619b5a72f37a08dd0cb7bbbfe06b574eae34387885f4368f77",
+  "checks": {
+    "TRAIN_and_unknown_rejected_before_hash": true,
+    "all_five_fullseq_literal_paths_interventions_and_prefixes": true,
+    "episode_and_other_role_flanks_fail_closed": true,
+    "exact_brackets_no_extra_neighbor": true,
+    "mask_empty_group_and_SI_MPJPE_mm": true,
+    "numeric_comparison_fail_closed": true,
+    "per_angle_side_and_startup_metrics": true,
+    "selected_rows_only_clock_and_11ms_jitter_interpolation": true,
+    "trial_then_equal_person_and_available_counts": true
+  },
+  "date": "2026-10-25",
+  "independent_helper_sha256": {
+    "audit_train_pilot.py": "bbf570cb0a2e6b55394e730ca252caf34cec4477bc1c1c4ab8912c13f26180a8",
+    "audit_train_targets.py": "20b7162e342ba9527c94e4ab8c282b5161bb2e677ae7ee03cb47ce85b7f43527"
+  },
+  "new_neural_fits": 0,
+  "optimizer_steps": 0,
+  "real_TRAIN_VALID_TEST_arrays_or_weights_read": false,
+  "scaler_fits": 0,
+  "status": "passed_independent_VALID_diagnostic_synthetic_checks"
+}

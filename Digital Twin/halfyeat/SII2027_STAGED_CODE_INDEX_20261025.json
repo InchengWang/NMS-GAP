@@ -1,0 +1,1004 @@
+{
+  "date": "2026-10-25",
+  "status": "accepted_five_fit_one_VALID_development_pilot_all_four_independent_audits_passed",
+  "report": "SII2027_STAGED_RECONSTRUCTION_20261025_ZH.md",
+  "readiness": "SII2027_STAGED_READINESS_20261025.json",
+  "aggregates": "SII2027_STAGED_AGGREGATES_20261025.json",
+  "source_files": [
+    {
+      "path": "sii2027_staged_20261025/models.py",
+      "sha256": "e194816e57480f0ef126c5791ce21f51dd8edf8af00b06605ed1a807a91f0bf0",
+      "bytes": 14880,
+      "symbols": [
+        {
+          "name": "LeftPaddedConv",
+          "line": 32,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TemporalResidual",
+          "line": 43,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "TCNEncoder",
+          "line": 63,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "GRUEncoder",
+          "line": 78,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "StagedReconstruction",
+          "line": 91,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "LossWeights",
+          "line": 177,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "_connected_zero",
+          "line": 188,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_masked_mse",
+          "line": 194,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reconstruction_losses",
+          "line": 228,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_model",
+          "line": 299,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 87,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 127,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "parameter_report",
+          "line": 154,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__post_init__",
+          "line": 182,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/probe_models.py",
+      "sha256": "1ceabe04fec96c4648a7d9cf81f503229ababc19be21e5ff5d81db42f39e6d30",
+      "bytes": 11787,
+      "symbols": [
+        {
+          "name": "fresh",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tensors",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 27,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/build_train_targets.py",
+      "sha256": "0f2d93a450b1484cb5d4652362b2fa2caab43afa5ede07a9bae33d92f5868e4c",
+      "bytes": 36473,
+      "symbols": [
+        {
+          "name": "canonical",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest_file",
+          "line": 47,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest_array",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_json",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "immutable_bytes",
+          "line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "immutable_json",
+          "line": 90,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "immutable_npz",
+          "line": 95,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "parent_sort",
+          "line": 131,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_metadata",
+          "line": 136,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_requested",
+          "line": 156,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "TrainAccess",
+          "line": 171,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "native_timestamp_parser",
+          "line": 236,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interpolation_brackets",
+          "line": 256,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scan_csv_clock",
+          "line": 278,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_selected_values",
+          "line": 307,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stream_source",
+          "line": 344,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_plan",
+          "line": 416,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "make_contract",
+          "line": 454,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_release",
+          "line": 491,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 642,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check_existing",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 172,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require",
+          "line": 177,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "checked_hash",
+          "line": 185,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_train_npz",
+          "line": 196,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "parse",
+          "line": 243,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/test_build_train_targets.py",
+      "sha256": "77c2864ede8ed4e5228abc0f2da5ef11820e18d86f7c8884c83478bf7a26e145",
+      "bytes": 13548,
+      "symbols": [
+        {
+          "name": "expect_error",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_csv",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stamp",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "minimal_access",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fixture_metadata",
+          "line": 47,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_tests",
+          "line": 127,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/audit_train_targets.py",
+      "sha256": "20b7162e342ba9527c94e4ab8c282b5161bb2e677ae7ee03cb47ce85b7f43527",
+      "bytes": 34002,
+      "symbols": [
+        {
+          "name": "jread",
+          "line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "canonical",
+          "line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "array_sha",
+          "line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_once",
+          "line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ordered_parent",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Access",
+          "line": 76,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "stamp_decoder",
+          "line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "clocks_only",
+          "line": 127,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bracket_indices",
+          "line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_numeric_rows",
+          "line": 174,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_source",
+          "line": 212,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_float32",
+          "line": 259,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_audit",
+          "line": 272,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_checks",
+          "line": 501,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 546,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require",
+          "line": 87,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "checked_hash",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "npz",
+          "line": 103,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "decode",
+          "line": 120,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/train_study.py",
+      "sha256": "5ad4bf9f6fdb142700fb611be49451b49dd7c79bb6492162cf723d6ea963abd6",
+      "bytes": 14363,
+      "symbols": [
+        {
+          "name": "sha",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "canonical",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "jhash",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_once",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tensor_sha",
+          "line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verified_metadata",
+          "line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "construct",
+          "line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "environment",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prepare",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check_contract",
+          "line": 97,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stats",
+          "line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "normalized",
+          "line": 116,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_windows",
+          "line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save_checkpoint",
+          "line": 150,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 160,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 210,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/audit_train_pilot.py",
+      "sha256": "bbf570cb0a2e6b55394e730ca252caf34cec4477bc1c1c4ab8912c13f26180a8",
+      "bytes": 29662,
+      "symbols": [
+        {
+          "name": "read",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 36,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "canonical",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "jhash",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_once",
+          "line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tensor_sha",
+          "line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_initial",
+          "line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_report",
+          "line": 99,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_forward",
+          "line": 115,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "production_comparator",
+          "line": 147,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_forward",
+          "line": 157,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_starts",
+          "line": 171,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "order_hashes",
+          "line": 179,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_statistics",
+          "line": 187,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_statistics",
+          "line": 199,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require_finite",
+          "line": 210,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "checkpoint",
+          "line": 219,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_optimizer",
+          "line": 230,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_audit",
+          "line": 251,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_checks",
+          "line": 410,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 455,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "add",
+          "line": 79,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "linear",
+          "line": 120,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/build_valid_targets.py",
+      "sha256": "96f0c6b6deebe970f1092dde38fc02866e0818c1a7ef997ed5726ad5964764f9",
+      "bytes": 37604,
+      "symbols": [
+        {
+          "name": "load_metadata",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "own_native_context_bounds",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_requested",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_plan",
+          "line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gate_template",
+          "line": 153,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_authorization",
+          "line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ValidAccess",
+          "line": 216,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "stream_source",
+          "line": 279,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "make_contract",
+          "line": 368,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_release",
+          "line": 411,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metadata_check",
+          "line": 527,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 553,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 217,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require",
+          "line": 224,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "checked_hash",
+          "line": 232,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_valid_npz",
+          "line": 243,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/test_build_valid_targets.py",
+      "sha256": "568fdd01fb633cd4ea93035dce821d31d13f593ac39ce8ba85f37c94229e448e",
+      "bytes": 14782,
+      "symbols": [
+        {
+          "name": "fixture",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_tests",
+          "line": 96,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/eval_study.py",
+      "sha256": "e93468ddbdd829f78de49c65a5cdb40a79ef00ab1a713c7975e2c48ba1378373",
+      "bytes": 14676,
+      "symbols": [
+        {
+          "name": "freeze",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "restore",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "score",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interventions",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "aggregate",
+          "line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 175,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/audit_valid_diagnostic.py",
+      "sha256": "03ed5dfed65d8a619b5a72f37a08dd0cb7bbbfe06b574eae34387885f4368f77",
+      "bytes": 45830,
+      "symbols": [
+        {
+          "name": "helpers_unchanged",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analysis_gate",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ValidAccess",
+          "line": 68,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "context_bounds",
+          "line": 92,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_source",
+          "line": 103,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "targets_audit",
+          "line": 143,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "motion_metrics",
+          "line": 264,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "restored",
+          "line": 274,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_predictions",
+          "line": 279,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "all_metrics",
+          "line": 300,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independently_aggregate",
+          "line": 330,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "numeric_equal",
+          "line": 349,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "results_audit",
+          "line": 362,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_checks",
+          "line": 429,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 493,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "checked_hash",
+          "line": 79,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "npz",
+          "line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "job_common",
+          "line": 203,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mpjpe",
+          "line": 320,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/physical_screen.py",
+      "sha256": "925096ac5b841544e7727afe1dc52e0f6fa40108732e067dc40baf0248fb64dd",
+      "bytes": 2869,
+      "symbols": [
+        {
+          "name": "rebuild",
+          "line": 13,
+          "kind": "FunctionDef"
+        }
+      ]
+    },
+    {
+      "path": "sii2027_staged_20261025/STUDY_DESIGN_ZH.md",
+      "sha256": "5e36396190123bba9e2a36e4f0ab6a09ced6d6502b3a9ff6c5396910ba5ea011",
+      "bytes": 4886,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/valid_contract_notes.md",
+      "sha256": "070af9325106b1e10360801fff40fde851cf7495a868cb4ed3bef9121d89378d",
+      "bytes": 8593,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/model_probe_receipt.json",
+      "sha256": "8a82e7f35955fa0529fdba167ba6b83e9bba3a0c6c57f7259b9ba1ec3a7c7308",
+      "bytes": 8325,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/synthetic_preflight.json",
+      "sha256": "f8788367cca3408b5eb44a7f4ff389bb21bc456d94d8dbc80963ef215c580bd5",
+      "bytes": 1590,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/target_audit_synthetic_v3.json",
+      "sha256": "e9a7d13b28e4483323f32b3bb0910675c6e435f8beb022f79af4d6975a41fb57",
+      "bytes": 555,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/target_audit_extended_synthetic_v3.json",
+      "sha256": "8a930d4a9eff593c6be792c86afdb4357cfe738d98ecd819a573085b91485b95",
+      "bytes": 518,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/pilot_audit_synthetic_bbf570cb0a2e.json",
+      "sha256": "38f8e314c5829bafdcd75cb10830966590a92ab5106a3298e57c50b3a4f07899",
+      "bytes": 1340,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/pilot_audit_guard_synthetic_bbf570cb0a2e.json",
+      "sha256": "cfcb4c2f8aca88ccdc559077fa555b7c07ff788c575c165bab2b2fdc8173b800",
+      "bytes": 392,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/valid_synthetic_preflight_v3.json",
+      "sha256": "676a8f94489159f792c238e44b50e6bad4ebdc60b1055d167e95ee2760595156",
+      "bytes": 2173,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/valid_audit_synthetic_03ed5dfed65d.json",
+      "sha256": "2ed5f71887f3c3536b20fa28e21c56afe3f2b7baa1b70cf81e7687016452c9cf",
+      "bytes": 1103,
+      "symbols": []
+    },
+    {
+      "path": "sii2027_staged_20261025/old_ARCH79_recheck.json",
+      "sha256": "401dcf1b2493e038cee2e8f315ec5c8a7633c9b224b6f10694e1db94c40c963d",
+      "bytes": 278,
+      "symbols": []
+    }
+  ],
+  "frozen_science_source_sha256": {
+    "train_study.py": "5ad4bf9f6fdb142700fb611be49451b49dd7c79bb6492162cf723d6ea963abd6",
+    "models.py": "e194816e57480f0ef126c5791ce21f51dd8edf8af00b06605ed1a807a91f0bf0",
+    "build_train_targets.py": "0f2d93a450b1484cb5d4652362b2fa2caab43afa5ede07a9bae33d92f5868e4c",
+    "audit_train_targets.py": "20b7162e342ba9527c94e4ab8c282b5161bb2e677ae7ee03cb47ce85b7f43527",
+    "STUDY_DESIGN_ZH.md": "5e36396190123bba9e2a36e4f0ab6a09ced6d6502b3a9ff6c5396910ba5ea011"
+  },
+  "implementation_and_scope": "original_five_arm_models_and_independent_audits_not_BSN_or_TransPose_exact_reproduction",
+  "paper_reference": "https://xinyu-yi.github.io/TransPose/",
+  "public_data_arrays_or_checkpoints_included": false
+}

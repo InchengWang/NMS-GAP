@@ -1,5 +1,8 @@
 # halfyeat：稀疏IMU运动重建的泛化与个体化
 
+**2026-10-25 BSN启发新支线已验收：** [五组分阶段重建开发对照](SII2027_STAGED_RECONSTRUCTION_20261025_ZH.md)，5新fit/2000更新、12VALID同患者跨试次。关节相对位置代理经用户确认；新增S3/S4/S5实测监督。六角direct3.742166°、latent3.781839°、strict4.332027°，中间重建优于常量但未改善运动预测。全部数据/训练/60预测独立复算通过；0新TEST动态读取。旧ARCH79继续冻结，新授权支线另建代码/合同；详见[聚合](SII2027_STAGED_AGGREGATES_20261025.json)与[函数SHA](SII2027_STAGED_CODE_INDEX_20261025.json)。
+
+
 **2026-10-25研究更新：** [文献baseline核查与比较方案](SII2027_LITERATURE_BASELINES_20261025_ZH.md)与[代码/来源索引](SII2027_LITERATURE_BASELINE_INDEX_20261025.json)。新原型已通过合成检查，正式比较尚未训练；旧架构与答辩已验成绩保持。
 
 **English defense presentation — 27 October 2026:** [Open the 14-slide visual deck](MIDTERM_DEFENSE_20261027_EN.md) · [English speaking script](MIDTERM_DEFENSE_20261027_SPEAKER_NOTES_EN.md) · [4 backup slides and references](MIDTERM_DEFENSE_20261027_APPENDIX_EN.md). Yincheng Wang · Mitsuhiro Hayashibe · Tohoku University · Robotics. Main talk: 14:30 + 0:30 buffer; all slides and speaking notes are English.
@@ -184,3 +187,20 @@ ARCH保持79项冻结。WMCG完整公开源接入后，物理QC发现P05/P06/P07
 45新fit/34200更新及独立训练/结果验收完成。每目标2秒梯度/2.4秒marker预处理，完整trial/公开QC/作者功能标定另计。cross-speed双膝RMSE G_R 5.384334°、G_S 5.031603°、A_R 4.425045°、A_S 4.520874°、I_R 6.897207°；相同2秒固定10°压力差A_R +0.193454°、A_S +0.082787°。same-speed另报，预定三项统计只用cross-speed；1160模型-parent包/22040case（clean计一次）/44080角行、12表及三统计已独立复算。保留适配未必优于无适配G_S等负结果，不据外层成绩调参数。
 
 目的—尝试—结论与函数入口见[新实验报告](SII2027_DORSCHKY_EXTERNAL_20261024_ZH.md)、[来源/成本/验收摘要](SII2027_DORSCHKY_READINESS_20261024.json)、[函数行号/SHA](SII2027_DORSCHKY_CODE_INDEX_20261024.json)与[完整聚合](SII2027_DORSCHKY_AGGREGATES_20261024.json)；新增Kiel/Grouvel/GAITEX/Twente候选核验见[简报](SII2027_PUBLIC_DATASET_CANDIDATES_20261024_ZH.md)。Kiel公开21健康、不是公开卒中，许可来源差异和标定配对待核；未将任何候选包装为已完成训练或真实重戴证据。
+
+## 2026-10-25：BSN启发分阶段重建的尝试与决策
+
+**2026-10-25 BSN启发新支线已验收：** [五组分阶段重建开发对照](SII2027_STAGED_RECONSTRUCTION_20261025_ZH.md)，5新fit/2000更新、12VALID同患者跨试次。关节相对位置代理经用户确认；新增S3/S4/S5实测监督。六角direct3.742166°、latent3.781839°、strict4.332027°，中间重建优于常量但未改善运动预测。全部数据/训练/60预测独立复算通过；0新TEST动态读取。旧ARCH79继续冻结，新授权支线另建代码/合同；详见[聚合](SII2027_STAGED_AGGREGATES_20261025.json)与[函数SHA](SII2027_STAGED_CODE_INDEX_20261025.json)。
+
+```mermaid
+flowchart TD
+    U[用户批准关节相对位置代理] --> Q[真实双小腿输入 数据单位/时钟/源角色核验]
+    Q --> T[5TCN模式 同窗同顺序 final50 2000更新]
+    T --> V[同8人12VALID 一次固定开发诊断 独立复算]
+    V --> R[中间重建优于常量 运动未优于direct]
+    R --> F[冻结完整阴性结果 不依据VALID重训重选]
+    F --> M[拟议新协议: 监督拆分/分阶段预训练]
+    F --> L[文献baseline后再做LOSO与少量适配]
+```
+
+五臂分别隔离直接预测、辅助标签、无语义瓶颈、语义严格瓶颈及观测skip。strict相对同结构latent六角+0.550188°，2/8改善；residual相对direct 0/8改善。不是架构变复杂即变好；下一步先查监督/训练策略，新的机制协议尚未训练。当前为联合训练，不是两阶段预训练，既有文献144fit大比较也尚未执行。位置非IMU中心，源时钟非硬件同步认证，健康/其他任务与本表不合并；主报告保留全部目的—尝试—结论及源函数/SHA。

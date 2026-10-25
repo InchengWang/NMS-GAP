@@ -1,0 +1,44 @@
+{
+  "audit_source_sha256": "bbf570cb0a2e6b55394e730ca252caf34cec4477bc1c1c4ab8912c13f26180a8",
+  "checks": {
+    "fifty_independent_epoch_order_hashes": true,
+    "five_literal_causal_prefixes": true,
+    "five_literal_eval_forwards_match_production_comparator": true,
+    "five_literal_seed_states_and_parameter_reports": true,
+    "latent_strict_complete_initialization": true,
+    "masked_unique_frame_scalers": true,
+    "optimizer_step_and_moment_layout_fail_closed": true,
+    "window_tail_inclusion": true
+  },
+  "date": "2026-10-25",
+  "forward_max_abs_errors": {
+    "auxiliary_only": {
+      "angles_hat": 0.0,
+      "positions_hat": 0.0,
+      "signals_hat": 0.0
+    },
+    "direct": {
+      "angles_hat": 0.0
+    },
+    "latent_bottleneck": {
+      "angles_hat": 0.0,
+      "latent_hat": 0.0
+    },
+    "residual_staged": {
+      "angles_hat": 0.0,
+      "positions_hat": 0.0,
+      "signals_hat": 0.0
+    },
+    "strict_staged": {
+      "angles_hat": 0.0,
+      "positions_hat": 0.0,
+      "signals_hat": 0.0
+    }
+  },
+  "model_source_sha256": "e194816e57480f0ef126c5791ce21f51dd8edf8af00b06605ed1a807a91f0bf0",
+  "new_neural_fits": 0,
+  "optimization_trajectory_recomputed": false,
+  "optimizer_steps": 0,
+  "real_TRAIN_or_heldout_data_or_weights_read": false,
+  "status": "passed_independent_TRAIN_pilot_synthetic_checks"
+}
