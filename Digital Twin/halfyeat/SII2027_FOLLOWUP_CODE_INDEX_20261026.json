@@ -1,0 +1,1366 @@
+{
+  "status": "accepted_module_function_and_SHA_metadata_only",
+  "date": "2026-10-26 Asia/Tokyo",
+  "files": [
+    {
+      "study": "baselines",
+      "sha256": "6e617c947e2640e30c1289cd17e8aa0efaf9d7e7d99e707ea0fa07e702942eed",
+      "bytes": 2492,
+      "functions": [
+        {
+          "name": "build",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "description",
+          "line": 35,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "baselines/baseline_models.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "baselines",
+      "sha256": "480052e2f422a511cb64a444a83083617ed0004c7ff1ed64bfe6df27768e30a8",
+      "bytes": 32231,
+      "functions": [
+        {
+          "name": "write",
+          "line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest_array",
+          "line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "json_digest",
+          "line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "state_hashes",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stream_seed",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "initial_model",
+          "line": 77,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "epoch_orders",
+          "line": 88,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "DropoutStream",
+          "line": 95,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "RoleGuard",
+          "line": 111,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "environment",
+          "line": 171,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "release",
+          "line": 180,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "role_paths",
+          "line": 189,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "real_trials",
+          "line": 193,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_arrays",
+          "line": 205,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "lineage_for",
+          "line": 215,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "subject_budget",
+          "line": 220,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 232,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_sources",
+          "line": 246,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prepare",
+          "line": 252,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_folder",
+          "line": 274,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ledger",
+          "line": 278,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 283,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_metric",
+          "line": 315,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 324,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_fit",
+          "line": 456,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 526,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 541,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "baselines/baseline_training.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "baselines",
+      "sha256": "4cc789781a40449dfd99ec15d26f1a908fb5f693076f192bbf9dd91151d1c7c4",
+      "bytes": 22696,
+      "functions": [
+        {
+          "name": "sha",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "IndependentReadBoundary",
+          "line": 54,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "independent_starts",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "literal_lstm",
+          "line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "model_checks",
+          "line": 140,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "SyntheticWindowModel",
+          "line": 172,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "fusion_checks",
+          "line": 179,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_source_trials",
+          "line": 228,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_checks",
+          "line": 251,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "heldout_checks",
+          "line": 299,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_stream_seed",
+          "line": 329,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_orders",
+          "line": 334,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rng_checks",
+          "line": 343,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 388,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "baselines/baseline_preflight.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "baselines",
+      "sha256": "cc6711b0b8a7b68a0807dde685099113ea2289314b1ae61aa0d30a4beb3624d9",
+      "bytes": 17384,
+      "functions": [
+        {
+          "name": "assert_gates",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "aggregate",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analysis_contract",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_support",
+          "line": 121,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 128,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 212,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "baselines/baseline_evaluation_v2.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "baselines",
+      "sha256": "3ffe8b0e181ee1b9778d4b1ed33a6767ba1bb001f6ee00b59aa5f23c10ec59fe",
+      "bytes": 39938,
+      "functions": [
+        {
+          "name": "check",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest_array",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "close",
+          "line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stream_seed",
+          "line": 69,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "DynamicGuard",
+          "line": 81,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "IndependentCausal",
+          "line": 131,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "IndependentResidual",
+          "line": 137,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "IndependentTCN",
+          "line": 147,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "IndependentLSTM",
+          "line": 154,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "independent_initial_model",
+          "line": 161,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "functional_tcn",
+          "line": 168,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "functional_lstm",
+          "line": 182,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "functional_forward",
+          "line": 204,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "infer",
+          "line": 210,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_guard",
+          "line": 227,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_probe",
+          "line": 231,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "json_digest",
+          "line": 267,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "state_digests",
+          "line": 271,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rebuild_subject",
+          "line": 275,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independently_expected_orders",
+          "line": 301,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "static_review",
+          "line": 306,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_optimizer",
+          "line": 332,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "formal_audit",
+          "line": 351,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 576,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "baselines/audit_baseline_training.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "baselines",
+      "sha256": "de83afedc791ba0e559f6d984a2e5dbd52e62249caff93b0a34b272799db63ca",
+      "bytes": 28018,
+      "functions": [
+        {
+          "name": "angle_metrics",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "grouped",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_table",
+          "line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "gate",
+          "line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_fusion",
+          "line": 114,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_probe",
+          "line": 134,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 188,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "baselines/audit_baseline_results.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "baselines",
+      "sha256": "223a1fb6d4342f0c9e17a1b1bfc37ede541c23e3d0b1e11be002d1b6a974f4e7",
+      "bytes": 6195,
+      "functions": [],
+      "local_module_name": "baselines/BASELINE_COMPARISON_PROTOCOL_ZH.md",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "baselines",
+      "sha256": "094b5ead63e1854bd3bbd5e7fa7ef6b943e313e6678e845e9d18ae1e36a9c795",
+      "bytes": 3916,
+      "functions": [],
+      "local_module_name": "baselines/PROTOCOL_REVIEW_ZH.md",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "dorschky",
+      "sha256": "6f37fdf57ba190ea915d68769afc199e4ec9fa26113225563ba42be4c697e9b9",
+      "bytes": 34047,
+      "functions": [
+        {
+          "name": "OldWriteFence",
+          "line": 39,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "configure_runtime",
+          "line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "environment",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metadata_cache",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_arm",
+          "line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "target_augmentation",
+          "line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "jobs",
+          "line": 119,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reference_weights",
+          "line": 127,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "static_sources",
+          "line": 138,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_sources",
+          "line": 151,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "legacy_source_gate",
+          "line": 157,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_optimizer_state",
+          "line": 198,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "construct_fit_access",
+          "line": 216,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "first_epoch_order",
+          "line": 229,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prepare",
+          "line": 241,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "preflight",
+          "line": 318,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 394,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 419,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_fit",
+          "line": 497,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 537,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 551,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "dorschky/cross_training_v3.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "dorschky",
+      "sha256": "336a7cb1e9fd23d1af8836b5267d8f3d3fa4fbfd411a0ac5525e68d9e6dfbea6",
+      "bytes": 36081,
+      "functions": [
+        {
+          "name": "modes",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "targets",
+          "line": 47,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "new_path",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "diagonal_ledger",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "aggregate",
+          "line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "analysis_contract",
+          "line": 190,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "assert_independent_metadata",
+          "line": 217,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unlock_gate",
+          "line": 229,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "validate_diagonal",
+          "line": 287,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_preflight",
+          "line": 307,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 406,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "dorschky/cross_evaluation.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "dorschky",
+      "sha256": "c4a7d48ec9375fc6f3f9c41365e9b342e32beda74282966fcfc91dab895d27b8",
+      "bytes": 21221,
+      "functions": [
+        {
+          "name": "guard_sources",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "expected_orders",
+          "line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_probe",
+          "line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main_audit",
+          "line": 94,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "dorschky/audit_cross_training.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "dorschky",
+      "sha256": "ff72aa339a76fd94b1977831477acc7b1ff6941c3f1124409b5aa5177f1a14e7",
+      "bytes": 36483,
+      "functions": [
+        {
+          "name": "static_sources",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "groups",
+          "line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "mean_values",
+          "line": 59,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "average",
+          "line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rebuild_tables",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare",
+          "line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "case_contract",
+          "line": 185,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_probe",
+          "line": 190,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metadata_gate",
+          "line": 254,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check_access",
+          "line": 340,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 362,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "dorschky/audit_cross_results.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "dorschky",
+      "sha256": "fa4eefa9a23da7147a88311b1d90abbbd9a60a697bc829c9f2b65251e5564667",
+      "bytes": 4029,
+      "functions": [],
+      "local_module_name": "dorschky/CROSS_V3_PROTOCOL_ZH.md",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "dorschky",
+      "sha256": "76ee92860bed5234adccb789949b528f84b20b63632135d239104de5c38805db",
+      "bytes": 3116,
+      "functions": [],
+      "local_module_name": "dorschky/CROSS_ANALYSIS_PROTOCOL_ZH.md",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "mechanism",
+      "sha256": "aea2a9895156058093ea959327655b18c8ba10f3a0808ab2ec4714aaa45f8ee5",
+      "bytes": 26867,
+      "functions": [
+        {
+          "name": "module_from",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "canonical",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "jhash",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "state_hash",
+          "line": 79,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_once",
+          "line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "TrainReadGuard",
+          "line": 95,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "environment",
+          "line": 154,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "runtime_check",
+          "line": 161,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verified_metadata",
+          "line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "role_paths",
+          "line": 192,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 198,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stats",
+          "line": 207,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "normalized",
+          "line": 218,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "training_arrays",
+          "line": 226,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stream_seed",
+          "line": 260,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "initial_model",
+          "line": 267,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "epoch_orders",
+          "line": 275,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "DropoutStream",
+          "line": 280,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "arm_losses",
+          "line": 296,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 309,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_sources",
+          "line": 319,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prepare",
+          "line": 324,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ledger",
+          "line": 347,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "freeze",
+          "line": 353,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contract",
+          "line": 376,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 388,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_fit",
+          "line": 486,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 497,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 514,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "mechanism/mechanism_training.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "mechanism",
+      "sha256": "ff170ef2fa2fa3c7e2416d88a3dd833fff617c0ced1b01d6c78726ea19b138db",
+      "bytes": 16174,
+      "functions": [
+        {
+          "name": "independent_seed",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_starts",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_orders",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "model_checks",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_batch",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_losses",
+          "line": 105,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "loss_and_gradient_checks",
+          "line": 121,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "TRAIN_checks",
+          "line": 171,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "heldout_checks",
+          "line": 217,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 237,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "mechanism/mechanism_preflight.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "mechanism",
+      "sha256": "d73bfca9aa5cb6f86a80548b1867cd6229ab431d74c606b2b0c3caaba319039f",
+      "bytes": 22894,
+      "functions": [
+        {
+          "name": "DynamicBoundary",
+          "line": 37,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "training_metadata_gate",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_metadata",
+          "line": 115,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_map",
+          "line": 135,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "freeze",
+          "line": 145,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "restore",
+          "line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "motion_score",
+          "line": 168,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "all_scores",
+          "line": 177,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "aggregate",
+          "line": 197,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "contrast_values",
+          "line": 225,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "factorial",
+          "line": 231,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 250,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic",
+          "line": 321,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "mechanism/mechanism_evaluation.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "mechanism",
+      "sha256": "31fc037894d79cf4964994e4bc4f4a84fe7236fec3f9b805b069af78dfc8552c",
+      "bytes": 13503,
+      "functions": [
+        {
+          "name": "load_module",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "jhash",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stream",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "guard_sources",
+          "line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "states",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "starts",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 39,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "mechanism/audit_mechanism_training.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "mechanism",
+      "sha256": "53fbed33eb6635d2952da2080b1e831b0e7deca748376261dea4acd164cef022",
+      "bytes": 38892,
+      "functions": [
+        {
+          "name": "need",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sha",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "jhash",
+          "line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tensor_digests",
+          "line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_literal",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ReadBoundary",
+          "line": 82,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "check_sources",
+          "line": 129,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_tree",
+          "line": 135,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unscale",
+          "line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "motion_metrics",
+          "line": 157,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_metrics",
+          "line": 170,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "average",
+          "line": 201,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_aggregate",
+          "line": 207,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "paired_contrasts",
+          "line": 240,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "independent_factorial",
+          "line": 253,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metadata_gate",
+          "line": 274,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_audit",
+          "line": 358,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_checks",
+          "line": 507,
+          "kind": "FunctionDef"
+        }
+      ],
+      "local_module_name": "mechanism/audit_mechanism_results.py",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "mechanism",
+      "sha256": "0f1588cc5f3f160b4af25d0202fc48c22d2c0578fbbe873827d4f42b761a71c2",
+      "bytes": 12653,
+      "functions": [],
+      "local_module_name": "mechanism/MECHANISM_PROTOCOL_ZH.md",
+      "complete_source_publicly_distributed": false
+    },
+    {
+      "study": "mechanism",
+      "sha256": "95ac7c3df71e2bdc098a1e1460c4b5fd537e5b9f27315e73418470790036e0a1",
+      "bytes": 5525,
+      "functions": [],
+      "local_module_name": "mechanism/ANALYSIS_PROTOCOL_ZH.md",
+      "complete_source_publicly_distributed": false
+    }
+  ],
+  "accepted_evidence": {
+    "baselines": [
+      {
+        "name": "BASELINES_v1/training_contract.json",
+        "sha256": "bf6087881ade7007faee4455376ad79bcc06c2797655f7be25a19e8bfbb061ce"
+      },
+      {
+        "name": "BASELINES_v1/independent_training_audit.json",
+        "sha256": "4e5075789bc76a8d18bc21f35dd95faf1c92471d2deb0d00b16972b31f47bc17"
+      },
+      {
+        "name": "BASELINES_v1/analysis_v2/evaluation_complete.json",
+        "sha256": "443595ba4aa009fb080f70ab018f119a4397bb19381c40e5547d54cec88b164a"
+      },
+      {
+        "name": "BASELINES_v1/analysis_v2/independent_results_audit.json",
+        "sha256": "7ea3beceecc3a51116094f792129fa7bcba24289a5c9c69424bf4a83db2565bd"
+      }
+    ],
+    "dorschky": [
+      {
+        "name": "CROSS_v3/training_contract.json",
+        "sha256": "97834cd9582208ab312bb447fa22815a368f33d3ea4c916e326b8ec0d6e5f0ad"
+      },
+      {
+        "name": "CROSS_v3/independent_cross_training_audit.json",
+        "sha256": "5f13309137b750a250d49567c449fb32a0922e76ce47e7cb1a0b01f417653df5"
+      },
+      {
+        "name": "CROSS_v3/analysis_v1/evaluation_complete.json",
+        "sha256": "e340ea9632d3035bb4c51a61b949c12fd410bb297cf679bea85aafeb8ceafac7"
+      },
+      {
+        "name": "CROSS_v3/analysis_v1/independent_results_audit.json",
+        "sha256": "f5a0153010244d07d30882253070d9fec52c5930ec2a8eccbc80f4c1ad6e2738"
+      }
+    ],
+    "mechanism": [
+      {
+        "name": "MECHANISM_v1/training_contract.json",
+        "sha256": "c3b7933aa059b6588a212a4238821dc039b6eddcfe49ef353e79007a8f1b3882"
+      },
+      {
+        "name": "MECHANISM_v1/independent_training_audit.json",
+        "sha256": "30774043c7c91146c1dfe4ea7a633f6bc86afdf51ba0b68a6400207e14c20823"
+      },
+      {
+        "name": "MECHANISM_v1/valid_factorial_v1/evaluation_complete.json",
+        "sha256": "f18db71eb321cac38be9a4d9963a71a083098d8add7d03bcf3ea9b14c3b07e2a"
+      },
+      {
+        "name": "MECHANISM_v1/valid_factorial_v1/independent_results_audit.json",
+        "sha256": "2a2d51dd6e224847ca17b5d38254448f9645c5e9980bddea2e5eaf6ec95b307c"
+      }
+    ]
+  },
+  "old_ARCH79_final_check": {
+    "status": "passed_all79_frozen_scientific_artifacts_unchanged_after_followups",
+    "date": "2026-10-26 Asia/Tokyo",
+    "freeze_manifest_sha256": "d22350d16347d2942ea3cc81011cfb51f45fa01f6c5e412b5c34efb38b8fe675",
+    "checked_items": 79,
+    "arrays_or_weights_opened": 0,
+    "live_bookkeeping_excluded": true
+  },
+  "scope": "public_metadata_index_only_complete_source_retained_locally",
+  "previous_dependencies": [
+    "sii2027_staged_20261025/README.md",
+    "SII2027_DORSCHKY_CODE_INDEX_20261024.json",
+    "SII2027_NATIVE_CODE_INDEX_20261021.json",
+    "SII2027_DIAGNOSIS_CODE_INDEX_20261021.json"
+  ],
+  "withheld": [
+    "complete_research_and_audit_source",
+    "raw_patient_arrays",
+    "checkpoints",
+    "frame_predictions",
+    "subject_trial_tables",
+    "paper_full_text",
+    "PPTX_PDF_and_deck_source"
+  ],
+  "source_files_published": 0,
+  "policy_note": "Complete research sources and audit implementations remain local. Public files contain reports, population aggregates, figures and function/SHA metadata only."
+}

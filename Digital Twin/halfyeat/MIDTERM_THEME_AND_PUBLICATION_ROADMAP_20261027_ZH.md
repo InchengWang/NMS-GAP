@@ -1,5 +1,9 @@
 # Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs
 
+
+**2026-10-26最新研究状态：** [三批后续实验与决策](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)已通过独立训练和全结果复算：文献架构72fit、Dorschky四格新增18fit、监督机制12fit。TCN同人TEST患膝3.174°，两种LSTM未改善；方向增强存在clean/压力权衡；固定中间联合监督三seed阴性。accepted共102fit/71400更新，含失败的实际成本120次/75000更新。旧ARCH79继续冻结；余下增强baseline72fit尚未执行。以下早期“未训练/0fit”等文字按原记录日期保留，当前状态以本条及新报告为准。
+
+
 **English defense presentation — 27 October 2026:** [Open the 14-slide visual deck](MIDTERM_DEFENSE_20261027_EN.md) · [English speaking script](MIDTERM_DEFENSE_20261027_SPEAKER_NOTES_EN.md) · [4 backup slides and references](MIDTERM_DEFENSE_20261027_APPENDIX_EN.md). Yincheng Wang · Mitsuhiro Hayashibe · Tohoku University · Robotics. Main talk: 14:30 + 0:30 buffer; all slides and speaking notes are English.
 
 The delivered visual deck expands the earlier 13-page outline to 14 main slides to provide sufficient background and related work. The three-level research goals below remain unchanged; no proposed experiment was run to make this presentation.
@@ -113,3 +117,12 @@ The delivered visual deck expands the earlier 13-page outline to 14 main slides 
 两个独立LSTM和SI扰动原型通过合成接口检查，正式新增fit/性能评价仍为0。旧ARCH79项继续冻结；新比较分支拟采用独立数据洗牌RNG和新Frame匹配控制，6个独立cell共144fit/126000更新。它首先是Stroke患者内跨trial比较，后续跨患者G/I/A和Dorschky需另立协议。未把它或旧内部消融写成已发表方法优越性结论。
 
 代码/输入差异、来源commit、原型与预算见新报告及[机器索引](SII2027_LITERATURE_BASELINE_INDEX_20261025.json)。当前全英文答辩稿已验结果不变，拟议baseline不进入已有成绩表。
+
+
+
+## 2026-10-26 执行状态更新
+
+
+**2026-10-26最新研究状态：** [三批后续实验与决策](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)已通过独立训练和全结果复算：文献架构72fit、Dorschky四格新增18fit、监督机制12fit。TCN同人TEST患膝3.174°，两种LSTM未改善；方向增强存在clean/压力权衡；固定中间联合监督三seed阴性。accepted共102fit/71400更新，含失败的实际成本120次/75000更新。旧ARCH79继续冻结；余下增强baseline72fit尚未执行。以下早期“未训练/0fit”等文字按原记录日期保留，当前状态以本条及新报告为准。
+
+详细目的、全部负结果、成本、下一门槛与三张科学图见[本轮研究报告](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)。这次新增研究没有修改旧冻结合同或既有答辩页。

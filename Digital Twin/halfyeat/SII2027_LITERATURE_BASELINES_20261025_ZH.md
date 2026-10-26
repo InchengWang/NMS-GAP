@@ -1,5 +1,9 @@
 # 稀疏IMU运动重建：文献baseline筛选与公平比较方案
 
+
+**2026-10-26最新研究状态：** [三批后续实验与决策](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)已通过独立训练和全结果复算：文献架构72fit、Dorschky四格新增18fit、监督机制12fit。TCN同人TEST患膝3.174°，两种LSTM未改善；方向增强存在clean/压力权衡；固定中间联合监督三seed阴性。accepted共102fit/71400更新，含失败的实际成本120次/75000更新。旧ARCH79继续冻结；余下增强baseline72fit尚未执行。以下早期“未训练/0fit”等文字按原记录日期保留，当前状态以本条及新报告为准。
+
+
 日期：2026-10-25。服务于 **Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs**。本次用户要求补架构与数据增强的已发表方法对照；旧ARCH79项冻结和既有成绩保持，新比较另立版本。
 
 **结论：现有Frame/共享TCN、Rot6D、静态SO3与假设虚拟混合主要是内部消融，不能替代已发表方法baseline。首批优先Hur-LSTM128、参数匹配LSTM85，以及固定FrameTCN上的测量噪声、陀螺仪常量偏置对照。** 较强的现代近邻MIE-TCN、MODA和完整物理生成有价值，但需先闭合输入、读出或标定条件。
@@ -99,3 +103,12 @@ flowchart TD
 ```
 
 本轮优先补论文baseline缺口；原源×目标增强2×2机制计划继续保留。没有把候选、合成probe或计划fit写成新实验结论。
+
+
+
+## 2026-10-26 执行状态更新
+
+
+**2026-10-26最新研究状态：** [三批后续实验与决策](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)已通过独立训练和全结果复算：文献架构72fit、Dorschky四格新增18fit、监督机制12fit。TCN同人TEST患膝3.174°，两种LSTM未改善；方向增强存在clean/压力权衡；固定中间联合监督三seed阴性。accepted共102fit/71400更新，含失败的实际成本120次/75000更新。旧ARCH79继续冻结；余下增强baseline72fit尚未执行。以下早期“未训练/0fit”等文字按原记录日期保留，当前状态以本条及新报告为准。
+
+详细目的、全部负结果、成本、下一门槛与三张科学图见[本轮研究报告](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)。这次新增研究没有修改旧冻结合同或既有答辩页。

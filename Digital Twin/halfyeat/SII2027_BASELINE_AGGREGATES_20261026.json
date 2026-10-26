@@ -1,0 +1,237 @@
+{
+  "status": "accepted_after_independent_training_and_results_audits",
+  "date": "2026-10-26 Asia/Tokyo",
+  "task": "measured_bilateral_shank12D_to_six_engineering_angles_same_patient_new_trials",
+  "real_TRAIN_unique_cropped_frames": 12665,
+  "TRAIN_parents": 31,
+  "VALID_parents": 12,
+  "TEST_parents": 10,
+  "TRAIN_VALID_people": 8,
+  "TEST_people": 6,
+  "seed_values": [
+    20261021,
+    20261022,
+    20261023
+  ],
+  "new_fits": 72,
+  "optimizer_updates": 63000,
+  "results": [
+    {
+      "method": "frame_tcn_replay4",
+      "TEST_people": 6,
+      "TEST_trials": 10,
+      "seeds": 3,
+      "endpoints": {
+        "bilateral_knee": {
+          "rmse_deg": 2.7810289328563798,
+          "mae_deg": 2.1076294990144047,
+          "pcc": 0.9826607045870697,
+          "rom_gt_deg": 46.46720995205396,
+          "rom_pred_deg": 46.64755155845598,
+          "temporal_sd_ratio": 0.9801523407748172,
+          "signed_bias_deg": -0.07261636132315026
+        },
+        "paretic_knee": {
+          "rmse_deg": 3.1737154630397,
+          "mae_deg": 2.3484627187615588,
+          "pcc": 0.9677044379348847,
+          "rom_gt_deg": 36.85823728040365,
+          "rom_pred_deg": 36.82315365045283,
+          "temporal_sd_ratio": 0.9742079029928368,
+          "signed_bias_deg": -0.3074997591702786
+        },
+        "six_angles": {
+          "rmse_deg": 2.4580422773692328,
+          "mae_deg": 1.8809191610514098,
+          "pcc": 0.9739645863351856,
+          "rom_gt_deg": 35.37843713229813,
+          "rom_pred_deg": 35.36506052221605,
+          "temporal_sd_ratio": 0.9813314395846767,
+          "signed_bias_deg": 0.34826970113735595
+        }
+      },
+      "paretic_knee_equal_people_seed_means_deg": [
+        3.041513865706064,
+        3.284487836078592,
+        3.195144687334444
+      ],
+      "paretic_knee_seed_SD_deg": 0.12289628273488742,
+      "cost": {
+        "parameters": 151110,
+        "new_fits": 24,
+        "optimizer_updates": 21000,
+        "sum_fit_wall_seconds": 3015.221717212349,
+        "sum_process_CPU_seconds": 5964.164163395001,
+        "TEST_offline_inference_records": 30,
+        "TEST_total_frames_across3seeds": 18135,
+        "TEST_sum_offline_inference_wall_seconds": 0.42820974299684167,
+        "timing_scope": "concurrent_CPU2threads_per_fit_observed_cost_not_streaming_latency_or_dedicated_benchmark"
+      }
+    },
+    {
+      "method": "hur_lstm128_replay4",
+      "TEST_people": 6,
+      "TEST_trials": 10,
+      "seeds": 3,
+      "endpoints": {
+        "bilateral_knee": {
+          "rmse_deg": 3.261534478078134,
+          "mae_deg": 2.2977236166330472,
+          "pcc": 0.9742437330213567,
+          "rom_gt_deg": 46.46720995205396,
+          "rom_pred_deg": 44.16800618760121,
+          "temporal_sd_ratio": 0.9742345585111246,
+          "signed_bias_deg": -0.18782556891504895
+        },
+        "paretic_knee": {
+          "rmse_deg": 3.5411562913639414,
+          "mae_deg": 2.4780493714068137,
+          "pcc": 0.954712417009619,
+          "rom_gt_deg": 36.85823728040365,
+          "rom_pred_deg": 34.39715430579799,
+          "temporal_sd_ratio": 0.9698552070232025,
+          "signed_bias_deg": -0.3277272674165567
+        },
+        "six_angles": {
+          "rmse_deg": 2.805535582186429,
+          "mae_deg": 2.046532015413486,
+          "pcc": 0.9645012490633268,
+          "rom_gt_deg": 35.37843713229813,
+          "rom_pred_deg": 33.55562651356227,
+          "temporal_sd_ratio": 0.9763874794142421,
+          "signed_bias_deg": 0.32050922510996793
+        }
+      },
+      "paretic_knee_equal_people_seed_means_deg": [
+        3.7030599085011415,
+        3.4178359699413585,
+        3.502572995649325
+      ],
+      "paretic_knee_seed_SD_deg": 0.1464741506650231,
+      "cost": {
+        "parameters": 337670,
+        "new_fits": 24,
+        "optimizer_updates": 21000,
+        "sum_fit_wall_seconds": 6723.191649876302,
+        "sum_process_CPU_seconds": 12932.495890204,
+        "TEST_offline_inference_records": 30,
+        "TEST_total_frames_across3seeds": 18135,
+        "TEST_sum_offline_inference_wall_seconds": 0.8177822516299784,
+        "timing_scope": "concurrent_CPU2threads_per_fit_observed_cost_not_streaming_latency_or_dedicated_benchmark"
+      }
+    },
+    {
+      "method": "lstm85_capacity_replay4",
+      "TEST_people": 6,
+      "TEST_trials": 10,
+      "seeds": 3,
+      "endpoints": {
+        "bilateral_knee": {
+          "rmse_deg": 3.3963316447278835,
+          "mae_deg": 2.4308104705465943,
+          "pcc": 0.9718559423432823,
+          "rom_gt_deg": 46.46720995205396,
+          "rom_pred_deg": 43.7853651331724,
+          "temporal_sd_ratio": 0.9675759753915093,
+          "signed_bias_deg": -0.16891865605149473
+        },
+        "paretic_knee": {
+          "rmse_deg": 3.6569875694730896,
+          "mae_deg": 2.608139748200544,
+          "pcc": 0.9523359945062072,
+          "rom_gt_deg": 36.85823728040365,
+          "rom_pred_deg": 33.87793921755788,
+          "temporal_sd_ratio": 0.9581648027589781,
+          "signed_bias_deg": -0.3626611212989092
+        },
+        "six_angles": {
+          "rmse_deg": 2.8729794612942157,
+          "mae_deg": 2.1213720023561424,
+          "pcc": 0.9629429385442435,
+          "rom_gt_deg": 35.37843713229813,
+          "rom_pred_deg": 33.345529766078634,
+          "temporal_sd_ratio": 0.9721344352392544,
+          "signed_bias_deg": 0.3207884030977946
+        }
+      },
+      "paretic_knee_equal_people_seed_means_deg": [
+        3.803979741784115,
+        3.626375390162311,
+        3.5406075764728415
+      ],
+      "paretic_knee_seed_SD_deg": 0.13432815604631676,
+      "cost": {
+        "parameters": 151136,
+        "new_fits": 24,
+        "optimizer_updates": 21000,
+        "sum_fit_wall_seconds": 4409.108902065083,
+        "sum_process_CPU_seconds": 8585.839624279999,
+        "TEST_offline_inference_records": 30,
+        "TEST_total_frames_across3seeds": 18135,
+        "TEST_sum_offline_inference_wall_seconds": 0.7466452633962035,
+        "timing_scope": "concurrent_CPU2threads_per_fit_observed_cost_not_streaming_latency_or_dedicated_benchmark"
+      }
+    }
+  ],
+  "descriptive_contrasts": {
+    "status": "complete_two_prespecified_patient_descriptive_contrasts",
+    "contrasts": [
+      {
+        "contrast": "hur_lstm128_replay4_minus_frame_tcn_replay4",
+        "endpoint": "paretic_knee",
+        "n_patients": 6,
+        "mean_paired_RMSE_difference_deg": 0.36744082832424185,
+        "patient_SD_difference_deg": 0.27015699558479617,
+        "patients_improved": 0,
+        "patients_worsened": 6,
+        "patients_tied": 0,
+        "interpretation": "negative_difference_favors_LSTM_descriptive_not_confirmatory"
+      },
+      {
+        "contrast": "lstm85_capacity_replay4_minus_frame_tcn_replay4",
+        "endpoint": "paretic_knee",
+        "n_patients": 6,
+        "mean_paired_RMSE_difference_deg": 0.48327210643338897,
+        "patient_SD_difference_deg": 0.1686688771506139,
+        "patients_improved": 0,
+        "patients_worsened": 6,
+        "patients_tied": 0,
+        "interpretation": "negative_difference_favors_LSTM_descriptive_not_confirmatory"
+      }
+    ],
+    "seeds_not_independent_patients": true,
+    "previously_used_TEST": true,
+    "new_significance_tests": false
+  },
+  "independent_audit": {
+    "predictions": 477,
+    "angle_rows": 2862,
+    "per_cell_max_abs_network_difference_deg": {
+      "frame_tcn_replay4": 0.0,
+      "hur_lstm128_replay4": 1.5258789069605427e-05,
+      "lstm85_capacity_replay4": 1.1444091796875e-05
+    },
+    "training_artifacts": 576,
+    "new_p_values": false,
+    "all_patients_and_seeds_retained": true
+  },
+  "evidence_sha256": {
+    "BASELINES_v1/training_contract.json": "bf6087881ade7007faee4455376ad79bcc06c2797655f7be25a19e8bfbb061ce",
+    "BASELINES_v1/independent_training_audit.json": "4e5075789bc76a8d18bc21f35dd95faf1c92471d2deb0d00b16972b31f47bc17",
+    "analysis_contract.json": "563173e9bb2217569640f856f076726a39c3501ec9f5caa932f0fb55d507f336",
+    "evaluation_complete.json": "443595ba4aa009fb080f70ab018f119a4397bb19381c40e5547d54cec88b164a",
+    "independent_results_audit.json": "7ea3beceecc3a51116094f792129fa7bcba24289a5c9c69424bf4a83db2565bd",
+    "equal_subject_aggregates.csv": "d9e9dd669c526a2618200eb97b877efd395f6d9de9f802ebfa7252a8d0423b12",
+    "training_cost.csv": "50e8269846e8d0f734cd3fe816f995b892351096624893c1d3fa17a189a47b50",
+    "inference_cost.csv": "d1b6fa28faa410b4ba8d7ec687b2104c2f208ffa0fda88af43ba90425132a59d"
+  },
+  "limitations": [
+    "previously_used_TEST_not_blind",
+    "same_people_not_LOSO",
+    "engineering_projection_angles_not_clinical_JCS",
+    "matched_training_budget_not_equal_hyperparameter_search",
+    "Hur_backbone_adaptation_not_full_paper_reproduction",
+    "no_augmentation_performance_test_in_this72fit_batch",
+    "offline_Hann_fusion_not_streaming_latency"
+  ]
+}
