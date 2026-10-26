@@ -1,0 +1,15 @@
+{
+  "status": "final_independently_audited_population_figures",
+  "files": [
+    {
+      "file": "SII2027_MEASUREMENT_BASELINES_20261026.svg",
+      "sha256": "6de1cd0afb8680bd9ef1b85645bd0fcac88b4d2ff5544a5bb63e4f3fcef97725"
+    }
+  ],
+  "data_sha256": "2b9ad596786c3109488a0248921ab9e563eb17a284434652ef5750dbcbeb2845",
+  "population_people": 6,
+  "seeds": 3,
+  "error_bars": "sample_seed_SD_ddof1",
+  "private_IDs_or_predictions_included": false,
+  "data_file": "SII2027_MEASUREMENT_BASELINES_20261026_AGGREGATES.json"
+}

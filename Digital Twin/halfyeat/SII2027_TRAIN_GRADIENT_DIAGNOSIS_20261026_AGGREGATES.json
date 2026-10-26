@@ -1,0 +1,1869 @@
+{
+  "status": "reviewed_population_seed_TRAIN_gradient_geometry",
+  "date": "2026-10-26 Asia/Tokyo",
+  "support": {
+    "TRAIN_people": 8,
+    "TRAIN_trials": 31,
+    "unique_TRAIN_frames": 12665,
+    "overlapping_windows": 492,
+    "window_frames": 120,
+    "model_seeds": [
+      20261021,
+      20261022,
+      20261023
+    ],
+    "snapshot_states": [
+      "init",
+      "final50"
+    ],
+    "seed_state_combinations": 6,
+    "domains_per_snapshot": 4
+  },
+  "method": {
+    "arm": "Both",
+    "auxiliary_weights": {
+      "signal": 0.25,
+      "position": 0.25
+    },
+    "model_mode": "eval_dropout_off",
+    "gradient_space": "raw_Euclidean_shared_encoder_parameters",
+    "parameters": {
+      "block0": {
+        "tensors": 10,
+        "scalar_parameters": 35264
+      },
+      "block1": {
+        "tensors": 8,
+        "scalar_parameters": 57728
+      },
+      "block2": {
+        "tensors": 8,
+        "scalar_parameters": 57728
+      },
+      "encoder_all": {
+        "tensors": 26,
+        "scalar_parameters": 150720
+      }
+    },
+    "angle_order": [
+      "LH",
+      "LK",
+      "LA",
+      "RH",
+      "RK",
+      "RA"
+    ],
+    "signal_group_order": [
+      "S3_ACC",
+      "S3_GYRO",
+      "S4_ACC",
+      "S4_GYRO",
+      "S5_ACC",
+      "S5_GYRO"
+    ],
+    "loss_units": "TRAIN_standardized_dimensionless_MSE",
+    "loss_weighting": "window-weighted complete support; equal6 global mask-valid signal groups; not patient or unique-frame weighted",
+    "computation_partition": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      44
+    ],
+    "global_denominators": {
+      "angles": 354240,
+      "positions": 1416960,
+      "signal_groups": [
+        177120,
+        177120,
+        177120,
+        177120,
+        174240,
+        158760
+      ],
+      "active_signal_groups": 6,
+      "per_angle": 59040,
+      "windows": 492,
+      "frames_per_window": 120
+    },
+    "seed_SD": "sample SD across three model-seed values, ddof=1; not patient SD or confidence interval",
+    "zero_norm_rule": "null cosine/ratio; no epsilon-defined direction"
+  },
+  "states": {
+    "init": {
+      "by_seed": {
+        "20261021": {
+          "loss": {
+            "angles": 1.0319235917787868,
+            "signals": 1.4984199552529653,
+            "positions": 1.8171199779411107,
+            "angle_channel_MSE": [
+              0.963004478318686,
+              0.9604869339226074,
+              1.0019719480822464,
+              1.0290415273247815,
+              1.012963442757849,
+              1.2240732202665507
+            ],
+            "signal_group_MSE": [
+              1.3513053556957113,
+              1.3871097493860032,
+              1.287502792675176,
+              1.545520787046461,
+              1.8239041947428771,
+              1.5951768519715634
+            ]
+          },
+          "weighted_aux_to_angle_loss_ratio": {
+            "signal": 0.3630162075929603,
+            "position": 0.44022638701593086
+          },
+          "domains": {
+            "block0": {
+              "task_L2_norm": {
+                "angles": 0.5798594363702243,
+                "signals": 2.957082594339031,
+                "positions": 2.2660869212321755
+              },
+              "quarter_signal_over_angle_norm": 1.2749135432069676,
+              "quarter_position_over_angle_norm": 0.9769983805977684,
+              "quarter_combined_aux_over_angle_norm": 1.7615859544214203,
+              "pairwise_cosine": {
+                "angle_signal": 0.11589940529991878,
+                "angle_position": 0.1980790857054635,
+                "signal_position": 0.2100431684645463
+              },
+              "combined_aux_L2_norm": 4.085888954594034,
+              "combined_aux_angle_cosine": 0.19373716427201915,
+              "weighted_total_L2_norm": 1.2685217942471747,
+              "weighted_total_angle_cosine": 0.6131203853144283
+            },
+            "block1": {
+              "task_L2_norm": {
+                "angles": 0.5419761982584919,
+                "signals": 4.744931235388786,
+                "positions": 3.7525553153403544
+              },
+              "quarter_signal_over_angle_norm": 2.1887175353066537,
+              "quarter_position_over_angle_norm": 1.7309594625180378,
+              "quarter_combined_aux_over_angle_norm": 3.059241572809969,
+              "pairwise_cosine": {
+                "angle_signal": 0.12395782007429805,
+                "angle_position": 0.22700561661410795,
+                "signal_position": 0.20749902855908714
+              },
+              "combined_aux_L2_norm": 6.632144468743505,
+              "combined_aux_angle_cosine": 0.21712772880103529,
+              "weighted_total_L2_norm": 1.8528494045718094,
+              "weighted_total_angle_cosine": 0.48680794695324675
+            },
+            "block2": {
+              "task_L2_norm": {
+                "angles": 0.46531041055953287,
+                "signals": 4.684326369115947,
+                "positions": 4.232973260340247
+              },
+              "quarter_signal_over_angle_norm": 2.5167749650620723,
+              "quarter_position_over_angle_norm": 2.2742738848514708,
+              "quarter_combined_aux_over_angle_norm": 3.3700730431058004,
+              "pairwise_cosine": {
+                "angle_signal": 0.07813104669072116,
+                "angle_position": 0.22830883214780537,
+                "signal_position": -0.013023226314271103
+              },
+              "combined_aux_L2_norm": 6.272520285212697,
+              "combined_aux_angle_cosine": 0.21242123472797386,
+              "weighted_total_L2_norm": 1.7278713302557251,
+              "weighted_total_angle_cosine": 0.4620798566069463
+            },
+            "encoder_all": {
+              "task_L2_norm": {
+                "angles": 0.920048337643954,
+                "signals": 7.2939442985744,
+                "positions": 6.093839836426962
+              },
+              "quarter_signal_over_angle_norm": 1.9819459478761254,
+              "quarter_position_over_angle_norm": 1.6558477384003476,
+              "quarter_combined_aux_over_angle_norm": 2.717579200285972,
+              "pairwise_cosine": {
+                "angle_signal": 0.10249272226193386,
+                "angle_position": 0.20897572913060652,
+                "signal_position": 0.10897907868039643
+              },
+              "combined_aux_L2_norm": 10.001216902555578,
+              "combined_aux_angle_cosine": 0.20207949191601204,
+              "weighted_total_L2_norm": 2.8333262770852685,
+              "weighted_total_angle_cosine": 0.5030513275946387
+            }
+          }
+        },
+        "20261022": {
+          "loss": {
+            "angles": 0.9981095460455507,
+            "signals": 1.5669687216740247,
+            "positions": 1.8667521093884116,
+            "angle_channel_MSE": [
+              1.039597379697621,
+              0.903308751286273,
+              0.9613905027068993,
+              0.9976712741161283,
+              1.0064585515715785,
+              1.0802308168948027
+            ],
+            "signal_group_MSE": [
+              1.4372078202346903,
+              1.281573173482052,
+              1.385329450207928,
+              1.2768705797604654,
+              2.6515978557279256,
+              1.3692334506310866
+            ]
+          },
+          "weighted_aux_to_angle_loss_ratio": {
+            "signal": 0.39248415363881134,
+            "position": 0.4675719505900855
+          },
+          "domains": {
+            "block0": {
+              "task_L2_norm": {
+                "angles": 0.3951223052192966,
+                "signals": 2.6331152410909096,
+                "positions": 2.7524451353793657
+              },
+              "quarter_signal_over_angle_norm": 1.6660127802893245,
+              "quarter_position_over_angle_norm": 1.7415146519327307,
+              "quarter_combined_aux_over_angle_norm": 2.8043441241134524,
+              "pairwise_cosine": {
+                "angle_signal": 0.03754895901196857,
+                "angle_position": -0.06489227178985779,
+                "signal_position": 0.3542917652625215
+              },
+              "combined_aux_L2_norm": 4.432235659791586,
+              "combined_aux_angle_cosine": -0.017991300028019498,
+              "weighted_total_L2_norm": 1.1696847167332025,
+              "weighted_total_angle_cosine": 0.3207589869854859
+            },
+            "block1": {
+              "task_L2_norm": {
+                "angles": 0.47193080501423573,
+                "signals": 3.862582449971003,
+                "positions": 4.562636209468571
+              },
+              "quarter_signal_over_angle_norm": 2.0461593145283707,
+              "quarter_position_over_angle_norm": 2.417004866492525,
+              "quarter_combined_aux_over_angle_norm": 3.4827338172129627,
+              "pairwise_cosine": {
+                "angle_signal": -0.12033860784489583,
+                "angle_position": -0.10663078435496955,
+                "signal_position": 0.2123871863312647
+              },
+              "combined_aux_L2_norm": 6.574437496030463,
+              "combined_aux_angle_cosine": -0.1447021548280073,
+              "weighted_total_L2_norm": 1.6430728068355345,
+              "weighted_total_angle_cosine": 0.14247511487374637
+            },
+            "block2": {
+              "task_L2_norm": {
+                "angles": 0.46684490578854876,
+                "signals": 4.603604324749884,
+                "positions": 5.2297913453380005
+              },
+              "quarter_signal_over_angle_norm": 2.4652750130013334,
+              "quarter_position_over_angle_norm": 2.8006042694759348,
+              "quarter_combined_aux_over_angle_norm": 4.099744287837435,
+              "pairwise_cosine": {
+                "angle_signal": 0.0048731230467550755,
+                "angle_position": 0.037111376255102156,
+                "signal_position": 0.2090693409530682
+              },
+              "combined_aux_L2_norm": 7.655778943250433,
+              "combined_aux_angle_cosine": 0.028281731524717645,
+              "weighted_total_L2_norm": 1.9828436499840998,
+              "weighted_total_angle_cosine": 0.26274112785651327
+            },
+            "encoder_all": {
+              "task_L2_norm": {
+                "angles": 0.7725182760711325,
+                "signals": 6.560945955770788,
+                "positions": 7.46621195245618
+              },
+              "quarter_signal_over_angle_norm": 2.1232332486483028,
+              "quarter_position_over_angle_norm": 2.416192659683012,
+              "quarter_combined_aux_over_angle_norm": 3.566823818110182,
+              "pairwise_cosine": {
+                "angle_signal": -0.033505828140083106,
+                "angle_position": -0.03633437265107896,
+                "signal_position": 0.2315848572566628
+              },
+              "combined_aux_L2_norm": 11.021746348063731,
+              "combined_aux_angle_cosine": -0.044558279558773256,
+              "weighted_total_L2_norm": 2.8283421867595697,
+              "weighted_total_angle_cosine": 0.22972494819122727
+            }
+          }
+        },
+        "20261023": {
+          "loss": {
+            "angles": 1.0369499782116967,
+            "signals": 1.5698740454611289,
+            "positions": 1.7205514355491869,
+            "angle_channel_MSE": [
+              1.0167869079409626,
+              0.9714749606296248,
+              0.9945598811434984,
+              1.149649118740122,
+              1.0283942587117365,
+              1.0608347421042363
+            ],
+            "signal_group_MSE": [
+              1.3646770301388602,
+              2.5568530648632106,
+              1.350283043401483,
+              1.4500641339434948,
+              1.465667829002077,
+              1.2316991714176486
+            ]
+          },
+          "weighted_aux_to_angle_loss_ratio": {
+            "signal": 0.37848355235237635,
+            "position": 0.4148106156760849
+          },
+          "domains": {
+            "block0": {
+              "task_L2_norm": {
+                "angles": 0.46529507113059176,
+                "signals": 3.324247182518371,
+                "positions": 2.5311120845790636
+              },
+              "quarter_signal_over_angle_norm": 1.7860962799589666,
+              "quarter_position_over_angle_norm": 1.3599499767044978,
+              "quarter_combined_aux_over_angle_norm": 2.50444454727199,
+              "pairwise_cosine": {
+                "angle_signal": -0.003170637293520065,
+                "angle_position": 0.12713502442838287,
+                "signal_position": 0.2537335983681281
+              },
+              "combined_aux_L2_norm": 4.661222815062173,
+              "combined_aux_angle_cosine": 0.06677497020918775,
+              "weighted_total_L2_norm": 1.2832961985582998,
+              "weighted_total_angle_cosine": 0.4232135382262329
+            },
+            "block1": {
+              "task_L2_norm": {
+                "angles": 0.5448577483623622,
+                "signals": 5.308587625567915,
+                "positions": 3.688675342394597
+              },
+              "quarter_signal_over_angle_norm": 2.4357677033700704,
+              "quarter_position_over_angle_norm": 1.6924946710776207,
+              "quarter_combined_aux_over_angle_norm": 3.1986912017681193,
+              "pairwise_cosine": {
+                "angle_signal": -0.15773422997205797,
+                "angle_position": 0.006540834365150294,
+                "signal_position": 0.17393748796637104
+              },
+              "combined_aux_L2_norm": 6.971326743607504,
+              "combined_aux_angle_cosine": -0.11665196551896394,
+              "weighted_total_L2_norm": 1.7643094750395039,
+              "weighted_total_angle_cosine": 0.19359019008019054
+            },
+            "block2": {
+              "task_L2_norm": {
+                "angles": 0.5461129755972661,
+                "signals": 5.081070062319495,
+                "positions": 4.2511986659284435
+              },
+              "quarter_signal_over_angle_norm": 2.326015993651539,
+              "quarter_position_over_angle_norm": 1.9461168548865941,
+              "quarter_combined_aux_over_angle_norm": 3.0820006377095694,
+              "pairwise_cosine": {
+                "angle_signal": -0.016019832602578832,
+                "angle_position": 0.07908975445672166,
+                "signal_position": 0.03324792745240176
+              },
+              "combined_aux_L2_norm": 6.732482156208979,
+              "combined_aux_angle_cosine": 0.0378505818332807,
+              "weighted_total_L2_norm": 1.7890546861188004,
+              "weighted_total_angle_cosine": 0.3408616136932576
+            },
+            "encoder_all": {
+              "task_L2_norm": {
+                "angles": 0.9008933628818819,
+                "signals": 8.065295709830703,
+                "positions": 6.171348658395817
+              },
+              "quarter_signal_over_angle_norm": 2.238138286431177,
+              "quarter_position_over_angle_norm": 1.712563582068746,
+              "quarter_combined_aux_over_angle_norm": 2.9843140903836907,
+              "pairwise_cosine": {
+                "angle_signal": -0.06958341377483696,
+                "angle_position": 0.062321766112012386,
+                "signal_position": 0.12575073270117842
+              },
+              "combined_aux_L2_norm": 10.75419502712619,
+              "combined_aux_angle_cosine": -0.01642163457737986,
+              "weighted_total_L2_norm": 2.8214098828195793,
+              "weighted_total_angle_cosine": 0.3036577573756703
+            }
+          }
+        }
+      },
+      "three_seed_summary": {
+        "loss": {
+          "angles": {
+            "mean": 1.0223277053453446,
+            "sample_seed_SD": 0.021123578533143592,
+            "minimum": 0.9981095460455507,
+            "maximum": 1.0369499782116967,
+            "model_seeds": 3
+          },
+          "signals": {
+            "mean": 1.545087574129373,
+            "sample_seed_SD": 0.040441441805061866,
+            "minimum": 1.4984199552529653,
+            "maximum": 1.5698740454611289,
+            "model_seeds": 3
+          },
+          "positions": {
+            "mean": 1.8014745076262362,
+            "sample_seed_SD": 0.07434544245473998,
+            "minimum": 1.7205514355491869,
+            "maximum": 1.8667521093884116,
+            "model_seeds": 3
+          },
+          "angle_channel_MSE": [
+            {
+              "mean": 1.0064629219857566,
+              "sample_seed_SD": 0.03932628446615936,
+              "minimum": 0.963004478318686,
+              "maximum": 1.039597379697621,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.9450902152795018,
+              "sample_seed_SD": 0.036598527740766225,
+              "minimum": 0.903308751286273,
+              "maximum": 0.9714749606296248,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.9859741106442147,
+              "sample_seed_SD": 0.021610183212732097,
+              "minimum": 0.9613905027068993,
+              "maximum": 1.0019719480822464,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.0587873067270106,
+              "sample_seed_SD": 0.0802366802548763,
+              "minimum": 0.9976712741161283,
+              "maximum": 1.149649118740122,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.0159387510137214,
+              "sample_seed_SD": 0.01126646157175318,
+              "minimum": 1.0064585515715785,
+              "maximum": 1.0283942587117365,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.1217129264218633,
+              "sample_seed_SD": 0.0891755249286394,
+              "minimum": 1.0608347421042363,
+              "maximum": 1.2240732202665507,
+              "model_seeds": 3
+            }
+          ],
+          "signal_group_MSE": [
+            {
+              "mean": 1.3843967353564206,
+              "sample_seed_SD": 0.04622183936050408,
+              "minimum": 1.3513053556957113,
+              "maximum": 1.4372078202346903,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.7418453292437555,
+              "sample_seed_SD": 0.7077871848607085,
+              "minimum": 1.281573173482052,
+              "maximum": 2.5568530648632106,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.3410384287615293,
+              "sample_seed_SD": 0.04956420992902563,
+              "minimum": 1.287502792675176,
+              "maximum": 1.385329450207928,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.4241518335834737,
+              "sample_seed_SD": 0.13618670622040557,
+              "minimum": 1.2768705797604654,
+              "maximum": 1.545520787046461,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.9803899598242936,
+              "sample_seed_SD": 0.6082543489999311,
+              "minimum": 1.465667829002077,
+              "maximum": 2.6515978557279256,
+              "model_seeds": 3
+            },
+            {
+              "mean": 1.3987031580067661,
+              "sample_seed_SD": 0.18352207988364666,
+              "minimum": 1.2316991714176486,
+              "maximum": 1.5951768519715634,
+              "model_seeds": 3
+            }
+          ]
+        },
+        "weighted_aux_to_angle_loss_ratio": {
+          "signal": {
+            "mean": 0.3779946378613827,
+            "sample_seed_SD": 0.014740055599451594,
+            "minimum": 0.3630162075929603,
+            "maximum": 0.39248415363881134,
+            "model_seeds": 3
+          },
+          "position": {
+            "mean": 0.44086965109403375,
+            "sample_seed_SD": 0.026386548788776217,
+            "minimum": 0.4148106156760849,
+            "maximum": 0.4675719505900855,
+            "model_seeds": 3
+          }
+        },
+        "domains": {
+          "block0": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.4800922709067042,
+                "sample_seed_SD": 0.09325325596127679,
+                "minimum": 0.3951223052192966,
+                "maximum": 0.5798594363702243,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 2.971481672649437,
+                "sample_seed_SD": 0.3457908908682599,
+                "minimum": 2.6331152410909096,
+                "maximum": 3.324247182518371,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 2.516548047063535,
+                "sample_seed_SD": 0.24350597838385063,
+                "minimum": 2.2660869212321755,
+                "maximum": 2.7524451353793657,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 1.575674201151753,
+              "sample_seed_SD": 0.2672971038914607,
+              "minimum": 1.2749135432069676,
+              "maximum": 1.7860962799589666,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 1.359487669744999,
+              "sample_seed_SD": 0.38225834533698805,
+              "minimum": 0.9769983805977684,
+              "maximum": 1.7415146519327307,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 2.3567915419356207,
+              "sample_seed_SD": 0.5368307066510964,
+              "minimum": 1.7615859544214203,
+              "maximum": 2.8043441241134524,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": 0.050092575672789096,
+                "sample_seed_SD": 0.060517976668102894,
+                "minimum": -0.003170637293520065,
+                "maximum": 0.11589940529991878,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.08677394611466287,
+                "sample_seed_SD": 0.13605236564542972,
+                "minimum": -0.06489227178985779,
+                "maximum": 0.1980790857054635,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.27268951069839864,
+                "sample_seed_SD": 0.07396897578546617,
+                "minimum": 0.2100431684645463,
+                "maximum": 0.3542917652625215,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 4.393115809815931,
+              "sample_seed_SD": 0.28965502713897673,
+              "minimum": 4.085888954594034,
+              "maximum": 4.661222815062173,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": 0.08084027815106247,
+              "sample_seed_SD": 0.10656270602015513,
+              "minimum": -0.017991300028019498,
+              "maximum": 0.19373716427201915,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 1.2405009031795589,
+              "sample_seed_SD": 0.06177191880451012,
+              "minimum": 1.1696847167332025,
+              "maximum": 1.2832961985582998,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.4523643035087157,
+              "sample_seed_SD": 0.1483446060550549,
+              "minimum": 0.3207589869854859,
+              "maximum": 0.6131203853144283,
+              "model_seeds": 3
+            }
+          },
+          "block1": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.5195882505450299,
+                "sample_seed_SD": 0.04129769870877482,
+                "minimum": 0.47193080501423573,
+                "maximum": 0.5448577483623622,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 4.638700436975902,
+                "sample_seed_SD": 0.7288322707330153,
+                "minimum": 3.862582449971003,
+                "maximum": 5.308587625567915,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 4.001288955734508,
+                "sample_seed_SD": 0.4871890979814398,
+                "minimum": 3.688675342394597,
+                "maximum": 4.562636209468571,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 2.2235481844016984,
+              "sample_seed_SD": 0.19712573335625885,
+              "minimum": 2.0461593145283707,
+              "maximum": 2.4357677033700704,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 1.9468196666960613,
+              "sample_seed_SD": 0.40764626408918464,
+              "minimum": 1.6924946710776207,
+              "maximum": 2.417004866492525,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 3.24688886393035,
+              "sample_seed_SD": 0.21582094718956193,
+              "minimum": 3.059241572809969,
+              "maximum": 3.4827338172129627,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": -0.05137167258088524,
+                "sample_seed_SD": 0.1529867032934966,
+                "minimum": -0.15773422997205797,
+                "maximum": 0.12395782007429805,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.04230522220809624,
+                "sample_seed_SD": 0.16966917985077684,
+                "minimum": -0.10663078435496955,
+                "maximum": 0.22700561661410795,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.19794123428557428,
+                "sample_seed_SD": 0.020931039143313516,
+                "minimum": 0.17393748796637104,
+                "maximum": 0.2123871863312647,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 6.725969569460491,
+              "sample_seed_SD": 0.2144356100417603,
+              "minimum": 6.574437496030463,
+              "maximum": 6.971326743607504,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": -0.014742130515311985,
+              "sample_seed_SD": 0.20129437901890182,
+              "minimum": -0.1447021548280073,
+              "maximum": 0.21712772880103529,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 1.7534105621489493,
+              "sample_seed_SD": 0.10531213114403604,
+              "minimum": 1.6430728068355345,
+              "maximum": 1.8528494045718094,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.2742910839690612,
+              "sample_seed_SD": 0.18581106134409606,
+              "minimum": 0.14247511487374637,
+              "maximum": 0.48680794695324675,
+              "model_seeds": 3
+            }
+          },
+          "block2": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.49275609731511594,
+                "sample_seed_SD": 0.046214781335781656,
+                "minimum": 0.46531041055953287,
+                "maximum": 0.5461129755972661,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 4.789666918728442,
+                "sample_seed_SD": 0.2555696699194176,
+                "minimum": 4.603604324749884,
+                "maximum": 5.081070062319495,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 4.571321090535563,
+                "sample_seed_SD": 0.5703247747528624,
+                "minimum": 4.232973260340247,
+                "maximum": 5.2297913453380005,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 2.4360219905716485,
+              "sample_seed_SD": 0.09868662920758259,
+              "minimum": 2.326015993651539,
+              "maximum": 2.5167749650620723,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 2.340331669738,
+              "sample_seed_SD": 0.4310567348168685,
+              "minimum": 1.9461168548865941,
+              "maximum": 2.8006042694759348,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 3.5172726562176018,
+              "sample_seed_SD": 0.5245963485567696,
+              "minimum": 3.0820006377095694,
+              "maximum": 4.099744287837435,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": 0.022328112378299136,
+                "sample_seed_SD": 0.049442941936626544,
+                "minimum": -0.016019832602578832,
+                "maximum": 0.07813104669072116,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.11483665428654306,
+                "sample_seed_SD": 0.10048630464169239,
+                "minimum": 0.037111376255102156,
+                "maximum": 0.22830883214780537,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.07643134736373296,
+                "sample_seed_SD": 0.11717458310264293,
+                "minimum": -0.013023226314271103,
+                "maximum": 0.2090693409530682,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 6.886927128224037,
+              "sample_seed_SD": 0.7044437988900452,
+              "minimum": 6.272520285212697,
+              "maximum": 7.655778943250433,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": 0.09285118269532407,
+              "sample_seed_SD": 0.10366117272814762,
+              "minimum": 0.028281731524717645,
+              "maximum": 0.21242123472797386,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 1.833256555452875,
+              "sample_seed_SD": 0.13310925924362696,
+              "minimum": 1.7278713302557251,
+              "maximum": 1.9828436499840998,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.3552275327189058,
+              "sample_seed_SD": 0.10044285398697254,
+              "minimum": 0.26274112785651327,
+              "maximum": 0.4620798566069463,
+              "model_seeds": 3
+            }
+          },
+          "encoder_all": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.8644866588656561,
+                "sample_seed_SD": 0.08022073198315958,
+                "minimum": 0.7725182760711325,
+                "maximum": 0.920048337643954,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 7.306728654725298,
+                "sample_seed_SD": 0.7522563562088902,
+                "minimum": 6.560945955770788,
+                "maximum": 8.065295709830703,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 6.57713348242632,
+                "sample_seed_SD": 0.7709392315699908,
+                "minimum": 6.093839836426962,
+                "maximum": 7.46621195245618,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 2.1144391609852016,
+              "sample_seed_SD": 0.12832236970593355,
+              "minimum": 1.9819459478761254,
+              "maximum": 2.238138286431177,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 1.9282013267173685,
+              "sample_seed_SD": 0.4235632509058637,
+              "minimum": 1.6558477384003476,
+              "maximum": 2.416192659683012,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 3.0895723695932813,
+              "sample_seed_SD": 0.4342966546411224,
+              "minimum": 2.717579200285972,
+              "maximum": 3.566823818110182,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": -0.0001988398843287368,
+                "sample_seed_SD": 0.09074450808912919,
+                "minimum": -0.06958341377483696,
+                "maximum": 0.10249272226193386,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.07832104086384666,
+                "sample_seed_SD": 0.12343518178977066,
+                "minimum": -0.03633437265107896,
+                "maximum": 0.20897572913060652,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.15543822287941256,
+                "sample_seed_SD": 0.06647596964230891,
+                "minimum": 0.10897907868039643,
+                "maximum": 0.2315848572566628,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 10.592386092581833,
+              "sample_seed_SD": 0.5291565796256147,
+              "minimum": 10.001216902555578,
+              "maximum": 11.021746348063731,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": 0.04703319259328631,
+              "sample_seed_SD": 0.13500901413593255,
+              "minimum": -0.044558279558773256,
+              "maximum": 0.20207949191601204,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 2.8276927822214724,
+              "sample_seed_SD": 0.005984681091287474,
+              "minimum": 2.8214098828195793,
+              "maximum": 2.8333262770852685,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.3454780110538454,
+              "sample_seed_SD": 0.1413807894755316,
+              "minimum": 0.22972494819122727,
+              "maximum": 0.5030513275946387,
+              "model_seeds": 3
+            }
+          }
+        }
+      },
+      "descriptive_seed_direction_counts": {
+        "block0": {
+          "negative_angle_signal_cosines": 1,
+          "negative_angle_position_cosines": 1,
+          "negative_combined_aux_angle_cosines": 1,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 3,
+          "model_seeds": 3
+        },
+        "block1": {
+          "negative_angle_signal_cosines": 2,
+          "negative_angle_position_cosines": 1,
+          "negative_combined_aux_angle_cosines": 2,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 3,
+          "model_seeds": 3
+        },
+        "block2": {
+          "negative_angle_signal_cosines": 1,
+          "negative_angle_position_cosines": 0,
+          "negative_combined_aux_angle_cosines": 0,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 3,
+          "model_seeds": 3
+        },
+        "encoder_all": {
+          "negative_angle_signal_cosines": 2,
+          "negative_angle_position_cosines": 1,
+          "negative_combined_aux_angle_cosines": 2,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 3,
+          "model_seeds": 3
+        }
+      }
+    },
+    "final50": {
+      "by_seed": {
+        "20261021": {
+          "loss": {
+            "angles": 0.07083451062081174,
+            "signals": 0.5177797153304186,
+            "positions": 0.18914090549969026,
+            "angle_channel_MSE": [
+              0.051706890925442596,
+              0.06104439204843706,
+              0.09356255341822829,
+              0.051494792222271046,
+              0.06007083860579345,
+              0.10712759650469796
+            ],
+            "signal_group_MSE": [
+              0.4524059960670166,
+              0.4831534738781464,
+              0.6259742376498673,
+              0.43219640340018134,
+              0.7426521446180133,
+              0.37029603636928665
+            ]
+          },
+          "weighted_aux_to_angle_loss_ratio": {
+            "signal": 1.8274274460021849,
+            "position": 0.6675450421059278
+          },
+          "domains": {
+            "block0": {
+              "task_L2_norm": {
+                "angles": 0.16967385628322304,
+                "signals": 0.13219206276162235,
+                "positions": 0.2022333935017382
+              },
+              "quarter_signal_over_angle_norm": 0.1947737642930751,
+              "quarter_position_over_angle_norm": 0.29797370957987496,
+              "quarter_combined_aux_over_angle_norm": 0.36140666564704216,
+              "pairwise_cosine": {
+                "angle_signal": 0.013975134444814137,
+                "angle_position": 0.08253250528682611,
+                "signal_position": 0.03350962502808282
+              },
+              "combined_aux_L2_norm": 0.24528505058718028,
+              "combined_aux_angle_cosine": 0.0755783135727509,
+              "weighted_total_L2_norm": 0.1847220649643735,
+              "weighted_total_angle_cosine": 0.9436252996296765
+            },
+            "block1": {
+              "task_L2_norm": {
+                "angles": 0.182169641703783,
+                "signals": 0.14408048056632092,
+                "positions": 0.21585117158898118
+              },
+              "quarter_signal_over_angle_norm": 0.19772844588535096,
+              "quarter_position_over_angle_norm": 0.2962227536517391,
+              "quarter_combined_aux_over_angle_norm": 0.3697261547500234,
+              "pairwise_cosine": {
+                "angle_signal": -0.014035896689309331,
+                "angle_position": 0.08334915789642053,
+                "signal_position": 0.08411039246410859
+              },
+              "combined_aux_L2_norm": 0.26941152455731676,
+              "combined_aux_angle_cosine": 0.05927257443407962,
+              "weighted_total_L2_norm": 0.19793103967978504,
+              "weighted_total_angle_cosine": 0.9405387889925608
+            },
+            "block2": {
+              "task_L2_norm": {
+                "angles": 0.11456083435659031,
+                "signals": 0.09732440968819779,
+                "positions": 0.12771987361467538
+              },
+              "quarter_signal_over_angle_norm": 0.21238586955743272,
+              "quarter_position_over_angle_norm": 0.27871626968324376,
+              "quarter_combined_aux_over_angle_norm": 0.3548282730205933,
+              "pairwise_cosine": {
+                "angle_signal": -0.03626782408134386,
+                "angle_position": -0.01866864627184079,
+                "signal_position": 0.02629078360077455
+              },
+              "combined_aux_L2_norm": 0.16259769204218877,
+              "combined_aux_angle_cosine": -0.036372605524156304,
+              "weighted_total_L2_norm": 0.12015738906235601,
+              "weighted_total_angle_cosine": 0.9411182267780368
+            },
+            "encoder_all": {
+              "task_L2_norm": {
+                "angles": 0.2740422971604614,
+                "signals": 0.21841695689334847,
+                "positions": 0.3221838603029539
+              },
+              "quarter_signal_over_angle_norm": 0.19925478580908412,
+              "quarter_position_over_angle_norm": 0.29391800430200005,
+              "quarter_combined_aux_over_angle_norm": 0.36397699680368784,
+              "pairwise_cosine": {
+                "angle_signal": -0.007673751652732345,
+                "angle_position": 0.06610179214067731,
+                "signal_position": 0.05454655768355023
+              },
+              "combined_aux_L2_norm": 0.39898036927059416,
+              "combined_aux_angle_cosine": 0.04917748990195211,
+              "weighted_total_L2_norm": 0.29620387556496486,
+              "weighted_total_angle_cosine": 0.9417415957121797
+            }
+          }
+        },
+        "20261022": {
+          "loss": {
+            "angles": 0.06264201786883997,
+            "signals": 0.5225943259376228,
+            "positions": 0.16067225718574601,
+            "angle_channel_MSE": [
+              0.04643423749608167,
+              0.05882120509223384,
+              0.08859235273264165,
+              0.04242721727215345,
+              0.06456987770873798,
+              0.0750072169111912
+            ],
+            "signal_group_MSE": [
+              0.4319788172913822,
+              0.5123032022268833,
+              0.6396982449062381,
+              0.4331352014347068,
+              0.7119497600778919,
+              0.40650072968863454
+            ]
+          },
+          "weighted_aux_to_angle_loss_ratio": {
+            "signal": 2.0856381376148843,
+            "position": 0.6412319663862124
+          },
+          "domains": {
+            "block0": {
+              "task_L2_norm": {
+                "angles": 0.14523700594454064,
+                "signals": 0.11057938831207505,
+                "positions": 0.18095062495774736
+              },
+              "quarter_signal_over_angle_norm": 0.19034299762813248,
+              "quarter_position_over_angle_norm": 0.3114747232995909,
+              "quarter_combined_aux_over_angle_norm": 0.3968060626040327,
+              "pairwise_cosine": {
+                "angle_signal": -0.018189860951619195,
+                "angle_position": 0.23566988472142805,
+                "signal_position": 0.20416008602934338
+              },
+              "combined_aux_L2_norm": 0.23052369789300667,
+              "combined_aux_angle_cosine": 0.17626469468405842,
+              "weighted_total_L2_norm": 0.165426215346895,
+              "weighted_total_angle_cosine": 0.9393632256248982
+            },
+            "block1": {
+              "task_L2_norm": {
+                "angles": 0.17062384611991283,
+                "signals": 0.1299335016170174,
+                "positions": 0.21086051189819352
+              },
+              "quarter_signal_over_angle_norm": 0.1903800444248885,
+              "quarter_position_over_angle_norm": 0.3089552203476921,
+              "quarter_combined_aux_over_angle_norm": 0.3963666779688831,
+              "pairwise_cosine": {
+                "angle_signal": -0.07585397504573645,
+                "angle_position": 0.1773566611103587,
+                "signal_position": 0.21599052519255119
+              },
+              "combined_aux_L2_norm": 0.270518428275295,
+              "combined_aux_angle_cosine": 0.1018102313273623,
+              "weighted_total_L2_norm": 0.18983119522177574,
+              "weighted_total_angle_cosine": 0.9350898931694973
+            },
+            "block2": {
+              "task_L2_norm": {
+                "angles": 0.09458482475876626,
+                "signals": 0.0974871960353846,
+                "positions": 0.13334214065440955
+              },
+              "quarter_signal_over_angle_norm": 0.2576713449647464,
+              "quarter_position_over_angle_norm": 0.3524406293358682,
+              "quarter_combined_aux_over_angle_norm": 0.45052865332618475,
+              "pairwise_cosine": {
+                "angle_signal": -0.09973965940438256,
+                "angle_position": 0.1437022270324278,
+                "signal_position": 0.0680906497834907
+              },
+              "combined_aux_L2_norm": 0.17045269489464054,
+              "combined_aux_angle_cosine": 0.055371508477975374,
+              "weighted_total_L2_norm": 0.10587033567599821,
+              "weighted_total_angle_cosine": 0.915689743022677
+            },
+            "encoder_all": {
+              "task_L2_norm": {
+                "angles": 0.24321302151639157,
+                "signals": 0.1965051382350437,
+                "positions": 0.3081970321480529
+              },
+              "quarter_signal_over_angle_norm": 0.20198871035961377,
+              "quarter_position_over_angle_norm": 0.31679742127549043,
+              "quarter_combined_aux_over_angle_norm": 0.40517671422922646,
+              "pairwise_cosine": {
+                "angle_signal": -0.060542363899162274,
+                "angle_position": 0.19193370889695666,
+                "signal_position": 0.1797804607822543
+              },
+              "combined_aux_L2_norm": 0.39417701166309477,
+              "combined_aux_angle_cosine": 0.11988652931520923,
+              "weighted_total_L2_norm": 0.2731487568697206,
+              "weighted_total_angle_cosine": 0.933656637888563
+            }
+          }
+        },
+        "20261023": {
+          "loss": {
+            "angles": 0.06334697770603046,
+            "signals": 0.5287941491083475,
+            "positions": 0.17384366738777474,
+            "angle_channel_MSE": [
+              0.04465522498431133,
+              0.05484304592582447,
+              0.08671025120210353,
+              0.044417016413019046,
+              0.06359368176821245,
+              0.08586264594271188
+            ],
+            "signal_group_MSE": [
+              0.4567641818733837,
+              0.47843145405656123,
+              0.6443854546274088,
+              0.4788266044157156,
+              0.7324967249677192,
+              0.38186047470929646
+            ]
+          },
+          "weighted_aux_to_angle_loss_ratio": {
+            "signal": 2.0868957299047586,
+            "position": 0.6860771961154877
+          },
+          "domains": {
+            "block0": {
+              "task_L2_norm": {
+                "angles": 0.16896827957900848,
+                "signals": 0.13527570796635482,
+                "positions": 0.2223505735685198
+              },
+              "quarter_signal_over_angle_norm": 0.20014956106465648,
+              "quarter_position_over_angle_norm": 0.3289827151618569,
+              "quarter_combined_aux_over_angle_norm": 0.41588161774296467,
+              "pairwise_cosine": {
+                "angle_signal": -0.26341881430253505,
+                "angle_position": 0.02056913453593898,
+                "signal_position": 0.18731693231034743
+              },
+              "combined_aux_L2_norm": 0.28108320583425433,
+              "combined_aux_angle_cosine": -0.11050324989133123,
+              "weighted_total_L2_norm": 0.1756819180101509,
+              "weighted_total_angle_cosine": 0.917585198700155
+            },
+            "block1": {
+              "task_L2_norm": {
+                "angles": 0.18348295920898927,
+                "signals": 0.14016276714573847,
+                "positions": 0.22214443084613844
+              },
+              "quarter_signal_over_angle_norm": 0.19097518340394137,
+              "quarter_position_over_angle_norm": 0.3026771965688559,
+              "quarter_combined_aux_over_angle_norm": 0.37423968839570526,
+              "pairwise_cosine": {
+                "angle_signal": -0.31082590492979467,
+                "angle_position": 0.0030689421663672497,
+                "signal_position": 0.10354277323857301
+              },
+              "combined_aux_L2_norm": 0.2746664219211762,
+              "combined_aux_angle_cosine": -0.15613292016087027,
+              "weighted_total_L2_norm": 0.1855985297632594,
+              "weighted_total_angle_cosine": 0.9308362614627567
+            },
+            "block2": {
+              "task_L2_norm": {
+                "angles": 0.09986173445108432,
+                "signals": 0.10079469246531271,
+                "positions": 0.13698977376788465
+              },
+              "quarter_signal_over_angle_norm": 0.2523356243994675,
+              "quarter_position_over_angle_norm": 0.34294861420363904,
+              "quarter_combined_aux_over_angle_norm": 0.4266564791374693,
+              "pairwise_cosine": {
+                "angle_signal": -0.34284328404303865,
+                "angle_position": -0.005141325878307825,
+                "signal_position": 0.004326021768077788
+              },
+              "combined_aux_L2_norm": 0.17042662408584222,
+              "combined_aux_angle_cosine": -0.20689896685444895,
+              "weighted_total_L2_norm": 0.10013528958198833,
+              "weighted_total_angle_cosine": 0.9092345138181741
+            },
+            "encoder_all": {
+              "task_L2_norm": {
+                "angles": 0.26867944065662436,
+                "signals": 0.21932781056885145,
+                "positions": 0.3428616686641724
+              },
+              "quarter_signal_over_angle_norm": 0.20407945062044688,
+              "quarter_position_over_angle_norm": 0.3190248459523498,
+              "quarter_combined_aux_over_angle_norm": 0.3985816235014817,
+              "pairwise_cosine": {
+                "angle_signal": -0.2963844698606893,
+                "angle_position": 0.008983316639991027,
+                "signal_position": 0.11859074119157834
+              },
+              "combined_aux_L2_norm": 0.42836275063354934,
+              "combined_aux_angle_cosine": -0.14456280765832485,
+              "weighted_total_L2_norm": 0.27447773459003477,
+              "weighted_total_angle_cosine": 0.9224723111069412
+            }
+          }
+        }
+      },
+      "three_seed_summary": {
+        "loss": {
+          "angles": {
+            "mean": 0.06560783539856072,
+            "sample_seed_SD": 0.004540136837385241,
+            "minimum": 0.06264201786883997,
+            "maximum": 0.07083451062081174,
+            "model_seeds": 3
+          },
+          "signals": {
+            "mean": 0.5230560634587963,
+            "sample_seed_SD": 0.005521715224089374,
+            "minimum": 0.5177797153304186,
+            "maximum": 0.5287941491083475,
+            "model_seeds": 3
+          },
+          "positions": {
+            "mean": 0.17455227669107032,
+            "sample_seed_SD": 0.014247546440152352,
+            "minimum": 0.16067225718574601,
+            "maximum": 0.18914090549969026,
+            "model_seeds": 3
+          },
+          "angle_channel_MSE": [
+            {
+              "mean": 0.04759878446861187,
+              "sample_seed_SD": 0.0036672367492090845,
+              "minimum": 0.04465522498431133,
+              "maximum": 0.051706890925442596,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.058236214355498465,
+              "sample_seed_SD": 0.003141788352938531,
+              "minimum": 0.05484304592582447,
+              "maximum": 0.06104439204843706,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.08962171911765782,
+              "sample_seed_SD": 0.0035402270804608033,
+              "minimum": 0.08671025120210353,
+              "maximum": 0.09356255341822829,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.046113008635814516,
+              "sample_seed_SD": 0.004765765529674857,
+              "minimum": 0.04242721727215345,
+              "maximum": 0.051494792222271046,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.06274479936091464,
+              "sample_seed_SD": 0.0023665986602127522,
+              "minimum": 0.06007083860579345,
+              "maximum": 0.06456987770873798,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.08933248645286701,
+              "sample_seed_SD": 0.016338896571744883,
+              "minimum": 0.0750072169111912,
+              "maximum": 0.10712759650469796,
+              "model_seeds": 3
+            }
+          ],
+          "signal_group_MSE": [
+            {
+              "mean": 0.44704966507726085,
+              "sample_seed_SD": 0.013232395309222997,
+              "minimum": 0.4319788172913822,
+              "maximum": 0.4567641818733837,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.49129604338719696,
+              "sample_seed_SD": 0.01834529666387871,
+              "minimum": 0.47843145405656123,
+              "maximum": 0.5123032022268833,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.6366859790611713,
+              "sample_seed_SD": 0.009568099957125502,
+              "minimum": 0.6259742376498673,
+              "maximum": 0.6443854546274088,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.4480527364168679,
+              "sample_seed_SD": 0.026655084864717352,
+              "minimum": 0.43219640340018134,
+              "maximum": 0.4788266044157156,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.7290328765545414,
+              "sample_seed_SD": 0.01564154047670744,
+              "minimum": 0.7119497600778919,
+              "maximum": 0.7426521446180133,
+              "model_seeds": 3
+            },
+            {
+              "mean": 0.3862190802557392,
+              "sample_seed_SD": 0.01849170182322654,
+              "minimum": 0.37029603636928665,
+              "maximum": 0.40650072968863454,
+              "model_seeds": 3
+            }
+          ]
+        },
+        "weighted_aux_to_angle_loss_ratio": {
+          "signal": {
+            "mean": 1.999987104507276,
+            "sample_seed_SD": 0.14944237080606396,
+            "minimum": 1.8274274460021849,
+            "maximum": 2.0868957299047586,
+            "model_seeds": 3
+          },
+          "position": {
+            "mean": 0.664951401535876,
+            "sample_seed_SD": 0.02253483716211043,
+            "minimum": 0.6412319663862124,
+            "maximum": 0.6860771961154877,
+            "model_seeds": 3
+          }
+        },
+        "domains": {
+          "block0": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.16129304726892404,
+                "sample_seed_SD": 0.013909414325524762,
+                "minimum": 0.14523700594454064,
+                "maximum": 0.16967385628322304,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 0.12601571968001743,
+                "sample_seed_SD": 0.013456874136026477,
+                "minimum": 0.11057938831207505,
+                "maximum": 0.13527570796635482,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 0.20184486400933513,
+                "sample_seed_SD": 0.020702708823207176,
+                "minimum": 0.18095062495774736,
+                "maximum": 0.2223505735685198,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 0.19508877432862137,
+              "sample_seed_SD": 0.004910865005323756,
+              "minimum": 0.19034299762813248,
+              "maximum": 0.20014956106465648,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 0.3128103826804409,
+              "sample_seed_SD": 0.015547591333775347,
+              "minimum": 0.29797370957987496,
+              "maximum": 0.3289827151618569,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 0.3913647819980132,
+              "sample_seed_SD": 0.027642101085813765,
+              "minimum": 0.36140666564704216,
+              "maximum": 0.41588161774296467,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": -0.08921118026978003,
+                "sample_seed_SD": 0.15172300929219953,
+                "minimum": -0.26341881430253505,
+                "maximum": 0.013975134444814137,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.11292384151473106,
+                "sample_seed_SD": 0.1107240180398012,
+                "minimum": 0.02056913453593898,
+                "maximum": 0.23566988472142805,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.14166221445592456,
+                "sample_seed_SD": 0.0940407353584653,
+                "minimum": 0.03350962502808282,
+                "maximum": 0.20416008602934338,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 0.25229731810481376,
+              "sample_seed_SD": 0.025998940028766838,
+              "minimum": 0.23052369789300667,
+              "maximum": 0.28108320583425433,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": 0.0471132527884927,
+              "sample_seed_SD": 0.14548765677227424,
+              "minimum": -0.11050324989133123,
+              "maximum": 0.17626469468405842,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 0.17527673277380648,
+              "sample_seed_SD": 0.009654303932542201,
+              "minimum": 0.165426215346895,
+              "maximum": 0.1847220649643735,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.9335245746515765,
+              "sample_seed_SD": 0.013967429899452457,
+              "minimum": 0.917585198700155,
+              "maximum": 0.9436252996296765,
+              "model_seeds": 3
+            }
+          },
+          "block1": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.1787588156775617,
+                "sample_seed_SD": 0.0070756270390175124,
+                "minimum": 0.17062384611991283,
+                "maximum": 0.18348295920898927,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 0.1380589164430256,
+                "sample_seed_SD": 0.007304375002865638,
+                "minimum": 0.1299335016170174,
+                "maximum": 0.14408048056632092,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 0.2162853714444377,
+                "sample_seed_SD": 0.005654476442766957,
+                "minimum": 0.21086051189819352,
+                "maximum": 0.22214443084613844,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 0.1930278912380603,
+              "sample_seed_SD": 0.004081661193095469,
+              "minimum": 0.1903800444248885,
+              "maximum": 0.19772844588535096,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 0.30261839018942904,
+              "sample_seed_SD": 0.006366437047798725,
+              "minimum": 0.2962227536517391,
+              "maximum": 0.3089552203476921,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 0.38011084037153725,
+              "sample_seed_SD": 0.014257706284186714,
+              "minimum": 0.3697261547500234,
+              "maximum": 0.3963666779688831,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": -0.13357192555494682,
+                "sample_seed_SD": 0.15658735136046137,
+                "minimum": -0.31082590492979467,
+                "maximum": -0.014035896689309331,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.08792492039104884,
+                "sample_seed_SD": 0.08723391224449568,
+                "minimum": 0.0030689421663672497,
+                "maximum": 0.1773566611103587,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.1345478969650776,
+                "sample_seed_SD": 0.07119747625505979,
+                "minimum": 0.08411039246410859,
+                "maximum": 0.21599052519255119,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 0.27153212491792933,
+              "sample_seed_SD": 0.0027702296364453716,
+              "minimum": 0.26941152455731676,
+              "maximum": 0.2746664219211762,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": 0.001649961866857221,
+              "sample_seed_SD": 0.13828933964418402,
+              "minimum": -0.15613292016087027,
+              "maximum": 0.1018102313273623,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 0.19112025488827342,
+              "sample_seed_SD": 0.006266494740135349,
+              "minimum": 0.1855985297632594,
+              "maximum": 0.19793103967978504,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.935488314541605,
+              "sample_seed_SD": 0.004863518768234168,
+              "minimum": 0.9308362614627567,
+              "maximum": 0.9405387889925608,
+              "model_seeds": 3
+            }
+          },
+          "block2": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.10300246452214697,
+                "sample_seed_SD": 0.010351733134965738,
+                "minimum": 0.09458482475876626,
+                "maximum": 0.11456083435659031,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 0.09853543272963171,
+                "sample_seed_SD": 0.0019582685627001417,
+                "minimum": 0.09732440968819779,
+                "maximum": 0.10079469246531271,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 0.13268392934565654,
+                "sample_seed_SD": 0.004669870855585314,
+                "minimum": 0.12771987361467538,
+                "maximum": 0.13698977376788465,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 0.24079761297388222,
+              "sample_seed_SD": 0.024749502044673667,
+              "minimum": 0.21238586955743272,
+              "maximum": 0.2576713449647464,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 0.324701837740917,
+              "sample_seed_SD": 0.040106470051698526,
+              "minimum": 0.27871626968324376,
+              "maximum": 0.3524406293358682,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 0.4106711351614158,
+              "sample_seed_SD": 0.04981253972829806,
+              "minimum": 0.3548282730205933,
+              "maximum": 0.45052865332618475,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": -0.15961692250958837,
+                "sample_seed_SD": 0.16182117642758848,
+                "minimum": -0.34284328404303865,
+                "maximum": -0.03626782408134386,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.039964084960759726,
+                "sample_seed_SD": 0.09009411018273344,
+                "minimum": -0.01866864627184079,
+                "maximum": 0.1437022270324278,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.03290248505078102,
+                "sample_seed_SD": 0.03239240487419865,
+                "minimum": 0.004326021768077788,
+                "maximum": 0.0680906497834907,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 0.1678256703408905,
+              "sample_seed_SD": 0.004527580782331788,
+              "minimum": 0.16259769204218877,
+              "maximum": 0.17045269489464054,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": -0.06263335463354329,
+              "sample_seed_SD": 0.13309271492314514,
+              "minimum": -0.20689896685444895,
+              "maximum": 0.055371508477975374,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 0.10872100477344752,
+              "sample_seed_SD": 0.010310957890894484,
+              "minimum": 0.10013528958198833,
+              "maximum": 0.12015738906235601,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.9220141612062959,
+              "sample_seed_SD": 0.016856496879473406,
+              "minimum": 0.9092345138181741,
+              "maximum": 0.9411182267780368,
+              "model_seeds": 3
+            }
+          },
+          "encoder_all": {
+            "task_L2_norm": {
+              "angles": {
+                "mean": 0.26197825311115913,
+                "sample_seed_SD": 0.01647089842947656,
+                "minimum": 0.24321302151639157,
+                "maximum": 0.2740422971604614,
+                "model_seeds": 3
+              },
+              "signals": {
+                "mean": 0.21141663523241452,
+                "sample_seed_SD": 0.012921763448983811,
+                "minimum": 0.1965051382350437,
+                "maximum": 0.21932781056885145,
+                "model_seeds": 3
+              },
+              "positions": {
+                "mean": 0.32441418703839303,
+                "sample_seed_SD": 0.017439610781459045,
+                "minimum": 0.3081970321480529,
+                "maximum": 0.3428616686641724,
+                "model_seeds": 3
+              }
+            },
+            "quarter_signal_over_angle_norm": {
+              "mean": 0.2017743155963816,
+              "sample_seed_SD": 0.0024194671874973946,
+              "minimum": 0.19925478580908412,
+              "maximum": 0.20407945062044688,
+              "model_seeds": 3
+            },
+            "quarter_position_over_angle_norm": {
+              "mean": 0.3099134238432801,
+              "sample_seed_SD": 0.013897137831184639,
+              "minimum": 0.29391800430200005,
+              "maximum": 0.3190248459523498,
+              "model_seeds": 3
+            },
+            "quarter_combined_aux_over_angle_norm": {
+              "mean": 0.3892451115114653,
+              "sample_seed_SD": 0.02212988976680289,
+              "minimum": 0.36397699680368784,
+              "maximum": 0.40517671422922646,
+              "model_seeds": 3
+            },
+            "pairwise_cosine": {
+              "angle_signal": {
+                "mean": -0.1215335284708613,
+                "sample_seed_SD": 0.15371535811003934,
+                "minimum": -0.2963844698606893,
+                "maximum": -0.007673751652732345,
+                "model_seeds": 3
+              },
+              "angle_position": {
+                "mean": 0.08900627255920833,
+                "sample_seed_SD": 0.09360113740856224,
+                "minimum": 0.008983316639991027,
+                "maximum": 0.19193370889695666,
+                "model_seeds": 3
+              },
+              "signal_position": {
+                "mean": 0.11763925321912762,
+                "sample_seed_SD": 0.0626223731453479,
+                "minimum": 0.05454655768355023,
+                "maximum": 0.1797804607822543,
+                "model_seeds": 3
+              }
+            },
+            "combined_aux_L2_norm": {
+              "mean": 0.4071733771890795,
+              "sample_seed_SD": 0.01850703167186153,
+              "minimum": 0.39417701166309477,
+              "maximum": 0.42836275063354934,
+              "model_seeds": 3
+            },
+            "combined_aux_angle_cosine": {
+              "mean": 0.008167070519612157,
+              "sample_seed_SD": 0.13691148173134346,
+              "minimum": -0.14456280765832485,
+              "maximum": 0.11988652931520923,
+              "model_seeds": 3
+            },
+            "weighted_total_L2_norm": {
+              "mean": 0.2812767890082401,
+              "sample_seed_SD": 0.012944303003608883,
+              "minimum": 0.2731487568697206,
+              "maximum": 0.29620387556496486,
+              "model_seeds": 3
+            },
+            "weighted_total_angle_cosine": {
+              "mean": 0.9326235149025613,
+              "sample_seed_SD": 0.009676096301069711,
+              "minimum": 0.9224723111069412,
+              "maximum": 0.9417415957121797,
+              "model_seeds": 3
+            }
+          }
+        }
+      },
+      "descriptive_seed_direction_counts": {
+        "block0": {
+          "negative_angle_signal_cosines": 2,
+          "negative_angle_position_cosines": 0,
+          "negative_combined_aux_angle_cosines": 1,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 0,
+          "model_seeds": 3
+        },
+        "block1": {
+          "negative_angle_signal_cosines": 3,
+          "negative_angle_position_cosines": 0,
+          "negative_combined_aux_angle_cosines": 1,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 0,
+          "model_seeds": 3
+        },
+        "block2": {
+          "negative_angle_signal_cosines": 3,
+          "negative_angle_position_cosines": 2,
+          "negative_combined_aux_angle_cosines": 2,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 0,
+          "model_seeds": 3
+        },
+        "encoder_all": {
+          "negative_angle_signal_cosines": 3,
+          "negative_angle_position_cosines": 0,
+          "negative_combined_aux_angle_cosines": 1,
+          "negative_weighted_total_angle_cosines": 0,
+          "quarter_combined_aux_norm_greater_than_angle": 0,
+          "model_seeds": 3
+        }
+      }
+    }
+  },
+  "provenance": {
+    "static_review_passed": true,
+    "static_review_sha256": "3b0d642b4e614648fac1e3058ab689d36a5971933f83b7f8d45c96f80662e739",
+    "result_sha256": "a809cc91697dc00f4b9b84948e770e76350be8a7593d06e6e1394864287c891b",
+    "complete_receipt_sha256": "f364c3f8a48f3a3b9b7314c24e2e22a2e4e05a12cdab8469a01a4db7632acc86",
+    "contract_sha256": "4e1535f92e42b42c059f0a51a1dde052e2b99ef5641b4f0f462d665f6944f834",
+    "diagnosis_code_sha256": "3a6e674120321190f816d4acf4fe3636d7610634ac30fe8ab18a1b19065dd22b",
+    "report_generator_sha256": "2788a378b669cd9e35ab74a7dacaba738fc369cfc43c44405444d1d7518d4807",
+    "actual_raw_gradient_recomputation_by_static_reviewer": false
+  },
+  "execution": {
+    "all_before_after_model_states_identical": true,
+    "TRAIN_source_files_loaded": 31,
+    "optimizer_instances": 0,
+    "optimizer_steps": 0,
+    "new_neural_fits": 0,
+    "scaler_refits": 0,
+    "VALID_TEST_dynamic_arrays_or_hashes_opened": 0
+  },
+  "boundaries": [
+    "posthoc TRAIN geometry after a known supervision study; no new p values, bootstrap, or hyperparameter selection",
+    "three model seeds do not expand the eight TRAIN participants",
+    "raw Euclidean eval gradients are not stochastic-dropout/minibatch, AdamW-preconditioned, clipped or weight-decay updates",
+    "negative cosine does not establish the cause of VALID error or actual negative transfer",
+    "loss values alone do not determine encoder gradient magnitudes; no new weights or checkpoints selected",
+    "angles and optical landmark positions remain engineering proxies, not clinical JCS or hardware sensor centers",
+    "seed/state/domain summaries only; no patient/trial rows, identifiers, checkpoint-to-individual maps, private paths, raw tensors or gradients"
+  ]
+}

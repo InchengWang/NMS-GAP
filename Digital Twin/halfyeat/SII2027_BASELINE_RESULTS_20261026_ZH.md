@@ -1,5 +1,8 @@
 # 文献架构baseline：72次匹配预算新训练结果
 
+**2026-10-26追加验收（本条优先）：** 原六格baseline余下SO3/noise/gyro-bias的72新fit/63000更新及3360压力预测已独立复算通过，六格累计144个独立fit/126000更新。SO3患膝clean为3.273°（replay 3.174°），±10°旋转绝对误差3.388°（replay 3.711°；6/6改善），存在clean/压力权衡。固定noise/bias压力过弱，不能判增强家族无效。另完成0新fit、0VALID/TEST的TRAIN梯度几何诊断。见[增强全结果](SII2027_MEASUREMENT_BASELINES_20261026_ZH.md)、[梯度诊断及限制](SII2027_TRAIN_GRADIENT_DIAGNOSIS_20261026_ZH.md)、[本轮代码函数/SHA索引](SII2027_MEASUREMENT_GRADIENT_CODE_INDEX_20261026.json)。此前三批加本批共174 accepted fit/134400更新；含Dorschky失败版实际192次尝试/138000更新，仅指这四批，非全项目总成本。下面各日期旧状态保留历史含义；旧ARCH79及答辩文件保持。
+
+
 2026-10-26。三架构、8位患者、3个seed共72次独立新训练和63000次更新已完成；独立TRAIN/VALID审计、统一评价及477次独立结果重算均通过。**本批同患者跨试次测试支持继续使用FrameTCN作为工程基线；两种LSTM改编未改善主端点。**
 
 入口：[完整人群聚合](SII2027_BASELINE_AGGREGATES_20261026.json) · [本轮代码与函数SHA](SII2027_FOLLOWUP_CODE_INDEX_20261026.json) · [模块、协议与函数指纹索引](SII2027_FOLLOWUP_CODE_INDEX_20261026.json)。

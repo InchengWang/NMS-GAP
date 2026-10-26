@@ -1,7 +1,10 @@
 # 运动重建中期报告：代码、历次实验与决策记录
 
+**2026-10-26追加验收（本条优先）：** 原六格baseline余下SO3/noise/gyro-bias的72新fit/63000更新及3360压力预测已独立复算通过，六格累计144个独立fit/126000更新。SO3患膝clean为3.273°（replay 3.174°），±10°旋转绝对误差3.388°（replay 3.711°；6/6改善），存在clean/压力权衡。固定noise/bias压力过弱，不能判增强家族无效。另完成0新fit、0VALID/TEST的TRAIN梯度几何诊断。见[增强全结果](SII2027_MEASUREMENT_BASELINES_20261026_ZH.md)、[梯度诊断及限制](SII2027_TRAIN_GRADIENT_DIAGNOSIS_20261026_ZH.md)、[本轮代码函数/SHA索引](SII2027_MEASUREMENT_GRADIENT_CODE_INDEX_20261026.json)。此前三批加本批共174 accepted fit/134400更新；含Dorschky失败版实际192次尝试/138000更新，仅指这四批，非全项目总成本。下面各日期旧状态保留历史含义；旧ARCH79及答辩文件保持。
 
-**2026-10-26最新研究状态：** [三批后续实验与决策](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)已通过独立训练和全结果复算：文献架构72fit、Dorschky四格新增18fit、监督机制12fit。TCN同人TEST患膝3.174°，两种LSTM未改善；方向增强存在clean/压力权衡；固定中间联合监督三seed阴性。accepted共102fit/71400更新，含失败的实际成本120次/75000更新。旧ARCH79继续冻结；余下增强baseline72fit尚未执行。以下早期“未训练/0fit”等文字按原记录日期保留，当前状态以本条及新报告为准。
+
+
+**2026-10-26前批研究状态（历史）：** [三批后续实验与决策](SII2027_RESEARCH_PROGRESS_20261026_ZH.md)已通过独立训练和全结果复算：文献架构72fit、Dorschky四格新增18fit、监督机制12fit。TCN同人TEST患膝3.174°，两种LSTM未改善；方向增强存在clean/压力权衡；固定中间联合监督三seed阴性。accepted共102fit/71400更新，含失败的实际成本120次/75000更新。旧ARCH79继续冻结；余下增强baseline72fit尚未执行。以下早期“未训练/0fit”等文字按原记录日期保留，当前状态以本条及新报告为准。
 
 
 **当前主题更新（2026-10-25）：** 用户确认2026-10-27中期答辩题目为 **Generalizable and Personalized Motion Reconstruction in Stroke Patients Using Sparse IMUs**。近期以真实双小腿IMU、跨患者建模与有限标签个体化为中心；三层目标为现有可组织投稿内容、适当优化、期刊证据包，见[当前主题与路线](MIDTERM_THEME_AND_PUBLICATION_ROADMAP_20261027_ZH.md)及[当前答辩大纲](MASTER_MIDTERM_OUTLINE_ZH.md)。现有证据更支持个体适配，零标定卒中泛化仍待验证；健康外部数据仅作技术复核。架构继续冻结，本次不启动新训练。以下旧日期、标题和未完成状态按各自记录日期保留，当前答辩日期以10月27日为准。
